@@ -2,12 +2,23 @@
     <div class="hero-body">
         <div class="container has-text-centered">
             <div class="section">
-                <p class="subtitle is-uppercase has-text-weight-medium has-text-grey">Projects</p>
+                <p class="subtitle is-uppercase has-text-weight-medium has-text-grey">Research</p>
             </div>
-            {% include project-card.html %}
+            <div class="columns is-centered is-multiline is-mobile">
+                {% for research in site.data.research %}
+                <div class="column is-one-third">
+                    <div class="has-background-black card">
+                        <figure class="image is-3by1"
+                            style="background-image: url({{research.image}});">
+                        </figure>
+                        <div class="card-content">
+                            <h1 class="title has-text-white is-size-4">{{ research.name }}</h1>
+                            <p class="has-text-white has-text-weight-light content">{{ research.description | truncate: 80 }}</p>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
         </div>
     </div>
 </section>
-</div>
-
-
