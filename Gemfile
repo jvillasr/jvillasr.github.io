@@ -17,15 +17,15 @@ gem "webrick"
 # If you have any plugins, put them here!
 group :jekyll_plugins do
   gem "jekyll-feed"
-  gem 'jekyll-admin', "0.9.0"
+  gem 'jekyll-admin', "0.11.1"
 end
 
 # Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem
 # and associated library.
-install_if -> { RUBY_PLATFORM =~ %r!mingw|mswin|java! } do
-  gem "tzinfo", "~> 1.2"
-  gem "tzinfo-data"
-end
+# install_if -> { RUBY_PLATFORM =~ %r!mingw|mswin|java! } do
+#   gem "tzinfo", "~> 1.2"
+#   gem "tzinfo-data"
+# end
 
 # Performance-booster for watching directories on Windows
-gem "wdm", :install_if => Gem.win_platform?
+# gem "wdm", :install_if => Gem.win_platform?

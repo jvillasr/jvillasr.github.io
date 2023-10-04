@@ -79,6 +79,13 @@ defaults:
       description: ""
       tags:
         - ""
+  # -
+  #   scope:
+  #     type: 'blogs'
+  #   values:
+  #     layout: blog
+      # title: "BLOG"
+      # permalink: /blog/
   -
     scope:
       type: 'pages'
