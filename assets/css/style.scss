@@ -291,6 +291,83 @@ a.navbar-item.is-active {
     }
 }
 
+#resume {
+    /* Define your styling for the whole resume section here */
+    // background-color: #000000; /* Example background color */
+    // padding: 20px; /* Example padding */
+    // border: 1px solid #E0E0E0; /* Example border */
+    .has-text-primary {
+        color: #FF5733 !important; /* Change this to your desired color */
+        font-size: 28px !important;
+        text-align: left;
+        margin-bottom: 20px !important;
+    }
+
+    .resume-title {
+        font-size: 2rem !important; /* Your desired font size */
+        font-weight: bold; /* Your desired font weight */
+        text-align: center; /* Your desired text alignment */
+    }
+
+    .resume-entry {
+        margin-bottom: 20px; /* Adjust spacing between entries */
+        margin-left: 40px !important;
+    }
+    .twocols {
+        display: flex;
+        // flex-direction: column
+    }
+
+    .date {
+        color: black; /* Date color */
+        // font-weight: bold;
+        font-size: 16px;
+        // margin-left: 60px
+        // flex-basis: 15%;
+        // align-self: flex-start;
+        margin-top: auto;
+    }
+
+    .title {
+        color: #007BFF;
+        // font-style: italic;
+        font-size: 24px;
+        // flex-grow: 1; /* Allow title to grow and take remaining space */
+    }
+
+    .institution {
+        color: #979797; /* Institution color */
+        font-style: italic;
+        font-size: 20px;
+    }
+    
+    .description {
+        color: #333; /* Description color */
+    }
+
+    .thesis {
+        color: #333; /* Description color */
+        font-weight: 600;
+    }
+
+    .supervisor {
+        color: #333; /* Description color */
+    }
+
+    .link {
+        color: #cdcdcd; /* Link color */
+        text-decoration: none;
+        border-bottom: 1px dashed #cdcdcd;
+        font-size: 14px;
+    }
+    
+    .link:hover {
+        color: rgb(200, 251, 249); /* Hover color for link */
+    }
+    
+}
+
+
 #project {
     .columns {
         .column {
