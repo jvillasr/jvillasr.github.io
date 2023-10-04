@@ -326,7 +326,6 @@ a.navbar-item.is-active {
 
     .date {
         color: black; /* Date color */
-        // font-weight: bold;
         font-size: 16px;
         // margin-left: 60px
         // flex-basis: 15%;
@@ -353,7 +352,7 @@ a.navbar-item.is-active {
 
     .thesis {
         color: #333; /* Description color */
-        // font-weight: 600;
+        font-weight: 500;
     }
 
     .supervisor {
@@ -380,7 +379,7 @@ a.navbar-item.is-active {
         margin-left: 30px
     }
     .highlight {
-        // font-weight: 600;
+        font-weight: 500;
         color: #333;
     }
     .publ-info {
