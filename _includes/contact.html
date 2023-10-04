@@ -1,13 +1,13 @@
 <section class="hero is-fullheight has-text-centered" id="contact">
     <div class="hero-body">
         <div class="container">
-            {% unless site.facebook_username == %}
+            <!-- {% unless site.facebook_username == %}
             <a id="contact-button" href="https://m.me/{{site.facebook_username}}"
                 class="button is-rounded is-uppercase has-text-weight-normal is-black is-outlined has-text-weight-semibold column is-two-fifths"
                 target="_blank">
                 <i class="fab fa-facebook-messenger"></i>Ping me on Messenger
             </a>
-            {% endunless %}
+            {% endunless %} -->
             {% unless site.email == %}
             <a id="contact-button" href="mailto:{{site.email}}"
                 class="button is-rounded is-uppercase has-text-weight-normal is-black is-outlined has-text-weight-semibold column is-two-fifths"
@@ -22,6 +22,13 @@
                 <i class="fab fa-twitter"></i>Tweet me on Twitter
             </a>
             {% endunless %}
+            <!-- {% unless site.orcid_username == %}
+            <a id="contact-button" href="https://orcid.org/{{site.orcid_username}}"
+                class="button is-rounded is-uppercase has-text-weight-normal is-black is-outlined has-text-weight-semibold column is-two-fifths"
+                target="_blank">
+                <i class="fab fa-orcid"></i>Visit my ORCID profile
+            </a>
+            {% endunless %} -->
             <hr>
             <h3 class="is-size-5 is-uppercase has-text-weight-semibold has-text-black is-marginless">
                 You Can find me here
@@ -35,6 +42,9 @@
                 {% endunless %}
                 {% unless site.instagram_username ==  %}
                 <a href="http://www.instagram.com/{{site.instagram_username}}" target="_blank" class="has-text-black"><i class="fab fa-instagram"></i></a>
+                {% endunless %}
+                {% unless site.orcid_username ==  %}
+                <a href="https://orcid.org/{{site.orcid_username}}" target="_blank" class="has-text-black"><i class="fab fa-orcid"></i></a>
                 {% endunless %}
                 {% unless site.linkedin_username ==  %}
                 <a href="http://www.linkedin.com/in/{{site.linkedin_username}}" target="_blank" class="has-text-black"><i class="fab fa-linkedin"></i></a>
