@@ -69,6 +69,12 @@ a.navbar-item.is-active {
 }
 
 #about {
+    .has-space-btw-paragraphs {
+        /* Add space between paragraphs */
+        p {
+        margin-bottom: 15px; /* Adjust the value to control the spacing */
+        }
+    }
     .image {
         max-width: 20vmax;
         margin: auto;
@@ -365,6 +371,23 @@ a.navbar-item.is-active {
         color: rgb(213, 68, 249); /* Hover color for link */
     }
     
+    .publ-title {
+        font-size: 18px;
+    }
+    .publ-authors {
+        font-size: 16px;
+        color: #989898;
+        margin-left: 30px
+    }
+    .highlight {
+        font-weight: bold;
+        color: #333;
+    }
+    .publ-info {
+        font-size: 14px;
+        font-style: italic;
+        margin-left: 30px
+    }
 }
 
 
