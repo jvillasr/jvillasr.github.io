@@ -1,15 +1,29 @@
 {%- assign p = include.project -%}
-{%- assign ext_link = p.link | downcase | contains: '://' -%}
+
+{%- assign is_abs = p.link | downcase | contains: '://' -%}
+{%- assign is_same_origin = false -%}
+{%- if is_abs and site.url and p.link contains site.url -%}
+  {%- assign is_same_origin = true -%}
+{%- endif -%}
+{%- assign is_internal = is_abs == false or is_same_origin -%}
+
+{%- comment -%} Normalize internal absolute links to relative {%- endcomment -%}
+{%- if is_internal and is_abs -%}
+  {%- assign normalized_href = p.link | replace: site.url, '' -%}
+{%- else -%}
+  {%- assign normalized_href = p.link -%}
+{%- endif -%}
 
 <a class="card research-card"
-   href="{% if ext_link %}{{ p.link }}{% else %}{{ p.link | relative_url }}{% endif %}"
-   {% if ext_link %}target="_blank" rel="noopener"{% endif %}
-   aria-label="{{ p.name | escape }}">
-
+   href="{% if is_internal %}{{ normalized_href | relative_url }}{% else %}{{ p.link }}{% endif %}"
+   {% unless is_internal %}target="_blank" rel="noopener"{% endunless %}
+   aria-label="{{ p.name | escape }}"
+>
   <div class="image is-3by2 research-card-media"
        {% if p.image %}
-         {%- assign ext_img = p.image | downcase | contains: '://' -%}
-         style="background-image:url('{% if ext_img %}{{ p.image }}{% else %}{{ p.image | relative_url }}{% endif %}')"
+         {%- assign img_abs = p.image | downcase | contains: '://' -%}
+         {%- assign img_src = img_abs ? p.image : p.image | relative_url -%}
+         style="background-image:url('{{ img_src }}')"
        {% endif %}>
     <span class="sr-only">{{ p.image_alt | default: p.name }}</span>
   </div>
