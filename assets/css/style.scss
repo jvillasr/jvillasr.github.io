@@ -2,6 +2,15 @@
 ---
 
 @import "main.scss";
+@import "research"; // _sass/_research.scss
+@import "project";  // _sass/_project.scss
+@import "pubs";     // _sass/_pubs.scss
+
+/* screen-reader-only utility (needed by the cards) */
+.sr-only {
+  position:absolute; width:1px; height:1px; padding:0; margin:-1px;
+  overflow:hidden; clip:rect(0,0,0,0); white-space:nowrap; border:0;
+}
 
 #navbar {
     opacity: 0.95;
