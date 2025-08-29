@@ -4,7 +4,7 @@ title: "Galactic Algols Project"
 subtitle: "Using high-resolution, multi-epoch spectroscopy to pin down mass-transfer efficiency in massive Algol binaries."
 slug: algols
 tags: [algols, binaries, mass-transfer, spectroscopy]
-hero_image: /assets/projects/algol2_banner.jpg         # replace with a 3:2 or 16:9 banner
+hero_image: /assets/projects/algol3_banner.jpg         # replace with a 3:2 or 16:9 banner
 hero_caption: "Artist’s impression of an Algol-type binary: gas overflows from the donor star (left) and feeds a disc around the accretor (right)."
 hero_credit: 'Image: Jaime Villaseñor (generated with GPT-5, 2025). Licensed under <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>.'
 hero_alt: "Mass transfer in an Algol binary: stream from donor to disc around accretor."
