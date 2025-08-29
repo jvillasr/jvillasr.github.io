@@ -2,9 +2,9 @@
 markdown: kramdown
 
 # URL of the Site
-url: ''
+url: "https://jvillasr.github.io"
 # Base URL of the Site (i.e., Name of the Repository in which the Site is hosted)
-baseurl: 
+baseurl: "" 
 
 # Title of the Site
 title: Jaime Villaseñor
@@ -97,7 +97,8 @@ defaults:
   - scope:
       path: "projects"
     values:
-      permalink: /projects/:name/
+      layout: project
+      permalink: /projects/:name/ 
 
 # Exclude
 exclude:
