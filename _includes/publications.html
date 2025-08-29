@@ -13,7 +13,13 @@ Params:
 {%- assign items = site.data[data_key] | default: site.data.papers_all -%}
 
 {%- if include.tag -%}
-  {%- assign items = items | where_exp: 'p','p.tags and p.tags contains include.tag' -%}
+  {%- assign tmp = '' | split: '' -%}
+  {%- for p in items -%}
+    {%- if p.tags and p.tags contains include.tag -%}
+      {%- assign tmp = tmp | push: p -%}
+    {%- endif -%}
+  {%- endfor -%}
+  {%- assign items = tmp -%}
 {%- endif -%}
 
 {%- if include.keywords -%}
