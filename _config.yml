@@ -95,10 +95,11 @@ defaults:
       layout: page
 
   - scope:
-      path: "projects"
+      path: "projects"        # folder at repo root
+      type: "pages"           # IMPORTANT so it applies to pages
     values:
       layout: project
-      permalink: /projects/:name/ 
+      permalink: /projects/:basename/
 
 # Exclude
 exclude:
