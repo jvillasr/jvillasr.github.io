@@ -1,17 +1,20 @@
-<div class="columns is-centered is-multiline is-mobile">
-  {% for project in site.data.projects %}
-    <div class="column has-text-centered is-paddingless is-marginless is-one-third-widescreen is-one-third-desktop is-one-fifth-fullhd is-one-third-tablet is-two-fifths-mobile is-three-quarters-touch"
-      id="project-card">
-      <a href="{{project.link}}" target="_blank">
-      <div class="has-background-black card">
-        <figure class="image is-3by1" style="background-image: url({{project.image}});">
-        </figure>
-        <div class="card-content">
-          <h1 class="title has-text-white is-size-4">{{ project.name }}</h1>
-          <p class="has-text-white has-text-weight-light content">{{ project.description | truncate: 80}}</p>
-        </div>
+{%- assign p = include.project -%}
+<a class="card research-card" href="{{ p.link | default: '#' }}" aria-label="{{ p.name }}">
+  <div class="image is-3by2 research-card-media"
+       style="{% if p.image %}background-image:url('{{ p.image | relative_url }}');{% endif %}">
+  </div>
+
+  <div class="card-content has-text-centered has-background-black">
+    <h3 class="title is-5 has-text-white research-card-title">{{ p.name }}</h3>
+    <p class="has-text-white has-text-weight-light research-card-desc">
+      {{ p.description }}
+    </p>
+
+    {% if p.role or p.status %}
+      <div class="research-card-badges">
+        {% if p.role %}<span class="tag is-light research-card-tag">{{ p.role }}</span>{% endif %}
+        {% if p.status %}<span class="tag is-dark research-card-tag">{{ p.status }}</span>{% endif %}
       </div>
-      </a>
-    </div>
-  {% endfor %}
-</div>
+    {% endif %}
+  </div>
+</a>

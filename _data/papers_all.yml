@@ -1,0 +1,2250 @@
+- bibcode: 2025arXiv250707093S
+  title: The Nineteenth Data Release of the Sloan Digital Sky Survey
+  authors:
+  - SDSS Collaboration
+  - Adamane Pallathadka, Gautham
+  - Aghakhanloo, Mojgan
+  - Aird, James
+  - Almeida, Andrés
+  - Amrita, Singh
+  - Anders, Friedrich
+  - Anderson, Scott F.
+  - Arseneau, Stefan
+  - González Avila, Consuelo
+  - Aviram, Shir
+  - Aydar, Catarina
+  - Badenes, Carles
+  - Barrera-Ballesteros, Jorge K.
+  - Bauer, Franz E.
+  - Behmard, Aida
+  - Berg, Michelle
+  - Besser, F.
+  - Moni Bidin, Christian
+  - Bizyaev, Dmitry
+  - Blanc, Guillermo
+  - Blanton, Michael R.
+  - Bovy, Jo
+  - Brandt, William Nielsen
+  - Brownstein, Joel R.
+  - Buchner, Johannes
+  - Bulbul, Esra
+  - Burchett, Joseph N.
+  - Carigi, Leticia
+  - Carlberg, Joleen K.
+  - Casey, Andrew R.
+  - Chakraborty, Priyanka
+  - Chanamé, Julio
+  - Chandra, Vedant
+  - Chiappini, Cristina
+  - Chilingarian, Igor
+  - Comparat, Johan
+  - Covey, Kevin
+  - Crumpler, Nicole
+  - Cunha, Katia
+  - D'Onghia, Elena
+  - Dai, Xinyu
+  - Darling, Jeremy
+  - Davis, Megan
+  - De Lee, Nathan
+  - Deacon, Niall
+  - Méndez Delgado, José Eduardo
+  - Demasi, Sebastian
+  - Demianenko, Mariia
+  - Demke, Delvin
+  - Donor, John
+  - Drory, Niv
+  - Villa Durango, Monica Alejandra
+  - Dwelly, Tom
+  - Egorov, Oleg
+  - Egorova, Evgeniya
+  - El-Badry, Kareem
+  - Eracleous, Mike
+  - Fan, Xiaohui
+  - Farr, Emily
+  - Finkbeiner, Douglas P.
+  - Fries, Logan
+  - Frinchaboy, Peter
+  - Gentile Fusillo, Nicola Pietro
+  - Serrano Félix, Luis Daniel
+  - Gaensicke, Boris
+  - Galligan, Emma
+  - García, Pablo
+  - Gelfand, Joseph
+  - Grabowski, Katie
+  - Grebel, Eva
+  - Green, Paul J
+  - Greve, Hannah
+  - Grier, Catherine
+  - Griffith, Emily
+  - Guetzoyan, Paloma
+  - Gupta, Pramod
+  - Hackshaw, Zoe
+  - Hall, Patrick B.
+  - Hawkins, Keith
+  - Hegedűs, Viola
+  - Hekker, Saskia
+  - Herbst, T. M.
+  - Hermes, J. J.
+  - Hernández-García, Lorena
+  - Hiremath, Pranavi
+  - Hogg, David W
+  - Holtzman, Jon
+  - Horne, Keith
+  - Horta, Danny
+  - Huang, Yang
+  - Hutchinson, Brian
+  - Häberle, Maximilian
+  - Ibarra-Medel, Hector Javier
+  - Ji, Alexander P.
+  - Jofre, Paula
+  - Johnson, James W.
+  - Johnson, Jennifer
+  - Johnston, Evelyn J.
+  - Kaldor, Mary
+  - Katkov, Ivan
+  - Khalatyan, Arman
+  - Khoperskov, Sergey
+  - Klessen, Ralf
+  - Kluge, Matthias
+  - Koekemoer, Anton M.
+  - Kollmeier, Juna A.
+  - Kounkel, Marina
+  - Kreckel, Kathryn
+  - Krishnarao, Dhanesh
+  - Krumpe, Mirko
+  - Lacerna, Ivan
+  - Laporte, Chervin
+  - Lepine, Sebastien
+  - Li, Jing
+  - Liang, Fu-Heng
+  - Limberg, Guilherme
+  - Liu, Xin
+  - Loebman, Sarah
+  - Long, Knox
+  - Lu, Yuxi
+  - Lucey, Madeline
+  - Lugo-Aranda, Alejandra Z.
+  - Martínez Martinez-Aldama, Mary Loli
+  - McKinnon, Kevin
+  - Medan, Ilija
+  - Merloni, Andrea
+  - Morrison, Sean
+  - Myers, Natalie
+  - Mészáros, Szabolcs
+  - Müller-Horn, Johanna
+  - Nepal, Samir
+  - Ness, Melissa
+  - Nidever, David
+  - Nitschelm, Christian
+  - Oravetz, Audrey
+  - Otto, Jonah
+  - Pan, Kaike
+  - Pérez Paolino, Facundo
+  - Negrete Peñaloza, Castalia Alenka
+  - Pinsonneault, Marc
+  - Taghizadeh Popp, Manuchehr
+  - Price-Whelan, Adrian
+  - Pulatova, Nadiia
+  - Queiroz, Anna Barbara
+  - Raddick, Jordan
+  - Rankine, Amy
+  - Rix, Hans-Walter
+  - Román-Zúñiga, Carlos
+  - Fernández Rosso, Daniela
+  - Runnoe, Jessie
+  - Mahmud Saad, Serat
+  - Salvato, Mara
+  - Sanchez, Sebastian F.
+  - Sattler, Natascha
+  - Saydjari, Andrew
+  - Sayres, Conor
+  - Schlaufman, Kevin
+  - Schneider, Donald P.
+  - Schwope, Axel
+  - Seaton, Lucas M.
+  - Seeburger, Rhys
+  - Serna, Javier
+  - Sharma, Sanjib
+  - Shen, Yue
+  - Sinha, Amaya
+  - Sizemore, Brian
+  - Sniegowska, Marzena
+  - Song, Yingyi
+  - Souto, Diogo
+  - Stassun, Keivan
+  - Steinmetz, Matthias
+  - Stone, Zachary
+  - Stone-Martinez, Alexander
+  - Stringfellow, Guy S.
+  - Mata Sánchez, Aurora
+  - Sánchez-Gallego, José
+  - Tan, Jonathan
+  - Tayar, Jamie
+  - Thai, Riley
+  - Thakar, Ani
+  - Thibodeaux, Pierre
+  - Ting, Yuan-Sen
+  - Tkachenko, Andrew
+  - Trakhtenbrot, Benny
+  - Fernandez Trincado, Jose G.
+  - Troup, Nicholas
+  - Trump, Jonathan R.
+  - Ulloa, Natalie
+  - Van der Marel, Roeland P.
+  - Vera, Pablo
+  - Villanova, Sandro
+  - Villaseñor, Jaime
+  - Wang, Ji
+  - Way, Zachary
+  - Weijmans, Anne-Marie
+  - Wheeler, Adam
+  - Wilson, John C.
+  - Wofford, Aida
+  - Wong, Tony
+  - Wu, Qiaoya
+  - Wylezalek, Dominika
+  - Xue, Xiang-Xiang
+  - Yan, Renbin
+  - Yang, Qian
+  - Zakamska, Nadia
+  - Zari, Eleonora
+  - Zasowski, Gail
+  - Zeltyn, Grisha
+  - Zheng, Zheng
+  - Zucker, Catherine
+  - Zermeño, Rodolfo de J.
+  authors_html: SDSS Collaboration; Gautham Adamane Pallathadka; Mojgan Aghakhanloo;
+    James Aird; Andrés Almeida; Singh Amrita; Friedrich Anders; Scott F. Anderson;
+    Stefan Arseneau; Consuelo González Avila; Shir Aviram; Catarina Aydar; Carles
+    Badenes; Jorge K. Barrera-Ballesteros; Franz E. Bauer; Aida Behmard; Michelle
+    Berg; F. Besser; Christian Moni Bidin; Dmitry Bizyaev; Guillermo Blanc; Michael
+    R. Blanton; Jo Bovy; William Nielsen Brandt; Joel R. Brownstein; Johannes Buchner;
+    Esra Bulbul; Joseph N. Burchett; Leticia Carigi; Joleen K. Carlberg; Andrew R.
+    Casey; Priyanka Chakraborty; Julio Chanamé; Vedant Chandra; Cristina Chiappini;
+    Igor Chilingarian; Johan Comparat; Kevin Covey; Nicole Crumpler; Katia Cunha;
+    Elena D'Onghia; Xinyu Dai; Jeremy Darling; Megan Davis; Nathan De Lee; Niall Deacon;
+    José Eduardo Méndez Delgado; Sebastian Demasi; Mariia Demianenko; Delvin Demke;
+    John Donor; Niv Drory; Monica Alejandra Villa Durango; Tom Dwelly; Oleg Egorov;
+    Evgeniya Egorova; Kareem El-Badry; Mike Eracleous; Xiaohui Fan; Emily Farr; Douglas
+    P. Finkbeiner; Logan Fries; Peter Frinchaboy; Nicola Pietro Gentile Fusillo; Luis
+    Daniel Serrano Félix; Boris Gaensicke; Emma Galligan; Pablo García; Joseph Gelfand;
+    Katie Grabowski; Eva Grebel; Paul J Green; Hannah Greve; Catherine Grier; Emily
+    Griffith; Paloma Guetzoyan; Pramod Gupta; Zoe Hackshaw; Patrick B. Hall; Keith
+    Hawkins; Viola Hegedűs; Saskia Hekker; T. M. Herbst; J. J. Hermes; Lorena Hernández-García;
+    Pranavi Hiremath; David W Hogg; Jon Holtzman; Keith Horne; Danny Horta; Yang Huang;
+    Brian Hutchinson; Maximilian Häberle; Hector Javier Ibarra-Medel; Alexander P.
+    Ji; Paula Jofre; James W. Johnson; Jennifer Johnson; Evelyn J. Johnston; Mary
+    Kaldor; Ivan Katkov; Arman Khalatyan; Sergey Khoperskov; Ralf Klessen; Matthias
+    Kluge; Anton M. Koekemoer; Juna A. Kollmeier; Marina Kounkel; Kathryn Kreckel;
+    Dhanesh Krishnarao; Mirko Krumpe; Ivan Lacerna; Chervin Laporte; Sebastien Lepine;
+    Jing Li; Fu-Heng Liang; Guilherme Limberg; Xin Liu; Sarah Loebman; Knox Long;
+    Yuxi Lu; Madeline Lucey; Alejandra Z. Lugo-Aranda; Mary Loli Martínez Martinez-Aldama;
+    Kevin McKinnon; Ilija Medan; Andrea Merloni; Sean Morrison; Natalie Myers; Szabolcs
+    Mészáros; Johanna Müller-Horn; Samir Nepal; Melissa Ness; David Nidever; Christian
+    Nitschelm; Audrey Oravetz; Jonah Otto; Kaike Pan; Facundo Pérez Paolino; Castalia
+    Alenka Negrete Peñaloza; Marc Pinsonneault; Manuchehr Taghizadeh Popp; Adrian
+    Price-Whelan; Nadiia Pulatova; Anna Barbara Queiroz; Jordan Raddick; Amy Rankine;
+    Hans-Walter Rix; Carlos Román-Zúñiga; Daniela Fernández Rosso; Jessie Runnoe;
+    Serat Mahmud Saad; Mara Salvato; Sebastian F. Sanchez; Natascha Sattler; Andrew
+    Saydjari; Conor Sayres; Kevin Schlaufman; Donald P. Schneider; Axel Schwope; Lucas
+    M. Seaton; Rhys Seeburger; Javier Serna; Sanjib Sharma; Yue Shen; Amaya Sinha;
+    Brian Sizemore; Marzena Sniegowska; Yingyi Song; Diogo Souto; Keivan Stassun;
+    Matthias Steinmetz; Zachary Stone; Alexander Stone-Martinez; Guy S. Stringfellow;
+    Aurora Mata Sánchez; José Sánchez-Gallego; Jonathan Tan; Jamie Tayar; Riley Thai;
+    Ani Thakar; Pierre Thibodeaux; Yuan-Sen Ting; Andrew Tkachenko; Benny Trakhtenbrot;
+    Jose G. Fernandez Trincado; Nicholas Troup; Jonathan R. Trump; Natalie Ulloa;
+    Roeland P. Van der Marel; Pablo Vera; Sandro Villanova; <strong>Jaime Villaseñor</strong>;
+    Ji Wang; Zachary Way; Anne-Marie Weijmans; Adam Wheeler; John C. Wilson; Aida
+    Wofford; Tony Wong; Qiaoya Wu; Dominika Wylezalek; Xiang-Xiang Xue; Renbin Yan;
+    Qian Yang; Nadia Zakamska; Eleonora Zari; Gail Zasowski; Grisha Zeltyn; Zheng
+    Zheng; Catherine Zucker; Rodolfo de J. Zermeño
+  authors_short_html: SDSS Collaboration; Gautham Adamane Pallathadka; Mojgan Aghakhanloo;
+    James Aird; Andrés Almeida; Singh Amrita; Friedrich Anders; <strong>Jaime Villaseñor</strong>,
+    <em>et&nbsp;al.</em>
+  authors_display:
+  - SDSS Collaboration
+  - Gautham Adamane Pallathadka
+  - Mojgan Aghakhanloo
+  - James Aird
+  - Andrés Almeida
+  - Singh Amrita
+  - Friedrich Anders
+  - Scott F. Anderson
+  - Stefan Arseneau
+  - Consuelo González Avila
+  - Shir Aviram
+  - Catarina Aydar
+  - Carles Badenes
+  - Jorge K. Barrera-Ballesteros
+  - Franz E. Bauer
+  - Aida Behmard
+  - Michelle Berg
+  - F. Besser
+  - Christian Moni Bidin
+  - Dmitry Bizyaev
+  - Guillermo Blanc
+  - Michael R. Blanton
+  - Jo Bovy
+  - William Nielsen Brandt
+  - Joel R. Brownstein
+  - Johannes Buchner
+  - Esra Bulbul
+  - Joseph N. Burchett
+  - Leticia Carigi
+  - Joleen K. Carlberg
+  - Andrew R. Casey
+  - Priyanka Chakraborty
+  - Julio Chanamé
+  - Vedant Chandra
+  - Cristina Chiappini
+  - Igor Chilingarian
+  - Johan Comparat
+  - Kevin Covey
+  - Nicole Crumpler
+  - Katia Cunha
+  - Elena D'Onghia
+  - Xinyu Dai
+  - Jeremy Darling
+  - Megan Davis
+  - Nathan De Lee
+  - Niall Deacon
+  - José Eduardo Méndez Delgado
+  - Sebastian Demasi
+  - Mariia Demianenko
+  - Delvin Demke
+  - John Donor
+  - Niv Drory
+  - Monica Alejandra Villa Durango
+  - Tom Dwelly
+  - Oleg Egorov
+  - Evgeniya Egorova
+  - Kareem El-Badry
+  - Mike Eracleous
+  - Xiaohui Fan
+  - Emily Farr
+  - Douglas P. Finkbeiner
+  - Logan Fries
+  - Peter Frinchaboy
+  - Nicola Pietro Gentile Fusillo
+  - Luis Daniel Serrano Félix
+  - Boris Gaensicke
+  - Emma Galligan
+  - Pablo García
+  - Joseph Gelfand
+  - Katie Grabowski
+  - Eva Grebel
+  - Paul J Green
+  - Hannah Greve
+  - Catherine Grier
+  - Emily Griffith
+  - Paloma Guetzoyan
+  - Pramod Gupta
+  - Zoe Hackshaw
+  - Patrick B. Hall
+  - Keith Hawkins
+  - Viola Hegedűs
+  - Saskia Hekker
+  - T. M. Herbst
+  - J. J. Hermes
+  - Lorena Hernández-García
+  - Pranavi Hiremath
+  - David W Hogg
+  - Jon Holtzman
+  - Keith Horne
+  - Danny Horta
+  - Yang Huang
+  - Brian Hutchinson
+  - Maximilian Häberle
+  - Hector Javier Ibarra-Medel
+  - Alexander P. Ji
+  - Paula Jofre
+  - James W. Johnson
+  - Jennifer Johnson
+  - Evelyn J. Johnston
+  - Mary Kaldor
+  - Ivan Katkov
+  - Arman Khalatyan
+  - Sergey Khoperskov
+  - Ralf Klessen
+  - Matthias Kluge
+  - Anton M. Koekemoer
+  - Juna A. Kollmeier
+  - Marina Kounkel
+  - Kathryn Kreckel
+  - Dhanesh Krishnarao
+  - Mirko Krumpe
+  - Ivan Lacerna
+  - Chervin Laporte
+  - Sebastien Lepine
+  - Jing Li
+  - Fu-Heng Liang
+  - Guilherme Limberg
+  - Xin Liu
+  - Sarah Loebman
+  - Knox Long
+  - Yuxi Lu
+  - Madeline Lucey
+  - Alejandra Z. Lugo-Aranda
+  - Mary Loli Martínez Martinez-Aldama
+  - Kevin McKinnon
+  - Ilija Medan
+  - Andrea Merloni
+  - Sean Morrison
+  - Natalie Myers
+  - Szabolcs Mészáros
+  - Johanna Müller-Horn
+  - Samir Nepal
+  - Melissa Ness
+  - David Nidever
+  - Christian Nitschelm
+  - Audrey Oravetz
+  - Jonah Otto
+  - Kaike Pan
+  - Facundo Pérez Paolino
+  - Castalia Alenka Negrete Peñaloza
+  - Marc Pinsonneault
+  - Manuchehr Taghizadeh Popp
+  - Adrian Price-Whelan
+  - Nadiia Pulatova
+  - Anna Barbara Queiroz
+  - Jordan Raddick
+  - Amy Rankine
+  - Hans-Walter Rix
+  - Carlos Román-Zúñiga
+  - Daniela Fernández Rosso
+  - Jessie Runnoe
+  - Serat Mahmud Saad
+  - Mara Salvato
+  - Sebastian F. Sanchez
+  - Natascha Sattler
+  - Andrew Saydjari
+  - Conor Sayres
+  - Kevin Schlaufman
+  - Donald P. Schneider
+  - Axel Schwope
+  - Lucas M. Seaton
+  - Rhys Seeburger
+  - Javier Serna
+  - Sanjib Sharma
+  - Yue Shen
+  - Amaya Sinha
+  - Brian Sizemore
+  - Marzena Sniegowska
+  - Yingyi Song
+  - Diogo Souto
+  - Keivan Stassun
+  - Matthias Steinmetz
+  - Zachary Stone
+  - Alexander Stone-Martinez
+  - Guy S. Stringfellow
+  - Aurora Mata Sánchez
+  - José Sánchez-Gallego
+  - Jonathan Tan
+  - Jamie Tayar
+  - Riley Thai
+  - Ani Thakar
+  - Pierre Thibodeaux
+  - Yuan-Sen Ting
+  - Andrew Tkachenko
+  - Benny Trakhtenbrot
+  - Jose G. Fernandez Trincado
+  - Nicholas Troup
+  - Jonathan R. Trump
+  - Natalie Ulloa
+  - Roeland P. Van der Marel
+  - Pablo Vera
+  - Sandro Villanova
+  - Jaime Villaseñor
+  - Ji Wang
+  - Zachary Way
+  - Anne-Marie Weijmans
+  - Adam Wheeler
+  - John C. Wilson
+  - Aida Wofford
+  - Tony Wong
+  - Qiaoya Wu
+  - Dominika Wylezalek
+  - Xiang-Xiang Xue
+  - Renbin Yan
+  - Qian Yang
+  - Nadia Zakamska
+  - Eleonora Zari
+  - Gail Zasowski
+  - Grisha Zeltyn
+  - Zheng Zheng
+  - Catherine Zucker
+  - Rodolfo de J. Zermeño
+  me_index: 192
+  n_authors: 212
+  year: '2025'
+  pub: arXiv e-prints
+  volume: ''
+  page: arXiv:2507.07093
+  doi: 10.48550/arXiv.2507.07093
+  arxiv: '2507.07093'
+  adsurl: https://ui.adsabs.harvard.edu/abs/2025arXiv250707093S
+  best_url: https://doi.org/10.48550/arXiv.2507.07093
+  refereed: false
+  citations: 5
+  tags:
+  - sdssv
+- bibcode: 2025arXiv250706989K
+  title: 'Sloan Digital Sky Survey-V: Pioneering Panoptic Spectroscopy'
+  authors:
+  - Kollmeier, Juna A.
+  - Rix, Hans-Walter
+  - Aerts, Conny
+  - Aird, James
+  - Alfaro, Pablo Vera
+  - Almeida, Andrés
+  - Anderson, Scott F.
+  - Jiménez Arranz, Óscar
+  - Arseneau, Stefan M.
+  - Assef, Roberto
+  - Aviram, Shir
+  - Aydar, Catarina
+  - Badenes, Carles
+  - Bandyopadhyay, Avrajit
+  - Barger, Kat
+  - Barkhouser, Robert H.
+  - Bauer, Franz E.
+  - Bender, Chad
+  - Besser, Felipe
+  - Bhattarai, Binod
+  - Bilgi, Pavaman
+  - Bird, Jonathan
+  - Bizyaev, Dmitry
+  - Blanc, Guillermo A.
+  - Blanton, Michael R.
+  - Bochanski, John
+  - Bovy, Jo
+  - Brandon, Christopher
+  - Brandt, William Nielsen
+  - Brownstein, Joel R.
+  - Buchner, Johannes
+  - Burchett, Joseph N.
+  - Carlberg, Joleen
+  - Casey, Andrew R.
+  - Castaneda-Carlos, Lesly
+  - Chakraborty, Priyanka
+  - Chanamé, Julio
+  - Chandra, Vedant
+  - Cherinka, Brian
+  - Chilingarian, Igor
+  - Comparat, Johan
+  - Cosens, Maren
+  - Covey, Kevin
+  - Crane, Jeffrey D.
+  - Crumpler, Nicole R.
+  - Cunha, Katia
+  - Cunningham, Tim
+  - Dai, Xinyu
+  - Darling, Jeremy
+  - Davidson, James W., Jr.
+  - Davis, Megan C.
+  - De Lee, Nathan
+  - Deacon, Niall
+  - Méndez Delgado, José Eduardo
+  - Demasi, Sebastian
+  - Demianenko, Mariia
+  - Derwent, Mark
+  - D'Onghia, Elena
+  - Di Mille, Francesco
+  - Dias, Bruno
+  - Donor, John
+  - Drory, Niv
+  - Dwelly, Tom
+  - Egorov, Oleg
+  - Egorova, Evgeniya
+  - El-Badry, Kareem
+  - Engelman, Mike
+  - Eracleous, Mike
+  - Fan, Xiaohui
+  - Farr, Emily
+  - Fries, Logan
+  - Frinchaboy, Peter
+  - Froning, Cynthia S.
+  - Gänsicke, Boris T.
+  - García, Pablo
+  - Gelfand, Joseph
+  - Gentile Fusillo, Nicola Pietro
+  - Glover, Simon
+  - Grabowski, Katie
+  - Grebel, Eva K.
+  - Green, Paul J
+  - Grier, Catherine
+  - Gupta, Pramod
+  - Gray, Aidan C.
+  - Häberle, Maximilian
+  - Hall, Patrick B.
+  - Hammond, Randolph P.
+  - Hawkins, Keith
+  - Harding, Albert C.
+  - Hegedűs, Viola
+  - Herbst, Tom
+  - Hermes, J. J.
+  - Rodríguez Hidalgo, Paola
+  - Hilder, Thomas
+  - Hogg, David W
+  - Holtzman, Jon A.
+  - Horta, Danny
+  - Huang, Yang
+  - Hwang, Hsiang-Chih
+  - Ibarra-Medel, Hector Javier
+  - Imig, Julie
+  - Inight, Keith
+  - Jana, Arghajit
+  - Ji, Alexander P.
+  - Jofre, Paula
+  - Johns, Matt
+  - Johnson, Jennifer
+  - Johnson, James W.
+  - Johnston, Evelyn J.
+  - Jones, Amy M
+  - Katkov, Ivan
+  - Koekemoer, Anton M.
+  - Kounkel, Marina
+  - Kreckel, Kathryn
+  - Krishnarao, Dhanesh
+  - Krumpe, Mirko
+  - Kumari, Nimisha
+  - Kupfer, Thomas
+  - Lacerna, Ivan
+  - Laporte, Chervin
+  - Lepine, Sebastien
+  - Li, Jing
+  - Liu, Xin
+  - Loebman, Sarah
+  - Long, Knox
+  - Roman-Lopes, Alexandre
+  - Lu, Yuxi
+  - Majewski, Steven Raymond
+  - Maoz, Dan
+  - McKinnon, Kevin A.
+  - Medan, Ilija
+  - Merloni, Andrea
+  - Minniti, Dante
+  - Morrison, Sean
+  - Myers, Natalie
+  - Mészáros, Szabolcs
+  - Nandra, Kirpal
+  - Nayak, Prasanta K.
+  - Ness, Melissa K
+  - Nidever, David L.
+  - O'Brien, Thomas
+  - Oeur, Micah
+  - Oravetz, Audrey
+  - Oravetz, Daniel
+  - Otto, Jonah
+  - Adamane Pallathadka, Gautham
+  - Palunas, Povilas
+  - Pan, Kaike
+  - Pappalardo, Daniel
+  - Pandey, Rakesh
+  - Negrete Peñaloza, Castalia Alenka
+  - Pinsonneault, Marc H.
+  - Pogge, Richard W.
+  - Taghizadeh Popp, Manuchehr
+  - Price-Whelan, Adrian M.
+  - Pulatova, Nadiia
+  - Qiu, Dan
+  - Ramirez, Solange
+  - Rankine, Amy
+  - Ricci, Claudio
+  - Runnoe, Jessie C.
+  - Sanchez, Sebastian
+  - Salvato, Mara
+  - Sattler, Natascha
+  - Saydjari, Andrew K.
+  - Sayres, Conor
+  - Schlaufman, Kevin C.
+  - Schneider, Donald P.
+  - Schreiber, Matthias R.
+  - Schwope, Axel
+  - Serna, Javier
+  - Shen, Yue
+  - Sifón, Cristóbal
+  - Singh, Amrita
+  - Sinha, Amaya
+  - Smee, Stephen
+  - Song, Ying-Yi
+  - Souto, Diogo
+  - Stassun, Keivan G.
+  - Steinmetz, Matthias
+  - Stone-Martinez, Alexander
+  - Stringfellow, Guy
+  - Stutz, Amelia
+  - José
+  - Sá
+  - nchez-Gallego
+  - Tan, Jonathan C.
+  - Tayar, Jamie
+  - Thai, Riley
+  - Thakar, Ani
+  - Ting, Yuan-Sen
+  - Tkachenko, Andrew
+  - Tovmasian, Gagik
+  - Trakhtenbrot, Benny
+  - Fernández-Trincado, José G.
+  - Troup, Nicholas
+  - Trump, Jonathan
+  - Tuttle, Sarah
+  - van der Marel, Roeland P.
+  - Villanova, Sandro
+  - Villaseñor, Jaime
+  - Wachter, Stefanie
+  - Way, Zachary
+  - Weijmans, Anne-Marie
+  - Weinberg, David
+  - Wheeler, Adam
+  - Wilson, John
+  - Wiggins, Alessa I.
+  - Wong, Tony
+  - Wu, Qiaoya
+  - Wylezalek, Dominika
+  - Xue, Xiang-Xiang
+  - Yang, Qian
+  - Zakamska, Nadia
+  - Zari, Eleonora
+  - Zasowski, Gail
+  - Zeltyn, Grisha
+  - Zucker, Catherine
+  - Román Zúñiga, Carlos G.
+  - Zermeño, Rodolfo de J.
+  authors_html: Juna A. Kollmeier; Hans-Walter Rix; Conny Aerts; James Aird; Pablo
+    Vera Alfaro; Andrés Almeida; Scott F. Anderson; Óscar Jiménez Arranz; Stefan M.
+    Arseneau; Roberto Assef; Shir Aviram; Catarina Aydar; Carles Badenes; Avrajit
+    Bandyopadhyay; Kat Barger; Robert H. Barkhouser; Franz E. Bauer; Chad Bender;
+    Felipe Besser; Binod Bhattarai; Pavaman Bilgi; Jonathan Bird; Dmitry Bizyaev;
+    Guillermo A. Blanc; Michael R. Blanton; John Bochanski; Jo Bovy; Christopher Brandon;
+    William Nielsen Brandt; Joel R. Brownstein; Johannes Buchner; Joseph N. Burchett;
+    Joleen Carlberg; Andrew R. Casey; Lesly Castaneda-Carlos; Priyanka Chakraborty;
+    Julio Chanamé; Vedant Chandra; Brian Cherinka; Igor Chilingarian; Johan Comparat;
+    Maren Cosens; Kevin Covey; Jeffrey D. Crane; Nicole R. Crumpler; Katia Cunha;
+    Tim Cunningham; Xinyu Dai; Jeremy Darling; James W. Davidson, Jr.; Megan C. Davis;
+    Nathan De Lee; Niall Deacon; José Eduardo Méndez Delgado; Sebastian Demasi; Mariia
+    Demianenko; Mark Derwent; Elena D'Onghia; Francesco Di Mille; Bruno Dias; John
+    Donor; Niv Drory; Tom Dwelly; Oleg Egorov; Evgeniya Egorova; Kareem El-Badry;
+    Mike Engelman; Mike Eracleous; Xiaohui Fan; Emily Farr; Logan Fries; Peter Frinchaboy;
+    Cynthia S. Froning; Boris T. Gänsicke; Pablo García; Joseph Gelfand; Nicola Pietro
+    Gentile Fusillo; Simon Glover; Katie Grabowski; Eva K. Grebel; Paul J Green; Catherine
+    Grier; Pramod Gupta; Aidan C. Gray; Maximilian Häberle; Patrick B. Hall; Randolph
+    P. Hammond; Keith Hawkins; Albert C. Harding; Viola Hegedűs; Tom Herbst; J. J.
+    Hermes; Paola Rodríguez Hidalgo; Thomas Hilder; David W Hogg; Jon A. Holtzman;
+    Danny Horta; Yang Huang; Hsiang-Chih Hwang; Hector Javier Ibarra-Medel; Julie
+    Imig; Keith Inight; Arghajit Jana; Alexander P. Ji; Paula Jofre; Matt Johns; Jennifer
+    Johnson; James W. Johnson; Evelyn J. Johnston; Amy M Jones; Ivan Katkov; Anton
+    M. Koekemoer; Marina Kounkel; Kathryn Kreckel; Dhanesh Krishnarao; Mirko Krumpe;
+    Nimisha Kumari; Thomas Kupfer; Ivan Lacerna; Chervin Laporte; Sebastien Lepine;
+    Jing Li; Xin Liu; Sarah Loebman; Knox Long; Alexandre Roman-Lopes; Yuxi Lu; Steven
+    Raymond Majewski; Dan Maoz; Kevin A. McKinnon; Ilija Medan; Andrea Merloni; Dante
+    Minniti; Sean Morrison; Natalie Myers; Szabolcs Mészáros; Kirpal Nandra; Prasanta
+    K. Nayak; Melissa K Ness; David L. Nidever; Thomas O'Brien; Micah Oeur; Audrey
+    Oravetz; Daniel Oravetz; Jonah Otto; Gautham Adamane Pallathadka; Povilas Palunas;
+    Kaike Pan; Daniel Pappalardo; Rakesh Pandey; Castalia Alenka Negrete Peñaloza;
+    Marc H. Pinsonneault; Richard W. Pogge; Manuchehr Taghizadeh Popp; Adrian M. Price-Whelan;
+    Nadiia Pulatova; Dan Qiu; Solange Ramirez; Amy Rankine; Claudio Ricci; Jessie
+    C. Runnoe; Sebastian Sanchez; Mara Salvato; Natascha Sattler; Andrew K. Saydjari;
+    Conor Sayres; Kevin C. Schlaufman; Donald P. Schneider; Matthias R. Schreiber;
+    Axel Schwope; Javier Serna; Yue Shen; Cristóbal Sifón; Amrita Singh; Amaya Sinha;
+    Stephen Smee; Ying-Yi Song; Diogo Souto; Keivan G. Stassun; Matthias Steinmetz;
+    Alexander Stone-Martinez; Guy Stringfellow; Amelia Stutz; José; Sá; nchez-Gallego;
+    Jonathan C. Tan; Jamie Tayar; Riley Thai; Ani Thakar; Yuan-Sen Ting; Andrew Tkachenko;
+    Gagik Tovmasian; Benny Trakhtenbrot; José G. Fernández-Trincado; Nicholas Troup;
+    Jonathan Trump; Sarah Tuttle; Roeland P. van der Marel; Sandro Villanova; <strong>Jaime
+    Villaseñor</strong>; Stefanie Wachter; Zachary Way; Anne-Marie Weijmans; David
+    Weinberg; Adam Wheeler; John Wilson; Alessa I. Wiggins; Tony Wong; Qiaoya Wu;
+    Dominika Wylezalek; Xiang-Xiang Xue; Qian Yang; Nadia Zakamska; Eleonora Zari;
+    Gail Zasowski; Grisha Zeltyn; Catherine Zucker; Carlos G. Román Zúñiga; Rodolfo
+    de J. Zermeño
+  authors_short_html: Juna A. Kollmeier; Hans-Walter Rix; Conny Aerts; James Aird;
+    Pablo Vera Alfaro; Andrés Almeida; Scott F. Anderson; <strong>Jaime Villaseñor</strong>,
+    <em>et&nbsp;al.</em>
+  authors_display:
+  - Juna A. Kollmeier
+  - Hans-Walter Rix
+  - Conny Aerts
+  - James Aird
+  - Pablo Vera Alfaro
+  - Andrés Almeida
+  - Scott F. Anderson
+  - Óscar Jiménez Arranz
+  - Stefan M. Arseneau
+  - Roberto Assef
+  - Shir Aviram
+  - Catarina Aydar
+  - Carles Badenes
+  - Avrajit Bandyopadhyay
+  - Kat Barger
+  - Robert H. Barkhouser
+  - Franz E. Bauer
+  - Chad Bender
+  - Felipe Besser
+  - Binod Bhattarai
+  - Pavaman Bilgi
+  - Jonathan Bird
+  - Dmitry Bizyaev
+  - Guillermo A. Blanc
+  - Michael R. Blanton
+  - John Bochanski
+  - Jo Bovy
+  - Christopher Brandon
+  - William Nielsen Brandt
+  - Joel R. Brownstein
+  - Johannes Buchner
+  - Joseph N. Burchett
+  - Joleen Carlberg
+  - Andrew R. Casey
+  - Lesly Castaneda-Carlos
+  - Priyanka Chakraborty
+  - Julio Chanamé
+  - Vedant Chandra
+  - Brian Cherinka
+  - Igor Chilingarian
+  - Johan Comparat
+  - Maren Cosens
+  - Kevin Covey
+  - Jeffrey D. Crane
+  - Nicole R. Crumpler
+  - Katia Cunha
+  - Tim Cunningham
+  - Xinyu Dai
+  - Jeremy Darling
+  - James W. Davidson, Jr.
+  - Megan C. Davis
+  - Nathan De Lee
+  - Niall Deacon
+  - José Eduardo Méndez Delgado
+  - Sebastian Demasi
+  - Mariia Demianenko
+  - Mark Derwent
+  - Elena D'Onghia
+  - Francesco Di Mille
+  - Bruno Dias
+  - John Donor
+  - Niv Drory
+  - Tom Dwelly
+  - Oleg Egorov
+  - Evgeniya Egorova
+  - Kareem El-Badry
+  - Mike Engelman
+  - Mike Eracleous
+  - Xiaohui Fan
+  - Emily Farr
+  - Logan Fries
+  - Peter Frinchaboy
+  - Cynthia S. Froning
+  - Boris T. Gänsicke
+  - Pablo García
+  - Joseph Gelfand
+  - Nicola Pietro Gentile Fusillo
+  - Simon Glover
+  - Katie Grabowski
+  - Eva K. Grebel
+  - Paul J Green
+  - Catherine Grier
+  - Pramod Gupta
+  - Aidan C. Gray
+  - Maximilian Häberle
+  - Patrick B. Hall
+  - Randolph P. Hammond
+  - Keith Hawkins
+  - Albert C. Harding
+  - Viola Hegedűs
+  - Tom Herbst
+  - J. J. Hermes
+  - Paola Rodríguez Hidalgo
+  - Thomas Hilder
+  - David W Hogg
+  - Jon A. Holtzman
+  - Danny Horta
+  - Yang Huang
+  - Hsiang-Chih Hwang
+  - Hector Javier Ibarra-Medel
+  - Julie Imig
+  - Keith Inight
+  - Arghajit Jana
+  - Alexander P. Ji
+  - Paula Jofre
+  - Matt Johns
+  - Jennifer Johnson
+  - James W. Johnson
+  - Evelyn J. Johnston
+  - Amy M Jones
+  - Ivan Katkov
+  - Anton M. Koekemoer
+  - Marina Kounkel
+  - Kathryn Kreckel
+  - Dhanesh Krishnarao
+  - Mirko Krumpe
+  - Nimisha Kumari
+  - Thomas Kupfer
+  - Ivan Lacerna
+  - Chervin Laporte
+  - Sebastien Lepine
+  - Jing Li
+  - Xin Liu
+  - Sarah Loebman
+  - Knox Long
+  - Alexandre Roman-Lopes
+  - Yuxi Lu
+  - Steven Raymond Majewski
+  - Dan Maoz
+  - Kevin A. McKinnon
+  - Ilija Medan
+  - Andrea Merloni
+  - Dante Minniti
+  - Sean Morrison
+  - Natalie Myers
+  - Szabolcs Mészáros
+  - Kirpal Nandra
+  - Prasanta K. Nayak
+  - Melissa K Ness
+  - David L. Nidever
+  - Thomas O'Brien
+  - Micah Oeur
+  - Audrey Oravetz
+  - Daniel Oravetz
+  - Jonah Otto
+  - Gautham Adamane Pallathadka
+  - Povilas Palunas
+  - Kaike Pan
+  - Daniel Pappalardo
+  - Rakesh Pandey
+  - Castalia Alenka Negrete Peñaloza
+  - Marc H. Pinsonneault
+  - Richard W. Pogge
+  - Manuchehr Taghizadeh Popp
+  - Adrian M. Price-Whelan
+  - Nadiia Pulatova
+  - Dan Qiu
+  - Solange Ramirez
+  - Amy Rankine
+  - Claudio Ricci
+  - Jessie C. Runnoe
+  - Sebastian Sanchez
+  - Mara Salvato
+  - Natascha Sattler
+  - Andrew K. Saydjari
+  - Conor Sayres
+  - Kevin C. Schlaufman
+  - Donald P. Schneider
+  - Matthias R. Schreiber
+  - Axel Schwope
+  - Javier Serna
+  - Yue Shen
+  - Cristóbal Sifón
+  - Amrita Singh
+  - Amaya Sinha
+  - Stephen Smee
+  - Ying-Yi Song
+  - Diogo Souto
+  - Keivan G. Stassun
+  - Matthias Steinmetz
+  - Alexander Stone-Martinez
+  - Guy Stringfellow
+  - Amelia Stutz
+  - José
+  - Sá
+  - nchez-Gallego
+  - Jonathan C. Tan
+  - Jamie Tayar
+  - Riley Thai
+  - Ani Thakar
+  - Yuan-Sen Ting
+  - Andrew Tkachenko
+  - Gagik Tovmasian
+  - Benny Trakhtenbrot
+  - José G. Fernández-Trincado
+  - Nicholas Troup
+  - Jonathan Trump
+  - Sarah Tuttle
+  - Roeland P. van der Marel
+  - Sandro Villanova
+  - Jaime Villaseñor
+  - Stefanie Wachter
+  - Zachary Way
+  - Anne-Marie Weijmans
+  - David Weinberg
+  - Adam Wheeler
+  - John Wilson
+  - Alessa I. Wiggins
+  - Tony Wong
+  - Qiaoya Wu
+  - Dominika Wylezalek
+  - Xiang-Xiang Xue
+  - Qian Yang
+  - Nadia Zakamska
+  - Eleonora Zari
+  - Gail Zasowski
+  - Grisha Zeltyn
+  - Catherine Zucker
+  - Carlos G. Román Zúñiga
+  - Rodolfo de J. Zermeño
+  me_index: 200
+  n_authors: 220
+  year: '2025'
+  pub: arXiv e-prints
+  volume: ''
+  page: arXiv:2507.06989
+  doi: 10.48550/arXiv.2507.06989
+  arxiv: '2507.06989'
+  adsurl: https://ui.adsabs.harvard.edu/abs/2025arXiv250706989K
+  best_url: https://doi.org/10.48550/arXiv.2507.06989
+  refereed: false
+  citations: 4
+  tags:
+  - sdssv
+- bibcode: 2025arXiv250406973M
+  title: 'HIP 15429: A newborn Be star on an eccentric binary orbit'
+  authors:
+  - Müller-Horn, Johanna
+  - El-Badry, Kareem
+  - Rix, Hans-Walter
+  - Shenar, Tomer
+  - Seeburger, Rhys
+  - Villaseñor, Jaime I.
+  - Bodensteiner, Julia
+  - Latham, David W.
+  - Bieryla, Allyson
+  - Buchhave, Lars A.
+  - Isaacson, Howard
+  - Howard, Andrew W.
+  authors_html: Johanna Müller-Horn; Kareem El-Badry; Hans-Walter Rix; Tomer Shenar;
+    Rhys Seeburger; <strong>Jaime I. Villaseñor</strong>; Julia Bodensteiner; David
+    W. Latham; Allyson Bieryla; Lars A. Buchhave; Howard Isaacson; Andrew W. Howard
+  authors_short_html: Johanna Müller-Horn; Kareem El-Badry; Hans-Walter Rix; Tomer
+    Shenar; Rhys Seeburger; <strong>Jaime I. Villaseñor</strong>; Julia Bodensteiner;
+    David W. Latham, <em>et&nbsp;al.</em>
+  authors_display:
+  - Johanna Müller-Horn
+  - Kareem El-Badry
+  - Hans-Walter Rix
+  - Tomer Shenar
+  - Rhys Seeburger
+  - Jaime I. Villaseñor
+  - Julia Bodensteiner
+  - David W. Latham
+  - Allyson Bieryla
+  - Lars A. Buchhave
+  - Howard Isaacson
+  - Andrew W. Howard
+  me_index: 5
+  n_authors: 12
+  year: '2025'
+  pub: arXiv e-prints
+  volume: ''
+  page: arXiv:2504.06973
+  doi: 10.48550/arXiv.2504.06973
+  arxiv: '2504.06973'
+  adsurl: https://ui.adsabs.harvard.edu/abs/2025arXiv250406973M
+  best_url: https://doi.org/10.48550/arXiv.2504.06973
+  refereed: false
+  citations: 1
+  tags: []
+- bibcode: 2025A&A...698A..41V
+  title: 'Binarity at LOw Metallicity (BLOeM): Enhanced multiplicity of early B-type
+    dwarfs and giants at Z = 0.2 Z<SUB>⊙</SUB>'
+  authors:
+  - Villaseñor, J. I.
+  - Sana, H.
+  - Mahy, L.
+  - Shenar, T.
+  - Bodensteiner, J.
+  - Britavskiy, N.
+  - Lennon, D. J.
+  - Moe, M.
+  - Patrick, L. R.
+  - Pawlak, M.
+  - Bowman, D. M.
+  - Crowther, P. A.
+  - de Mink, S. E.
+  - Deshmukh, K.
+  - Evans, C. J.
+  - Fabry, M.
+  - Fouesneau, M.
+  - Holgado, G.
+  - Langer, N.
+  - Maíz Apellániz, J.
+  - Mandel, I.
+  - Oskinova, L. M.
+  - Pauli, D.
+  - Ramachandran, V.
+  - Renzo, M.
+  - Rix, H. -W.
+  - Rocha, D. F.
+  - Sander, A. A. C.
+  - Schneider, F. R. N.
+  - Sen, K.
+  - Simón-Díaz, S.
+  - van Loon, J. Th.
+  - Toonen, S.
+  - Vink, J. S.
+  authors_html: <strong>J. I. Villaseñor</strong>; H. Sana; L. Mahy; T. Shenar; J.
+    Bodensteiner; N. Britavskiy; D. J. Lennon; M. Moe; L. R. Patrick; M. Pawlak; D.
+    M. Bowman; P. A. Crowther; S. E. de Mink; K. Deshmukh; C. J. Evans; M. Fabry;
+    M. Fouesneau; G. Holgado; N. Langer; J. Maíz Apellániz; I. Mandel; L. M. Oskinova;
+    D. Pauli; V. Ramachandran; M. Renzo; H. -W. Rix; D. F. Rocha; A. A. C. Sander;
+    F. R. N. Schneider; K. Sen; S. Simón-Díaz; J. Th. van Loon; S. Toonen; J. S. Vink
+  authors_short_html: <strong>J. I. Villaseñor</strong>; H. Sana; L. Mahy; T. Shenar;
+    J. Bodensteiner; N. Britavskiy; D. J. Lennon; M. Moe, <em>et&nbsp;al.</em>
+  authors_display:
+  - J. I. Villaseñor
+  - H. Sana
+  - L. Mahy
+  - T. Shenar
+  - J. Bodensteiner
+  - N. Britavskiy
+  - D. J. Lennon
+  - M. Moe
+  - L. R. Patrick
+  - M. Pawlak
+  - D. M. Bowman
+  - P. A. Crowther
+  - S. E. de Mink
+  - K. Deshmukh
+  - C. J. Evans
+  - M. Fabry
+  - M. Fouesneau
+  - G. Holgado
+  - N. Langer
+  - J. Maíz Apellániz
+  - I. Mandel
+  - L. M. Oskinova
+  - D. Pauli
+  - V. Ramachandran
+  - M. Renzo
+  - H. -W. Rix
+  - D. F. Rocha
+  - A. A. C. Sander
+  - F. R. N. Schneider
+  - K. Sen
+  - S. Simón-Díaz
+  - J. Th. van Loon
+  - S. Toonen
+  - J. S. Vink
+  me_index: 0
+  n_authors: 34
+  year: '2025'
+  pub: Astronomy and Astrophysics
+  volume: '698'
+  page: A41
+  doi: 10.1051/0004-6361/202453166
+  arxiv: '2503.21936'
+  adsurl: https://ui.adsabs.harvard.edu/abs/2025A&A...698A..41V
+  best_url: https://doi.org/10.1051/0004-6361/202453166
+  refereed: true
+  citations: 7
+  tags:
+  - bloem
+- bibcode: 2025A&A...698A..40B
+  title: 'Binarity at LOw Metallicity (BLOeM): Multiplicity of early B-type supergiants
+    in the Small Magellanic Cloud'
+  authors:
+  - Britavskiy, N.
+  - Mahy, L.
+  - Lennon, D. J.
+  - Patrick, L. R.
+  - Sana, H.
+  - Villaseñor, J. I.
+  - Shenar, T.
+  - Bodensteiner, J.
+  - Bernini-Peron, M.
+  - Berlanas, S. R.
+  - Bowman, D. M.
+  - Crowther, P. A.
+  - de Mink, S. E.
+  - Evans, C. J.
+  - Götberg, Y.
+  - Holgado, G.
+  - Johnston, C.
+  - Keszthelyi, Z.
+  - Klencki, J.
+  - Langer, N.
+  - Mandel, I.
+  - Menon, A.
+  - Moe, M.
+  - Oskinova, L. M.
+  - Pauli, D.
+  - Pawlak, M.
+  - Ramachandran, V.
+  - Renzo, M.
+  - Sander, A. A. C.
+  - Schneider, F. R. N.
+  - Schootemeijer, A.
+  - Sen, K.
+  - Simón-Díaz, S.
+  - van Loon, J. Th.
+  - Vink, J. S.
+  authors_html: N. Britavskiy; L. Mahy; D. J. Lennon; L. R. Patrick; H. Sana; <strong>J.
+    I. Villaseñor</strong>; T. Shenar; J. Bodensteiner; M. Bernini-Peron; S. R. Berlanas;
+    D. M. Bowman; P. A. Crowther; S. E. de Mink; C. J. Evans; Y. Götberg; G. Holgado;
+    C. Johnston; Z. Keszthelyi; J. Klencki; N. Langer; I. Mandel; A. Menon; M. Moe;
+    L. M. Oskinova; D. Pauli; M. Pawlak; V. Ramachandran; M. Renzo; A. A. C. Sander;
+    F. R. N. Schneider; A. Schootemeijer; K. Sen; S. Simón-Díaz; J. Th. van Loon;
+    J. S. Vink
+  authors_short_html: N. Britavskiy; L. Mahy; D. J. Lennon; L. R. Patrick; H. Sana;
+    <strong>J. I. Villaseñor</strong>; T. Shenar; J. Bodensteiner, <em>et&nbsp;al.</em>
+  authors_display:
+  - N. Britavskiy
+  - L. Mahy
+  - D. J. Lennon
+  - L. R. Patrick
+  - H. Sana
+  - J. I. Villaseñor
+  - T. Shenar
+  - J. Bodensteiner
+  - M. Bernini-Peron
+  - S. R. Berlanas
+  - D. M. Bowman
+  - P. A. Crowther
+  - S. E. de Mink
+  - C. J. Evans
+  - Y. Götberg
+  - G. Holgado
+  - C. Johnston
+  - Z. Keszthelyi
+  - J. Klencki
+  - N. Langer
+  - I. Mandel
+  - A. Menon
+  - M. Moe
+  - L. M. Oskinova
+  - D. Pauli
+  - M. Pawlak
+  - V. Ramachandran
+  - M. Renzo
+  - A. A. C. Sander
+  - F. R. N. Schneider
+  - A. Schootemeijer
+  - K. Sen
+  - S. Simón-Díaz
+  - J. Th. van Loon
+  - J. S. Vink
+  me_index: 5
+  n_authors: 35
+  year: '2025'
+  pub: Astronomy and Astrophysics
+  volume: '698'
+  page: A40
+  doi: 10.1051/0004-6361/202452963
+  arxiv: '2502.12239'
+  adsurl: https://ui.adsabs.harvard.edu/abs/2025A&A...698A..40B
+  best_url: https://doi.org/10.1051/0004-6361/202452963
+  refereed: true
+  citations: 4
+  tags:
+  - bloem
+- bibcode: 2025A&A...698A..39P
+  title: 'Binarity at LOw Metallicity (BLOeM): The multiplicity properties and evolution
+    of BAF-type supergiants'
+  authors:
+  - Patrick, L. R.
+  - Lennon, D. J.
+  - Najarro, F.
+  - Shenar, T.
+  - Bodensteiner, J.
+  - Sana, H.
+  - Crowther, P. A.
+  - Britavskiy, N.
+  - Langer, N.
+  - Schootemeijer, A.
+  - Evans, C. J.
+  - Mahy, L.
+  - Götberg, Y.
+  - de Mink, S. E.
+  - Schneider, F. R. N.
+  - O'Grady, A. J. G.
+  - Villaseñor, J. I.
+  - Bernini-Peron, M.
+  - Bowman, D. M.
+  - de Koter, A.
+  - Deshmukh, K.
+  - Gilkis, A.
+  - González-Torà, G.
+  - Kalari, V. M.
+  - Keszthelyi, Z.
+  - Mandel, I.
+  - Menon, A.
+  - Moe, M.
+  - Oskinova, L. M.
+  - Pauli, D.
+  - Renzo, M.
+  - Sander, A. A. C.
+  - Sen, K.
+  - Stoop, M.
+  - van Loon, J. Th.
+  - Toonen, S.
+  - Tramper, F.
+  - Vink, J. S.
+  - Wang, C.
+  authors_html: L. R. Patrick; D. J. Lennon; F. Najarro; T. Shenar; J. Bodensteiner;
+    H. Sana; P. A. Crowther; N. Britavskiy; N. Langer; A. Schootemeijer; C. J. Evans;
+    L. Mahy; Y. Götberg; S. E. de Mink; F. R. N. Schneider; A. J. G. O'Grady; <strong>J.
+    I. Villaseñor</strong>; M. Bernini-Peron; D. M. Bowman; A. de Koter; K. Deshmukh;
+    A. Gilkis; G. González-Torà; V. M. Kalari; Z. Keszthelyi; I. Mandel; A. Menon;
+    M. Moe; L. M. Oskinova; D. Pauli; M. Renzo; A. A. C. Sander; K. Sen; M. Stoop;
+    J. Th. van Loon; S. Toonen; F. Tramper; J. S. Vink; C. Wang
+  authors_short_html: L. R. Patrick; D. J. Lennon; F. Najarro; T. Shenar; J. Bodensteiner;
+    H. Sana; P. A. Crowther; <strong>J. I. Villaseñor</strong>, <em>et&nbsp;al.</em>
+  authors_display:
+  - L. R. Patrick
+  - D. J. Lennon
+  - F. Najarro
+  - T. Shenar
+  - J. Bodensteiner
+  - H. Sana
+  - P. A. Crowther
+  - N. Britavskiy
+  - N. Langer
+  - A. Schootemeijer
+  - C. J. Evans
+  - L. Mahy
+  - Y. Götberg
+  - S. E. de Mink
+  - F. R. N. Schneider
+  - A. J. G. O'Grady
+  - J. I. Villaseñor
+  - M. Bernini-Peron
+  - D. M. Bowman
+  - A. de Koter
+  - K. Deshmukh
+  - A. Gilkis
+  - G. González-Torà
+  - V. M. Kalari
+  - Z. Keszthelyi
+  - I. Mandel
+  - A. Menon
+  - M. Moe
+  - L. M. Oskinova
+  - D. Pauli
+  - M. Renzo
+  - A. A. C. Sander
+  - K. Sen
+  - M. Stoop
+  - J. Th. van Loon
+  - S. Toonen
+  - F. Tramper
+  - J. S. Vink
+  - C. Wang
+  me_index: 16
+  n_authors: 39
+  year: '2025'
+  pub: Astronomy and Astrophysics
+  volume: '698'
+  page: A39
+  doi: 10.1051/0004-6361/202452949
+  arxiv: '2502.02644'
+  adsurl: https://ui.adsabs.harvard.edu/abs/2025A&A...698A..39P
+  best_url: https://doi.org/10.1051/0004-6361/202452949
+  refereed: true
+  citations: 8
+  tags:
+  - bloem
+- bibcode: 2025A&A...698A..38B
+  title: 'Binarity at LOw Metallicity (BLOeM): Multiplicity properties of Oe and Be
+    stars'
+  authors:
+  - Bodensteiner, J.
+  - Shenar, T.
+  - Sana, H.
+  - Britavskiy, N.
+  - Crowther, P. A.
+  - Langer, N.
+  - Lennon, D. J.
+  - Mahy, L.
+  - Patrick, L. R.
+  - Villaseñor, J. I.
+  - Abdul-Masih, M.
+  - Bowman, D. M.
+  - de Koter, A.
+  - de Mink, S. E.
+  - Deshmukh, K.
+  - Fabry, M.
+  - Gilkis, A.
+  - Götberg, Y.
+  - Holgado, G.
+  - Izzard, R. G.
+  - Janssens, S.
+  - Kalari, V. M.
+  - Keszthelyi, Z.
+  - Kubát, J.
+  - Mandel, I.
+  - Maravelias, G.
+  - Oskinova, L. M.
+  - Pauli, D.
+  - Ramachandran, V.
+  - Rocha, D. F.
+  - Renzo, M.
+  - Sander, A. A. C.
+  - Schneider, F. R. N.
+  - Schootemeijer, A.
+  - Sen, K.
+  - Stoop, M.
+  - Toonen, S.
+  - van Loon, J. Th.
+  - Valli, R.
+  - Vigna-Gómez, A.
+  - Vink, J. S.
+  - Wang, C.
+  - Xu, X. -T.
+  authors_html: J. Bodensteiner; T. Shenar; H. Sana; N. Britavskiy; P. A. Crowther;
+    N. Langer; D. J. Lennon; L. Mahy; L. R. Patrick; <strong>J. I. Villaseñor</strong>;
+    M. Abdul-Masih; D. M. Bowman; A. de Koter; S. E. de Mink; K. Deshmukh; M. Fabry;
+    A. Gilkis; Y. Götberg; G. Holgado; R. G. Izzard; S. Janssens; V. M. Kalari; Z.
+    Keszthelyi; J. Kubát; I. Mandel; G. Maravelias; L. M. Oskinova; D. Pauli; V. Ramachandran;
+    D. F. Rocha; M. Renzo; A. A. C. Sander; F. R. N. Schneider; A. Schootemeijer;
+    K. Sen; M. Stoop; S. Toonen; J. Th. van Loon; R. Valli; A. Vigna-Gómez; J. S.
+    Vink; C. Wang; X. -T. Xu
+  authors_short_html: J. Bodensteiner; T. Shenar; H. Sana; N. Britavskiy; P. A. Crowther;
+    N. Langer; D. J. Lennon; <strong>J. I. Villaseñor</strong>, <em>et&nbsp;al.</em>
+  authors_display:
+  - J. Bodensteiner
+  - T. Shenar
+  - H. Sana
+  - N. Britavskiy
+  - P. A. Crowther
+  - N. Langer
+  - D. J. Lennon
+  - L. Mahy
+  - L. R. Patrick
+  - J. I. Villaseñor
+  - M. Abdul-Masih
+  - D. M. Bowman
+  - A. de Koter
+  - S. E. de Mink
+  - K. Deshmukh
+  - M. Fabry
+  - A. Gilkis
+  - Y. Götberg
+  - G. Holgado
+  - R. G. Izzard
+  - S. Janssens
+  - V. M. Kalari
+  - Z. Keszthelyi
+  - J. Kubát
+  - I. Mandel
+  - G. Maravelias
+  - L. M. Oskinova
+  - D. Pauli
+  - V. Ramachandran
+  - D. F. Rocha
+  - M. Renzo
+  - A. A. C. Sander
+  - F. R. N. Schneider
+  - A. Schootemeijer
+  - K. Sen
+  - M. Stoop
+  - S. Toonen
+  - J. Th. van Loon
+  - R. Valli
+  - A. Vigna-Gómez
+  - J. S. Vink
+  - C. Wang
+  - X. -T. Xu
+  me_index: 9
+  n_authors: 43
+  year: '2025'
+  pub: Astronomy and Astrophysics
+  volume: '698'
+  page: A38
+  doi: 10.1051/0004-6361/202452623
+  arxiv: '2502.02641'
+  adsurl: https://ui.adsabs.harvard.edu/abs/2025A&A...698A..38B
+  best_url: https://doi.org/10.1051/0004-6361/202452623
+  refereed: true
+  citations: 8
+  tags:
+  - bloem
+- bibcode: 2024arXiv240920252F
+  title: What is the Role of Large Language Models in the Evolution of Astronomy Research?
+  authors:
+  - Fouesneau, Morgan
+  - Momcheva, Ivelina G.
+  - Chadayammuri, Urmila
+  - Demianenko, Mariia
+  - Dumont, Antoine
+  - Hviding, Raphael E.
+  - Kahle, K. Angelique
+  - Pulatova, Nadiia
+  - Rajpoot, Bhavesh
+  - Scheuck, Marten B.
+  - Seeburger, Rhys
+  - Semenov, Dmitry
+  - Villaseñor, Jaime I.
+  authors_html: Morgan Fouesneau; Ivelina G. Momcheva; Urmila Chadayammuri; Mariia
+    Demianenko; Antoine Dumont; Raphael E. Hviding; K. Angelique Kahle; Nadiia Pulatova;
+    Bhavesh Rajpoot; Marten B. Scheuck; Rhys Seeburger; Dmitry Semenov; <strong>Jaime
+    I. Villaseñor</strong>
+  authors_short_html: Morgan Fouesneau; Ivelina G. Momcheva; Urmila Chadayammuri;
+    Mariia Demianenko; Antoine Dumont; Raphael E. Hviding; K. Angelique Kahle; <strong>Jaime
+    I. Villaseñor</strong>, <em>et&nbsp;al.</em>
+  authors_display:
+  - Morgan Fouesneau
+  - Ivelina G. Momcheva
+  - Urmila Chadayammuri
+  - Mariia Demianenko
+  - Antoine Dumont
+  - Raphael E. Hviding
+  - K. Angelique Kahle
+  - Nadiia Pulatova
+  - Bhavesh Rajpoot
+  - Marten B. Scheuck
+  - Rhys Seeburger
+  - Dmitry Semenov
+  - Jaime I. Villaseñor
+  me_index: 12
+  n_authors: 13
+  year: '2024'
+  pub: arXiv e-prints
+  volume: ''
+  page: arXiv:2409.20252
+  doi: 10.48550/arXiv.2409.20252
+  arxiv: '2409.20252'
+  adsurl: https://ui.adsabs.harvard.edu/abs/2024arXiv240920252F
+  best_url: https://doi.org/10.48550/arXiv.2409.20252
+  refereed: false
+  citations: 6
+  tags: []
+- bibcode: 2024A&A...692A.109D
+  title: 'Investigating 39 Galactic Wolf-Rayet stars with VLTI/GRAVITY: Uncovering
+    a long-period binary desert'
+  authors:
+  - Deshmukh, K.
+  - Sana, H.
+  - Mérand, A.
+  - Bordier, E.
+  - Langer, N.
+  - Bodensteiner, J.
+  - Dsilva, K.
+  - Frost, A. J.
+  - Gosset, E.
+  - Le Bouquin, J. -B.
+  - Lefever, R. R.
+  - Mahy, L.
+  - Patrick, L. R.
+  - Reggiani, M.
+  - Sander, A. A. C.
+  - Shenar, T.
+  - Tramper, F.
+  - Villaseñor, J. I.
+  - Waisberg, I.
+  authors_html: K. Deshmukh; H. Sana; A. Mérand; E. Bordier; N. Langer; J. Bodensteiner;
+    K. Dsilva; A. J. Frost; E. Gosset; J. -B. Le Bouquin; R. R. Lefever; L. Mahy;
+    L. R. Patrick; M. Reggiani; A. A. C. Sander; T. Shenar; F. Tramper; <strong>J.
+    I. Villaseñor</strong>; I. Waisberg
+  authors_short_html: K. Deshmukh; H. Sana; A. Mérand; E. Bordier; N. Langer; J. Bodensteiner;
+    K. Dsilva; <strong>J. I. Villaseñor</strong>, <em>et&nbsp;al.</em>
+  authors_display:
+  - K. Deshmukh
+  - H. Sana
+  - A. Mérand
+  - E. Bordier
+  - N. Langer
+  - J. Bodensteiner
+  - K. Dsilva
+  - A. J. Frost
+  - E. Gosset
+  - J. -B. Le Bouquin
+  - R. R. Lefever
+  - L. Mahy
+  - L. R. Patrick
+  - M. Reggiani
+  - A. A. C. Sander
+  - T. Shenar
+  - F. Tramper
+  - J. I. Villaseñor
+  - I. Waisberg
+  me_index: 17
+  n_authors: 19
+  year: '2024'
+  pub: Astronomy and Astrophysics
+  volume: '692'
+  page: A109
+  doi: 10.1051/0004-6361/202452352
+  arxiv: '2409.15212'
+  adsurl: https://ui.adsabs.harvard.edu/abs/2024A&A...692A.109D
+  best_url: https://doi.org/10.1051/0004-6361/202452352
+  refereed: true
+  citations: 8
+  tags: []
+- bibcode: 2024A&A...690A.289S
+  title: 'Binarity at LOw Metallicity (BLOeM): A spectroscopic VLT monitoring survey
+    of massive stars in the SMC'
+  authors:
+  - Shenar, T.
+  - Bodensteiner, J.
+  - Sana, H.
+  - Crowther, P. A.
+  - Lennon, D. J.
+  - Abdul-Masih, M.
+  - Almeida, L. A.
+  - Backs, F.
+  - Berlanas, S. R.
+  - Bernini-Peron, M.
+  - Bestenlehner, J. M.
+  - Bowman, D. M.
+  - Bronner, V. A.
+  - Britavskiy, N.
+  - de Koter, A.
+  - de Mink, S. E.
+  - Deshmukh, K.
+  - Evans, C. J.
+  - Fabry, M.
+  - Gieles, M.
+  - Gilkis, A.
+  - González-Torà, G.
+  - Gräfener, G.
+  - Götberg, Y.
+  - Hawcroft, C.
+  - Hénault-Brunet, V.
+  - Herrero, A.
+  - Holgado, G.
+  - Janssens, S.
+  - Johnston, C.
+  - Josiek, J.
+  - Justham, S.
+  - Kalari, V. M.
+  - Katabi, Z. Z.
+  - Keszthelyi, Z.
+  - Klencki, J.
+  - Kubát, J.
+  - Kubátová, B.
+  - Langer, N.
+  - Lefever, R. R.
+  - Ludwig, B.
+  - Mackey, J.
+  - Mahy, L.
+  - Maíz Apellániz, J.
+  - Mandel, I.
+  - Maravelias, G.
+  - Marchant, P.
+  - Menon, A.
+  - Najarro, F.
+  - Oskinova, L. M.
+  - O'Grady, A. J. G.
+  - Ovadia, R.
+  - Patrick, L. R.
+  - Pauli, D.
+  - Pawlak, M.
+  - Ramachandran, V.
+  - Renzo, M.
+  - Rocha, D. F.
+  - Sander, A. A. C.
+  - Sayada, T.
+  - Schneider, F. R. N.
+  - Schootemeijer, A.
+  - Schösser, E. C.
+  - Schürmann, C.
+  - Sen, K.
+  - Shahaf, S.
+  - Simón-Díaz, S.
+  - Stoop, M.
+  - Toonen, S.
+  - Tramper, F.
+  - van Loon, J. Th.
+  - Valli, R.
+  - van Son, L. A. C.
+  - Vigna-Gómez, A.
+  - Villaseñor, J. I.
+  - Vink, J. S.
+  - Wang, C.
+  - Willcox, R.
+  authors_html: T. Shenar; J. Bodensteiner; H. Sana; P. A. Crowther; D. J. Lennon;
+    M. Abdul-Masih; L. A. Almeida; F. Backs; S. R. Berlanas; M. Bernini-Peron; J.
+    M. Bestenlehner; D. M. Bowman; V. A. Bronner; N. Britavskiy; A. de Koter; S. E.
+    de Mink; K. Deshmukh; C. J. Evans; M. Fabry; M. Gieles; A. Gilkis; G. González-Torà;
+    G. Gräfener; Y. Götberg; C. Hawcroft; V. Hénault-Brunet; A. Herrero; G. Holgado;
+    S. Janssens; C. Johnston; J. Josiek; S. Justham; V. M. Kalari; Z. Z. Katabi; Z.
+    Keszthelyi; J. Klencki; J. Kubát; B. Kubátová; N. Langer; R. R. Lefever; B. Ludwig;
+    J. Mackey; L. Mahy; J. Maíz Apellániz; I. Mandel; G. Maravelias; P. Marchant;
+    A. Menon; F. Najarro; L. M. Oskinova; A. J. G. O'Grady; R. Ovadia; L. R. Patrick;
+    D. Pauli; M. Pawlak; V. Ramachandran; M. Renzo; D. F. Rocha; A. A. C. Sander;
+    T. Sayada; F. R. N. Schneider; A. Schootemeijer; E. C. Schösser; C. Schürmann;
+    K. Sen; S. Shahaf; S. Simón-Díaz; M. Stoop; S. Toonen; F. Tramper; J. Th. van
+    Loon; R. Valli; L. A. C. van Son; A. Vigna-Gómez; <strong>J. I. Villaseñor</strong>;
+    J. S. Vink; C. Wang; R. Willcox
+  authors_short_html: T. Shenar; J. Bodensteiner; H. Sana; P. A. Crowther; D. J. Lennon;
+    M. Abdul-Masih; L. A. Almeida; <strong>J. I. Villaseñor</strong>, <em>et&nbsp;al.</em>
+  authors_display:
+  - T. Shenar
+  - J. Bodensteiner
+  - H. Sana
+  - P. A. Crowther
+  - D. J. Lennon
+  - M. Abdul-Masih
+  - L. A. Almeida
+  - F. Backs
+  - S. R. Berlanas
+  - M. Bernini-Peron
+  - J. M. Bestenlehner
+  - D. M. Bowman
+  - V. A. Bronner
+  - N. Britavskiy
+  - A. de Koter
+  - S. E. de Mink
+  - K. Deshmukh
+  - C. J. Evans
+  - M. Fabry
+  - M. Gieles
+  - A. Gilkis
+  - G. González-Torà
+  - G. Gräfener
+  - Y. Götberg
+  - C. Hawcroft
+  - V. Hénault-Brunet
+  - A. Herrero
+  - G. Holgado
+  - S. Janssens
+  - C. Johnston
+  - J. Josiek
+  - S. Justham
+  - V. M. Kalari
+  - Z. Z. Katabi
+  - Z. Keszthelyi
+  - J. Klencki
+  - J. Kubát
+  - B. Kubátová
+  - N. Langer
+  - R. R. Lefever
+  - B. Ludwig
+  - J. Mackey
+  - L. Mahy
+  - J. Maíz Apellániz
+  - I. Mandel
+  - G. Maravelias
+  - P. Marchant
+  - A. Menon
+  - F. Najarro
+  - L. M. Oskinova
+  - A. J. G. O'Grady
+  - R. Ovadia
+  - L. R. Patrick
+  - D. Pauli
+  - M. Pawlak
+  - V. Ramachandran
+  - M. Renzo
+  - D. F. Rocha
+  - A. A. C. Sander
+  - T. Sayada
+  - F. R. N. Schneider
+  - A. Schootemeijer
+  - E. C. Schösser
+  - C. Schürmann
+  - K. Sen
+  - S. Shahaf
+  - S. Simón-Díaz
+  - M. Stoop
+  - S. Toonen
+  - F. Tramper
+  - J. Th. van Loon
+  - R. Valli
+  - L. A. C. van Son
+  - A. Vigna-Gómez
+  - J. I. Villaseñor
+  - J. S. Vink
+  - C. Wang
+  - R. Willcox
+  me_index: 74
+  n_authors: 78
+  year: '2024'
+  pub: Astronomy and Astrophysics
+  volume: '690'
+  page: A289
+  doi: 10.1051/0004-6361/202451586
+  arxiv: '2407.14593'
+  adsurl: https://ui.adsabs.harvard.edu/abs/2024A&A...690A.289S
+  best_url: https://doi.org/10.1051/0004-6361/202451586
+  refereed: true
+  citations: 25
+  tags:
+  - bloem
+- bibcode: 2024A&A...688A.141L
+  title: Rotational synchronisation of B-type binaries in 30 Doradus
+  authors:
+  - Lennon, D. J.
+  - Dufton, P. L.
+  - Villaseñor, J. I.
+  - Langer, N.
+  - Evans, C. J.
+  - Sana, H.
+  - Taylor, W. D.
+  authors_html: D. J. Lennon; P. L. Dufton; <strong>J. I. Villaseñor</strong>; N.
+    Langer; C. J. Evans; H. Sana; W. D. Taylor
+  authors_short_html: D. J. Lennon; P. L. Dufton; <strong>J. I. Villaseñor</strong>;
+    N. Langer; C. J. Evans; H. Sana; W. D. Taylor
+  authors_display:
+  - D. J. Lennon
+  - P. L. Dufton
+  - J. I. Villaseñor
+  - N. Langer
+  - C. J. Evans
+  - H. Sana
+  - W. D. Taylor
+  me_index: 2
+  n_authors: 7
+  year: '2024'
+  pub: Astronomy and Astrophysics
+  volume: '688'
+  page: A141
+  doi: 10.1051/0004-6361/202450583
+  arxiv: '2405.17608'
+  adsurl: https://ui.adsabs.harvard.edu/abs/2024A&A...688A.141L
+  best_url: https://doi.org/10.1051/0004-6361/202450583
+  refereed: true
+  citations: 1
+  tags:
+  - bbc
+- bibcode: 2023MNRAS.525.5121V
+  title: 'The B-type Binaries Characterisation Programme - II. VFTS 291: a stripped
+    star from a recent mass transfer phase'
+  authors:
+  - Villaseñor, J. I.
+  - Lennon, D. J.
+  - Picco, A.
+  - Shenar, T.
+  - Marchant, P.
+  - Langer, N.
+  - Dufton, P. L.
+  - Nardini, F.
+  - Evans, C. J.
+  - Bodensteiner, J.
+  - de Mink, S. E.
+  - Götberg, Y.
+  - Soszyński, I.
+  - Taylor, W. D.
+  - Sana, H.
+  authors_html: <strong>J. I. Villaseñor</strong>; D. J. Lennon; A. Picco; T. Shenar;
+    P. Marchant; N. Langer; P. L. Dufton; F. Nardini; C. J. Evans; J. Bodensteiner;
+    S. E. de Mink; Y. Götberg; I. Soszyński; W. D. Taylor; H. Sana
+  authors_short_html: <strong>J. I. Villaseñor</strong>; D. J. Lennon; A. Picco; T.
+    Shenar; P. Marchant; N. Langer; P. L. Dufton; F. Nardini, <em>et&nbsp;al.</em>
+  authors_display:
+  - J. I. Villaseñor
+  - D. J. Lennon
+  - A. Picco
+  - T. Shenar
+  - P. Marchant
+  - N. Langer
+  - P. L. Dufton
+  - F. Nardini
+  - C. J. Evans
+  - J. Bodensteiner
+  - S. E. de Mink
+  - Y. Götberg
+  - I. Soszyński
+  - W. D. Taylor
+  - H. Sana
+  me_index: 0
+  n_authors: 15
+  year: '2023'
+  pub: Monthly Notices of the Royal Astronomical Society
+  volume: '525'
+  page: '5121'
+  doi: 10.1093/mnras/stad2533
+  arxiv: '2307.07766'
+  adsurl: https://ui.adsabs.harvard.edu/abs/2023MNRAS.525.5121V
+  best_url: https://doi.org/10.1093/mnras/stad2533
+  refereed: true
+  citations: 20
+  tags:
+  - bbc
+- bibcode: 2023A&A...674A..60B
+  title: Searching for compact objects in the single-lined spectroscopic binaries
+    of the young Galactic cluster NGC 6231
+  authors:
+  - Banyard, G.
+  - Mahy, L.
+  - Sana, H.
+  - Bodensteiner, J.
+  - Villaseñor, J. I.
+  - Sen, K.
+  - Langer, N.
+  - de Mink, S. E.
+  - Picco, A.
+  - Shenar, T.
+  authors_html: G. Banyard; L. Mahy; H. Sana; J. Bodensteiner; <strong>J. I. Villaseñor</strong>;
+    K. Sen; N. Langer; S. E. de Mink; A. Picco; T. Shenar
+  authors_short_html: G. Banyard; L. Mahy; H. Sana; J. Bodensteiner; <strong>J. I.
+    Villaseñor</strong>; K. Sen; N. Langer; S. E. de Mink, <em>et&nbsp;al.</em>
+  authors_display:
+  - G. Banyard
+  - L. Mahy
+  - H. Sana
+  - J. Bodensteiner
+  - J. I. Villaseñor
+  - K. Sen
+  - N. Langer
+  - S. E. de Mink
+  - A. Picco
+  - T. Shenar
+  me_index: 4
+  n_authors: 10
+  year: '2023'
+  pub: Astronomy and Astrophysics
+  volume: '674'
+  page: A60
+  doi: 10.1051/0004-6361/202244742
+  arxiv: '2210.07149'
+  adsurl: https://ui.adsabs.harvard.edu/abs/2023A&A...674A..60B
+  best_url: https://doi.org/10.1051/0004-6361/202244742
+  refereed: true
+  citations: 7
+  tags: []
+- bibcode: 2022MNRAS.512.3331D
+  title: Properties of the Be-type stars in 30 Doradus
+  authors:
+  - Dufton, P. L.
+  - Lennon, D. J.
+  - Villaseñor, J. I.
+  - Howarth, I. D.
+  - Evans, C. J.
+  - de Mink, S. E.
+  - Sana, H.
+  - Taylor, W. D.
+  authors_html: P. L. Dufton; D. J. Lennon; <strong>J. I. Villaseñor</strong>; I.
+    D. Howarth; C. J. Evans; S. E. de Mink; H. Sana; W. D. Taylor
+  authors_short_html: P. L. Dufton; D. J. Lennon; <strong>J. I. Villaseñor</strong>;
+    I. D. Howarth; C. J. Evans; S. E. de Mink; H. Sana; W. D. Taylor
+  authors_display:
+  - P. L. Dufton
+  - D. J. Lennon
+  - J. I. Villaseñor
+  - I. D. Howarth
+  - C. J. Evans
+  - S. E. de Mink
+  - H. Sana
+  - W. D. Taylor
+  me_index: 2
+  n_authors: 8
+  year: '2022'
+  pub: Monthly Notices of the Royal Astronomical Society
+  volume: '512'
+  page: '3331'
+  doi: 10.1093/mnras/stac630
+  arxiv: '2203.02440'
+  adsurl: https://ui.adsabs.harvard.edu/abs/2022MNRAS.512.3331D
+  best_url: https://doi.org/10.1093/mnras/stac630
+  refereed: true
+  citations: 12
+  tags: []
+- bibcode: 2022A&A...665A.180L
+  title: 'The VLT-FLAMES survey of massive stars. NGC 2004#115: A triple system hosting
+    a possible short period B+BH binary'
+  authors:
+  - Lennon, D. J.
+  - Dufton, P. L.
+  - Villaseñor, J. I.
+  - Evans, C. J.
+  - Langer, N.
+  - Saxton, R.
+  - Monageng, I. M.
+  - Toonen, S.
+  authors_html: D. J. Lennon; P. L. Dufton; <strong>J. I. Villaseñor</strong>; C.
+    J. Evans; N. Langer; R. Saxton; I. M. Monageng; S. Toonen
+  authors_short_html: D. J. Lennon; P. L. Dufton; <strong>J. I. Villaseñor</strong>;
+    C. J. Evans; N. Langer; R. Saxton; I. M. Monageng; S. Toonen
+  authors_display:
+  - D. J. Lennon
+  - P. L. Dufton
+  - J. I. Villaseñor
+  - C. J. Evans
+  - N. Langer
+  - R. Saxton
+  - I. M. Monageng
+  - S. Toonen
+  me_index: 2
+  n_authors: 8
+  year: '2022'
+  pub: Astronomy and Astrophysics
+  volume: '665'
+  page: A180
+  doi: 10.1051/0004-6361/202142413
+  arxiv: '2111.12173'
+  adsurl: https://ui.adsabs.harvard.edu/abs/2022A&A...665A.180L
+  best_url: https://doi.org/10.1051/0004-6361/202142413
+  refereed: true
+  citations: 22
+  tags: []
+- bibcode: 2022A&A...658A..69B
+  title: The observed multiplicity properties of B-type stars in the Galactic young
+    open cluster NGC 6231
+  authors:
+  - Banyard, G.
+  - Sana, H.
+  - Mahy, L.
+  - Bodensteiner, J.
+  - Villaseñor, J. I.
+  - Evans, C. J.
+  authors_html: G. Banyard; H. Sana; L. Mahy; J. Bodensteiner; <strong>J. I. Villaseñor</strong>;
+    C. J. Evans
+  authors_short_html: G. Banyard; H. Sana; L. Mahy; J. Bodensteiner; <strong>J. I.
+    Villaseñor</strong>; C. J. Evans
+  authors_display:
+  - G. Banyard
+  - H. Sana
+  - L. Mahy
+  - J. Bodensteiner
+  - J. I. Villaseñor
+  - C. J. Evans
+  me_index: 4
+  n_authors: 6
+  year: '2022'
+  pub: Astronomy and Astrophysics
+  volume: '658'
+  page: A69
+  doi: 10.1051/0004-6361/202141037
+  arxiv: '2108.07814'
+  adsurl: https://ui.adsabs.harvard.edu/abs/2022A&A...658A..69B
+  best_url: https://doi.org/10.1051/0004-6361/202141037
+  refereed: true
+  citations: 68
+  tags: []
+- bibcode: 2021MNRAS.507.5348V
+  title: The B-type binaries characterization programme I. Orbital solutions for the
+    30 Doradus population
+  authors:
+  - Villaseñor, J. I.
+  - Taylor, W. D.
+  - Evans, C. J.
+  - Ramírez-Agudelo, O. H.
+  - Sana, H.
+  - Almeida, L. A.
+  - de Mink, S. E.
+  - Dufton, P. L.
+  - Langer, N.
+  authors_html: <strong>J. I. Villaseñor</strong>; W. D. Taylor; C. J. Evans; O. H.
+    Ramírez-Agudelo; H. Sana; L. A. Almeida; S. E. de Mink; P. L. Dufton; N. Langer
+  authors_short_html: <strong>J. I. Villaseñor</strong>; W. D. Taylor; C. J. Evans;
+    O. H. Ramírez-Agudelo; H. Sana; L. A. Almeida; S. E. de Mink; P. L. Dufton, <em>et&nbsp;al.</em>
+  authors_display:
+  - J. I. Villaseñor
+  - W. D. Taylor
+  - C. J. Evans
+  - O. H. Ramírez-Agudelo
+  - H. Sana
+  - L. A. Almeida
+  - S. E. de Mink
+  - P. L. Dufton
+  - N. Langer
+  me_index: 0
+  n_authors: 9
+  year: '2021'
+  pub: Monthly Notices of the Royal Astronomical Society
+  volume: '507'
+  page: '5348'
+  doi: 10.1093/mnras/stab2197
+  arxiv: '2107.10170'
+  adsurl: https://ui.adsabs.harvard.edu/abs/2021MNRAS.507.5348V
+  best_url: https://doi.org/10.1093/mnras/stab2197
+  refereed: true
+  citations: 44
+  tags:
+  - bbc
+- bibcode: 2020Msngr.181...22E
+  title: The VLT-FLAMES Tarantula Survey
+  authors:
+  - Evans, C.
+  - Lennon, D.
+  - Langer, N.
+  - Almeida, L.
+  - Bartlett, E.
+  - Bastian, N.
+  - Bestenlehner, J.
+  - Britavskiy, N.
+  - Castro, N.
+  - Clark, S.
+  - Crowther, P.
+  - de Koter, A.
+  - de Mink, S.
+  - Dufton, P.
+  - Fossati, L.
+  - Garcia, M.
+  - Gieles, M.
+  - Gräfener, G.
+  - Grin, N.
+  - Hénault-Brunet, V.
+  - Herrero, A.
+  - Howarth, I.
+  - Izzard, R.
+  - Kalari, V.
+  - Maíz Apellániz, J.
+  - Markova, N.
+  - Najarro, F.
+  - Patrick, L.
+  - Puls, J.
+  - Ramírez-Agudelo, O.
+  - Renzo, M.
+  - Sabín-Sanjulián, C.
+  - Sana, H.
+  - Schneider, F.
+  - Schootemeijer, A.
+  - Simón-Díaz, S.
+  - Smartt, S.
+  - Taylor, W.
+  - Tramper, F.
+  - van Loon, J.
+  - Villaseñor, J.
+  - Vink, J. S.
+  - Walborn, N.
+  authors_html: C. Evans; D. Lennon; N. Langer; L. Almeida; E. Bartlett; N. Bastian;
+    J. Bestenlehner; N. Britavskiy; N. Castro; S. Clark; P. Crowther; A. de Koter;
+    S. de Mink; P. Dufton; L. Fossati; M. Garcia; M. Gieles; G. Gräfener; N. Grin;
+    V. Hénault-Brunet; A. Herrero; I. Howarth; R. Izzard; V. Kalari; J. Maíz Apellániz;
+    N. Markova; F. Najarro; L. Patrick; J. Puls; O. Ramírez-Agudelo; M. Renzo; C.
+    Sabín-Sanjulián; H. Sana; F. Schneider; A. Schootemeijer; S. Simón-Díaz; S. Smartt;
+    W. Taylor; F. Tramper; J. van Loon; <strong>J. Villaseñor</strong>; J. S. Vink;
+    N. Walborn
+  authors_short_html: C. Evans; D. Lennon; N. Langer; L. Almeida; E. Bartlett; N.
+    Bastian; J. Bestenlehner; <strong>J. Villaseñor</strong>, <em>et&nbsp;al.</em>
+  authors_display:
+  - C. Evans
+  - D. Lennon
+  - N. Langer
+  - L. Almeida
+  - E. Bartlett
+  - N. Bastian
+  - J. Bestenlehner
+  - N. Britavskiy
+  - N. Castro
+  - S. Clark
+  - P. Crowther
+  - A. de Koter
+  - S. de Mink
+  - P. Dufton
+  - L. Fossati
+  - M. Garcia
+  - M. Gieles
+  - G. Gräfener
+  - N. Grin
+  - V. Hénault-Brunet
+  - A. Herrero
+  - I. Howarth
+  - R. Izzard
+  - V. Kalari
+  - J. Maíz Apellániz
+  - N. Markova
+  - F. Najarro
+  - L. Patrick
+  - J. Puls
+  - O. Ramírez-Agudelo
+  - M. Renzo
+  - C. Sabín-Sanjulián
+  - H. Sana
+  - F. Schneider
+  - A. Schootemeijer
+  - S. Simón-Díaz
+  - S. Smartt
+  - W. Taylor
+  - F. Tramper
+  - J. van Loon
+  - J. Villaseñor
+  - J. S. Vink
+  - N. Walborn
+  me_index: 40
+  n_authors: 43
+  year: '2020'
+  pub: The Messenger
+  volume: '181'
+  page: '22'
+  doi: 10.18727/0722-6691/5207
+  arxiv: ''
+  adsurl: https://ui.adsabs.harvard.edu/abs/2020Msngr.181...22E
+  best_url: https://doi.org/10.18727/0722-6691/5207
+  refereed: false
+  citations: 5
+  tags: []
+- bibcode: 2020MNRAS.493.1197R
+  title: Revisiting the post-common-envelope binaries HZ 9, KV Vel and Abell 65
+  authors:
+  - Rios-Venegas, C.
+  - Contreras-Quijada, A.
+  - Vogt, N.
+  - Hambsch, F. -J.
+  - Hinojosa, R.
+  - Aranda, J.
+  - Gotta, V.
+  - Jerez, R.
+  - Puebla, E.
+  - Rey, J.
+  - Villaseñor, J. I.
+  authors_html: C. Rios-Venegas; A. Contreras-Quijada; N. Vogt; F. -J. Hambsch; R.
+    Hinojosa; J. Aranda; V. Gotta; R. Jerez; E. Puebla; J. Rey; <strong>J. I. Villaseñor</strong>
+  authors_short_html: C. Rios-Venegas; A. Contreras-Quijada; N. Vogt; F. -J. Hambsch;
+    R. Hinojosa; J. Aranda; V. Gotta; <strong>J. I. Villaseñor</strong>, <em>et&nbsp;al.</em>
+  authors_display:
+  - C. Rios-Venegas
+  - A. Contreras-Quijada
+  - N. Vogt
+  - F. -J. Hambsch
+  - R. Hinojosa
+  - J. Aranda
+  - V. Gotta
+  - R. Jerez
+  - E. Puebla
+  - J. Rey
+  - J. I. Villaseñor
+  me_index: 10
+  n_authors: 11
+  year: '2020'
+  pub: Monthly Notices of the Royal Astronomical Society
+  volume: '493'
+  page: '1197'
+  doi: 10.1093/mnras/staa331
+  arxiv: ''
+  adsurl: https://ui.adsabs.harvard.edu/abs/2020MNRAS.493.1197R
+  best_url: https://doi.org/10.1093/mnras/staa331
+  refereed: true
+  citations: 3
+  tags: []
+- bibcode: 2016ApJS..227....6V
+  title: Determination of Pulsation Periods and Other Parameters of 2875 Stars Classified
+    as MIRA in the All Sky Automated Survey (ASAS)
+  authors:
+  - Vogt, N.
+  - Contreras-Quijada, A.
+  - Fuentes-Morales, I.
+  - Vogt-Geisse, S.
+  - Arcos, C.
+  - Abarca, C.
+  - Agurto-Gangas, C.
+  - Caviedes, M.
+  - DaSilva, H.
+  - Flores, J.
+  - Gotta, V.
+  - Peñaloza, F.
+  - Rojas, K.
+  - Villaseñor, J. I.
+  authors_html: N. Vogt; A. Contreras-Quijada; I. Fuentes-Morales; S. Vogt-Geisse;
+    C. Arcos; C. Abarca; C. Agurto-Gangas; M. Caviedes; H. DaSilva; J. Flores; V.
+    Gotta; F. Peñaloza; K. Rojas; <strong>J. I. Villaseñor</strong>
+  authors_short_html: N. Vogt; A. Contreras-Quijada; I. Fuentes-Morales; S. Vogt-Geisse;
+    C. Arcos; C. Abarca; C. Agurto-Gangas; <strong>J. I. Villaseñor</strong>, <em>et&nbsp;al.</em>
+  authors_display:
+  - N. Vogt
+  - A. Contreras-Quijada
+  - I. Fuentes-Morales
+  - S. Vogt-Geisse
+  - C. Arcos
+  - C. Abarca
+  - C. Agurto-Gangas
+  - M. Caviedes
+  - H. DaSilva
+  - J. Flores
+  - V. Gotta
+  - F. Peñaloza
+  - K. Rojas
+  - J. I. Villaseñor
+  me_index: 13
+  n_authors: 14
+  year: '2016'
+  pub: The Astrophysical Journal Supplement Series
+  volume: '227'
+  page: '6'
+  doi: 10.3847/0067-0049/227/1/6
+  arxiv: '1609.05246'
+  adsurl: https://ui.adsabs.harvard.edu/abs/2016ApJS..227....6V
+  best_url: https://doi.org/10.3847/0067-0049/227/1/6
+  refereed: true
+  citations: 16
+  tags: []

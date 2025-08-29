@@ -1,0 +1,56 @@
+{%- assign p = include.p -%}
+{%- assign first_n = include.first_n | default: 8 | plus: 0 -%}
+
+<li class="pub-item">
+  <span class="pub-authors">
+    {%- if p.n_authors and p.n_authors > first_n and p.authors_display -%}
+      {%- for name in p.authors_display limit:first_n -%}
+        {%- assign idx = forloop.index0 -%}
+        {%- if p.me_index != nil and p.me_index == idx -%}
+          <strong>{{ name }}</strong>
+        {%- else -%}
+          {{ name }}
+        {%- endif -%}
+        {%- unless forloop.last -%}; {% endunless -%}
+      {%- endfor -%}
+      {%- assign remaining = p.n_authors | minus: first_n -%}
+      ; and {{ remaining }} authors
+      {%- if p.me_index and p.me_index >= first_n -%}
+        , including <strong>{{ p.authors_display[p.me_index] }}</strong>
+      {%- endif -%}
+      {%- if p.year %}<span class="pub-year-inline"> ({{ p.year }})</span>{% endif %}
+      <details class="pub-authors-more"><summary>Show all</summary>
+        <span class="pub-authors">{{ p.authors_html }}</span>
+      </details>
+    {%- else -%}
+      {%- if include.authors == 'short' and p.authors_short_html -%}
+        {{ p.authors_short_html }}
+      {%- else -%}
+        {{ p.authors_html }}
+      {%- endif -%}
+      {%- if p.year %}<span class="pub-year-inline"> ({{ p.year }})</span>{% endif %}
+    {%- endif -%}
+  </span>
+
+  <span class="pub-title">
+    <a href="{{ p.best_url | default: p.adsurl }}" rel="noopener" target="_blank">{{ p.title }}</a>
+  </span>
+
+  {%- capture venue -%}
+    {%- if p.pub and p.pub == "arXiv e-prints" and p.arxiv -%}
+      — <span class="arxiv-chunk"><em>arXiv</em>: {{ p.arxiv }}</span>
+    {%- elsif p.pub -%}
+      — <em>{{ p.pub }}</em>{% if p.volume %} {{ p.volume }}{% endif %}{% if p.page %}:{{ p.page }}{% endif %}
+    {%- endif -%}
+  {%- endcapture -%}
+  {{ venue | strip }}{% if venue and venue != "" %}.{% endif %}
+
+  <span class="pub-badges">
+    <a href="{{ p.adsurl }}" class="pub-badge">ADS</a>
+    {% if p.arxiv %}<a href="https://arxiv.org/abs/{{ p.arxiv }}" class="pub-badge">arXiv</a>{% endif %}
+    {% if p.doi %}<a href="https://doi.org/{{ p.doi }}" class="pub-badge">DOI</a>{% endif %}
+    {% if p.citations and p.citations > 0 %}
+      <a href="{{ p.adsurl }}/citations" class="pub-badge pub-badge-neutral">Cited {{ p.citations }}</a>
+    {% endif %}
+  </span>
+</li>
