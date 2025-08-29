@@ -1,0 +1,62 @@
+.project-hero img { width: 100%; height: 100%; object-fit: cover; border-radius: 12px; }
+.meta-badges { display: flex; gap: .5rem; margin-top: .5rem; }
+.link-buttons .button { margin-left: .5rem; margin-bottom: .5rem; }
+
+/* Header block just under the top title */
+.project .project-header { margin-top: .75rem; margin-bottom: 1rem; }
+.project .project-subtitle { margin-top: .5rem; }
+
+/* Badges and link buttons */
+.project .meta-badges { display: flex; gap: .5rem; justify-content: center; margin-top: .5rem; }
+.project .link-buttons .button { margin: .25rem; }
+
+/* Hero image: centered, not huge */
+.project .project-hero { max-width: 960px; margin: 0 auto; border-radius: 12px; overflow: hidden; }
+.project .project-hero img { width: 100%; height: auto; display: block; }
+
+/* Body: readable column, left-aligned text */
+.project .project-body {
+  max-width: 860px;
+  margin: 0 auto;
+  text-align: left;
+}
+.project .project-body ul { margin-left: 1.25rem; }
+
+/* Hero image + meta */
+.project-hero { 
+  max-width: 1200px; 
+  margin: 0 auto; 
+  border-radius: 12px; 
+  overflow: hidden; 
+}
+
+.project-hero--framed { box-shadow: 0 8px 24px rgba(0,0,0,.08); border: 1px solid #e5e7eb; }
+
+.project-hero-meta {
+  max-width: 1200px;
+  margin: .6rem auto 1.4rem;
+  text-align: center;
+}
+
+.project-hero-caption {
+  font-size: 0.95rem;           /* slightly larger */
+  line-height: 1.45;
+  color: #4b5563;               /* slate-600 */
+}
+
+.project-hero-credit {
+  margin-top: .25rem;
+  font-size: 0.78rem;           /* smaller */
+  line-height: 1.3;
+  color: #9ca3af;               /* slate-400 */
+  letter-spacing: .02em;
+}
+
+.project-hero-credit a {
+  color: inherit;
+  text-decoration: underline dotted;
+  text-underline-offset: 2px;
+}
+
+.notification.is-light { padding: .9rem 1rem; }
+.project-content h2 { margin-top: 2.2rem; }

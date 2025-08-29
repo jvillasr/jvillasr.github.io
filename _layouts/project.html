@@ -1,32 +1,66 @@
 ---
-layout: compress
+layout: page
 ---
 
-<!DOCTYPE html>
-<html>
+<section class="section project">
+  <div class="container">
 
-<head>
-    {% include head.html %}
-</head>
+    {% if page.subtitle %}
+      <p class="subtitle is-5 has-text-grey has-text-centered project-subtitle">
+        {{ page.subtitle }}
+      </p>
+    {% endif %}
 
-<body>
-    {% include navbar.html %}
+    {% if page.links %}
+      <div class="buttons is-centered is-flex-wrap-wrap link-buttons">
+        {% for l in page.links %}
+          <a class="button is-small is-link is-light" href="{{ l.url }}" target="_blank" rel="noopener">{{ l.label }}</a>
+        {% endfor %}
+      </div>
+    {% endif %}
 
-    <!--Main Section-->
-    <section class="hero is-fullheight" id="project">
-        <div class="hero-body">
-            <div class="container has-text-centered">
-                <div class="section">
-                    <p class="subtitle is-uppercase has-text-weight-medium has-text-grey">Projects</p>
-                </div>
-                {% include project-card.html %}
-            </div>
-        </div>
-    </section>
+    {% if page.hero_image %}
+      <figure class="image project-hero mb-5 project-hero--framed">
+        <img src="{{ page.hero_image | relative_url }}" alt="{{ page.hero_alt | default: page.title }}">
+      </figure>
+      {% if page.hero_caption or page.hero_credit %}
+      <figcaption class="project-hero-meta">
+          {% if page.hero_caption %}
+          <div class="project-hero-caption">
+              {{ page.hero_caption }}
+          </div>
+          {% endif %}
+          {% if page.hero_credit %}
+          <div class="project-hero-credit">
+              {{ page.hero_credit }}
+          </div>
+          {% endif %}
+      </figcaption>
+      {% endif %}
+    {% endif %}
+
+    <div class="content project-body">
+      {{ content }}
     </div>
 
-    <!--Footer-->
-    {% include footer.html %}
-</body>
+    <hr class="my-6">
 
-</html>
+    {% assign related = site.posts | where_exp:'p','p.tags contains page.slug' | slice: 0, 3 %}
+    {% if related and related != empty %}
+      <h2 class="title is-4">Related posts</h2>
+      <ul>
+        {% for post in related %}
+          <li>
+            <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+            <span class="has-text-grey is-size-7"> — {{ post.date | date: "%b %Y" }}</span>
+          </li>
+        {% endfor %}
+      </ul>
+    {% endif %}
+
+    <p class="mt-5">
+      <a href="{{ '/#research' | relative_url }}">← Back to Research</a>
+    </p>
+
+  </div>
+</section>

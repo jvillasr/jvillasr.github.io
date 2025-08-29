@@ -1,0 +1,86 @@
+/* Compact vertical rhythm */
+.section--compact { padding-top: 4.75rem; padding-bottom: 4.25rem; }
+
+/* Title/subtitle spacing */
+#research header { margin-top: 0.5rem; }  /* moves title down from top edge */
+#research .title.is-spaced { margin-bottom: 0.5rem; }
+#research .subtitle { margin-top: 0.5rem; }
+
+/* Grid spacing under the subtitle */
+#research .columns { 
+  justify-content: center; 
+  margin-top: 2.5rem;         /* was default/mt-4 → ensure a clear gap */
+}
+
+/* Card layout: consistent heights */
+#research .card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+#research .research-card{
+  transition: transform .15s ease, box-shadow .15s ease;
+  box-shadow: 0 6px 14px rgba(0,0,0,.08);
+  border-radius:12px;
+}
+#research .research-card:focus-visible{ outline:3px solid rgba(100,150,255,.6); outline-offset:3px; }
+#research .research-card:hover{ transform: translateY(-3px); box-shadow: 0 10px 24px rgba(0,0,0,.14); }
+
+#research .research-card-media {
+  background-color: #f5f5f5;      /* placeholder when no image */
+  background-size: cover;
+  background-position: center;
+}
+
+#research .research-card .research-card-media{ 
+    border-top-left-radius:12px; 
+    border-top-right-radius:12px; }
+
+/* Make the text panel uniform height and tidy */
+#research .card-content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 0.5rem 0.25rem;
+  gap: .2rem;                 /* small vertical rhythm between title/desc */
+  min-height: 136px;          /* keeps card heights even; tweak if needed */
+}
+
+#research .research-card-title {
+  margin-bottom: .5rem;
+  /* Optional clamp if your titles get too tall:
+  display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;
+  */
+}
+
+#research .research-card-desc {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;          /* keep descriptions to 2 lines */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  min-height: 2.4em;              /* stabilizes card height even with short text */
+}
+
+#research .research-card-badges{
+  margin-top: .65rem;         /* extra space above badges */
+  display: flex;
+  gap: .5rem;
+  justify-content: center;
+  margin-top: auto;           /* <-- this pins badges to the bottom */
+}
+
+#research .research-card-tag{
+  border-radius: 7px;        /* less pill-y than Bulma's .is-rounded */
+  font-size: .72rem;
+  padding: .25rem .55rem;
+  box-shadow: 0 1px 2px rgba(0,0,0,.1);
+}
+
+/* Keep it tighter on small screens */
+@media (max-width: 768px) {
+  .section--compact { padding-top: 3.25rem; padding-bottom: 3rem; }
+  #research .columns { margin-top: 1.25rem; }
+}

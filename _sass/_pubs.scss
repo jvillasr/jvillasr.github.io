@@ -1,0 +1,47 @@
+.pubs .pub-list { list-style: none; margin: 0; padding: 0; }
+.pubs .pub-item { margin: .6rem 0 1rem; text-indent: -1.2em; padding-left: 1.2em; }
+
+.pubs .pub-title a {
+  color: hsl(217, 71%, 53%);        /* Bulma link blue (#3273dc) */
+  font-weight: 600;
+  border-bottom: 1px solid currentColor;
+  text-decoration: none;
+}
+.pubs .pub-title a:hover { opacity: .9; }
+
+.pubs .pub-badges { margin-left: .4rem; white-space: nowrap; }
+.pubs .pub-badge {
+  font-size: .72rem;
+  padding: .1rem .4rem;
+  margin-right: .25rem;
+  border-radius: .35rem;
+  background: rgba(0,0,0,.08);
+}
+
+/* Apricot gelato */
+.pubs .pub-badge-neutral,
+.pubs .pub-badge-neutral:link,
+.pubs .pub-badge-neutral:visited {
+  background: #FFF0E0;
+  border: 1px solid #FFD2A8;
+  color: #6A2F00 !important;
+}
+.pubs .pub-badge-neutral:hover,
+.pubs .pub-badge-neutral:focus {
+  background: #FFE6CC;
+  border-color: #FFBD80;
+  color: #3D1E00 !important;
+}
+
+/* Keep the title link wrapping normally */
+.pubs .pub-title a {
+  display: inline;         /* avoid inline-block width constraints */
+  white-space: normal;     /* allow wrapping */
+  overflow: visible;       /* no accidental clipping */
+  text-overflow: unset;
+}
+
+.pubs .pub-year { white-space: nowrap; }   /* keeps “(2025)” stuck together */
+.pubs .pub-year-inline { white-space: nowrap; }  /* keeps (2025) together */
+.pubs .arxiv-chunk    { white-space: nowrap; }   /* keeps 'arXiv: 2507.06989' intact */
+

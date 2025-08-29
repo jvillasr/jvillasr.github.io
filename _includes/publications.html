@@ -1,0 +1,74 @@
+{%- comment -%}
+Params:
+  data:         _data filename without extension (default: "papers_all")
+  tag:          filter by tag in p.tags
+  keywords:     comma-separated terms to match in title or pub
+  refereed:     "true" = refereed only
+  limit:        max items
+  year_headings:"true" = group by year
+  authors:      "short" to use authors_short_html if present
+{%- endcomment -%}
+
+{%- assign data_key = include.data | default: 'papers_all' -%}
+{%- assign items = site.data[data_key] | default: site.data.papers_all -%}
+
+{%- if include.tag -%}
+  {%- assign items = items | where_exp: 'p','p.tags and p.tags contains include.tag' -%}
+{%- endif -%}
+
+{%- if include.keywords -%}
+  {%- assign keys = include.keywords | downcase | split: ',' | map: 'strip' -%}
+  {%- assign filtered = '' | split: '' -%}
+  {%- for p in items -%}
+    {%- assign title_lc = p.title | default:'' | downcase -%}
+    {%- assign pub_lc   = p.pub   | default:'' | downcase -%}
+    {%- assign hit = false -%}
+    {%- for k in keys -%}
+      {%- if title_lc contains k or pub_lc contains k -%}{%- assign hit = true -%}{%- endif -%}
+    {%- endfor -%}
+    {%- if hit -%}{%- assign filtered = filtered | push: p -%}{%- endif -%}
+  {%- endfor -%}
+  {%- assign items = filtered -%}
+{%- endif -%}
+
+{%- if items == nil or items.size == 0 -%}
+  <p class="has-text-grey">No publications found.</p>
+{%- else -%}
+  {%- assign items = items | sort: 'year' | reverse -%}
+  {%- if include.limit -%}{%- assign items = items | slice: 0, include.limit | compact -%}{%- endif -%}
+
+  {%- assign render_list = items -%}
+  {%- assign by_year = render_list -%}
+  {%- if include.year_headings == 'true' -%}
+    {%- assign by_year = render_list | group_by: 'year' | sort: 'name' | reverse -%}
+
+    {%- for group in by_year -%}
+      <h3 class="title is-5">{{ group.name }}</h3>
+
+      {%- comment -%} newest first within the year {%- endcomment -%}
+      {%- assign pubs_in_year = group.items | sort: 'pubdate' | reverse -%}
+      {%- if pubs_in_year == empty -%}
+        {%- assign pubs_in_year = group.items | sort: 'date' | reverse -%}
+      {%- endif -%}
+      {%- if pubs_in_year == empty -%}
+        {%- assign pubs_in_year = group.items | sort_natural: 'bibcode' | reverse -%}
+      {%- endif -%}
+
+      <ul class="pub-list">
+        {%- for p in pubs_in_year -%}
+          {% include one_pub.html p=p authors=include.authors first_n=include.first_n %}
+        {%- endfor -%}
+      </ul>
+    {%- endfor -%}
+
+  {%- else -%}
+    <ul class="pub-list">
+      {%- assign render_list = render_list | sort: 'pubdate' | reverse -%}
+      {%- if render_list == empty -%}{%- assign render_list = render_list | sort: 'date' | reverse -%}{%- endif -%}
+      {%- if render_list == empty -%}{%- assign render_list = render_list | sort_natural: 'bibcode' | reverse -%}{%- endif -%}
+      {%- for p in render_list -%}
+        {% include one_pub.html p=p authors=include.authors first_n=include.first_n %}
+      {%- endfor -%}
+    </ul>
+  {%- endif -%}
+{%- endif -%}

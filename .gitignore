@@ -2,6 +2,16 @@
 # Created by https://www.toptal.com/developers/gitignore/api/jekyll,ruby
 # Edit at https://www.toptal.com/developers/gitignore?templates=jekyll,ruby
 
+# OS/editor junk
+.DS_Store
+._*
+Thumbs.db
+*.log
+
+# Scratch playgrounds)
+assets/images/_scratch/
+dev-notes/
+
 ### Jekyll ###
 _site/
 .sass-cache/
