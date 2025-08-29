@@ -94,6 +94,11 @@ defaults:
     values:
       layout: page
 
+  - scope:
+      path: "projects"
+    values:
+      permalink: /projects/:name/
+
 # Exclude
 exclude:
   - .sass-cache/

@@ -1,7 +1,17 @@
 {%- assign p = include.project -%}
-<a class="card research-card" href="{{ p.link | default: '#' }}" aria-label="{{ p.name }}">
+{%- assign ext_link = p.link | downcase | contains: '://' -%}
+
+<a class="card research-card"
+   href="{% if ext_link %}{{ p.link }}{% else %}{{ p.link | relative_url }}{% endif %}"
+   {% if ext_link %}target="_blank" rel="noopener"{% endif %}
+   aria-label="{{ p.name | escape }}">
+
   <div class="image is-3by2 research-card-media"
-       style="{% if p.image %}background-image:url('{{ p.image | relative_url }}');{% endif %}">
+       {% if p.image %}
+         {%- assign ext_img = p.image | downcase | contains: '://' -%}
+         style="background-image:url('{% if ext_img %}{{ p.image }}{% else %}{{ p.image | relative_url }}{% endif %}')"
+       {% endif %}>
+    <span class="sr-only">{{ p.image_alt | default: p.name }}</span>
   </div>
 
   <div class="card-content has-text-centered has-background-black">
