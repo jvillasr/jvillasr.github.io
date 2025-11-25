@@ -19,9 +19,6 @@
         , including <strong>{{ p.authors_display[p.me_index] }}</strong>
       {%- endif -%}
       {%- if p.year %}<span class="pub-year-inline"> ({{ p.year }})</span>{% endif %}
-      <details class="pub-authors-more"><summary>Show all</summary>
-        <span class="pub-authors">{{ p.authors_html }}</span>
-      </details>
     {%- else -%}
       {%- if include.authors == 'short' and p.authors_short_html -%}
         {{ p.authors_short_html }}
@@ -31,6 +28,20 @@
       {%- if p.year %}<span class="pub-year-inline"> ({{ p.year }})</span>{% endif %}
     {%- endif -%}
   </span>
+
+  {%- comment -%}
+    Robust toggle: input + label (no UA marker). ID must be unique.
+  {%- endcomment -%}
+  {%- if p.n_authors and p.n_authors > first_n and p.authors_html -%}
+    {%- assign toggle_id = 'auth-' | append: p.bibcode | slugify -%}
+    <input id="{{ toggle_id }}" class="pub-authors-toggle" type="checkbox" hidden>
+    <label for="{{ toggle_id }}" class="pub-authors-toggle-label" aria-controls="{{ toggle_id }}-panel" aria-expanded="false">
+      Show all
+    </label>
+    <div id="{{ toggle_id }}-panel" class="pub-authors-full" role="region" aria-live="polite">
+      <span class="pub-authors">{{ p.authors_html }}</span>
+    </div>
+  {%- endif -%}
 
   <span class="pub-title">
     <a href="{{ p.best_url | default: p.adsurl }}" rel="noopener" target="_blank">{{ p.title }}</a>
@@ -46,11 +57,15 @@
   {{ venue | strip }}{% if venue and venue != "" %}.{% endif %}
 
   <span class="pub-badges">
-    <a href="{{ p.adsurl }}" class="pub-badge">ADS</a>
-    {% if p.arxiv %}<a href="https://arxiv.org/abs/{{ p.arxiv }}" class="pub-badge">arXiv</a>{% endif %}
-    {% if p.doi %}<a href="https://doi.org/{{ p.doi }}" class="pub-badge">DOI</a>{% endif %}
+    <a href="{{ p.adsurl }}" class="pub-badge" target="_blank" rel="noopener">ADS</a>
+    {% if p.arxiv %}
+      <a href="https://arxiv.org/abs/{{ p.arxiv }}" class="pub-badge" target="_blank" rel="noopener">arXiv</a>
+    {% endif %}
+    {% if p.doi %}
+      <a href="https://doi.org/{{ p.doi }}" class="pub-badge" target="_blank" rel="noopener">DOI</a>
+    {% endif %}
     {% if p.citations and p.citations > 0 %}
-      <a href="{{ p.adsurl }}/citations" class="pub-badge pub-badge-neutral">Cited {{ p.citations }}</a>
+      <a href="{{ p.adsurl }}/citations" class="pub-badge pub-badge-neutral" target="_blank" rel="noopener">Cited {{ p.citations }}</a>
     {% endif %}
   </span>
 </li>

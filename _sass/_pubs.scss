@@ -45,3 +45,54 @@
 .pubs .pub-year-inline { white-space: nowrap; }  /* keeps (2025) together */
 .pubs .arxiv-chunk    { white-space: nowrap; }   /* keeps 'arXiv: 2507.06989' intact */
 
+/* Put “Show all” on its own line, aligned with the hanging indent */
+.pubs .pub-break { display: block; }
+
+/* Force the toggle onto its own line and cancel the inherited hanging indent */
+.pubs .pub-authors-toggle-label {
+  display: block;           /* break onto a new line */
+  text-indent: 0;           /* cancel li.pub-item's -1.2em */
+  margin: .2rem 0 .1rem;
+  padding-left: 1rem;       /* space for our arrow */
+  position: relative;
+  cursor: pointer;
+  user-select: none;
+}
+
+/* Arrow drawn inside the content box */
+.pubs .pub-authors-toggle-label::before {
+  content: "▸";
+  position: absolute; left: 0; top: 0;
+  width: .8rem; line-height: 1;
+}
+
+/* Reveal full authors when checked */
+.pubs .pub-authors-full { display: none; margin: .15rem 0 .25rem; }
+.pubs .pub-authors-toggle:checked + .pub-authors-toggle-label::before { content: "▾"; }
+.pubs .pub-authors-toggle:checked + .pub-authors-toggle-label + .pub-authors-full { display: block; }
+
+/* Numbered resume list (does NOT affect Research) */
+.pubs.pubs--numbered .pub-list { counter-reset: pub; }
+
+.pubs.pubs--numbered .pub-item {
+  counter-increment: pub;
+  position: relative;
+  /* replace hanging-indent with a number gutter */
+  padding-left: 2.2rem;   /* room for 2-digit numbers */
+  text-indent: 0;         /* cancel the global -1.2em indent */
+  margin: .6rem 0 1rem;
+}
+
+.pubs.pubs--numbered .pub-item::before {
+  content: counter(pub) ".";
+  position: absolute;
+  left: 0; top: 0;
+  width: 1.8rem;          /* matches the gutter above */
+  text-align: right;
+  font-weight: 700;
+  opacity: .85;
+  font-variant-numeric: tabular-nums;
+}
+
+/* Keep the Show-all control aligned when numbered (works with your current toggle) */
+.pubs.pubs--numbered .pub-authors-toggle-label { display: block; text-indent: 0; }
