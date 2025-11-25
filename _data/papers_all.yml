@@ -123,7 +123,8 @@
   month: ''
   month_num: '11'
   sortdate: '2025-11-31'
-  tags: []
+  tags:
+  - bloem
 - bibcode: 2025arXiv250910387Z
   title: 'The large-scale kinematics of young stars in the Milky Way disc: first results
     from SDSS-V'
