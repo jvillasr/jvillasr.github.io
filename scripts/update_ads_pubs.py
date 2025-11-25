@@ -321,6 +321,7 @@ def pick_primary_url(doi: str, identifiers: list, adsurl: str) -> str:
 def add_tags(m):
     # robust, accent/case-insensitive thanks to your norm()
     title = norm(m.get("title", ""))
+    title_unmath = title.replace("$", "")
     journal = norm(m.get("pub", ""))  # sometimes "Sloan" appears here
 
     tags = []
@@ -337,7 +338,9 @@ def add_tags(m):
         tags.append("bbc")
 
     # Low metallicity contexts (incl. SMC/LMC mentions)
-    if "binarity at low metallicity" in title:
+    if ("binarity at low metallicity" in title
+            or "bloem" in title
+            or "low z" in title_unmath):
         tags.append("bloem")
 
     m["tags"] = tags
