@@ -1,0 +1,207 @@
+/* Scoped resume theme — won’t affect Research */
+
+.resume {
+  /* Local tokens (tweak here later if you want) */
+  --resume-accent: hsl(16, 90%, 56%);      /* lively orange for headings */
+  --resume-link:   hsl(217, 71%, 53%);     /* Bulma blue, keeps consistency */
+  --resume-ink:    hsl(222, 47%, 11%);     /* near-black for strong text */
+  --resume-muted:  hsl(215, 16%, 47%);     /* body-muted for notes/places */
+  --resume-soft:   hsl(210, 20%, 98%);     /* subtle backgrounds */
+  --resume-rule:   hsla(215, 16%, 47%, .18);
+
+  color: var(--resume-ink);
+}
+
+.resume .section-heading,
+.resume h2.title,
+.resume h2 {
+  color: var(--resume-accent);
+  font-weight: 800;
+  letter-spacing: .2px;
+  margin: 2.25rem 0 1rem;
+  line-height: 1.15;
+  position: relative;
+  padding-bottom: .3rem;
+}
+
+/* Accent underline bar under section headings */
+.resume .section-heading::after,
+.resume h2.title::after,
+.resume h2::after {
+  content: "";
+  display: block;
+  width: 56px;
+  height: 3px;
+  margin-top: .35rem;
+  border-radius: 2px;
+  background: linear-gradient(90deg, var(--resume-accent), transparent);
+}
+
+/* Tighter hierarchy for entry titles (e.g., “Postdoc”) */
+.resume .entry-title,
+.resume .resume-entry h3,
+.resume .resume-entry .title {
+  font-weight: 700;
+  line-height: 1.25;
+  margin: .1rem 0 .15rem;
+}
+
+/* Dates + location: quieter, aligned, with tabular numerals */
+.resume .resume-date,
+.resume .resume-meta,
+.resume .resume-entry .subtitle {
+  color: var(--resume-muted);
+  font-variant-numeric: tabular-nums;
+  font-feature-settings: "tnum";
+}
+
+/* Body copy inside entries */
+.resume .resume-entry p {
+  margin: .15rem 0 .35rem;
+}
+
+/* Links: consistent, tasteful underline */
+.resume a {
+  color: var(--resume-link);
+  text-decoration: none;
+  border-bottom: 1px solid currentColor;
+  transition: opacity .15s ease;
+}
+.resume a:hover { opacity: .9; }
+
+/* Soft separators between entries (not heavy rules) */
+.resume .resume-entry + .resume-entry {
+  border-top: 1px solid var(--resume-rule);
+  padding-top: .9rem;
+  margin-top: .9rem;
+}
+
+/* Optional: small “webpage” or extra links inside entries look subtle */
+.resume .resume-entry a.is-subtle {
+  color: var(--resume-muted);
+  border-bottom-color: var(--resume-rule);
+}
+.resume .resume-entry a.is-subtle:hover {
+  color: var(--resume-link);
+  border-bottom-color: currentColor;
+}
+
+/* Headline at very top (“RESUME”)—give it breathing room */
+.resume h1, .resume .page-title {
+  letter-spacing: .5px;
+  margin: 1.2rem 0 1.6rem;
+}
+
+/* Keep “Latest Publications” consistent with the resume style */
+.resume .pubs h1,
+.resume .pubs .title {
+  color: var(--resume-accent);
+}
+
+/* ===== Resume timeline (final consolidated) ===== */
+.resume-timeline{
+  /* geometry */
+  --date-w: 13ch;          /* date column width */
+  --gap: 1.25rem;          /* space between date & content */
+  --rail: 2px;             /* vertical rail thickness */
+  --pad: .50rem;           /* breathing room between rail and text */
+  --dot-top: .88rem;       /* vertical position of the dot */
+
+  /* colors */
+  --accent: hsl(16, 90%, 56%);    /* dot/section accent */
+  --rule:   rgba(0,0,0,.12);
+  --muted:  hsl(215, 16%, 47%);
+  --link:   hsl(217, 71%, 53%);
+}
+
+.resume-timeline .resume-entry{
+  position: relative;
+  display: grid;
+  grid-template-columns: var(--date-w) 1fr;
+  column-gap: var(--gap);
+  row-gap: .25rem;
+  padding: .8rem 0 .95rem;
+  border-top: 1px solid var(--rule);
+}
+.resume-timeline .resume-entry:first-child{ border-top: 0; }
+
+/* first row: your existing two-column wrapper */
+.resume-timeline .resume-entry .twocols{
+  display: grid;
+  grid-template-columns: var(--date-w) 1fr;
+  column-gap: var(--gap);
+  grid-column: 1 / -1;
+  position: relative; /* anchor for the dot */
+}
+
+/* date (left col) */
+.resume-timeline .resume-entry .twocols .date{
+  grid-column: 1;
+  text-align: right;
+  color: var(--muted);
+  font-variant-numeric: tabular-nums;
+  line-height: 1.25;
+  padding-top: .1rem;
+}
+
+/* title (right col) */
+.resume-timeline .resume-entry .twocols .entry-title{
+  grid-column: 2;
+  font-weight: 700;
+  margin: 0 0 .15rem;
+  line-height: 1.25;
+  padding-left: var(--pad);         /* wider gutter so text never touches the rail */
+  position: relative;
+}
+
+/* other rows (right col) */
+.resume-timeline .resume-entry .institution,
+.resume-timeline .resume-entry .description,
+.resume-timeline .resume-entry .thesis,
+.resume-timeline .resume-entry .supervisor,
+.resume-timeline .resume-entry .link{
+  grid-column: 2;
+  padding-left: var(--pad);         /* same gutter for a clean column edge */
+}
+
+/* vertical rail: centered on the column boundary, starts just under the dot */
+.resume-timeline .resume-entry::after{
+  content: "";
+  position: absolute;
+  left: calc(var(--date-w) + var(--gap) - var(--rail)/2);
+  top: calc(var(--dot-top) + .46rem);   /* a touch lower so it doesn’t poke above the dot */
+  bottom: -1px;
+  width: var(--rail);
+  background: var(--rule);
+}
+.resume-timeline .resume-entry:last-child::after{ display: none; }
+
+/* dot: centered on the rail, anchored to the first row */
+.resume-timeline .resume-entry .twocols::before{
+  content: "";
+  position: absolute;
+  left: calc(var(--date-w) + var(--gap) - 4px); /* 8px dot centered on rail */
+  top: var(--dot-top);
+  width: 8px; height: 8px; border-radius: 50%;
+  background: var(--accent);
+  box-shadow: 0 0 0 2px #fff;        /* crisp edge on light bg */
+}
+
+/* link inside entries — no dotted leader, clear external look */
+.resume-timeline .resume-entry .link{
+  justify-self: start;
+  color: var(--link);
+  text-decoration: none;
+  border: 0;                         /* kill any inherited border-underline */
+  font-size: .92rem;
+}
+.resume-timeline .resume-entry .link:hover{ text-decoration: underline; }
+
+/* mobile: stack, hide rail & dots for clarity */
+@media (max-width:680px){
+  .resume-timeline .resume-entry{ grid-template-columns: 1fr; }
+  .resume-timeline .resume-entry .twocols{ grid-template-columns: 1fr; }
+  .resume-timeline .resume-entry .twocols .date{ text-align:left; margin-bottom:.25rem; }
+  .resume-timeline .resume-entry::after,
+  .resume-timeline .resume-entry .twocols::before{ display:none; }
+}
