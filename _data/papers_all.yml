@@ -46,8 +46,7 @@
   month: ''
   month_num: '11'
   sortdate: '2025-11-31'
-  tags:
-  - bloem
+  tags: []
 - bibcode: 2025arXiv251113692S
   title: The physical properties of post-mass-transfer binaries
   authors:
