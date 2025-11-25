@@ -1,4 +1,7 @@
 #!/usr/bin/env python3
+# RUN IN TERMINAL AS:
+# $./scripts/update_ads_pubs.py "JIV" _data/papers_all.yml --sdss _data/papers_sdssv.yml
+#
 import os, sys, re, time, json, math, unicodedata
 from typing import List, Dict
 import requests, yaml
@@ -6,6 +9,13 @@ import requests, yaml
 ADS_API = "https://api.adsabs.harvard.edu/v1"
 TOKEN = os.getenv("ADS_DEV_KEY")
 HEADERS = {"Authorization": f"Bearer {TOKEN}"}
+
+# Map BibTeX month tokens to two-digit numbers
+BIB_MONTHS = {
+    "jan":"01","feb":"02","mar":"03","apr":"04","may":"05","jun":"06",
+    "jul":"07","aug":"08","sep":"09","oct":"10","nov":"11","dec":"12"
+}
+
 
 # ---- helpers ----
 
@@ -49,6 +59,62 @@ def get_bibcodes_for_library(library_id: str) -> list[str]:
 def chunked(lst, n):
     for i in range(0, len(lst), n):
         yield lst[i:i+n]
+
+def fetch_bibtex_months(bibcodes: List[str]) -> Dict[str, Dict[str, str]]:
+    """
+    Query ADS /export/bibtex for many bibcodes at once and extract BibTeX month.
+    Returns { bibcode: {"token": "jun", "num": "06"} } for those that have it.
+    """
+    if not bibcodes:
+        return {}
+    out: Dict[str, Dict[str,str]] = {}
+    headers = {**HEADERS, "Content-Type": "application/json"}
+
+    for chunk in chunked(bibcodes, 100):
+        r = requests.post(f"{ADS_API}/export/bibtex", headers=headers, json={"bibcode": chunk}, timeout=30)
+        r.raise_for_status()
+        text = (r.json() or {}).get("export", "")
+
+        # Split concatenated bibtex entries; key is the bibcode after @TYPE{
+        for m in re.finditer(r'@[\w\-]+\{([^,]+),(.*?)\n\}\s*', text, flags=re.S):
+            code = m.group(1).strip()
+            body = m.group(2)
+            mm = re.search(r'(?mi)^\s*month\s*=\s*[{\"]?([A-Za-z]{3})', body)
+            if mm:
+                token = mm.group(1).lower()
+                num = BIB_MONTHS.get(token)
+                if num:
+                    out[code] = {"token": token, "num": num}
+    return out
+
+def derive_sortdate_from_fields(pub: str, year: str, arxiv_id: str, refereed: bool,
+                                bibcode: str) -> tuple[str, str, str]:
+    """
+    Returns (sortdate, month_token, month_num).
+      - Refereed journals: use BibTeX month -> YYYY-MM-15
+      - arXiv e-prints: YYMM from arXiv id -> 20YY-MM-31
+      - Fallbacks: refereed -> YYYY-06-30, else YYYY-01-01
+    """
+    # 1) refereed journal month from BibTeX
+    if refereed and pub and pub != "arXiv e-prints":
+        mm = BIBTEX_MONTH_BY_BIBCODE.get(bibcode) or {}
+        mnum = mm.get("num")
+        if year and mnum:
+            return f"{year}-{mnum}-15", mm.get("token",""), mnum
+
+    # 2) arXiv month from arXiv ID (YYMM.xxxxx)
+    if pub == "arXiv e-prints" and arxiv_id and len(arxiv_id) >= 4 and arxiv_id[:4].isdigit():
+        yy = arxiv_id[:2]; mnum = arxiv_id[2:4]
+        return f"20{yy}-{mnum}-31", "", mnum
+
+    # 3) fallbacks
+    if year:
+        if refereed:
+            return f"{year}-06-30", "jun", "06"
+        else:
+            return f"{year}-01-01", "jan", "01"
+
+    return "", "", ""
 
 def fetch_metadata_for_bibcodes(bibcodes: List[str]) -> List[Dict]:
     """Use /search/query in chunks to pull fields we need."""
@@ -124,15 +190,15 @@ def map_doc(d: Dict) -> Dict:
     pub     = d.get("pub", "")
     year    = str(d.get("year", "")) if d.get("year") else ""
     bibcode = d.get("bibcode", "")
+    props   = d.get("property") or []
+    refereed_flag = ("REFEREED" in props)
 
     # ADS url (robust fallback)
     adsurl = f"https://ui.adsabs.harvard.edu/abs/{bibcode}" if bibcode else ""
     if not adsurl:
-        # try to find an ADS abs link in identifiers (rare, but just in case)
         for x in ids:
             if isinstance(x, str) and "ui.adsabs.harvard.edu/abs/" in x:
-                adsurl = x
-                break
+                adsurl = x; break
     if not adsurl:
         adsurl = "https://ui.adsabs.harvard.edu/"
 
@@ -145,6 +211,11 @@ def map_doc(d: Dict) -> Dict:
     # Display-friendly authors
     authors_display = [format_author_display(a) for a in authors]
     me_index = next((i for i, a in enumerate(authors) if is_me(a)), -1)
+
+    # NEW: single chronological key using BibTeX month or arXiv month
+    sortdate, month_token, month_num = derive_sortdate_from_fields(
+        pub=pub, year=year, arxiv_id=arxiv, refereed=refereed_flag, bibcode=bibcode
+    )
 
     return {
         "bibcode": bibcode,
@@ -163,8 +234,11 @@ def map_doc(d: Dict) -> Dict:
         "arxiv": arxiv,
         "adsurl": adsurl,
         "best_url": best_url,
-        "refereed": ("REFEREED" in (d.get("property") or [])),
+        "refereed": refereed_flag,          # was: ("REFEREED" in (d.get("property") or []))
         "citations": d.get("citation_count", 0),
+        "month": month_token,                         # NEW (e.g., 'jun' if known)
+        "month_num": month_num,                       # NEW (e.g., '06' or '' )
+        "sortdate": sortdate,                         # NEW ('YYYY-MM-DD')
     }
 
 def write_yaml(path: str, items: List[Dict]):
@@ -290,9 +364,18 @@ def main():
         die("No bibcodes found in library.")
 
     docs = fetch_metadata_for_bibcodes(bibs)
+
+    # Build a month map from BibTeX for refereed, non-arXiv items
+    ref_bibcodes = [d.get("bibcode","") for d in docs
+                    if d.get("pub") != "arXiv e-prints" and "REFEREED" in (d.get("property") or [])]
+    global BIBTEX_MONTH_BY_BIBCODE
+    BIBTEX_MONTH_BY_BIBCODE = fetch_bibtex_months(ref_bibcodes)
+
     mapped = [map_doc(d) for d in docs]
     mapped = [add_tags(m) for m in mapped]         # keep your tagging step
-    mapped.sort(key=lambda x: (x.get("year",""), x.get("bibcode","")), reverse=True)
+    # mapped.sort(key=lambda x: (x.get("year",""), x.get("bibcode","")), reverse=True)
+    mapped.sort(key=lambda x: (x.get("sortdate",""), x.get("bibcode","")), reverse=True)
+
     write_yaml(out_all, mapped)
     print(f"Wrote {len(mapped)} items to {out_all}")
 

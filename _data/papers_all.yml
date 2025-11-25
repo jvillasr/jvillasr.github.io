@@ -486,6 +486,9 @@
   best_url: https://doi.org/10.48550/arXiv.2507.07093
   refereed: false
   citations: 5
+  month: ''
+  month_num: '07'
+  sortdate: '2025-07-31'
   tags:
   - sdssv
 - bibcode: 2025arXiv250706989K
@@ -993,55 +996,11 @@
   best_url: https://doi.org/10.48550/arXiv.2507.06989
   refereed: false
   citations: 4
+  month: ''
+  month_num: '07'
+  sortdate: '2025-07-31'
   tags:
   - sdssv
-- bibcode: 2025arXiv250406973M
-  title: 'HIP 15429: A newborn Be star on an eccentric binary orbit'
-  authors:
-  - Müller-Horn, Johanna
-  - El-Badry, Kareem
-  - Rix, Hans-Walter
-  - Shenar, Tomer
-  - Seeburger, Rhys
-  - Villaseñor, Jaime I.
-  - Bodensteiner, Julia
-  - Latham, David W.
-  - Bieryla, Allyson
-  - Buchhave, Lars A.
-  - Isaacson, Howard
-  - Howard, Andrew W.
-  authors_html: Johanna Müller-Horn; Kareem El-Badry; Hans-Walter Rix; Tomer Shenar;
-    Rhys Seeburger; <strong>Jaime I. Villaseñor</strong>; Julia Bodensteiner; David
-    W. Latham; Allyson Bieryla; Lars A. Buchhave; Howard Isaacson; Andrew W. Howard
-  authors_short_html: Johanna Müller-Horn; Kareem El-Badry; Hans-Walter Rix; Tomer
-    Shenar; Rhys Seeburger; <strong>Jaime I. Villaseñor</strong>; Julia Bodensteiner;
-    David W. Latham, <em>et&nbsp;al.</em>
-  authors_display:
-  - Johanna Müller-Horn
-  - Kareem El-Badry
-  - Hans-Walter Rix
-  - Tomer Shenar
-  - Rhys Seeburger
-  - Jaime I. Villaseñor
-  - Julia Bodensteiner
-  - David W. Latham
-  - Allyson Bieryla
-  - Lars A. Buchhave
-  - Howard Isaacson
-  - Andrew W. Howard
-  me_index: 5
-  n_authors: 12
-  year: '2025'
-  pub: arXiv e-prints
-  volume: ''
-  page: arXiv:2504.06973
-  doi: 10.48550/arXiv.2504.06973
-  arxiv: '2504.06973'
-  adsurl: https://ui.adsabs.harvard.edu/abs/2025arXiv250406973M
-  best_url: https://doi.org/10.48550/arXiv.2504.06973
-  refereed: false
-  citations: 1
-  tags: []
 - bibcode: 2025A&A...698A..41V
   title: 'Binarity at LOw Metallicity (BLOeM): Enhanced multiplicity of early B-type
     dwarfs and giants at Z = 0.2 Z<SUB>⊙</SUB>'
@@ -1135,6 +1094,9 @@
   best_url: https://doi.org/10.1051/0004-6361/202453166
   refereed: true
   citations: 7
+  month: jun
+  month_num: '06'
+  sortdate: '2025-06-15'
   tags:
   - bloem
 - bibcode: 2025A&A...698A..40B
@@ -1233,6 +1195,9 @@
   best_url: https://doi.org/10.1051/0004-6361/202452963
   refereed: true
   citations: 4
+  month: jun
+  month_num: '06'
+  sortdate: '2025-06-15'
   tags:
   - bloem
 - bibcode: 2025A&A...698A..39P
@@ -1339,6 +1304,9 @@
   best_url: https://doi.org/10.1051/0004-6361/202452949
   refereed: true
   citations: 8
+  month: jun
+  month_num: '06'
+  sortdate: '2025-06-15'
   tags:
   - bloem
 - bibcode: 2025A&A...698A..38B
@@ -1454,57 +1422,60 @@
   best_url: https://doi.org/10.1051/0004-6361/202452623
   refereed: true
   citations: 8
+  month: jun
+  month_num: '06'
+  sortdate: '2025-06-15'
   tags:
   - bloem
-- bibcode: 2024arXiv240920252F
-  title: What is the Role of Large Language Models in the Evolution of Astronomy Research?
+- bibcode: 2025arXiv250406973M
+  title: 'HIP 15429: A newborn Be star on an eccentric binary orbit'
   authors:
-  - Fouesneau, Morgan
-  - Momcheva, Ivelina G.
-  - Chadayammuri, Urmila
-  - Demianenko, Mariia
-  - Dumont, Antoine
-  - Hviding, Raphael E.
-  - Kahle, K. Angelique
-  - Pulatova, Nadiia
-  - Rajpoot, Bhavesh
-  - Scheuck, Marten B.
+  - Müller-Horn, Johanna
+  - El-Badry, Kareem
+  - Rix, Hans-Walter
+  - Shenar, Tomer
   - Seeburger, Rhys
-  - Semenov, Dmitry
   - Villaseñor, Jaime I.
-  authors_html: Morgan Fouesneau; Ivelina G. Momcheva; Urmila Chadayammuri; Mariia
-    Demianenko; Antoine Dumont; Raphael E. Hviding; K. Angelique Kahle; Nadiia Pulatova;
-    Bhavesh Rajpoot; Marten B. Scheuck; Rhys Seeburger; Dmitry Semenov; <strong>Jaime
-    I. Villaseñor</strong>
-  authors_short_html: Morgan Fouesneau; Ivelina G. Momcheva; Urmila Chadayammuri;
-    Mariia Demianenko; Antoine Dumont; Raphael E. Hviding; K. Angelique Kahle; <strong>Jaime
-    I. Villaseñor</strong>, <em>et&nbsp;al.</em>
+  - Bodensteiner, Julia
+  - Latham, David W.
+  - Bieryla, Allyson
+  - Buchhave, Lars A.
+  - Isaacson, Howard
+  - Howard, Andrew W.
+  authors_html: Johanna Müller-Horn; Kareem El-Badry; Hans-Walter Rix; Tomer Shenar;
+    Rhys Seeburger; <strong>Jaime I. Villaseñor</strong>; Julia Bodensteiner; David
+    W. Latham; Allyson Bieryla; Lars A. Buchhave; Howard Isaacson; Andrew W. Howard
+  authors_short_html: Johanna Müller-Horn; Kareem El-Badry; Hans-Walter Rix; Tomer
+    Shenar; Rhys Seeburger; <strong>Jaime I. Villaseñor</strong>; Julia Bodensteiner;
+    David W. Latham, <em>et&nbsp;al.</em>
   authors_display:
-  - Morgan Fouesneau
-  - Ivelina G. Momcheva
-  - Urmila Chadayammuri
-  - Mariia Demianenko
-  - Antoine Dumont
-  - Raphael E. Hviding
-  - K. Angelique Kahle
-  - Nadiia Pulatova
-  - Bhavesh Rajpoot
-  - Marten B. Scheuck
+  - Johanna Müller-Horn
+  - Kareem El-Badry
+  - Hans-Walter Rix
+  - Tomer Shenar
   - Rhys Seeburger
-  - Dmitry Semenov
   - Jaime I. Villaseñor
-  me_index: 12
-  n_authors: 13
-  year: '2024'
+  - Julia Bodensteiner
+  - David W. Latham
+  - Allyson Bieryla
+  - Lars A. Buchhave
+  - Howard Isaacson
+  - Andrew W. Howard
+  me_index: 5
+  n_authors: 12
+  year: '2025'
   pub: arXiv e-prints
   volume: ''
-  page: arXiv:2409.20252
-  doi: 10.48550/arXiv.2409.20252
-  arxiv: '2409.20252'
-  adsurl: https://ui.adsabs.harvard.edu/abs/2024arXiv240920252F
-  best_url: https://doi.org/10.48550/arXiv.2409.20252
+  page: arXiv:2504.06973
+  doi: 10.48550/arXiv.2504.06973
+  arxiv: '2504.06973'
+  adsurl: https://ui.adsabs.harvard.edu/abs/2025arXiv250406973M
+  best_url: https://doi.org/10.48550/arXiv.2504.06973
   refereed: false
-  citations: 6
+  citations: 1
+  month: ''
+  month_num: '04'
+  sortdate: '2025-04-31'
   tags: []
 - bibcode: 2024A&A...692A.109D
   title: 'Investigating 39 Galactic Wolf-Rayet stars with VLTI/GRAVITY: Uncovering
@@ -1567,6 +1538,9 @@
   best_url: https://doi.org/10.1051/0004-6361/202452352
   refereed: true
   citations: 8
+  month: dec
+  month_num: '12'
+  sortdate: '2024-12-15'
   tags: []
 - bibcode: 2024A&A...690A.289S
   title: 'Binarity at LOw Metallicity (BLOeM): A spectroscopic VLT monitoring survey
@@ -1757,8 +1731,64 @@
   best_url: https://doi.org/10.1051/0004-6361/202451586
   refereed: true
   citations: 25
+  month: oct
+  month_num: '10'
+  sortdate: '2024-10-15'
   tags:
   - bloem
+- bibcode: 2024arXiv240920252F
+  title: What is the Role of Large Language Models in the Evolution of Astronomy Research?
+  authors:
+  - Fouesneau, Morgan
+  - Momcheva, Ivelina G.
+  - Chadayammuri, Urmila
+  - Demianenko, Mariia
+  - Dumont, Antoine
+  - Hviding, Raphael E.
+  - Kahle, K. Angelique
+  - Pulatova, Nadiia
+  - Rajpoot, Bhavesh
+  - Scheuck, Marten B.
+  - Seeburger, Rhys
+  - Semenov, Dmitry
+  - Villaseñor, Jaime I.
+  authors_html: Morgan Fouesneau; Ivelina G. Momcheva; Urmila Chadayammuri; Mariia
+    Demianenko; Antoine Dumont; Raphael E. Hviding; K. Angelique Kahle; Nadiia Pulatova;
+    Bhavesh Rajpoot; Marten B. Scheuck; Rhys Seeburger; Dmitry Semenov; <strong>Jaime
+    I. Villaseñor</strong>
+  authors_short_html: Morgan Fouesneau; Ivelina G. Momcheva; Urmila Chadayammuri;
+    Mariia Demianenko; Antoine Dumont; Raphael E. Hviding; K. Angelique Kahle; <strong>Jaime
+    I. Villaseñor</strong>, <em>et&nbsp;al.</em>
+  authors_display:
+  - Morgan Fouesneau
+  - Ivelina G. Momcheva
+  - Urmila Chadayammuri
+  - Mariia Demianenko
+  - Antoine Dumont
+  - Raphael E. Hviding
+  - K. Angelique Kahle
+  - Nadiia Pulatova
+  - Bhavesh Rajpoot
+  - Marten B. Scheuck
+  - Rhys Seeburger
+  - Dmitry Semenov
+  - Jaime I. Villaseñor
+  me_index: 12
+  n_authors: 13
+  year: '2024'
+  pub: arXiv e-prints
+  volume: ''
+  page: arXiv:2409.20252
+  doi: 10.48550/arXiv.2409.20252
+  arxiv: '2409.20252'
+  adsurl: https://ui.adsabs.harvard.edu/abs/2024arXiv240920252F
+  best_url: https://doi.org/10.48550/arXiv.2409.20252
+  refereed: false
+  citations: 6
+  month: ''
+  month_num: 09
+  sortdate: '2024-09-31'
+  tags: []
 - bibcode: 2024A&A...688A.141L
   title: Rotational synchronisation of B-type binaries in 30 Doradus
   authors:
@@ -1793,6 +1823,9 @@
   best_url: https://doi.org/10.1051/0004-6361/202450583
   refereed: true
   citations: 1
+  month: aug
+  month_num: 08
+  sortdate: '2024-08-15'
   tags:
   - bbc
 - bibcode: 2023MNRAS.525.5121V
@@ -1847,6 +1880,9 @@
   best_url: https://doi.org/10.1093/mnras/stad2533
   refereed: true
   citations: 20
+  month: nov
+  month_num: '11'
+  sortdate: '2023-11-15'
   tags:
   - bbc
 - bibcode: 2023A&A...674A..60B
@@ -1890,43 +1926,9 @@
   best_url: https://doi.org/10.1051/0004-6361/202244742
   refereed: true
   citations: 7
-  tags: []
-- bibcode: 2022MNRAS.512.3331D
-  title: Properties of the Be-type stars in 30 Doradus
-  authors:
-  - Dufton, P. L.
-  - Lennon, D. J.
-  - Villaseñor, J. I.
-  - Howarth, I. D.
-  - Evans, C. J.
-  - de Mink, S. E.
-  - Sana, H.
-  - Taylor, W. D.
-  authors_html: P. L. Dufton; D. J. Lennon; <strong>J. I. Villaseñor</strong>; I.
-    D. Howarth; C. J. Evans; S. E. de Mink; H. Sana; W. D. Taylor
-  authors_short_html: P. L. Dufton; D. J. Lennon; <strong>J. I. Villaseñor</strong>;
-    I. D. Howarth; C. J. Evans; S. E. de Mink; H. Sana; W. D. Taylor
-  authors_display:
-  - P. L. Dufton
-  - D. J. Lennon
-  - J. I. Villaseñor
-  - I. D. Howarth
-  - C. J. Evans
-  - S. E. de Mink
-  - H. Sana
-  - W. D. Taylor
-  me_index: 2
-  n_authors: 8
-  year: '2022'
-  pub: Monthly Notices of the Royal Astronomical Society
-  volume: '512'
-  page: '3331'
-  doi: 10.1093/mnras/stac630
-  arxiv: '2203.02440'
-  adsurl: https://ui.adsabs.harvard.edu/abs/2022MNRAS.512.3331D
-  best_url: https://doi.org/10.1093/mnras/stac630
-  refereed: true
-  citations: 12
+  month: jun
+  month_num: '06'
+  sortdate: '2023-06-15'
   tags: []
 - bibcode: 2022A&A...665A.180L
   title: 'The VLT-FLAMES survey of massive stars. NGC 2004#115: A triple system hosting
@@ -1965,6 +1967,49 @@
   best_url: https://doi.org/10.1051/0004-6361/202142413
   refereed: true
   citations: 22
+  month: sep
+  month_num: 09
+  sortdate: '2022-09-15'
+  tags: []
+- bibcode: 2022MNRAS.512.3331D
+  title: Properties of the Be-type stars in 30 Doradus
+  authors:
+  - Dufton, P. L.
+  - Lennon, D. J.
+  - Villaseñor, J. I.
+  - Howarth, I. D.
+  - Evans, C. J.
+  - de Mink, S. E.
+  - Sana, H.
+  - Taylor, W. D.
+  authors_html: P. L. Dufton; D. J. Lennon; <strong>J. I. Villaseñor</strong>; I.
+    D. Howarth; C. J. Evans; S. E. de Mink; H. Sana; W. D. Taylor
+  authors_short_html: P. L. Dufton; D. J. Lennon; <strong>J. I. Villaseñor</strong>;
+    I. D. Howarth; C. J. Evans; S. E. de Mink; H. Sana; W. D. Taylor
+  authors_display:
+  - P. L. Dufton
+  - D. J. Lennon
+  - J. I. Villaseñor
+  - I. D. Howarth
+  - C. J. Evans
+  - S. E. de Mink
+  - H. Sana
+  - W. D. Taylor
+  me_index: 2
+  n_authors: 8
+  year: '2022'
+  pub: Monthly Notices of the Royal Astronomical Society
+  volume: '512'
+  page: '3331'
+  doi: 10.1093/mnras/stac630
+  arxiv: '2203.02440'
+  adsurl: https://ui.adsabs.harvard.edu/abs/2022MNRAS.512.3331D
+  best_url: https://doi.org/10.1093/mnras/stac630
+  refereed: true
+  citations: 12
+  month: may
+  month_num: '05'
+  sortdate: '2022-05-15'
   tags: []
 - bibcode: 2022A&A...658A..69B
   title: The observed multiplicity properties of B-type stars in the Galactic young
@@ -1999,6 +2044,9 @@
   best_url: https://doi.org/10.1051/0004-6361/202141037
   refereed: true
   citations: 68
+  month: feb
+  month_num: '02'
+  sortdate: '2022-02-15'
   tags: []
 - bibcode: 2021MNRAS.507.5348V
   title: The B-type binaries characterization programme I. Orbital solutions for the
@@ -2039,8 +2087,57 @@
   best_url: https://doi.org/10.1093/mnras/stab2197
   refereed: true
   citations: 44
+  month: nov
+  month_num: '11'
+  sortdate: '2021-11-15'
   tags:
   - bbc
+- bibcode: 2020MNRAS.493.1197R
+  title: Revisiting the post-common-envelope binaries HZ 9, KV Vel and Abell 65
+  authors:
+  - Rios-Venegas, C.
+  - Contreras-Quijada, A.
+  - Vogt, N.
+  - Hambsch, F. -J.
+  - Hinojosa, R.
+  - Aranda, J.
+  - Gotta, V.
+  - Jerez, R.
+  - Puebla, E.
+  - Rey, J.
+  - Villaseñor, J. I.
+  authors_html: C. Rios-Venegas; A. Contreras-Quijada; N. Vogt; F. -J. Hambsch; R.
+    Hinojosa; J. Aranda; V. Gotta; R. Jerez; E. Puebla; J. Rey; <strong>J. I. Villaseñor</strong>
+  authors_short_html: C. Rios-Venegas; A. Contreras-Quijada; N. Vogt; F. -J. Hambsch;
+    R. Hinojosa; J. Aranda; V. Gotta; <strong>J. I. Villaseñor</strong>, <em>et&nbsp;al.</em>
+  authors_display:
+  - C. Rios-Venegas
+  - A. Contreras-Quijada
+  - N. Vogt
+  - F. -J. Hambsch
+  - R. Hinojosa
+  - J. Aranda
+  - V. Gotta
+  - R. Jerez
+  - E. Puebla
+  - J. Rey
+  - J. I. Villaseñor
+  me_index: 10
+  n_authors: 11
+  year: '2020'
+  pub: Monthly Notices of the Royal Astronomical Society
+  volume: '493'
+  page: '1197'
+  doi: 10.1093/mnras/staa331
+  arxiv: ''
+  adsurl: https://ui.adsabs.harvard.edu/abs/2020MNRAS.493.1197R
+  best_url: https://doi.org/10.1093/mnras/staa331
+  refereed: true
+  citations: 3
+  month: mar
+  month_num: '03'
+  sortdate: '2020-03-15'
+  tags: []
 - bibcode: 2020Msngr.181...22E
   title: The VLT-FLAMES Tarantula Survey
   authors:
@@ -2153,49 +2250,9 @@
   best_url: https://doi.org/10.18727/0722-6691/5207
   refereed: false
   citations: 5
-  tags: []
-- bibcode: 2020MNRAS.493.1197R
-  title: Revisiting the post-common-envelope binaries HZ 9, KV Vel and Abell 65
-  authors:
-  - Rios-Venegas, C.
-  - Contreras-Quijada, A.
-  - Vogt, N.
-  - Hambsch, F. -J.
-  - Hinojosa, R.
-  - Aranda, J.
-  - Gotta, V.
-  - Jerez, R.
-  - Puebla, E.
-  - Rey, J.
-  - Villaseñor, J. I.
-  authors_html: C. Rios-Venegas; A. Contreras-Quijada; N. Vogt; F. -J. Hambsch; R.
-    Hinojosa; J. Aranda; V. Gotta; R. Jerez; E. Puebla; J. Rey; <strong>J. I. Villaseñor</strong>
-  authors_short_html: C. Rios-Venegas; A. Contreras-Quijada; N. Vogt; F. -J. Hambsch;
-    R. Hinojosa; J. Aranda; V. Gotta; <strong>J. I. Villaseñor</strong>, <em>et&nbsp;al.</em>
-  authors_display:
-  - C. Rios-Venegas
-  - A. Contreras-Quijada
-  - N. Vogt
-  - F. -J. Hambsch
-  - R. Hinojosa
-  - J. Aranda
-  - V. Gotta
-  - R. Jerez
-  - E. Puebla
-  - J. Rey
-  - J. I. Villaseñor
-  me_index: 10
-  n_authors: 11
-  year: '2020'
-  pub: Monthly Notices of the Royal Astronomical Society
-  volume: '493'
-  page: '1197'
-  doi: 10.1093/mnras/staa331
-  arxiv: ''
-  adsurl: https://ui.adsabs.harvard.edu/abs/2020MNRAS.493.1197R
-  best_url: https://doi.org/10.1093/mnras/staa331
-  refereed: true
-  citations: 3
+  month: jan
+  month_num: '01'
+  sortdate: '2020-01-01'
   tags: []
 - bibcode: 2016ApJS..227....6V
   title: Determination of Pulsation Periods and Other Parameters of 2875 Stars Classified
@@ -2247,4 +2304,7 @@
   best_url: https://doi.org/10.3847/0067-0049/227/1/6
   refereed: true
   citations: 16
+  month: nov
+  month_num: '11'
+  sortdate: '2016-11-15'
   tags: []
