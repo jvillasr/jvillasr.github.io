@@ -4,6 +4,7 @@
 
 # OS/editor junk
 .DS_Store
+assets/.DS_Store
 ._*
 Thumbs.db
 *.log
