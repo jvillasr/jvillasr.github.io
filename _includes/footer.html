@@ -4,54 +4,69 @@
         <a class="has-text-white" onclick="window.scroll(0,0)">BACK TO TOP</a>
     </div>
     <!--Footer Main Section-->
-    <div class="has-background-grey-darker">
-        <div class="container columns">
-            <!--Name Section-->
-            <div class="column has-text-left-desktop has-text-centered-mobile">
-                <a href="{{site.url}}{{site.baseurl}}/#about">
-                    <div class="columns">
-                        <div class="column is-one-fifth-desktop is-one-fifth-fullhd is-one-quarter-tablet">
-                            <figure class="image is-64x64">
-                                <img class="is-rounded" src="{{site.author-image}}">
-                            </figure>
-                        </div>
-                        <div class="column is-marginless">
-                            <h5 class="has-text-grey-lighter">{{site.author-name}}</h5>
-                            <div class="content has-text-grey">
-                                <p>{{site.author-about | truncate: 75 }}</p>
-                            </div>
-                        </div>
+    <div class="has-background-grey-darker footer-main">
+        <div class="container columns is-variable is-6 is-multiline">
+            <!--Profile Section-->
+            <div class="column is-12-mobile is-5-tablet is-4-desktop">
+                <a class="footer-profile" href="{{site.url}}{{site.baseurl}}/#about">
+                    <figure class="image is-96x96">
+                        <img class="is-rounded" src="{{site.author-image}}" alt="{{site.author-name}}">
+                    </figure>
+                    <div>
+                        <p class="footer-eyebrow">Astronomer</p>
+                        <h3 class="footer-name">{{site.author-name}}</h3>
+                        <p class="footer-blurb">Massive stars, interacting binaries, and stellar evolution. Currently at MPIA.</p>
                     </div>
                 </a>
             </div>
 
-            <!--Link Section-->
-            <div class="column has-text-white">
-                <h3>More Links</h3>
-                {% for sitepage in site.html_pages offset: 4 %}
-                {% unless sitepage.url == '/'  limit: 2 %}
-                <li>
-                    <a href="{{sitepage.url | absolute_url}}">{{sitepage.title}}</a>
-                </li>
-                {% endunless %}
-                {% endfor %}
-                <li>
-                    <a target="_blank" href="{{site.url}}{{site.baseurl}}/feed.xml">Subscribe via RSS</a>
-                </li>
+            <!--Quick Links-->
+            <div class="column is-6-mobile is-3-tablet is-3-desktop">
+                <h4 class="footer-heading">Quick Links</h4>
+                <ul class="footer-links-list">
+                    <li><a href="{{ '/' | relative_url }}">Home</a></li>
+                    <li><a href="{{ '/research/' | relative_url }}">Research</a></li>
+                    <li><a href="{{ '/resume/' | relative_url }}">Resume</a></li>
+                    <li><a href="{{ '/projects/' | relative_url }}">Projects</a></li>
+                    <li><a href="{{ '/contact/' | relative_url }}">Contact</a></li>
+                </ul>
             </div>
 
-            <!--Blog-post Section-->
-            <div class="column has-text-white">
-                <h3>Recent Posts</h3>
-                {% for post in site.posts offset: 0 limit:3 %}
-                <li>
-                    <a href="{{post.url | absolute_url}}">{{post.title}}</a>
-                </li>
-                {% endfor %}
+            <!--Contact & Social-->
+            <div class="column is-6-mobile is-4-tablet is-3-desktop">
+                <h4 class="footer-heading">Stay in touch</h4>
+                <ul class="footer-contact">
+                    {% if site.email %}
+                    <li>
+                        <i class="far fa-envelope"></i>
+                        <a href="mailto:{{ site.email }}">Email me</a>
+                    </li>
+                    {% endif %}
+                    {% if site.github_username %}
+                    <li>
+                        <i class="fab fa-github"></i>
+                        <a href="https://github.com/{{ site.github_username | strip }}" target="_blank" rel="noopener">GitHub</a>
+                    </li>
+                    {% endif %}
+                    {% if site.bluesky_handle %}
+                    <li>
+                        <svg class="footer-icon footer-icon--bsky" viewBox="0 0 24 24" aria-hidden="true">
+                            <path fill="currentColor" d="M5.202 2.857C7.954 4.922 10.913 9.11 12 11.358c1.087-2.247 4.046-6.436 6.798-8.501C20.783 1.366 24 .213 24 3.883c0 .732-.42 6.156-.667 7.037-.856 3.061-3.978 3.842-6.755 3.37 4.854.826 6.089 3.562 3.422 6.299-5.065 5.196-7.28-1.304-7.847-2.97-.104-.305-.152-.448-.153-.327 0-.121-.05.022-.153.327-.568 1.666-2.782 8.166-7.847 2.97-2.667-2.737-1.432-5.473 3.422-6.3-2.777.473-5.899-.308-6.755-3.369C.42 10.04 0 4.615 0 3.883c0-3.67 3.217-2.517 5.202-1.026"/>
+                        </svg>
+                        <a href="https://bsky.app/profile/{{ site.bluesky_handle }}" target="_blank" rel="noopener">Bluesky</a>
+                    </li>
+                    {% endif %}
+                    {% if site.orcid_username %}
+                    <li>
+                        <i class="fab fa-orcid orcid-icon"></i>
+                        <a href="https://orcid.org/{{ site.orcid_username }}" target="_blank" rel="noopener">ORCID</a>
+                    </li>
+                    {% endif %}
+                </ul>
             </div>
         </div>
     </div>
     <div class="has-background-black has-text-centered has-text-white" id="credits">
-        <i class="far fa-copyright"></i> {{ "now" | date: "%Y" }} | <a href="https://github.com/thedevslot/WhatATheme" target="_blank" rel="noopener noreferrer">WhatATheme</a> - A Theme made with <i class="fas fa-heart has-text-danger"></i> by <a href="https://www.twitter.com/thedevslot" target="_blank" rel="noopener noreferrer">TheDevsLot</a> Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a>
+        <span>&copy; {{ "now" | date: "%Y" }} {{ site.author-name }}. Built with Jekyll.</span>
     </div>
 </footer>

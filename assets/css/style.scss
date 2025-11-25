@@ -105,16 +105,47 @@ a.navbar-item.is-active {
         margin: 0.5rem auto;
         display: flex;
         justify-content: center;
+        align-items: center;
+        gap: 0.65rem;
+        padding: 0.85rem 1.5rem;
+
+        i,
+        svg {
+            display: inline-flex;
+            align-items: center;
+            line-height: 1;
+            margin: 0;
+        }
     }
 
     svg {
         transition: all 0.15s ease-in-out;
-        margin: auto 0.75vmax;
+        margin: 0;
+        width: 1.9rem;
+        height: 1.9rem;
 
         &:hover {
             transform: scale(1.10);
             filter: opacity(0.75);
         }
+    }
+
+    .contact-social a {
+        margin: 0 0.45rem;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .contact-bluesky svg {
+        width: 1.5rem;
+        height: 1.5rem;
+        fill: currentColor;
+        vertical-align: middle;
+    }
+
+    .contact-bluesky-btn svg {
+        margin: 0;
     }
 
     hr {
@@ -226,39 +257,117 @@ a.navbar-item.is-active {
         }
     }
 
-    .container {
-        margin: auto;
-        padding: 1.5rem;
-        line-height: 1.25;
+    .footer-main {
+        padding: 2rem 0;
 
-        .column {
-            display: grid;
-            justify-content: center;
+        .container {
+            margin: auto;
+            padding: 0 1.5rem 1.5rem;
+            line-height: 1.5;
 
-            li {
-                list-style: circle;
-                list-style-position: outside;
-            }
+            .column {
+                display: flex;
+                flex-direction: column;
+                gap: 0.65rem;
 
-            a {
-                color: #7a7a7a;
-
-                &:hover {
-                    color: white;
+                h4 {
+                    font-size: 1.05rem;
+                    letter-spacing: 0.08em;
+                    text-transform: uppercase;
+                    color: #f4f4f4;
                 }
-            }
 
-            figure {
-                border: 1.5px solid white;
-                border-radius: 50rem;
-                justify-content: center;
-                margin: auto;
-                transition: all 0.25s ease;
-                &:hover{
-                    transform: scale(1.15);
+                ul {
+                    list-style: none;
+                    margin: 0;
+                    padding: 0;
+
+                    li {
+                        margin-bottom: 0.3rem;
+                        display: flex;
+                        align-items: center;
+                        gap: 0.5rem;
+                    }
+                }
+
+                a {
+                    color: #cfcfcf;
+
+                    &:hover {
+                        color: white;
+                    }
                 }
             }
         }
+    }
+
+    .footer-profile {
+        display: flex;
+        align-items: center;
+        gap: 1.2rem;
+        padding: 1.2rem;
+        border-radius: 1rem;
+        background: rgba(255, 255, 255, 0.05);
+        transition: transform 0.25s ease;
+        max-width: 620px;
+        margin: 0 auto;
+
+        &:hover {
+            transform: translateY(-4px);
+        }
+
+        figure {
+            border: 1.5px solid rgba(255,255,255,0.7);
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+        .footer-eyebrow {
+            text-transform: uppercase;
+            letter-spacing: 0.25em;
+            font-size: 0.65rem;
+            color: #a0a0a0;
+            margin-bottom: 0.25rem;
+        }
+
+        .footer-name {
+            color: #fff;
+            margin: 0;
+        }
+
+        .footer-blurb {
+            color: #cfcfcf;
+            margin-bottom: 0;
+            font-size: 0.9rem;
+        }
+    }
+
+    .footer-contact i,
+    .footer-contact .footer-icon {
+        color: #d4d4d4;
+        display: inline-flex;
+        align-items: center;
+        line-height: 1;
+    }
+
+    .footer-contact .footer-icon:not(svg) {
+        width: 1.35rem;
+        height: 1.35rem;
+        justify-content: center;
+        font-size: 0.85rem;
+    }
+
+    .footer-contact svg.footer-icon {
+        border: none;
+        width: 1rem;
+        height: 1rem;
+        padding: 0;
+        overflow: visible;
+        fill: currentColor;
+        color: #b6b6b6;
     }
 
     #credits {
