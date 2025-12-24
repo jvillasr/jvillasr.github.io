@@ -1,68 +1,101 @@
 <section class="hero is-fullheight has-background-white-ter" id="about">
     <div class="hero-body">
         <div class="container">
-            <p class="about-tagline">Astronomer exploring massive binary stars, born in Chile and researching at MPIA in Heidelberg.</p>
-            <div class="about-infographic">
-                    <div class="about-avatar-card">
-                        <div class="about-avatar-frame">
-                            <div class="about-avatar-photo">
-                            <img class="is-rounded" src="{{site.author-image}}" alt="{{site.author-name}}" loading="lazy" decoding="async">
+            <h2 class="about-section-title">About</h2>
+            <div class="about-layout">
+                <div class="about-left">
+                    <figure class="about-portrait">
+                        <img class="is-rounded" src="{{ site.author-image }}" alt="{{ site.author-name }}" loading="lazy" decoding="async">
+                    </figure>
+                    <p class="about-headline">
+                        Building survey-to-inference pipelines to constrain massive-binary evolution and uncover compact companions at scale.
+                    </p>
+                    <p class="about-abstract">
+                        Massive-star evolution is shaped by binaries, but we still lack robust demographics and interaction products across environments.
+                        I combine survey-scale spectroscopy with probabilistic RV/orbit inference and targeted follow-up, turning heterogeneous data into
+                        reproducible population constraints that inform compact-object formation and gravitational-wave progenitors.
+                    </p>
+                    <ul class="about-chips" aria-label="Research strengths">
+                        <li>Survey-scale spectroscopy</li>
+                        <li>Probabilistic inference</li>
+                        <li>Binary evolution</li>
+                        <li>Open-source pipelines</li>
+                        <li>Compact companions</li>
+                    </ul>
+                    <div class="about-cta">
+                        <a class="button is-black is-rounded is-outlined is-uppercase has-text-weight-semibold"
+                           href="{{ '/assets/docs/JIV_CV_oct2023.pdf' | relative_url }}" target="_blank" rel="noopener">
+                            Download CV
+                        </a>
+                        <a class="button is-black is-rounded is-uppercase has-text-weight-semibold"
+                           href="{{ '/' | relative_url }}#research">
+                            Research
+                        </a>
+                        <a class="about-cta-link" href="{{ '/' | relative_url }}#contact">Contact</a>
+                    </div>
+                </div>
+                <div class="about-right">
+                    <div class="about-pillars">
+                        <article class="about-pillar">
+                            <div class="about-pillar-header">
+                                {% include icons/about-background.svg class="about-pillar-icon" %}
+                                <h3 class="about-pillar-title">Background</h3>
                             </div>
-                        </div>
-                        <p class="about-name">{{site.author-name}}</p>
-                    </div>
-                <div class="about-cards-grid">
-                    <div class="about-card about-card--chile">
-                        <p class="card-kicker">From:</p>
-                        <h3 class="card-title">Chile</h3>
-                        <span class="card-underline"></span>
-                        <div class="card-media card-media--chile">
-                            <div class="chile-illustration">
-                                <img class="chile-map" src="{{ '/assets/images/about/chile.png' | relative_url }}" alt="Chile illustration" loading="lazy" decoding="async">
-                                <div class="chile-point chile-point--paranal"></div>
-                                <div class="chile-point chile-point--santiago"></div>
-                                <div class="chile-connector chile-connector--paranal"></div>
-                                <div class="chile-connector chile-connector--santiago"></div>
-                                <div class="chile-icon chile-icon--paranal">
-                                    <div class="chile-icon-thumb">
-                                        <img src="{{ '/assets/images/about/vlt.png' | relative_url }}" alt="Very Large Telescope, Paranal" loading="lazy" decoding="async">
-                                    </div>
-                                    <span class="chile-label">Paranal</span>
-                                </div>
-                                <div class="chile-icon chile-icon--santiago">
-                                    <div class="chile-icon-thumb">
-                                        <img src="{{ '/assets/images/about/andes-scl.png' | relative_url }}" alt="Andes mountains near Santiago" loading="lazy" decoding="async">
-                                    </div>
-                                    <span class="chile-label">Santiago</span>
-                                </div>
+                            <ul class="about-pillar-bullets">
+                                <li>Quantitative spectroscopy and binaries as a core lens.</li>
+                                <li>Linking observation → inference → population interpretation.</li>
+                                <li>Tool-building for reproducibility and collaboration.</li>
+                            </ul>
+                            <p class="about-pillar-proof">A “surveys + physics” perspective that scales.</p>
+                        </article>
+                        <article class="about-pillar">
+                            <div class="about-pillar-header">
+                                {% include icons/about-execution.svg class="about-pillar-icon" %}
+                                <h3 class="about-pillar-title">Currently</h3>
                             </div>
-                        </div>
+                            <ul class="about-pillar-bullets">
+                                <li>Building survey-to-inference RV/orbit modeling at scale.</li>
+                                <li>Shipping reusable, open pipeline components and outputs.</li>
+                                <li>Designing follow-up strategies that validate candidates efficiently.</li>
+                            </ul>
+                            <p class="about-pillar-proof">From selection → RV modeling → population constraints.</p>
+                        </article>
+                        <article class="about-pillar about-pillar--focus">
+                            <div class="about-pillar-header">
+                                {% include icons/about-focus.svg class="about-pillar-icon" %}
+                                <h3 class="about-pillar-title">Research focus</h3>
+                            </div>
+                            <ul class="about-pillar-bullets">
+                                <li>How do close-binary demographics depend on environment and metallicity?</li>
+                                <li>Which interaction products (mass transfer, mergers) are observable at scale?</li>
+                                <li>How can we discover and validate compact companions efficiently in surveys?</li>
+                            </ul>
+                            <div class="about-pipeline" aria-hidden="true">
+                                {% include icons/about-pipeline.svg class="about-pipeline-svg" %}
+                            </div>
+                        </article>
                     </div>
-                    <div class="about-card">
-                        <p class="card-kicker">Currently:</p>
-                        <h3 class="card-title">Researcher at MPIA, Heidelberg</h3>
-                        <span class="card-underline"></span>
-                        <div class="card-media card-media--now">
-                            <img class="now-image now-image--mpia" src="{{ '/assets/images/about/mpia.png' | relative_url }}" alt="MPIA illustration" loading="lazy" decoding="async">
-                            <img class="now-image now-image--heidelberg" src="{{ '/assets/images/heidelberg.png' | relative_url }}" alt="Heidelberg skyline illustration" loading="lazy" decoding="async">
-                        </div>
+
+                    <div class="about-credibility" aria-label="Credibility strip">
+                        <div class="about-cred-item"><strong>Scale</strong><span>Survey-scale spectroscopy</span></div>
+                        <div class="about-cred-item"><strong>Inference</strong><span>Probabilistic RV/orbit modeling</span></div>
+                        <div class="about-cred-item"><strong>Delivery</strong><span>Open tools &amp; reproducible pipelines</span></div>
+                        <div class="about-cred-item"><strong>Impact</strong><span>Compact companions &amp; evolution constraints</span></div>
                     </div>
-                    <div class="about-card">
-                        <p class="card-kicker">Research focus:</p>
-                        <h3 class="card-title">Massive binary stars &amp; gravitational waves</h3>
-                        <span class="card-underline"></span>
-                        <div class="card-media">
-                            <img src="{{ '/assets/images/about/research.svg' | relative_url }}" alt="Research focus illustration" loading="lazy" decoding="async">
+
+                    <details class="about-accordion">
+                        <summary>Why massive binaries?</summary>
+                        <div class="about-accordion-body">
+                            <p>
+                                Binaries set the final fates of many massive stars: they drive mass transfer, spin-up, and mergers, producing stripped stars,
+                                supernovae, X-ray binaries, and compact-object pairs.
+                            </p>
+                            <p>
+                                By measuring binary demographics and interaction products across environments, we can connect what we observe today to the
+                                formation channels of compact companions and gravitational-wave sources.
+                            </p>
                         </div>
-                    </div>
-                    <div class="about-card">
-                        <p class="card-kicker">How I work:</p>
-                        <h3 class="card-title">Spectroscopic surveys, orbital dynamics, stellar evolution</h3>
-                        <span class="card-underline"></span>
-                        <div class="card-media">
-                            <img src="{{ '/assets/images/about/how.svg' | relative_url }}" alt="Workflow illustration" loading="lazy" decoding="async">
-                        </div>
-                    </div>
+                    </details>
                 </div>
             </div>
         </div>

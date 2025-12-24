@@ -22,7 +22,7 @@ Example:
 - Blog: start document to put ideas about future blog entries [DONE][2025-12-24]
 
 ## Next
-- Re-style the "About" section. Follow instructions in `about-revamp.md`. This will need a new branch to work on these changes.
+- Re-style the "About" section. Follow instructions in `about-revamp.md`. This will need a new branch to work on these changes. [STARTED][2025-12-24]
 - Add extra buttons to display publications:
     - latest 10 (default)
     - More cited

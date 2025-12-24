@@ -17,6 +17,7 @@ This project does not need strict SemVer; entries are grouped by release date.
 - Publications UI: show title first; improved title hover/focus styling
 - Publications badges: stronger hover/focus affordance (ADS/arXiv/DOI/Cited)
 - Publications data: strip ADS HTML from titles; include page ranges when present
+- About section redesigned to follow `about-revamp.md` (“clean hero + 3 pillars”, credibility strip, and CTA path)
 - Homepage hero background now uses a local, smaller image (`heroimage: /assets/images/30dor.jpeg`)
 - Images resized and lazy-loaded in About/footer for faster loads
 - Project pages: added “Key results (so far)” where missing

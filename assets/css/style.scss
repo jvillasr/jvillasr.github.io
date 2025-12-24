@@ -481,6 +481,8 @@ a.navbar-item.is-active {
     }
 }
 
+@import "about"; // _sass/_about.scss
+
 #contact {
     .contact-button {
         margin: 0.5rem auto;

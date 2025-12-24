@@ -1,0 +1,25 @@
+<svg class="{{ include.class | default: 'footer-icon' }}" viewBox="0 0 560 64" aria-hidden="true" focusable="false">
+  <g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="42" cy="32" r="10"/>
+    <circle cx="154" cy="32" r="10"/>
+    <circle cx="266" cy="32" r="10"/>
+    <circle cx="378" cy="32" r="10"/>
+    <circle cx="490" cy="32" r="10"/>
+    <path d="M54 32h88"/>
+    <path d="M166 32h88"/>
+    <path d="M278 32h88"/>
+    <path d="M390 32h88"/>
+    <path d="M138 28l8 4-8 4"/>
+    <path d="M250 28l8 4-8 4"/>
+    <path d="M362 28l8 4-8 4"/>
+    <path d="M474 28l8 4-8 4"/>
+  </g>
+  <g fill="currentColor" font-family="inherit" font-size="12">
+    <text x="42" y="56" text-anchor="middle">Survey</text>
+    <text x="154" y="56" text-anchor="middle">RVs</text>
+    <text x="266" y="56" text-anchor="middle">Orbits</text>
+    <text x="378" y="56" text-anchor="middle">Populations</text>
+    <text x="490" y="56" text-anchor="middle">Compact objects / GW</text>
+  </g>
+</svg>
+
