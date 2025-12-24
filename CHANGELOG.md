@@ -21,7 +21,7 @@ This project does not need strict SemVer; entries are grouped by release date.
 - Images resized and lazy-loaded in About/footer for faster loads
 - Project pages: added “Key results (so far)” where missing
 - Roadmap reprioritised to reflect current site state
- - Sample theme posts are kept locally but removed from the published blog
+- Sample theme posts are kept locally but removed from the published blog
 - Blog post layout: constrain header width for readability
 - Blog post layout: single-column hero + left-aligned metadata
 
@@ -31,6 +31,8 @@ This project does not need strict SemVer; entries are grouped by release date.
 - Contact/footer icon sizing and alignment (switch key icons to inline SVG so they render without Font Awesome)
 - Missing About illustrations (`research`/`how`) replaced with lightweight SVGs
 - Blog listing and search links now use relative URLs (local preview stays on localhost)
+- Cache-bust `assets/css/style.css` per build revision to avoid stale CSS on GitHub Pages
+- Footer Contact link now points to the homepage `#contact` section
 
 ---
 

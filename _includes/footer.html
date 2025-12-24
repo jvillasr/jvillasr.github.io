@@ -8,7 +8,7 @@
         <div class="container columns is-variable is-6 is-multiline">
             <!--Profile Section-->
             <div class="column is-12-mobile is-5-tablet is-4-desktop">
-                <a class="footer-profile" href="{{site.url}}{{site.baseurl}}/#about">
+                <a class="footer-profile" href="{{ '/' | relative_url }}#about">
                     <figure class="image is-96x96">
                         <img class="is-rounded" src="{{site.author-image}}" alt="{{site.author-name}}" loading="lazy" decoding="async">
                     </figure>
@@ -28,7 +28,7 @@
                     <li><a href="{{ '/research/' | relative_url }}">Research</a></li>
                     <li><a href="{{ '/resume/' | relative_url }}">Resume</a></li>
                     <li><a href="{{ '/projects/' | relative_url }}">Projects</a></li>
-                    <li><a href="{{ '/contact/' | relative_url }}">Contact</a></li>
+                    <li><a href="{{ '/' | relative_url }}#contact">Contact</a></li>
                 </ul>
             </div>
 

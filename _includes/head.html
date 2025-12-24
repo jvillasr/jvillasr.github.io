@@ -1,7 +1,12 @@
 <head>
     {% include meta.html %}
     <title>{{site.title}}</title>
-    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=6' | relative_url }}">
+    {% if site.github and site.github.build_revision %}
+        {% assign cache_bust = site.github.build_revision %}
+    {% else %}
+        {% assign cache_bust = site.time | date: '%s' %}
+    {% endif %}
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}?v={{ cache_bust }}">
     <script src="https://kit.fontawesome.com/6a97161b76.js" crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="{% if site.favicon-url %}{{site.favicon-url}}{% else %}{{ 'assets/images/logo.png' | absolute_url }}{% endif %}" type="image/x-icon">
 </head>
