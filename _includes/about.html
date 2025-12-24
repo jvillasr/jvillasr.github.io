@@ -3,29 +3,48 @@
         <div class="container">
             <p class="about-tagline">Astronomer exploring massive binary stars, born in Chile and researching at MPIA in Heidelberg.</p>
             <div class="about-infographic">
-                <div class="about-avatar-card">
-                    <div class="about-avatar-frame">
-                        <div class="about-avatar-photo">
-                            <img class="is-rounded" src="{{site.author-image}}" alt="{{site.author-name}}">
+                    <div class="about-avatar-card">
+                        <div class="about-avatar-frame">
+                            <div class="about-avatar-photo">
+                            <img class="is-rounded" src="{{site.author-image}}" alt="{{site.author-name}}" loading="lazy" decoding="async">
+                            </div>
                         </div>
+                        <p class="about-name">{{site.author-name}}</p>
                     </div>
-                    <p class="about-name">{{site.author-name}}</p>
-                </div>
                 <div class="about-cards-grid">
-                    <div class="about-card">
+                    <div class="about-card about-card--chile">
                         <p class="card-kicker">From:</p>
                         <h3 class="card-title">Chile</h3>
                         <span class="card-underline"></span>
-                        <div class="card-media">
-                            <img src="{{site.url}}{{site.baseurl}}/assets/images/about/chile.png" alt="Chile illustration">
+                        <div class="card-media card-media--chile">
+                            <div class="chile-illustration">
+                                <img class="chile-map" src="{{ '/assets/images/about/chile.png' | relative_url }}" alt="Chile illustration" loading="lazy" decoding="async">
+                                <div class="chile-point chile-point--paranal"></div>
+                                <div class="chile-point chile-point--santiago"></div>
+                                <div class="chile-connector chile-connector--paranal"></div>
+                                <div class="chile-connector chile-connector--santiago"></div>
+                                <div class="chile-icon chile-icon--paranal">
+                                    <div class="chile-icon-thumb">
+                                        <img src="{{ '/assets/images/about/vlt.png' | relative_url }}" alt="Very Large Telescope, Paranal" loading="lazy" decoding="async">
+                                    </div>
+                                    <span class="chile-label">Paranal</span>
+                                </div>
+                                <div class="chile-icon chile-icon--santiago">
+                                    <div class="chile-icon-thumb">
+                                        <img src="{{ '/assets/images/about/andes-scl.png' | relative_url }}" alt="Andes mountains near Santiago" loading="lazy" decoding="async">
+                                    </div>
+                                    <span class="chile-label">Santiago</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="about-card">
-                        <p class="card-kicker">Now:</p>
+                        <p class="card-kicker">Currently:</p>
                         <h3 class="card-title">Researcher at MPIA, Heidelberg</h3>
                         <span class="card-underline"></span>
-                        <div class="card-media">
-                            <img src="{{site.url}}{{site.baseurl}}/assets/images/about/mpia.png" alt="MPIA Heidelberg illustration">
+                        <div class="card-media card-media--now">
+                            <img class="now-image now-image--mpia" src="{{ '/assets/images/about/mpia.png' | relative_url }}" alt="MPIA illustration" loading="lazy" decoding="async">
+                            <img class="now-image now-image--heidelberg" src="{{ '/assets/images/heidelberg.png' | relative_url }}" alt="Heidelberg skyline illustration" loading="lazy" decoding="async">
                         </div>
                     </div>
                     <div class="about-card">
@@ -33,7 +52,7 @@
                         <h3 class="card-title">Massive binary stars &amp; gravitational waves</h3>
                         <span class="card-underline"></span>
                         <div class="card-media">
-                            <img src="{{site.url}}{{site.baseurl}}/assets/images/about/research.png" alt="Research focus illustration">
+                            <img src="{{ '/assets/images/about/research.svg' | relative_url }}" alt="Research focus illustration" loading="lazy" decoding="async">
                         </div>
                     </div>
                     <div class="about-card">
@@ -41,7 +60,7 @@
                         <h3 class="card-title">Spectroscopic surveys, orbital dynamics, stellar evolution</h3>
                         <span class="card-underline"></span>
                         <div class="card-media">
-                            <img src="{{site.url}}{{site.baseurl}}/assets/images/about/how.png" alt="Workflow illustration">
+                            <img src="{{ '/assets/images/about/how.svg' | relative_url }}" alt="Workflow illustration" loading="lazy" decoding="async">
                         </div>
                     </div>
                 </div>

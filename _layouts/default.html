@@ -17,26 +17,39 @@ layout: compress
   {% include footer.html %}
 </body>
 <script>
-  var navItems = document.getElementsByClassName('navbar-item');
-  var heroes = document.getElementsByClassName('hero');
-  const viewOffset = 200; 
+  document.addEventListener('DOMContentLoaded', function () {
+    var navLinks = document.querySelectorAll('.navbar-end > a.navbar-item[data-section]');
+    var sections = document.querySelectorAll('.hero[id]');
+    var viewOffset = 200;
 
-  window.addEventListener("scroll", function (event) {
-    var scroll = this.scrollY;
-    var position = window.pageYOffset;
-
-    for (var i = 0; i < navItems.length; i++) {
-      navItems[i].classList.remove('is-active');
+    function clearActive() {
+      for (var i = 0; i < navLinks.length; i++) navLinks[i].classList.remove('is-active');
     }
 
-    for (var i = 0; i < heroes.length; i++) {
-        var sectionTop = heroes[i].offsetTop-viewOffset;
-        var sectionBottom = heroes[i].offsetTop + heroes[i].offsetHeight-viewOffset;
-
-        if (scroll >= sectionTop && scroll < sectionBottom) {
-          navItems[i+1].classList.add('is-active');
+    function setActive(sectionId) {
+      for (var i = 0; i < navLinks.length; i++) {
+        if (navLinks[i].dataset.section === sectionId) {
+          navLinks[i].classList.add('is-active');
+          break;
+        }
       }
     }
+
+    function onScroll() {
+      var scrollY = window.scrollY || window.pageYOffset || 0;
+      for (var i = 0; i < sections.length; i++) {
+        var top = sections[i].offsetTop - viewOffset;
+        var bottom = sections[i].offsetTop + sections[i].offsetHeight - viewOffset;
+        if (scrollY >= top && scrollY < bottom) {
+          clearActive();
+          setActive(sections[i].id);
+          return;
+        }
+      }
+    }
+
+    window.addEventListener('scroll', onScroll);
+    onScroll();
   });
 </script>
 

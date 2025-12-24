@@ -1,3 +1,112 @@
+- bibcode: 2025arXiv251212102L
+  title: 'Binarity at LOw Metallicity (BLOeM): Projected rotational velocities'
+  authors:
+  - Lennon, D. J.
+  - Berlanas, S. R.
+  - Herrero, A.
+  - Britavskiy, N.
+  - Dufton, P. L.
+  - Langer, N.
+  - Jin, H.
+  - Schootemeijer, A.
+  - Menon, A.
+  - Bestenlehner, J.
+  - Crowther, P.
+  - Vink, J. S.
+  - Bodensteiner, J.
+  - Shenar, T.
+  - Deshmukh, K.
+  - Villasenor, J.
+  - Patrick, L.
+  - Najarro, F.
+  - de Koter, A.
+  - Mahy, L.
+  - Bowman, D. M.
+  - Bobrick, A.
+  - Evans, C. J.
+  - Gull, M.
+  - Holgado, G.
+  - Katabi, Z.
+  - Kubat, J.
+  - Marchant, P.
+  - Pauli, D.
+  - Pawlak, M.
+  - Renzo, M.
+  - Rocha, D. F.
+  - Sander, A. A. C.
+  - Sayada, T.
+  - Simon-Diaz, S.
+  - Stoop, M.
+  - Valli, R.
+  - Wang, C.
+  - Xu, X.-T.
+  authors_html: D. J. Lennon; S. R. Berlanas; A. Herrero; N. Britavskiy; P. L. Dufton;
+    N. Langer; H. Jin; A. Schootemeijer; A. Menon; J. Bestenlehner; P. Crowther; J.
+    S. Vink; J. Bodensteiner; T. Shenar; K. Deshmukh; <strong>J. Villasenor</strong>;
+    L. Patrick; F. Najarro; A. de Koter; L. Mahy; D. M. Bowman; A. Bobrick; C. J.
+    Evans; M. Gull; G. Holgado; Z. Katabi; J. Kubat; P. Marchant; D. Pauli; M. Pawlak;
+    M. Renzo; D. F. Rocha; A. A. C. Sander; T. Sayada; S. Simon-Diaz; M. Stoop; R.
+    Valli; C. Wang; X.-T. Xu
+  authors_short_html: D. J. Lennon; S. R. Berlanas; A. Herrero; N. Britavskiy; P.
+    L. Dufton; N. Langer; H. Jin; <strong>J. Villasenor</strong>, <em>et&nbsp;al.</em>
+  authors_display:
+  - D. J. Lennon
+  - S. R. Berlanas
+  - A. Herrero
+  - N. Britavskiy
+  - P. L. Dufton
+  - N. Langer
+  - H. Jin
+  - A. Schootemeijer
+  - A. Menon
+  - J. Bestenlehner
+  - P. Crowther
+  - J. S. Vink
+  - J. Bodensteiner
+  - T. Shenar
+  - K. Deshmukh
+  - J. Villasenor
+  - L. Patrick
+  - F. Najarro
+  - A. de Koter
+  - L. Mahy
+  - D. M. Bowman
+  - A. Bobrick
+  - C. J. Evans
+  - M. Gull
+  - G. Holgado
+  - Z. Katabi
+  - J. Kubat
+  - P. Marchant
+  - D. Pauli
+  - M. Pawlak
+  - M. Renzo
+  - D. F. Rocha
+  - A. A. C. Sander
+  - T. Sayada
+  - S. Simon-Diaz
+  - M. Stoop
+  - R. Valli
+  - C. Wang
+  - X.-T. Xu
+  me_index: 15
+  n_authors: 39
+  year: '2025'
+  pub: arXiv e-prints
+  volume: ''
+  page: arXiv:2512.12102
+  page_range: ''
+  doi: 10.48550/arXiv.2512.12102
+  arxiv: '2512.12102'
+  adsurl: https://ui.adsabs.harvard.edu/abs/2025arXiv251212102L
+  best_url: https://doi.org/10.48550/arXiv.2512.12102
+  refereed: false
+  citations: 0
+  month: ''
+  month_num: '12'
+  sortdate: '2025-12-31'
+  tags:
+  - bloem
 - bibcode: 2025arXiv251115347S
   title: Interacting binaries on the Main Sequence as in-situ tracers of mass transfer
     efficiency and stability
@@ -37,6 +146,7 @@
   pub: arXiv e-prints
   volume: ''
   page: arXiv:2511.15347
+  page_range: ''
   doi: 10.48550/arXiv.2511.15347
   arxiv: '2511.15347'
   adsurl: https://ui.adsabs.harvard.edu/abs/2025arXiv251115347S
@@ -75,12 +185,13 @@
   pub: arXiv e-prints
   volume: ''
   page: arXiv:2511.13692
+  page_range: ''
   doi: 10.48550/arXiv.2511.13692
   arxiv: '2511.13692'
   adsurl: https://ui.adsabs.harvard.edu/abs/2025arXiv251113692S
   best_url: https://doi.org/10.48550/arXiv.2511.13692
   refereed: false
-  citations: 0
+  citations: 1
   month: ''
   month_num: '11'
   sortdate: '2025-11-31'
@@ -114,6 +225,7 @@
   pub: arXiv e-prints
   volume: ''
   page: arXiv:2511.08675
+  page_range: ''
   doi: 10.48550/arXiv.2511.08675
   arxiv: '2511.08675'
   adsurl: https://ui.adsabs.harvard.edu/abs/2025arXiv251108675V
@@ -125,8 +237,8 @@
   sortdate: '2025-11-31'
   tags:
   - bloem
-- bibcode: 2025arXiv250910387Z
-  title: 'The large-scale kinematics of young stars in the Milky Way disc: first results
+- bibcode: 2025A&A...703A.303Z
+  title: 'The large-scale kinematics of young stars in the Milky Way disc: First results
     from SDSS-V'
   authors:
   - Zari, Eleonora
@@ -181,18 +293,19 @@
   me_index: 1
   n_authors: 20
   year: '2025'
-  pub: arXiv e-prints
-  volume: ''
-  page: arXiv:2509.10387
-  doi: 10.48550/arXiv.2509.10387
+  pub: Astronomy and Astrophysics
+  volume: '703'
+  page: A303
+  page_range: ''
+  doi: 10.1051/0004-6361/202556444
   arxiv: '2509.10387'
-  adsurl: https://ui.adsabs.harvard.edu/abs/2025arXiv250910387Z
-  best_url: https://doi.org/10.48550/arXiv.2509.10387
-  refereed: false
+  adsurl: https://ui.adsabs.harvard.edu/abs/2025A&A...703A.303Z
+  best_url: https://doi.org/10.1051/0004-6361/202556444
+  refereed: true
   citations: 0
-  month: ''
-  month_num: 09
-  sortdate: '2025-09-31'
+  month: nov
+  month_num: '11'
+  sortdate: '2025-11-15'
   tags:
   - sdssv
 - bibcode: 2025NatAs...9.1337S
@@ -374,12 +487,13 @@
   pub: Nature Astronomy
   volume: '9'
   page: '1337'
+  page_range: '1'
   doi: 10.1038/s41550-025-02610-x
   arxiv: '2509.12488'
   adsurl: https://ui.adsabs.harvard.edu/abs/2025NatAs...9.1337S
   best_url: https://doi.org/10.1038/s41550-025-02610-x
   refereed: true
-  citations: 3
+  citations: 7
   month: sep
   month_num: 09
   sortdate: '2025-09-15'
@@ -424,12 +538,13 @@
   pub: Astronomy and Astrophysics
   volume: '701'
   page: A9
+  page_range: ''
   doi: 10.1051/0004-6361/202452504
   arxiv: '2504.06973'
   adsurl: https://ui.adsabs.harvard.edu/abs/2025A&A...701A...9M
   best_url: https://doi.org/10.1051/0004-6361/202452504
   refereed: true
-  citations: 6
+  citations: 7
   month: sep
   month_num: 09
   sortdate: '2025-09-15'
@@ -916,12 +1031,13 @@
   pub: arXiv e-prints
   volume: ''
   page: arXiv:2507.07093
+  page_range: ''
   doi: 10.48550/arXiv.2507.07093
   arxiv: '2507.07093'
   adsurl: https://ui.adsabs.harvard.edu/abs/2025arXiv250707093S
   best_url: https://doi.org/10.48550/arXiv.2507.07093
   refereed: false
-  citations: 22
+  citations: 26
   month: ''
   month_num: '07'
   sortdate: '2025-07-31'
@@ -1426,12 +1542,13 @@
   pub: arXiv e-prints
   volume: ''
   page: arXiv:2507.06989
+  page_range: ''
   doi: 10.48550/arXiv.2507.06989
   arxiv: '2507.06989'
   adsurl: https://ui.adsabs.harvard.edu/abs/2025arXiv250706989K
   best_url: https://doi.org/10.48550/arXiv.2507.06989
   refereed: false
-  citations: 31
+  citations: 40
   month: ''
   month_num: '07'
   sortdate: '2025-07-31'
@@ -1439,7 +1556,7 @@
   - sdssv
 - bibcode: 2025A&A...698A..41V
   title: 'Binarity at LOw Metallicity (BLOeM): Enhanced multiplicity of early B-type
-    dwarfs and giants at Z = 0.2 Z<SUB>⊙</SUB>'
+    dwarfs and giants at Z = 0.2 Z⊙'
   authors:
   - Villaseñor, J. I.
   - Sana, H.
@@ -1524,12 +1641,13 @@
   pub: Astronomy and Astrophysics
   volume: '698'
   page: A41
+  page_range: ''
   doi: 10.1051/0004-6361/202453166
   arxiv: '2503.21936'
   adsurl: https://ui.adsabs.harvard.edu/abs/2025A&A...698A..41V
   best_url: https://doi.org/10.1051/0004-6361/202453166
   refereed: true
-  citations: 13
+  citations: 15
   month: jun
   month_num: '06'
   sortdate: '2025-06-15'
@@ -1625,12 +1743,13 @@
   pub: Astronomy and Astrophysics
   volume: '698'
   page: A40
+  page_range: ''
   doi: 10.1051/0004-6361/202452963
   arxiv: '2502.12239'
   adsurl: https://ui.adsabs.harvard.edu/abs/2025A&A...698A..40B
   best_url: https://doi.org/10.1051/0004-6361/202452963
   refereed: true
-  citations: 7
+  citations: 8
   month: jun
   month_num: '06'
   sortdate: '2025-06-15'
@@ -1734,12 +1853,13 @@
   pub: Astronomy and Astrophysics
   volume: '698'
   page: A39
+  page_range: ''
   doi: 10.1051/0004-6361/202452949
   arxiv: '2502.02644'
   adsurl: https://ui.adsabs.harvard.edu/abs/2025A&A...698A..39P
   best_url: https://doi.org/10.1051/0004-6361/202452949
   refereed: true
-  citations: 13
+  citations: 14
   month: jun
   month_num: '06'
   sortdate: '2025-06-15'
@@ -1852,12 +1972,13 @@
   pub: Astronomy and Astrophysics
   volume: '698'
   page: A38
+  page_range: ''
   doi: 10.1051/0004-6361/202452623
   arxiv: '2502.02641'
   adsurl: https://ui.adsabs.harvard.edu/abs/2025A&A...698A..38B
   best_url: https://doi.org/10.1051/0004-6361/202452623
   refereed: true
-  citations: 11
+  citations: 13
   month: jun
   month_num: '06'
   sortdate: '2025-06-15'
@@ -1918,6 +2039,7 @@
   pub: Astronomy and Astrophysics
   volume: '692'
   page: A109
+  page_range: ''
   doi: 10.1051/0004-6361/202452352
   arxiv: '2409.15212'
   adsurl: https://ui.adsabs.harvard.edu/abs/2024A&A...692A.109D
@@ -2111,12 +2233,13 @@
   pub: Astronomy and Astrophysics
   volume: '690'
   page: A289
+  page_range: ''
   doi: 10.1051/0004-6361/202451586
   arxiv: '2407.14593'
   adsurl: https://ui.adsabs.harvard.edu/abs/2024A&A...690A.289S
   best_url: https://doi.org/10.1051/0004-6361/202451586
   refereed: true
-  citations: 33
+  citations: 37
   month: oct
   month_num: '10'
   sortdate: '2024-10-15'
@@ -2165,12 +2288,13 @@
   pub: arXiv e-prints
   volume: ''
   page: arXiv:2409.20252
+  page_range: ''
   doi: 10.48550/arXiv.2409.20252
   arxiv: '2409.20252'
   adsurl: https://ui.adsabs.harvard.edu/abs/2024arXiv240920252F
   best_url: https://doi.org/10.48550/arXiv.2409.20252
   refereed: false
-  citations: 9
+  citations: 10
   month: ''
   month_num: 09
   sortdate: '2024-09-31'
@@ -2203,12 +2327,13 @@
   pub: Astronomy and Astrophysics
   volume: '688'
   page: A141
+  page_range: ''
   doi: 10.1051/0004-6361/202450583
   arxiv: '2405.17608'
   adsurl: https://ui.adsabs.harvard.edu/abs/2024A&A...688A.141L
   best_url: https://doi.org/10.1051/0004-6361/202450583
   refereed: true
-  citations: 2
+  citations: 3
   month: aug
   month_num: 08
   sortdate: '2024-08-15'
@@ -2260,12 +2385,13 @@
   pub: Monthly Notices of the Royal Astronomical Society
   volume: '525'
   page: '5121'
+  page_range: '5'
   doi: 10.1093/mnras/stad2533
   arxiv: '2307.07766'
   adsurl: https://ui.adsabs.harvard.edu/abs/2023MNRAS.525.5121V
   best_url: https://doi.org/10.1093/mnras/stad2533
   refereed: true
-  citations: 25
+  citations: 26
   month: nov
   month_num: '11'
   sortdate: '2023-11-15'
@@ -2306,6 +2432,7 @@
   pub: Astronomy and Astrophysics
   volume: '674'
   page: A60
+  page_range: ''
   doi: 10.1051/0004-6361/202244742
   arxiv: '2210.07149'
   adsurl: https://ui.adsabs.harvard.edu/abs/2023A&A...674A..60B
@@ -2347,12 +2474,13 @@
   pub: Astronomy and Astrophysics
   volume: '665'
   page: A180
+  page_range: ''
   doi: 10.1051/0004-6361/202142413
   arxiv: '2111.12173'
   adsurl: https://ui.adsabs.harvard.edu/abs/2022A&A...665A.180L
   best_url: https://doi.org/10.1051/0004-6361/202142413
   refereed: true
-  citations: 24
+  citations: 25
   month: sep
   month_num: 09
   sortdate: '2022-09-15'
@@ -2387,12 +2515,13 @@
   pub: Monthly Notices of the Royal Astronomical Society
   volume: '512'
   page: '3331'
+  page_range: '3'
   doi: 10.1093/mnras/stac630
   arxiv: '2203.02440'
   adsurl: https://ui.adsabs.harvard.edu/abs/2022MNRAS.512.3331D
   best_url: https://doi.org/10.1093/mnras/stac630
   refereed: true
-  citations: 13
+  citations: 15
   month: may
   month_num: '05'
   sortdate: '2022-05-15'
@@ -2424,6 +2553,7 @@
   pub: Astronomy and Astrophysics
   volume: '658'
   page: A69
+  page_range: ''
   doi: 10.1051/0004-6361/202141037
   arxiv: '2108.07814'
   adsurl: https://ui.adsabs.harvard.edu/abs/2022A&A...658A..69B
@@ -2467,12 +2597,13 @@
   pub: Monthly Notices of the Royal Astronomical Society
   volume: '507'
   page: '5348'
+  page_range: '5'
   doi: 10.1093/mnras/stab2197
   arxiv: '2107.10170'
   adsurl: https://ui.adsabs.harvard.edu/abs/2021MNRAS.507.5348V
   best_url: https://doi.org/10.1093/mnras/stab2197
   refereed: true
-  citations: 49
+  citations: 50
   month: nov
   month_num: '11'
   sortdate: '2021-11-15'
@@ -2514,6 +2645,7 @@
   pub: Monthly Notices of the Royal Astronomical Society
   volume: '493'
   page: '1197'
+  page_range: '1'
   doi: 10.1093/mnras/staa331
   arxiv: ''
   adsurl: https://ui.adsabs.harvard.edu/abs/2020MNRAS.493.1197R
@@ -2630,6 +2762,7 @@
   pub: The Messenger
   volume: '181'
   page: '22'
+  page_range: '2'
   doi: 10.18727/0722-6691/5207
   arxiv: ''
   adsurl: https://ui.adsabs.harvard.edu/abs/2020Msngr.181...22E
@@ -2684,6 +2817,7 @@
   pub: The Astrophysical Journal Supplement Series
   volume: '227'
   page: '6'
+  page_range: ''
   doi: 10.3847/0067-0049/227/1/6
   arxiv: '1609.05246'
   adsurl: https://ui.adsabs.harvard.edu/abs/2016ApJS..227....6V

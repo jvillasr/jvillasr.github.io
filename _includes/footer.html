@@ -10,7 +10,7 @@
             <div class="column is-12-mobile is-5-tablet is-4-desktop">
                 <a class="footer-profile" href="{{site.url}}{{site.baseurl}}/#about">
                     <figure class="image is-96x96">
-                        <img class="is-rounded" src="{{site.author-image}}" alt="{{site.author-name}}">
+                        <img class="is-rounded" src="{{site.author-image}}" alt="{{site.author-name}}" loading="lazy" decoding="async">
                     </figure>
                     <div>
                         <p class="footer-eyebrow">Astronomer</p>
@@ -38,13 +38,13 @@
                 <ul class="footer-contact">
                     {% if site.email %}
                     <li>
-                        <i class="far fa-envelope"></i>
+                        {% include icons/email.svg class="footer-icon footer-icon--email" %}
                         <a href="mailto:{{ site.email }}">Email me</a>
                     </li>
                     {% endif %}
                     {% if site.github_username %}
                     <li>
-                        <i class="fab fa-github"></i>
+                        {% include icons/github.svg class="footer-icon footer-icon--github" %}
                         <a href="https://github.com/{{ site.github_username | strip }}" target="_blank" rel="noopener">GitHub</a>
                     </li>
                     {% endif %}
@@ -58,8 +58,14 @@
                     {% endif %}
                     {% if site.orcid_username %}
                     <li>
-                        <i class="fab fa-orcid orcid-icon"></i>
+                        {% include icons/orcid.svg class="footer-icon footer-icon--orcid" %}
                         <a href="https://orcid.org/{{ site.orcid_username }}" target="_blank" rel="noopener">ORCID</a>
+                    </li>
+                    {% endif %}
+                    {% if site.facebook_username %}
+                    <li>
+                        {% include icons/facebook.svg class="footer-icon footer-icon--facebook" %}
+                        <a href="https://www.facebook.com/{{ site.facebook_username }}" target="_blank" rel="noopener">Facebook</a>
                     </li>
                     {% endif %}
                 </ul>

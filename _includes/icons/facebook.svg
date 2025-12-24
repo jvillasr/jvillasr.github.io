@@ -1,0 +1,3 @@
+<svg class="{{ include.class | default: 'footer-icon' }}" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+  <path fill="currentColor" d="M13.5 22v-8h2.67l.5-3H13.5V9.5c0-.87.3-1.5 1.6-1.5h1.8V5.3c-.31-.04-1.38-.13-2.64-.13-2.62 0-4.41 1.6-4.41 4.54V11H7v3h2.85v8H13.5Z"/>
+</svg>

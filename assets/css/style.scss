@@ -203,6 +203,11 @@ a.navbar-item.is-active {
         transition: transform 0.15s ease, box-shadow 0.15s ease;
     }
 
+    .about-card--chile {
+        padding-left: 0.85rem;
+        padding-right: 0.85rem;
+    }
+
     .about-card:hover {
         transform: translateY(-4px);
         box-shadow: 0px 18px 32px rgba(0, 0, 0, 0.12);
@@ -241,10 +246,183 @@ a.navbar-item.is-active {
         padding-top: 0.75rem;
     }
 
+    .card-media--chile {
+        justify-content: flex-start;
+        padding-left: 0;
+        width: 100%;
+        align-items: flex-start;
+    }
+
+    .card-media--chile .chile-illustration {
+        margin: 0;
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: auto;
+    }
+
     .card-media img {
         max-width: 85%;
         max-height: 140px;
         object-fit: contain;
+    }
+
+    .card-media--now {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+        padding-top: 1rem;
+    }
+
+    .now-image {
+        width: 99%;
+        max-width: 260px;
+        height: auto;
+        object-fit: contain;
+    }
+
+    .now-image--mpia {
+        margin-bottom: 0.4rem;
+    }
+
+    .now-image--heidelberg {
+        width: 100%;
+        max-width: 260px;
+        margin-top: 0.2rem;
+    }
+
+    .card-media .chile-map {
+        width: 90%;
+        max-width: 100%;
+        max-height: 280px;
+        object-fit: contain;
+    }
+
+    .chile-illustration {
+        position: relative;
+        width: 100%;
+        max-width: 520px;
+        min-height: 320px;
+        aspect-ratio: 3 / 4;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        margin: 0 auto 0 0;
+    }
+
+    .chile-map {
+        width: 100%;
+        max-width: none;
+        max-height: 100%;
+        object-fit: contain;
+        display: block;
+        margin-left: -30%;
+    }
+
+    .chile-point {
+        position: absolute;
+        width: 11px;
+        height: 11px;
+        border-radius: 50%;
+        background: #fff;
+        border: 2px solid var(--about-text);
+        box-shadow: 0 0 0 3px rgba(0, 183, 176, 0.35);
+    }
+
+    .chile-point--paranal {
+        top: 11%;
+        left: 13.8%;
+    }
+
+    .chile-point--santiago {
+        top: 33%;
+        left: 13.0%;
+    }
+
+    .chile-connector {
+        position: absolute;
+        height: 2px;
+        background: var(--about-text);
+        transform-origin: left center;
+        border-radius: 999px;
+    }
+
+    .chile-connector--paranal {
+        top: 12%;
+        left: 18%;
+        width: 35%;
+        transform: rotate(-3deg);
+    }
+
+    .chile-connector--santiago {
+        top: 34.5%;
+        left: 17%;
+        width: 40%;
+        transform: rotate(18deg);
+    }
+
+    .chile-icon {
+        position: absolute;
+        right: 0;
+        width: auto;
+        height: auto;
+        transform: translateX(-40%);
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        gap: 0.35rem;
+        align-items: center;
+        justify-content: flex-start;
+        background: transparent;
+        padding: 0;
+        border-radius: 0;
+        box-shadow: none;
+        border: none;
+        overflow: visible;
+    }
+
+    .chile-icon--paranal {
+        top: -10%;
+        flex-direction: column-reverse;
+    }
+
+    .chile-icon--santiago {
+        top: 30%;
+    }
+
+    .chile-icon img {
+        width: auto;
+        height: 100%;
+        min-width: 100%;
+        object-fit: cover;
+        object-position: center;
+        background: transparent;
+        border-radius: 50%;
+        border: none;
+        padding: 0;
+        box-sizing: border-box;
+        display: block;
+    }
+
+    .chile-icon-thumb {
+        width: 88px;
+        height: 88px;
+        border-radius: 50%;
+        border: 4px solid var(--about-accent);
+        box-shadow: 0 0 0 2px var(--about-text);
+        padding: 0;
+        box-sizing: border-box;
+        background: #fff;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .chile-label {
+        font-size: 0.7rem;
+        font-weight: 600;
+        letter-spacing: 0.02em;
     }
 
     @media (min-width: 1180px) {
@@ -304,7 +482,7 @@ a.navbar-item.is-active {
 }
 
 #contact {
-    #contact-button {
+    .contact-button {
         margin: 0.5rem auto;
         display: flex;
         justify-content: center;
@@ -319,18 +497,26 @@ a.navbar-item.is-active {
             line-height: 1;
             margin: 0;
         }
+
+        i {
+            font-size: 1.35rem;
+        }
+
+        svg {
+            width: 1.35rem;
+            height: 1.35rem;
+        }
     }
 
     svg {
         transition: all 0.15s ease-in-out;
         margin: 0;
-        width: 1.9rem;
-        height: 1.9rem;
+    }
 
-        &:hover {
-            transform: scale(1.10);
-            filter: opacity(0.75);
-        }
+    .contact-button:hover svg,
+    .contact-social a:hover svg {
+        transform: scale(1.10);
+        filter: opacity(0.75);
     }
 
     .contact-social a {
@@ -340,9 +526,12 @@ a.navbar-item.is-active {
         justify-content: center;
     }
 
+    .contact-social svg.footer-icon {
+        width: 1em;
+        height: 1em;
+    }
+
     .contact-bluesky svg {
-        width: 1.5rem;
-        height: 1.5rem;
         fill: currentColor;
         vertical-align: middle;
     }
@@ -554,19 +743,16 @@ a.navbar-item.is-active {
         display: inline-flex;
         align-items: center;
         line-height: 1;
-    }
-
-    .footer-contact .footer-icon:not(svg) {
         width: 1.35rem;
         height: 1.35rem;
         justify-content: center;
-        font-size: 0.85rem;
+        flex: 0 0 1.35rem;
     }
+
+    .footer-contact i { font-size: 1.05rem; }
 
     .footer-contact svg.footer-icon {
         border: none;
-        width: 1rem;
-        height: 1rem;
         padding: 0;
         overflow: visible;
         fill: currentColor;
@@ -772,21 +958,38 @@ a.navbar-item.is-active {
     .title {
         margin: auto;
     }
-    #post-image {
-        border-radius: 0.25rem;
-    }
+	    #post-image {
+	        border-radius: 0.25rem;
+	    }
     .subtitle {
         letter-spacing: 0.05rem;
     }
 
-    #description {
-        margin-bottom: 1.25vmax;
-    }
+	    #description {
+	        margin-bottom: 1.25vmax;
+	    }
 
-    .tag {
-        margin: 0.15rem auto;
-    }
-    .content {
+        .post-hero {
+            margin-bottom: 1.25rem;
+        }
+
+        .post-meta {
+            max-width: 72ch;
+            margin: 0 auto 1.5rem;
+        }
+
+        .post-meta .subtitle {
+            letter-spacing: 0.03rem;
+        }
+
+        .post-meta .tag {
+            margin: 0.15rem 0.15rem 0 0;
+        }
+
+	    .tag {
+	        margin: 0.15rem auto;
+	    }
+	    .content {
         ol, ul, blockquote {
             display: inline-block;
         }
@@ -803,13 +1006,23 @@ a.navbar-item.is-active {
         ul, ol {
             display: inline-block;
         }
-    }
+	    }
 
-    .container {
-        margin: 2.5rem auto;
-        word-break: break-word;
-        max-width: -webkit-fill-available;
-    }
+        .post-content {
+            max-width: 72ch;
+            margin-left: auto;
+            margin-right: auto;
+            line-height: 1.75;
+            font-size: 1.05rem;
+        }
+
+	    .container {
+	        margin: 2.5rem auto;
+	        word-break: break-word;
+	        max-width: 1100px;
+            padding-left: 1.25rem;
+            padding-right: 1.25rem;
+	    }
 
     #disqus_thread {
         margin-top: 5vmax;

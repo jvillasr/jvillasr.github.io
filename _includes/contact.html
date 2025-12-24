@@ -1,80 +1,85 @@
 <section class="hero is-fullheight has-text-centered" id="contact">
     <div class="hero-body">
         <div class="container">
-            <!-- {% unless site.facebook_username == %}
-            <a id="contact-button" href="https://m.me/{{site.facebook_username}}"
-                class="button is-rounded is-uppercase has-text-weight-normal is-black is-outlined has-text-weight-semibold column is-two-fifths"
-                target="_blank">
-                <i class="fab fa-facebook-messenger"></i>Ping me on Messenger
-            </a>
-            {% endunless %} -->
-            {% unless site.email == %}
-            <a id="contact-button" href="mailto:{{site.email}}"
-                class="button is-rounded is-uppercase has-text-weight-normal is-black is-outlined has-text-weight-semibold column is-two-fifths"
-                target="_blank">
-                <i class="fas fa-envelope"></i>Send me an Email
-            </a>
-            {% endunless %}
-            {% unless site.bluesky_handle == %}
-            <a id="contact-button" href="https://bsky.app/profile/{{site.bluesky_handle}}"
-                class="contact-bluesky contact-bluesky-btn button is-rounded is-uppercase has-text-weight-normal is-black is-outlined has-text-weight-semibold column is-two-fifths"
-                target="_blank">
-                <svg class="footer-icon footer-icon--bsky" viewBox="0 0 24 24" aria-hidden="true">
-                    <path fill="currentColor" d="M5.202 2.857C7.954 4.922 10.913 9.11 12 11.358c1.087-2.247 4.046-6.436 6.798-8.501C20.783 1.366 24 .213 24 3.883c0 .732-.42 6.156-.667 7.037-.856 3.061-3.978 3.842-6.755 3.37 4.854.826 6.089 3.562 3.422 6.299-5.065 5.196-7.28-1.304-7.847-2.97-.104-.305-.152-.448-.153-.327 0-.121-.05.022-.153.327-.568 1.666-2.782 8.166-7.847 2.97-2.667-2.737-1.432-5.473 3.422-6.3-2.777.473-5.899-.308-6.755-3.369C.42 10.04 0 4.615 0 3.883c0-3.67 3.217-2.517 5.202-1.026"/>
-                </svg>
-                Say hi on Bluesky
-            </a>
-            {% endunless %}
-            <!-- {% unless site.orcid_username == %}
-            <a id="contact-button" href="https://orcid.org/{{site.orcid_username}}"
-                class="button is-rounded is-uppercase has-text-weight-normal is-black is-outlined has-text-weight-semibold column is-two-fifths"
-                target="_blank">
-                <i class="fab fa-orcid"></i>Visit my ORCID profile
-            </a>
-            {% endunless %} -->
+	            <!-- {% unless site.facebook_username == %}
+	            <a href="https://m.me/{{site.facebook_username}}"
+	                class="contact-button button is-rounded is-uppercase has-text-weight-normal is-black is-outlined has-text-weight-semibold column is-two-fifths"
+	                target="_blank">
+	                <i class="fab fa-facebook-messenger"></i>Ping me on Messenger
+	            </a>
+	            {% endunless %} -->
+	            {% unless site.email == %}
+	            <a href="mailto:{{site.email}}"
+	                class="contact-button button is-rounded is-uppercase has-text-weight-normal is-black is-outlined has-text-weight-semibold column is-two-fifths"
+	                target="_blank">
+	                {% include icons/email.svg class="footer-icon footer-icon--email" %}Send me an Email
+	            </a>
+	            {% endunless %}
+	            {% unless site.bluesky_handle == %}
+	            <a class="contact-button contact-bluesky contact-bluesky-btn button is-rounded is-uppercase has-text-weight-normal is-black is-outlined has-text-weight-semibold column is-two-fifths" href="https://bsky.app/profile/{{site.bluesky_handle}}"
+	                target="_blank" rel="noopener">
+	                <svg class="footer-icon footer-icon--bsky" viewBox="0 0 24 24" aria-hidden="true">
+	                    <path fill="currentColor" d="M5.202 2.857C7.954 4.922 10.913 9.11 12 11.358c1.087-2.247 4.046-6.436 6.798-8.501C20.783 1.366 24 .213 24 3.883c0 .732-.42 6.156-.667 7.037-.856 3.061-3.978 3.842-6.755 3.37 4.854.826 6.089 3.562 3.422 6.299-5.065 5.196-7.28-1.304-7.847-2.97-.104-.305-.152-.448-.153-.327 0-.121-.05.022-.153.327-.568 1.666-2.782 8.166-7.847 2.97-2.667-2.737-1.432-5.473 3.422-6.3-2.777.473-5.899-.308-6.755-3.369C.42 10.04 0 4.615 0 3.883c0-3.67 3.217-2.517 5.202-1.026"/>
+	                </svg>
+	                Say hi on Bluesky
+	            </a>
+	            {% endunless %}
+	            <!-- {% unless site.orcid_username == %}
+	            <a href="https://orcid.org/{{site.orcid_username}}"
+	                class="contact-button button is-rounded is-uppercase has-text-weight-normal is-black is-outlined has-text-weight-semibold column is-two-fifths"
+	                target="_blank">
+	                <i class="fab fa-orcid"></i>Visit my ORCID profile
+	            </a>
+	            {% endunless %} -->
             <hr>
             <h3 class="is-size-5 is-uppercase has-text-weight-semibold has-text-black is-marginless">
                 You Can find me here
             </h3>
-            <div class="column is-full is-size-3 contact-social">
-                {% unless site.facebook_username == %}
-                <a href="http://www.facebook.com/{{site.facebook_username}}" target="_blank" class="has-text-black"><i class="fab fa-facebook"></i></a>
-                {% endunless %}
-                {% unless site.bluesky_handle == %}
-                <a href="https://bsky.app/profile/{{site.bluesky_handle}}" target="_blank" class="has-text-black contact-bluesky">
-                    <svg class="footer-icon footer-icon--bsky" viewBox="0 0 24 24" aria-hidden="true">
-                        <path fill="currentColor" d="M5.202 2.857C7.954 4.922 10.913 9.11 12 11.358c1.087-2.247 4.046-6.436 6.798-8.501C20.783 1.366 24 .213 24 3.883c0 .732-.42 6.156-.667 7.037-.856 3.061-3.978 3.842-6.755 3.37 4.854.826 6.089 3.562 3.422 6.299-5.065 5.196-7.28-1.304-7.847-2.97-.104-.305-.152-.448-.153-.327 0-.121-.05.022-.153.327-.568 1.666-2.782 8.166-7.847 2.97-2.667-2.737-1.432-5.473 3.422-6.3-2.777.473-5.899-.308-6.755-3.369C.42 10.04 0 4.615 0 3.883c0-3.67 3.217-2.517 5.202-1.026"/>
-                    </svg>
-                </a>
-                {% endunless %}
-                {% unless site.instagram_username ==  %}
-                <a href="http://www.instagram.com/{{site.instagram_username}}" target="_blank" class="has-text-black"><i class="fab fa-instagram"></i></a>
-                {% endunless %}
-                {% unless site.orcid_username ==  %}
-                <a href="https://orcid.org/{{site.orcid_username}}" target="_blank" class="has-text-black"><i class="fab fa-orcid"></i></a>
-                {% endunless %}
-                {% unless site.linkedin_username ==  %}
-                <a href="http://www.linkedin.com/in/{{site.linkedin_username}}" target="_blank" class="has-text-black"><i class="fab fa-linkedin"></i></a>
-                {% endunless %}
-                {% unless site.github_username ==  %}
-                <a href="http://www.github.com/{{site.github_username}}" target="_blank" class="has-text-black"><i class="fab fa-github"></i></a>
-                {% endunless %}
-                {% unless site.youtube_channel_id ==  %}
-                <a href="http://www.youtube.com/channel/{{site.youtube_channel_id}}" target="_blank" class="has-text-black"><i class="fab fa-youtube"></i></a>
-                {% endunless %}
-                {% unless site.reddit_username ==  %}
-                <a href="http://www.reddit.com/u/{{site.reddit_username}}" target="_blank" class="has-text-black"><i class="fab fa-reddit"></i></a>
-                {% endunless %}
-                {% unless site.behance_username ==  %}
-                <a href="http://www.behance.com/{{site.behance_username}}" target="_blank" class="has-text-black"><i class="fab fa-behance"></i></a>
-                {% endunless %}
-                {% unless site.dribbble_username ==  %}
-                <a href="http://www.dribbble.com/{{site.dribbble_username}}" target="_blank" class="has-text-black"><i class="fab fa-dribbble"></i></a>
-                {% endunless %}
-                {% unless site.spotify_username ==  %}
-                <a href="http://open.spotify.com/user/{{site.spotify_username}}" target="_blank" class="has-text-black"><i class="fab fa-spotify"></i></a>
-                {% endunless %}
-            </div>
+		            <div class="column is-full is-size-3 contact-social">
+		                {% unless site.github_username ==  %}
+		                <a href="https://github.com/{{site.github_username}}" target="_blank" rel="noopener" class="has-text-black" aria-label="GitHub">
+	                        {% include icons/github.svg class="footer-icon footer-icon--github" %}
+	                    </a>
+		                {% endunless %}
+		                {% unless site.bluesky_handle == %}
+		                <a href="https://bsky.app/profile/{{site.bluesky_handle}}" target="_blank" rel="noopener" class="has-text-black contact-bluesky" aria-label="Bluesky">
+		                    <svg class="footer-icon footer-icon--bsky" viewBox="0 0 24 24" aria-hidden="true">
+		                        <path fill="currentColor" d="M5.202 2.857C7.954 4.922 10.913 9.11 12 11.358c1.087-2.247 4.046-6.436 6.798-8.501C20.783 1.366 24 .213 24 3.883c0 .732-.42 6.156-.667 7.037-.856 3.061-3.978 3.842-6.755 3.37 4.854.826 6.089 3.562 3.422 6.299-5.065 5.196-7.28-1.304-7.847-2.97-.104-.305-.152-.448-.153-.327 0-.121-.05.022-.153.327-.568 1.666-2.782 8.166-7.847 2.97-2.667-2.737-1.432-5.473 3.422-6.3-2.777.473-5.899-.308-6.755-3.369C.42 10.04 0 4.615 0 3.883c0-3.67 3.217-2.517 5.202-1.026"/>
+		                    </svg>
+		                </a>
+		                {% endunless %}
+		                {% unless site.orcid_username ==  %}
+		                <a href="https://orcid.org/{{site.orcid_username}}" target="_blank" rel="noopener" class="has-text-black" aria-label="ORCID">
+	                        {% include icons/orcid.svg class="footer-icon footer-icon--orcid" %}
+	                    </a>
+		                {% endunless %}
+	                {% unless site.instagram_username ==  %}
+	                <a href="http://www.instagram.com/{{site.instagram_username}}" target="_blank" class="has-text-black"><i class="fab fa-instagram"></i></a>
+	                {% endunless %}
+	                {% unless site.linkedin_username ==  %}
+	                <a href="http://www.linkedin.com/in/{{site.linkedin_username}}" target="_blank" class="has-text-black"><i class="fab fa-linkedin"></i></a>
+	                {% endunless %}
+	                {% unless site.youtube_channel_id ==  %}
+	                <a href="http://www.youtube.com/channel/{{site.youtube_channel_id}}" target="_blank" class="has-text-black"><i class="fab fa-youtube"></i></a>
+	                {% endunless %}
+	                {% unless site.reddit_username ==  %}
+	                <a href="http://www.reddit.com/u/{{site.reddit_username}}" target="_blank" class="has-text-black"><i class="fab fa-reddit"></i></a>
+	                {% endunless %}
+	                {% unless site.behance_username ==  %}
+	                <a href="http://www.behance.com/{{site.behance_username}}" target="_blank" class="has-text-black"><i class="fab fa-behance"></i></a>
+	                {% endunless %}
+	                {% unless site.dribbble_username ==  %}
+	                <a href="http://www.dribbble.com/{{site.dribbble_username}}" target="_blank" class="has-text-black"><i class="fab fa-dribbble"></i></a>
+	                {% endunless %}
+	                {% unless site.spotify_username ==  %}
+	                <a href="http://open.spotify.com/user/{{site.spotify_username}}" target="_blank" class="has-text-black"><i class="fab fa-spotify"></i></a>
+	                {% endunless %}
+		                {% unless site.facebook_username == %}
+		                <a href="https://www.facebook.com/{{site.facebook_username}}" target="_blank" rel="noopener" class="has-text-black" aria-label="Facebook">
+	                        {% include icons/facebook.svg class="footer-icon footer-icon--facebook" %}
+	                    </a>
+		                {% endunless %}
+	            </div>
         </div>
     </div>
 </section>
