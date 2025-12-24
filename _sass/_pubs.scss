@@ -1,21 +1,56 @@
 .pubs .pub-list { list-style: none; margin: 0; padding: 0; }
 .pubs .pub-item { margin: .6rem 0 1rem; text-indent: -1.2em; padding-left: 1.2em; }
 
+.pubs .pub-title,
+.pubs .pub-authors,
+.pubs .pub-badges,
+.pubs .pub-authors-full {
+  display: block;
+  text-indent: 0;
+}
+
+.pubs .pub-title { margin-bottom: .45rem; }
+.pubs .pub-authors { margin-top: .15rem; }
+
+.pubs .pub-venue-inline { margin-left: .25rem; color: #6b7280; }
+.pubs .pub-venue-inline em { color: inherit; }
+
 .pubs .pub-title a {
   color: hsl(217, 71%, 53%);        /* Bulma link blue (#3273dc) */
   font-weight: 600;
-  border-bottom: 1px solid currentColor;
+  border-bottom: 0;
   text-decoration: none;
+  transition: border-color .15s ease, background-color .15s ease, box-shadow .15s ease;
+  padding: .05em .12em;
+  border-radius: .25em;
 }
-.pubs .pub-title a:hover { opacity: .9; }
+.pubs .pub-title a:hover,
+.pubs .pub-title a:focus-visible {
+  border-bottom: 2px solid rgba(50, 115, 220, 0.9);
+  border-color: rgba(50, 115, 220, 0.9);
+  background: rgba(50, 115, 220, 0.08);
+  box-shadow: 0 0 0 3px rgba(50, 115, 220, 0.12);
+}
 
-.pubs .pub-badges { margin-left: .4rem; white-space: nowrap; }
+.pubs .pub-badges { margin-top: .25rem; white-space: nowrap; }
 .pubs .pub-badge {
+  display: inline-block;
   font-size: .72rem;
   padding: .1rem .4rem;
   margin-right: .25rem;
   border-radius: .35rem;
   background: rgba(0,0,0,.08);
+  border: 1px solid transparent;
+  text-decoration: none;
+  transition: transform .12s ease, box-shadow .12s ease, background-color .12s ease, border-color .12s ease;
+}
+
+.pubs .pub-badge:hover,
+.pubs .pub-badge:focus-visible {
+  transform: translateY(-1px);
+  box-shadow: 0 8px 18px rgba(0,0,0,.14);
+  background: rgba(50, 115, 220, 0.12);
+  border-color: rgba(50, 115, 220, 0.25);
 }
 
 /* Apricot gelato */
@@ -41,11 +76,11 @@
   text-overflow: unset;
 }
 
-.pubs .pub-year { white-space: nowrap; }   /* keeps “(2025)” stuck together */
+.pubs .pub-year { white-space: nowrap; }   /* keeps "(2025)" stuck together */
 .pubs .pub-year-inline { white-space: nowrap; }  /* keeps (2025) together */
 .pubs .arxiv-chunk    { white-space: nowrap; }   /* keeps 'arXiv: 2507.06989' intact */
 
-/* Put “Show all” on its own line, aligned with the hanging indent */
+/* Put "Show all" on its own line, aligned with the hanging indent */
 .pubs .pub-break { display: block; }
 
 /* Force the toggle onto its own line and cancel the inherited hanging indent */
@@ -61,14 +96,14 @@
 
 /* Arrow drawn inside the content box */
 .pubs .pub-authors-toggle-label::before {
-  content: "▸";
+  content: "\25B8";
   position: absolute; left: 0; top: 0;
   width: .8rem; line-height: 1;
 }
 
 /* Reveal full authors when checked */
 .pubs .pub-authors-full { display: none; margin: .15rem 0 .25rem; }
-.pubs .pub-authors-toggle:checked + .pub-authors-toggle-label::before { content: "▾"; }
+.pubs .pub-authors-toggle:checked + .pub-authors-toggle-label::before { content: "\25BE"; }
 .pubs .pub-authors-toggle:checked + .pub-authors-toggle-label + .pub-authors-full { display: block; }
 
 /* Numbered resume list (does NOT affect Research) */

@@ -1,0 +1,5 @@
+<svg class="{{ include.class | default: 'footer-icon' }}" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+  <circle cx="12" cy="12" r="12" fill="currentColor"/>
+  <path fill="#fff" d="M7.6 7.4a1.2 1.2 0 1 1 0-2.4 1.2 1.2 0 0 1 0 2.4ZM6.7 9h1.8v10H6.7V9Z"/>
+  <path fill="#fff" d="M11 9h4.1c3 0 5.1 2 5.1 5.3 0 3.4-2.1 4.7-5.1 4.7H11V9Zm2 1.7v6.6h2c1.8 0 3.2-.7 3.2-3.2 0-2.8-1.4-3.4-3.2-3.4h-2Z"/>
+</svg>

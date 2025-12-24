@@ -39,6 +39,10 @@ Accurate RVs and stellar atmosphere analysis are the bottleneck for tight orbits
 - **Spectral analysis (`span`)**: simultaneous binary fits for Teff, log g, v sin i, He/H, light ratio; synthetic model grids.
 - **Roadmap**: SED fitting, spectral classification, and binary population simulations.
 
+## Key results (so far)
+- **Reusable pipeline:** stable modules for RV extraction, orbit work, and binary spectral fitting used across multiple projects.
+- **Public releases:** tagged releases published (current: **v0.2.0**) with tutorials and issue tracker for feedback.
+
 ## How to install
 <details>
   <summary><strong>Clone & run locally</strong></summary>

@@ -3,15 +3,14 @@
 
         <!-- logo or branding image on left side -->
         <div class="navbar-brand">
-            <a class="navbar-item"
-                href="{% if page.layout == 'default' %}{{site.url}}{{site.baseurl}}/#{% else %}{{site.url}}{{site.baseurl}}/{% endif %}">
+            <a class="navbar-item" href="{{ '/' | relative_url }}#hero">
                 <strong>{{site.title}}</strong>
             </a>
-            <div class="navbar-burger" data-target="navbar-menu">
+            <button class="navbar-burger" type="button" aria-label="menu" aria-expanded="false" aria-controls="navbar-menu" data-target="navbar-menu">
                 <span></span>
                 <span></span>
                 <span></span>
-            </div>
+            </button>
         </div>
 
         <!-- children of navbar-menu must be navbar-start and/or navbar-end -->
@@ -21,12 +20,11 @@
             </div> -->
             <!-- navbar items | right side -->
             <div class="navbar-end">
-                <a class="navbar-item {% if page.layout == 'default' %}is-active{% endif %}"
-                    href="{% if page.layout == 'default' %}{{site.url}}{{site.baseurl}}/#{% else %}{{site.url}}{{site.baseurl}}/{% endif %}">HOME</a>
-                <a class="navbar-item" href="{{site.url}}{{site.baseurl}}/#about">ABOUT</a>
-                <a class="navbar-item" href="{{site.url}}{{site.baseurl}}/#contact">CONTACT</a>
-                <a class="navbar-item" href="{{site.url}}{{site.baseurl}}/#research">RESEARCH</a>
-                <a class="navbar-item" href="{{site.url}}{{site.baseurl}}/#resume">RESUME</a>
+                <a class="navbar-item" data-section="hero" href="{{ '/' | relative_url }}#hero">HOME</a>
+                <a class="navbar-item" data-section="about" href="{{ '/' | relative_url }}#about">ABOUT</a>
+                <a class="navbar-item" data-section="contact" href="{{ '/' | relative_url }}#contact">CONTACT</a>
+                <a class="navbar-item" data-section="research" href="{{ '/' | relative_url }}#research">RESEARCH</a>
+                <a class="navbar-item" data-section="resume" href="{{ '/' | relative_url }}#resume">RESUME</a>
                 <!-- <a class="navbar-item {% if page.layout == 'blog' %}is-active{% endif %}"
                     href="{{site.url}}{{site.baseurl}}/blog">BLOG</a> -->
                 {% include dropdown.html %}
@@ -38,21 +36,28 @@
 <!-- Bulma Navbar JS -->
 <script>
     document.addEventListener('DOMContentLoaded', function () {
-        /* Get all "navbar-burger" elements */
-        var $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
-        /* Check if there are any navbar burgers */
-        if ($navbarBurgers.length > 0) {
-            /* Add a click event on each of them */
-            $navbarBurgers.forEach(function ($el) {
-                $el.addEventListener('click', function () {
-                    /* Get the target from the "data-target" attribute */
-                    var target = $el.dataset.target;
-                    var $target = document.getElementById(target);
-                    /* Toggle the class on both the "navbar-burger" and the "navbar-menu" */
-                    $el.classList.toggle('is-active');
-                    $target.classList.toggle('is-active');
-                });
-            });
+        var navbarBurger = document.querySelector('.navbar-burger');
+        var navbarMenu = document.getElementById('navbar-menu');
+        if (!navbarBurger || !navbarMenu) return;
+
+        function setMenu(open) {
+            navbarBurger.classList.toggle('is-active', open);
+            navbarMenu.classList.toggle('is-active', open);
+            navbarBurger.setAttribute('aria-expanded', open ? 'true' : 'false');
         }
+
+        navbarBurger.addEventListener('click', function () {
+            setMenu(!navbarBurger.classList.contains('is-active'));
+        });
+
+        navbarMenu.addEventListener('click', function (e) {
+            var link = e.target.closest('a');
+            if (!link) return;
+            setMenu(false);
+        });
+
+        document.addEventListener('keydown', function (e) {
+            if (e.key === 'Escape') setMenu(false);
+        });
     });
 </script>

@@ -2,7 +2,7 @@
 # RUN IN TERMINAL AS:
 # $./scripts/update_ads_pubs.py "JIV" _data/papers_all.yml --sdss _data/papers_sdssv.yml
 #
-import os, sys, re, time, json, math, unicodedata
+import os, sys, re, time, json, math, unicodedata, html
 from typing import List, Dict
 import requests, yaml
 
@@ -27,6 +27,15 @@ def norm(s: str) -> str:
     s = unicodedata.normalize("NFD", s)
     s = "".join(ch for ch in s if unicodedata.category(ch) != "Mn")
     return re.sub(r"\s+", " ", s).strip().lower()
+
+def clean_title(title: str) -> str:
+    """Strip ADS-provided HTML tags/entities and normalize whitespace."""
+    if not title:
+        return ""
+    title = html.unescape(title)
+    title = re.sub(r"<[^>]+>", "", title)
+    title = re.sub(r"\s+", " ", title).strip()
+    return title
 
 def find_library_id(library_name: str) -> str:
     r = requests.get(f"{ADS_API}/biblib/libraries?rows=2000", headers=HEADERS)
@@ -183,7 +192,7 @@ def format_authors_html(authors: List[str], my_lastnames=("Villaseñor","Villase
     return ", ".join(fmt)
 
 def map_doc(d: Dict) -> Dict:
-    title   = (d.get("title") or [""])[0]
+    title   = clean_title((d.get("title") or [""])[0])
     authors = d.get("author") or []
     ids     = d.get("identifier") or []
     doi     = (d.get("doi") or [""])[0] if d.get("doi") else ""
@@ -230,6 +239,7 @@ def map_doc(d: Dict) -> Dict:
         "pub": pub,
         "volume": d.get("volume", ""),
         "page": (d.get("page") or [""])[0] if d.get("page") else "",
+        "page_range": (d.get("page_range") or [""])[0] if d.get("page_range") else "",
         "doi": doi,
         "arxiv": arxiv,
         "adsurl": adsurl,

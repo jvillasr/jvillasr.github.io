@@ -48,6 +48,10 @@ Most massive stars (M ≳ 8 M☉) live in binaries and many **exchange mass**—
 - **Student:** Farah Wallauer (MPIA Summer Intern) leading the first pass on RVs and orbital solutions (2025).
 - **Collaborators:** Koushik Sen (University of Arizona), Norbert Langer (Universität Bonn)
 
+## Key results (so far)
+- **Survey set-up:** target sample and observing strategy defined (98 candidates; multi-epoch FEROS spectroscopy).
+- **First-pass results:** RV variability screening and initial orbital solutions underway (student-led).
+
 ## Publications
 <div class="pubs">
   {% include publications.html data="papers_all" tag="algols" year_headings="true" authors="short" first_n="8" %}
