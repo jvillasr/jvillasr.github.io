@@ -1,0 +1,31 @@
+{%- comment -%}
+  First/second-author publications.
+  Params:
+    - limit
+    - authors / first_n
+    - numbered: truthy -> add numbering class
+{%- endcomment -%}
+
+{%- assign limit_n = include.limit | default: 10 | plus: 0 -%}
+{%- assign render_list = '' | split: '' -%}
+{%- for p in site.data.papers_all -%}
+  {%- if p.me_index == 0 or p.me_index == 1 -%}
+    {%- assign render_list = render_list | push: p -%}
+  {%- endif -%}
+{%- endfor -%}
+{%- assign render_list = render_list | sort: "sortdate" | reverse -%}
+{%- if limit_n > 0 -%}
+  {%- assign render_list = render_list | slice: 0, limit_n | compact -%}
+{%- endif -%}
+
+<div class="pubs{% if include.numbered %} pubs--numbered{% endif %}">
+  <ul class="pub-list">
+    {%- if render_list.size == 0 -%}
+      <li class="pub-item">No first- or second-author publications found.</li>
+    {%- else -%}
+      {%- for p in render_list -%}
+        {% include one_pub.html p=p authors=include.authors first_n=include.first_n %}
+      {%- endfor -%}
+    {%- endif -%}
+  </ul>
+</div>

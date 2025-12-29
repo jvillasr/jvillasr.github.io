@@ -68,7 +68,154 @@
 
           <section class="resume-section">
             <h2 class="resume-section-heading">Latest Publications</h2>
-            {% include publications_latest.html limit=10 authors="short" first_n="5" numbered=true %}
+            {% assign ads_metrics = site.data.ads_metrics %}
+            {% assign metrics = ads_metrics.metrics %}
+            {% assign plots = ads_metrics.plots %}
+
+            <div class="resume-pubs">
+              <div class="resume-pubs-overview">
+                <div class="resume-pubs-metrics">
+                  {% if metrics %}
+                    {% assign delta_papers = metrics.deltas.total_papers | default: 0 | plus: 0 %}
+                    {% assign delta_citations = metrics.deltas.total_citations | default: 0 | plus: 0 %}
+                    {% assign delta_h = metrics.deltas.h_index | default: 0 | plus: 0 %}
+                    {% assign delta_g = metrics.deltas.g_index | default: 0 | plus: 0 %}
+                    <div class="resume-metric-card">
+                      <span class="resume-metric-label">Total papers</span>
+                      <span class="resume-metric-value">{{ metrics.total_papers | default: 0 }}</span>
+                      <span class="resume-metric-delta{% if delta_papers > 0 %} is-up{% endif %}">
+                        {% if delta_papers > 0 %}&#8593; +{{ delta_papers }}{% else %}&#8212; 0{% endif %}
+                      </span>
+                    </div>
+                    <div class="resume-metric-card">
+                      <span class="resume-metric-label">Total citations</span>
+                      <span class="resume-metric-value">{{ metrics.total_citations | default: 0 }}</span>
+                      <span class="resume-metric-delta{% if delta_citations > 0 %} is-up{% endif %}">
+                        {% if delta_citations > 0 %}&#8593; +{{ delta_citations }}{% else %}&#8212; 0{% endif %}
+                      </span>
+                    </div>
+                    <div class="resume-metric-card">
+                      <span class="resume-metric-label">h-index</span>
+                      <span class="resume-metric-value">{{ metrics.h_index | default: 0 }}</span>
+                      <span class="resume-metric-delta{% if delta_h > 0 %} is-up{% endif %}">
+                        {% if delta_h > 0 %}&#8593; +{{ delta_h }}{% else %}&#8212; 0{% endif %}
+                      </span>
+                    </div>
+                    <div class="resume-metric-card">
+                      <span class="resume-metric-label">g-index</span>
+                      <span class="resume-metric-value">{{ metrics.g_index | default: 0 }}</span>
+                      <span class="resume-metric-delta{% if delta_g > 0 %} is-up{% endif %}">
+                        {% if delta_g > 0 %}&#8593; +{{ delta_g }}{% else %}&#8212; 0{% endif %}
+                      </span>
+                    </div>
+                  {% else %}
+                    <p class="resume-pubs-empty">
+                      Metrics not available yet. Run <code>scripts/update_ads_pubs.py</code> with <code>--metrics</code>.
+                    </p>
+                  {% endif %}
+                </div>
+
+                <div class="resume-pubs-filters" role="tablist" aria-label="Publication filters">
+                  <button class="resume-pubs-filter is-active" type="button" data-pubs-target="latest" aria-pressed="true">Latest 10</button>
+                  <button class="resume-pubs-filter" type="button" data-pubs-target="cited" aria-pressed="false">Most cited</button>
+                  <button class="resume-pubs-filter" type="button" data-pubs-target="first" aria-pressed="false">First/second author</button>
+                </div>
+
+                {% if plots %}
+                  <div class="resume-pubs-plots">
+                    {% assign papers_series = plots.papers_per_year | sort: "year" %}
+                    {% assign papers_max = papers_series | map: "value" | sort | last | plus: 0 %}
+                    {% if papers_max == 0 %}{% assign papers_max = 1 %}{% endif %}
+                    {% assign papers_count = papers_series.size | minus: 1 %}
+                    {% if papers_count < 1 %}{% assign papers_count = 1 %}{% endif %}
+
+                    <div class="resume-plot-card" style="--plot-color: #ff6a3c;">
+                      <h3 class="resume-plot-title">Papers per year</h3>
+                      <svg class="resume-plot-svg" viewBox="0 0 240 70" role="img" aria-label="Papers per year">
+                        <polyline points="{% for item in papers_series %}{% assign value = item.value | plus: 0 %}{% assign x = forloop.index0 | times: 240 | divided_by: papers_count %}{% assign scaled = value | times: 70 | divided_by: papers_max %}{% assign y = 70 | minus: scaled %}{{ x }},{{ y }}{% unless forloop.last %} {% endunless %}{% endfor %}" />
+                      </svg>
+                      <div class="resume-plot-axis">
+                        <span>{{ papers_series.first.year }}</span>
+                        <span>{{ papers_series.last.year }}</span>
+                      </div>
+                    </div>
+
+                    {% assign citations_series = plots.citations_per_year | sort: "year" %}
+                    {% assign citations_max = citations_series | map: "value" | sort | last | plus: 0 %}
+                    {% if citations_max == 0 %}{% assign citations_max = 1 %}{% endif %}
+                    {% assign citations_count = citations_series.size | minus: 1 %}
+                    {% if citations_count < 1 %}{% assign citations_count = 1 %}{% endif %}
+
+                    <div class="resume-plot-card" style="--plot-color: #2f6fdb;">
+                      <h3 class="resume-plot-title">Citations per year</h3>
+                      <svg class="resume-plot-svg" viewBox="0 0 240 70" role="img" aria-label="Citations per year">
+                        <polyline points="{% for item in citations_series %}{% assign value = item.value | plus: 0 %}{% assign x = forloop.index0 | times: 240 | divided_by: citations_count %}{% assign scaled = value | times: 70 | divided_by: citations_max %}{% assign y = 70 | minus: scaled %}{{ x }},{{ y }}{% unless forloop.last %} {% endunless %}{% endfor %}" />
+                      </svg>
+                      <div class="resume-plot-axis">
+                        <span>{{ citations_series.first.year }}</span>
+                        <span>{{ citations_series.last.year }}</span>
+                      </div>
+                    </div>
+
+                    {% assign reads_series = plots.reads_per_year | sort: "year" %}
+                    {% assign reads_max = reads_series | map: "value" | sort | last | plus: 0 %}
+                    {% if reads_max == 0 %}{% assign reads_max = 1 %}{% endif %}
+                    {% assign reads_count = reads_series.size | minus: 1 %}
+                    {% if reads_count < 1 %}{% assign reads_count = 1 %}{% endif %}
+
+                    <div class="resume-plot-card" style="--plot-color: #19a974;">
+                      <h3 class="resume-plot-title">Reads per year</h3>
+                      <svg class="resume-plot-svg" viewBox="0 0 240 70" role="img" aria-label="Reads per year">
+                        <polyline points="{% for item in reads_series %}{% assign value = item.value | plus: 0 %}{% assign x = forloop.index0 | times: 240 | divided_by: reads_count %}{% assign scaled = value | times: 70 | divided_by: reads_max %}{% assign y = 70 | minus: scaled %}{{ x }},{{ y }}{% unless forloop.last %} {% endunless %}{% endfor %}" />
+                      </svg>
+                      <div class="resume-plot-axis">
+                        <span>{{ reads_series.first.year }}</span>
+                        <span>{{ reads_series.last.year }}</span>
+                      </div>
+                    </div>
+
+                    {% assign indices_series = plots.indices_per_year | sort: "year" %}
+                    {% assign indices_values = '' | split: '' %}
+                    {% for item in indices_series %}
+                      {% assign indices_values = indices_values | push: item.h_index | push: item.g_index | push: item.i10_index | push: item.read10_index %}
+                    {% endfor %}
+                    {% assign indices_max = indices_values | sort | last | plus: 0 %}
+                    {% if indices_max == 0 %}{% assign indices_max = 1 %}{% endif %}
+                    {% assign indices_count = indices_series.size | minus: 1 %}
+                    {% if indices_count < 1 %}{% assign indices_count = 1 %}{% endif %}
+
+                    <div class="resume-plot-card resume-plot-card--multi">
+                      <h3 class="resume-plot-title">Indices per year</h3>
+                      <svg class="resume-plot-svg" viewBox="0 0 240 70" role="img" aria-label="Indices per year">
+                        <polyline class="resume-plot-line resume-plot-line--h" points="{% for item in indices_series %}{% assign value = item.h_index | plus: 0 %}{% assign x = forloop.index0 | times: 240 | divided_by: indices_count %}{% assign scaled = value | times: 70 | divided_by: indices_max %}{% assign y = 70 | minus: scaled %}{{ x }},{{ y }}{% unless forloop.last %} {% endunless %}{% endfor %}" />
+                        <polyline class="resume-plot-line resume-plot-line--g" points="{% for item in indices_series %}{% assign value = item.g_index | plus: 0 %}{% assign x = forloop.index0 | times: 240 | divided_by: indices_count %}{% assign scaled = value | times: 70 | divided_by: indices_max %}{% assign y = 70 | minus: scaled %}{{ x }},{{ y }}{% unless forloop.last %} {% endunless %}{% endfor %}" />
+                        <polyline class="resume-plot-line resume-plot-line--i10" points="{% for item in indices_series %}{% assign value = item.i10_index | plus: 0 %}{% assign x = forloop.index0 | times: 240 | divided_by: indices_count %}{% assign scaled = value | times: 70 | divided_by: indices_max %}{% assign y = 70 | minus: scaled %}{{ x }},{{ y }}{% unless forloop.last %} {% endunless %}{% endfor %}" />
+                        <polyline class="resume-plot-line resume-plot-line--read10" points="{% for item in indices_series %}{% assign value = item.read10_index | plus: 0 %}{% assign x = forloop.index0 | times: 240 | divided_by: indices_count %}{% assign scaled = value | times: 70 | divided_by: indices_max %}{% assign y = 70 | minus: scaled %}{{ x }},{{ y }}{% unless forloop.last %} {% endunless %}{% endfor %}" />
+                      </svg>
+                      <div class="resume-plot-legend">
+                        <span class="resume-plot-key resume-plot-key--h">h-index</span>
+                        <span class="resume-plot-key resume-plot-key--g">g-index</span>
+                        <span class="resume-plot-key resume-plot-key--i10">i10-index</span>
+                        <span class="resume-plot-key resume-plot-key--read10">read10-index</span>
+                      </div>
+                    </div>
+                  </div>
+                {% endif %}
+              </div>
+
+              <div class="resume-pubs-lists">
+                <div class="resume-pubs-list is-active" data-pubs-panel="latest">
+                  {% include publications_latest.html limit=10 authors="short" first_n="5" numbered=true %}
+                </div>
+                <div class="resume-pubs-list" data-pubs-panel="cited">
+                  {% include publications_most_cited.html limit=10 authors="short" first_n="5" numbered=true %}
+                </div>
+                <div class="resume-pubs-list" data-pubs-panel="first">
+                  {% include publications_first_second.html limit=10 authors="short" first_n="5" numbered=true %}
+                </div>
+              </div>
+            </div>
+
             <p class="resume-linkout">
               <a href="https://ui.adsabs.harvard.edu/public-libraries/7KtKk-uwSP-LaMEkA7SKGQ"
                  target="_blank" rel="noopener">
@@ -81,3 +228,29 @@
     </div>
   </div>
 </section>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    var pubs = document.querySelector('.resume-pubs');
+    if (!pubs) return;
+    var buttons = pubs.querySelectorAll('[data-pubs-target]');
+    var panels = pubs.querySelectorAll('[data-pubs-panel]');
+
+    function setActive(target) {
+      buttons.forEach(function (button) {
+        var isActive = button.dataset.pubsTarget === target;
+        button.classList.toggle('is-active', isActive);
+        button.setAttribute('aria-pressed', isActive ? 'true' : 'false');
+      });
+      panels.forEach(function (panel) {
+        panel.classList.toggle('is-active', panel.dataset.pubsPanel === target);
+      });
+    }
+
+    buttons.forEach(function (button) {
+      button.addEventListener('click', function () {
+        setActive(button.dataset.pubsTarget);
+      });
+    });
+  });
+</script>

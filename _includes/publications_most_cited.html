@@ -1,0 +1,21 @@
+{%- comment -%}
+  Most cited N publications.
+  Params:
+    - limit
+    - authors / first_n
+    - numbered: truthy -> add numbering class
+{%- endcomment -%}
+
+{%- assign limit_n = include.limit | default: 10 | plus: 0 -%}
+{%- assign render_list = site.data.papers_all | sort: "citations" | reverse -%}
+{%- if limit_n > 0 -%}
+  {%- assign render_list = render_list | slice: 0, limit_n | compact -%}
+{%- endif -%}
+
+<div class="pubs{% if include.numbered %} pubs--numbered{% endif %}">
+  <ul class="pub-list">
+    {%- for p in render_list -%}
+      {% include one_pub.html p=p authors=include.authors first_n=include.first_n %}
+    {%- endfor -%}
+  </ul>
+</div>

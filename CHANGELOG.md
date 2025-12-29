@@ -9,6 +9,8 @@ This project does not need strict SemVer; entries are grouped by release date.
 ### Added
 - `notes/blog-ideas.md` (repo-only; excluded from site build)
 - New blog post: `The Universe’s Power Couples: Why Massive Binary Stars Run the Show`
+- Resume publications dashboard with filters, metrics, and ADS plots
+- ADS metrics dataset for resume publications (`_data/ads_metrics.yml`)
 
 ### Changed
 - Homepage hero tagline and CTA (`site.description`, hero button points to Research)
@@ -17,6 +19,8 @@ This project does not need strict SemVer; entries are grouped by release date.
 - Publications UI: show title first; improved title hover/focus styling
 - Publications badges: stronger hover/focus affordance (ADS/arXiv/DOI/Cited)
 - Publications data: strip ADS HTML from titles; include page ranges when present
+- Publications resume panel: add Latest/Most cited/First-author filters and sparkline plots
+- ADS sync script now exports metrics/plots (`scripts/update_ads_pubs.py --metrics`)
 - Homepage hero background now uses a local, smaller image (`heroimage: /assets/images/30dor.jpeg`)
 - Images resized and lazy-loaded in About/footer for faster loads
 - Project pages: added “Key results (so far)” where missing

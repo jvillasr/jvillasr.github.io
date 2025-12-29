@@ -206,6 +206,209 @@
   color: var(--resume-accent);
 }
 
+.resume-pubs {
+  margin-top: 1rem;
+  display: grid;
+  gap: 1.25rem;
+}
+
+.resume-pubs-overview {
+  display: grid;
+  gap: 1rem;
+}
+
+.resume-pubs-metrics {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: .75rem;
+}
+
+.resume-metric-card {
+  background: #fff;
+  border: 1px solid var(--resume-rule);
+  border-radius: .9rem;
+  padding: .75rem .85rem;
+  box-shadow: 0 8px 18px rgba(15, 23, 42, 0.08);
+  display: grid;
+  gap: .2rem;
+}
+
+.resume-metric-label {
+  font-size: .75rem;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: var(--resume-muted);
+}
+
+.resume-metric-value {
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: var(--resume-ink);
+}
+
+.resume-metric-delta {
+  font-size: .85rem;
+  color: var(--resume-muted);
+}
+
+.resume-metric-delta.is-up {
+  color: #108a4b;
+  font-weight: 600;
+}
+
+.resume-pubs-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .5rem;
+}
+
+.resume-pubs-filter {
+  border: 1px solid var(--resume-rule);
+  background: #fff;
+  border-radius: 999px;
+  padding: .35rem .85rem;
+  font-size: .72rem;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: var(--resume-ink);
+  transition: transform .15s ease, box-shadow .15s ease, background-color .15s ease, color .15s ease;
+}
+
+.resume-pubs-filter:hover,
+.resume-pubs-filter:focus-visible {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 16px rgba(15, 23, 42, 0.12);
+}
+
+.resume-pubs-filter.is-active {
+  background: var(--resume-accent);
+  color: #fff;
+  border-color: var(--resume-accent);
+  box-shadow: 0 8px 18px rgba(255, 87, 51, 0.25);
+}
+
+.resume-pubs-plots {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: .85rem;
+}
+
+.resume-plot-card {
+  background: #fff;
+  border: 1px solid var(--resume-rule);
+  border-radius: .9rem;
+  padding: .75rem .85rem .65rem;
+  box-shadow: 0 8px 18px rgba(15, 23, 42, 0.08);
+}
+
+.resume-plot-title {
+  margin: 0 0 .45rem;
+  font-size: .95rem;
+  font-weight: 700;
+  color: var(--resume-ink);
+}
+
+.resume-plot-svg {
+  width: 100%;
+  height: auto;
+}
+
+.resume-plot-svg polyline {
+  stroke: var(--plot-color, var(--resume-accent));
+  stroke-width: 2;
+  fill: none;
+}
+
+.resume-plot-axis {
+  display: flex;
+  justify-content: space-between;
+  font-size: .7rem;
+  color: var(--resume-muted);
+  margin-top: .35rem;
+}
+
+.resume-plot-card--multi .resume-plot-svg {
+  margin-bottom: .3rem;
+}
+
+.resume-plot-line {
+  fill: none;
+  stroke-width: 2;
+}
+
+.resume-plot-line--h {
+  stroke: var(--resume-accent);
+}
+
+.resume-plot-line--g {
+  stroke: #2f6fdb;
+}
+
+.resume-plot-line--i10 {
+  stroke: #4b5563;
+}
+
+.resume-plot-line--read10 {
+  stroke: #19a974;
+}
+
+.resume-plot-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .6rem;
+  font-size: .7rem;
+  color: var(--resume-muted);
+}
+
+.resume-plot-key {
+  display: inline-flex;
+  align-items: center;
+  gap: .35rem;
+}
+
+.resume-plot-key::before {
+  content: "";
+  width: 18px;
+  height: 2px;
+  background: currentColor;
+}
+
+.resume-plot-key--h {
+  color: var(--resume-accent);
+}
+
+.resume-plot-key--g {
+  color: #2f6fdb;
+}
+
+.resume-plot-key--i10 {
+  color: #4b5563;
+}
+
+.resume-plot-key--read10 {
+  color: #19a974;
+}
+
+.resume-pubs-lists {
+  display: grid;
+  gap: .75rem;
+}
+
+.resume-pubs-list {
+  display: none;
+}
+
+.resume-pubs-list.is-active {
+  display: block;
+}
+
+.resume-pubs-empty {
+  margin: 0;
+  padding: .75rem 0;
+  color: var(--resume-muted);
+}
+
 @media (max-width: 760px) {
   .resume-card {
     padding: 1.75rem;
@@ -224,5 +427,13 @@
   .resume-date {
     text-align: left;
     margin-bottom: .4rem;
+  }
+
+  .resume-pubs-metrics {
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  }
+
+  .resume-pubs-plots {
+    grid-template-columns: 1fr;
   }
 }
