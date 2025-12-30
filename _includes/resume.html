@@ -67,13 +67,21 @@
           </section>
 
           <section class="resume-section">
-            <h2 class="resume-section-heading">Latest Publications</h2>
             {% assign ads_metrics = site.data.ads_metrics %}
             {% assign metrics = ads_metrics.metrics %}
             {% assign plots = ads_metrics.plots %}
 
+            <h2 class="resume-section-heading resume-pubs-heading">Publications</h2>
+
             <div class="resume-pubs">
-              <div class="resume-pubs-overview">
+              <div class="resume-pubs-metrics-block">
+                <h3 class="resume-metrics-title">Publication metrics</h3>
+                {% assign latest_year = ads_metrics.delta_year %}
+                {% if latest_year == nil or latest_year == "" %}
+                  {% assign latest_year = site.time | date: "%Y" | plus: 0 %}
+                {% else %}
+                  {% assign latest_year = latest_year | plus: 0 %}
+                {% endif %}
                 <div class="resume-pubs-metrics">
                   {% if metrics %}
                     {% assign delta_papers = metrics.deltas.total_papers | default: 0 | plus: 0 %}
@@ -84,28 +92,28 @@
                       <span class="resume-metric-label">Total papers</span>
                       <span class="resume-metric-value">{{ metrics.total_papers | default: 0 }}</span>
                       <span class="resume-metric-delta{% if delta_papers > 0 %} is-up{% endif %}">
-                        {% if delta_papers > 0 %}&#8593; +{{ delta_papers }}{% else %}&#8212; 0{% endif %}
+                        {% if delta_papers > 0 %}&#8593; +{{ delta_papers }}{% else %}&#8212; 0{% endif %} ({{ latest_year }})
                       </span>
                     </div>
                     <div class="resume-metric-card">
                       <span class="resume-metric-label">Total citations</span>
                       <span class="resume-metric-value">{{ metrics.total_citations | default: 0 }}</span>
                       <span class="resume-metric-delta{% if delta_citations > 0 %} is-up{% endif %}">
-                        {% if delta_citations > 0 %}&#8593; +{{ delta_citations }}{% else %}&#8212; 0{% endif %}
+                        {% if delta_citations > 0 %}&#8593; +{{ delta_citations }}{% else %}&#8212; 0{% endif %} ({{ latest_year }})
                       </span>
                     </div>
                     <div class="resume-metric-card">
                       <span class="resume-metric-label">h-index</span>
                       <span class="resume-metric-value">{{ metrics.h_index | default: 0 }}</span>
                       <span class="resume-metric-delta{% if delta_h > 0 %} is-up{% endif %}">
-                        {% if delta_h > 0 %}&#8593; +{{ delta_h }}{% else %}&#8212; 0{% endif %}
+                        {% if delta_h > 0 %}&#8593; +{{ delta_h }}{% else %}&#8212; 0{% endif %} ({{ latest_year }})
                       </span>
                     </div>
                     <div class="resume-metric-card">
                       <span class="resume-metric-label">g-index</span>
                       <span class="resume-metric-value">{{ metrics.g_index | default: 0 }}</span>
                       <span class="resume-metric-delta{% if delta_g > 0 %} is-up{% endif %}">
-                        {% if delta_g > 0 %}&#8593; +{{ delta_g }}{% else %}&#8212; 0{% endif %}
+                        {% if delta_g > 0 %}&#8593; +{{ delta_g }}{% else %}&#8212; 0{% endif %} ({{ latest_year }})
                       </span>
                     </div>
                   {% else %}
@@ -114,93 +122,409 @@
                     </p>
                   {% endif %}
                 </div>
-
-                <div class="resume-pubs-filters" role="tablist" aria-label="Publication filters">
-                  <button class="resume-pubs-filter is-active" type="button" data-pubs-target="latest" aria-pressed="true">Latest 10</button>
-                  <button class="resume-pubs-filter" type="button" data-pubs-target="cited" aria-pressed="false">Most cited</button>
-                  <button class="resume-pubs-filter" type="button" data-pubs-target="first" aria-pressed="false">First/second author</button>
-                </div>
-
                 {% if plots %}
+                  {% assign plot_left = 22 %}
+                  {% assign plot_right = 6 %}
+                  {% assign plot_top = 8 %}
+                  {% assign plot_bottom = 30 %}
+                  {% assign plot_width = 190 %}
+                  {% assign plot_height = 110 %}
+                  {% assign plot_view_width = plot_left | plus: plot_width | plus: plot_right %}
+                  {% assign plot_view_height = plot_top | plus: plot_height | plus: plot_bottom %}
+                  {% assign axis_left = plot_left %}
+                  {% assign axis_right = plot_left | plus: plot_width %}
+                  {% assign axis_bottom = plot_top | plus: plot_height %}
+                  {% assign tick_size = 3 %}
+                  {% assign x_label_offset = 12 %}
+                  {% assign y_label_offset = 2 %}
+                  {% assign y_tick_end = axis_left | minus: tick_size %}
+                  {% assign y_label_x = axis_left | minus: tick_size | minus: 4 %}
                   <div class="resume-pubs-plots">
                     {% assign papers_series = plots.papers_per_year | sort: "year" %}
-                    {% assign papers_max = papers_series | map: "value" | sort | last | plus: 0 %}
-                    {% if papers_max == 0 %}{% assign papers_max = 1 %}{% endif %}
+                    {% assign papers_raw_max = papers_series | map: "value" | sort | last | plus: 0 %}
+                    {% if papers_raw_max == 0 %}{% assign papers_raw_max = 1 %}{% endif %}
+                    {% assign papers_max = papers_raw_max | plus: 9 | divided_by: 10 | times: 10 %}
+                    {% if papers_max < 10 %}{% assign papers_max = 10 %}{% endif %}
                     {% assign papers_count = papers_series.size | minus: 1 %}
                     {% if papers_count < 1 %}{% assign papers_count = 1 %}{% endif %}
+                    {% assign papers_mid = papers_max | divided_by: 2 %}
+                    {% assign papers_mid_scaled = papers_mid | times: plot_height | divided_by: papers_max %}
+                    {% assign papers_mid_y = plot_top | plus: plot_height | minus: papers_mid_scaled %}
 
-                    <div class="resume-plot-card" style="--plot-color: #ff6a3c;">
+                    <div class="resume-plot-card">
                       <h3 class="resume-plot-title">Papers per year</h3>
-                      <svg class="resume-plot-svg" viewBox="0 0 240 70" role="img" aria-label="Papers per year">
-                        <polyline points="{% for item in papers_series %}{% assign value = item.value | plus: 0 %}{% assign x = forloop.index0 | times: 240 | divided_by: papers_count %}{% assign scaled = value | times: 70 | divided_by: papers_max %}{% assign y = 70 | minus: scaled %}{{ x }},{{ y }}{% unless forloop.last %} {% endunless %}{% endfor %}" />
+                      <svg class="resume-plot-svg" viewBox="0 0 {{ plot_view_width }} {{ plot_view_height }}" role="img" aria-label="Papers per year">
+                        <line class="resume-plot-axis-line" x1="{{ axis_left }}" y1="{{ plot_top }}" x2="{{ axis_left }}" y2="{{ axis_bottom }}" />
+                        <line class="resume-plot-axis-line" x1="{{ axis_left }}" y1="{{ axis_bottom }}" x2="{{ axis_right }}" y2="{{ axis_bottom }}" />
+                        <line class="resume-plot-tick" x1="{{ axis_left }}" y1="{{ axis_bottom }}" x2="{{ y_tick_end }}" y2="{{ axis_bottom }}" />
+                        <text class="resume-plot-tick-label resume-plot-tick-label--y" x="{{ y_label_x }}" y="{{ axis_bottom | plus: y_label_offset }}" text-anchor="end">0</text>
+                        <line class="resume-plot-tick" x1="{{ axis_left }}" y1="{{ papers_mid_y }}" x2="{{ y_tick_end }}" y2="{{ papers_mid_y }}" />
+                        {% assign label_value = papers_mid %}
+                        {% if label_value >= 1000 %}
+                          {% assign label_scaled = label_value | times: 10 | divided_by: 1000 %}
+                          {% assign label_major = label_scaled | divided_by: 10 %}
+                          {% assign label_major_ten = label_major | times: 10 %}
+                          {% assign label_minor = label_scaled | minus: label_major_ten %}
+                          {% if label_minor == 0 %}
+                            {% assign label_text = label_major | append: "k" %}
+                          {% else %}
+                            {% assign label_text = label_major | append: "." | append: label_minor | append: "k" %}
+                          {% endif %}
+                        {% else %}
+                          {% assign label_text = label_value %}
+                        {% endif %}
+                        <text class="resume-plot-tick-label resume-plot-tick-label--y" x="{{ y_label_x }}" y="{{ papers_mid_y | plus: y_label_offset }}" text-anchor="end">{{ label_text }}</text>
+                        <line class="resume-plot-tick" x1="{{ axis_left }}" y1="{{ plot_top }}" x2="{{ y_tick_end }}" y2="{{ plot_top }}" />
+                        {% assign label_value = papers_max %}
+                        {% if label_value >= 1000 %}
+                          {% assign label_scaled = label_value | times: 10 | divided_by: 1000 %}
+                          {% assign label_major = label_scaled | divided_by: 10 %}
+                          {% assign label_major_ten = label_major | times: 10 %}
+                          {% assign label_minor = label_scaled | minus: label_major_ten %}
+                          {% if label_minor == 0 %}
+                            {% assign label_text = label_major | append: "k" %}
+                          {% else %}
+                            {% assign label_text = label_major | append: "." | append: label_minor | append: "k" %}
+                          {% endif %}
+                        {% else %}
+                          {% assign label_text = label_value %}
+                        {% endif %}
+                        <text class="resume-plot-tick-label resume-plot-tick-label--y" x="{{ y_label_x }}" y="{{ plot_top | plus: y_label_offset }}" text-anchor="end">{{ label_text }}</text>
+                        {% for item in papers_series %}
+                          {% assign x = forloop.index0 | times: plot_width | divided_by: papers_count | plus: axis_left %}
+                          <line class="resume-plot-tick" x1="{{ x }}" y1="{{ axis_bottom }}" x2="{{ x }}" y2="{{ axis_bottom | plus: tick_size }}" />
+                          <text class="resume-plot-tick-label resume-plot-tick-label--x" x="{{ x }}" y="{{ axis_bottom | plus: x_label_offset }}" text-anchor="end" transform="rotate(-45 {{ x }} {{ axis_bottom | plus: x_label_offset }})">{{ item.year }}</text>
+                        {% endfor %}
+                        <polyline class="resume-plot-line resume-plot-line--papers" points="{% for item in papers_series %}{% assign value = item.value | plus: 0 %}{% assign x = forloop.index0 | times: plot_width | divided_by: papers_count | plus: axis_left %}{% assign scaled = value | times: plot_height | divided_by: papers_max %}{% assign y = plot_top | plus: plot_height | minus: scaled %}{{ x }},{{ y }}{% unless forloop.last %},{% endunless %}{% endfor %}" />
+                        {% for item in papers_series %}
+                          {% assign value = item.value | plus: 0 %}
+                          {% assign x = forloop.index0 | times: plot_width | divided_by: papers_count | plus: axis_left %}
+                          {% assign scaled = value | times: plot_height | divided_by: papers_max %}
+                          {% assign y = plot_top | plus: plot_height | minus: scaled %}
+                          {% assign label_text = value | append: "" %}
+                          {% assign label_len = label_text | size %}
+                          {% assign label_width = label_len | times: 7 | plus: 12 %}
+                          {% assign label_half = label_width | divided_by: 2 %}
+                          {% assign label_x = x | minus: label_half %}
+                          {% assign label_y = y | minus: 22 %}
+                          <g class="resume-plot-point-group">
+                            <circle class="resume-plot-point resume-plot-point--papers" cx="{{ x }}" cy="{{ y }}" r="3"></circle>
+                            <g class="resume-plot-tooltip">
+                              <rect class="resume-plot-tooltip-bg" x="{{ label_x }}" y="{{ label_y }}" width="{{ label_width }}" height="16" rx="5" ry="5"></rect>
+                              <text class="resume-plot-tooltip-text" x="{{ x }}" y="{{ label_y | plus: 11 }}" text-anchor="middle">{{ label_text }}</text>
+                            </g>
+                          </g>
+                        {% endfor %}
                       </svg>
-                      <div class="resume-plot-axis">
-                        <span>{{ papers_series.first.year }}</span>
-                        <span>{{ papers_series.last.year }}</span>
-                      </div>
                     </div>
 
                     {% assign citations_series = plots.citations_per_year | sort: "year" %}
-                    {% assign citations_max = citations_series | map: "value" | sort | last | plus: 0 %}
-                    {% if citations_max == 0 %}{% assign citations_max = 1 %}{% endif %}
+                    {% assign citations_raw_max = citations_series | map: "value" | sort | last | plus: 0 %}
+                    {% if citations_raw_max == 0 %}{% assign citations_raw_max = 1 %}{% endif %}
+                    {% assign citations_max = citations_raw_max | plus: 9 | divided_by: 10 | times: 10 %}
+                    {% if citations_max < 10 %}{% assign citations_max = 10 %}{% endif %}
                     {% assign citations_count = citations_series.size | minus: 1 %}
                     {% if citations_count < 1 %}{% assign citations_count = 1 %}{% endif %}
+                    {% assign citations_mid = citations_max | divided_by: 2 %}
+                    {% assign citations_mid_scaled = citations_mid | times: plot_height | divided_by: citations_max %}
+                    {% assign citations_mid_y = plot_top | plus: plot_height | minus: citations_mid_scaled %}
 
-                    <div class="resume-plot-card" style="--plot-color: #2f6fdb;">
+                    <div class="resume-plot-card">
                       <h3 class="resume-plot-title">Citations per year</h3>
-                      <svg class="resume-plot-svg" viewBox="0 0 240 70" role="img" aria-label="Citations per year">
-                        <polyline points="{% for item in citations_series %}{% assign value = item.value | plus: 0 %}{% assign x = forloop.index0 | times: 240 | divided_by: citations_count %}{% assign scaled = value | times: 70 | divided_by: citations_max %}{% assign y = 70 | minus: scaled %}{{ x }},{{ y }}{% unless forloop.last %} {% endunless %}{% endfor %}" />
+                      <svg class="resume-plot-svg" viewBox="0 0 {{ plot_view_width }} {{ plot_view_height }}" role="img" aria-label="Citations per year">
+                        <line class="resume-plot-axis-line" x1="{{ axis_left }}" y1="{{ plot_top }}" x2="{{ axis_left }}" y2="{{ axis_bottom }}" />
+                        <line class="resume-plot-axis-line" x1="{{ axis_left }}" y1="{{ axis_bottom }}" x2="{{ axis_right }}" y2="{{ axis_bottom }}" />
+                        <line class="resume-plot-tick" x1="{{ axis_left }}" y1="{{ axis_bottom }}" x2="{{ y_tick_end }}" y2="{{ axis_bottom }}" />
+                        <text class="resume-plot-tick-label resume-plot-tick-label--y" x="{{ y_label_x }}" y="{{ axis_bottom | plus: y_label_offset }}" text-anchor="end">0</text>
+                        <line class="resume-plot-tick" x1="{{ axis_left }}" y1="{{ citations_mid_y }}" x2="{{ y_tick_end }}" y2="{{ citations_mid_y }}" />
+                        {% assign label_value = citations_mid %}
+                        {% if label_value >= 1000 %}
+                          {% assign label_scaled = label_value | times: 10 | divided_by: 1000 %}
+                          {% assign label_major = label_scaled | divided_by: 10 %}
+                          {% assign label_major_ten = label_major | times: 10 %}
+                          {% assign label_minor = label_scaled | minus: label_major_ten %}
+                          {% if label_minor == 0 %}
+                            {% assign label_text = label_major | append: "k" %}
+                          {% else %}
+                            {% assign label_text = label_major | append: "." | append: label_minor | append: "k" %}
+                          {% endif %}
+                        {% else %}
+                          {% assign label_text = label_value %}
+                        {% endif %}
+                        <text class="resume-plot-tick-label resume-plot-tick-label--y" x="{{ y_label_x }}" y="{{ citations_mid_y | plus: y_label_offset }}" text-anchor="end">{{ label_text }}</text>
+                        <line class="resume-plot-tick" x1="{{ axis_left }}" y1="{{ plot_top }}" x2="{{ y_tick_end }}" y2="{{ plot_top }}" />
+                        {% assign label_value = citations_max %}
+                        {% if label_value >= 1000 %}
+                          {% assign label_scaled = label_value | times: 10 | divided_by: 1000 %}
+                          {% assign label_major = label_scaled | divided_by: 10 %}
+                          {% assign label_major_ten = label_major | times: 10 %}
+                          {% assign label_minor = label_scaled | minus: label_major_ten %}
+                          {% if label_minor == 0 %}
+                            {% assign label_text = label_major | append: "k" %}
+                          {% else %}
+                            {% assign label_text = label_major | append: "." | append: label_minor | append: "k" %}
+                          {% endif %}
+                        {% else %}
+                          {% assign label_text = label_value %}
+                        {% endif %}
+                        <text class="resume-plot-tick-label resume-plot-tick-label--y" x="{{ y_label_x }}" y="{{ plot_top | plus: y_label_offset }}" text-anchor="end">{{ label_text }}</text>
+                        {% for item in citations_series %}
+                          {% assign x = forloop.index0 | times: plot_width | divided_by: citations_count | plus: axis_left %}
+                          <line class="resume-plot-tick" x1="{{ x }}" y1="{{ axis_bottom }}" x2="{{ x }}" y2="{{ axis_bottom | plus: tick_size }}" />
+                          <text class="resume-plot-tick-label resume-plot-tick-label--x" x="{{ x }}" y="{{ axis_bottom | plus: x_label_offset }}" text-anchor="end" transform="rotate(-45 {{ x }} {{ axis_bottom | plus: x_label_offset }})">{{ item.year }}</text>
+                        {% endfor %}
+                        <polyline class="resume-plot-line resume-plot-line--citations" points="{% for item in citations_series %}{% assign value = item.value | plus: 0 %}{% assign x = forloop.index0 | times: plot_width | divided_by: citations_count | plus: axis_left %}{% assign scaled = value | times: plot_height | divided_by: citations_max %}{% assign y = plot_top | plus: plot_height | minus: scaled %}{{ x }},{{ y }}{% unless forloop.last %},{% endunless %}{% endfor %}" />
+                        {% for item in citations_series %}
+                          {% assign value = item.value | plus: 0 %}
+                          {% assign x = forloop.index0 | times: plot_width | divided_by: citations_count | plus: axis_left %}
+                          {% assign scaled = value | times: plot_height | divided_by: citations_max %}
+                          {% assign y = plot_top | plus: plot_height | minus: scaled %}
+                          {% assign label_text = value | append: "" %}
+                          {% assign label_len = label_text | size %}
+                          {% assign label_width = label_len | times: 7 | plus: 12 %}
+                          {% assign label_half = label_width | divided_by: 2 %}
+                          {% assign label_x = x | minus: label_half %}
+                          {% assign label_y = y | minus: 22 %}
+                          <g class="resume-plot-point-group">
+                            <circle class="resume-plot-point resume-plot-point--citations" cx="{{ x }}" cy="{{ y }}" r="3"></circle>
+                            <g class="resume-plot-tooltip">
+                              <rect class="resume-plot-tooltip-bg" x="{{ label_x }}" y="{{ label_y }}" width="{{ label_width }}" height="16" rx="5" ry="5"></rect>
+                              <text class="resume-plot-tooltip-text" x="{{ x }}" y="{{ label_y | plus: 11 }}" text-anchor="middle">{{ label_text }}</text>
+                            </g>
+                          </g>
+                        {% endfor %}
                       </svg>
-                      <div class="resume-plot-axis">
-                        <span>{{ citations_series.first.year }}</span>
-                        <span>{{ citations_series.last.year }}</span>
-                      </div>
                     </div>
 
                     {% assign reads_series = plots.reads_per_year | sort: "year" %}
-                    {% assign reads_max = reads_series | map: "value" | sort | last | plus: 0 %}
-                    {% if reads_max == 0 %}{% assign reads_max = 1 %}{% endif %}
+                    {% assign reads_raw_max = reads_series | map: "value" | sort | last | plus: 0 %}
+                    {% if reads_raw_max == 0 %}{% assign reads_raw_max = 1 %}{% endif %}
+                    {% assign reads_max = reads_raw_max | plus: 9 | divided_by: 10 | times: 10 %}
+                    {% if reads_max < 10 %}{% assign reads_max = 10 %}{% endif %}
                     {% assign reads_count = reads_series.size | minus: 1 %}
                     {% if reads_count < 1 %}{% assign reads_count = 1 %}{% endif %}
+                    {% assign reads_mid = reads_max | divided_by: 2 %}
+                    {% assign reads_mid_scaled = reads_mid | times: plot_height | divided_by: reads_max %}
+                    {% assign reads_mid_y = plot_top | plus: plot_height | minus: reads_mid_scaled %}
 
-                    <div class="resume-plot-card" style="--plot-color: #19a974;">
+                    <div class="resume-plot-card">
                       <h3 class="resume-plot-title">Reads per year</h3>
-                      <svg class="resume-plot-svg" viewBox="0 0 240 70" role="img" aria-label="Reads per year">
-                        <polyline points="{% for item in reads_series %}{% assign value = item.value | plus: 0 %}{% assign x = forloop.index0 | times: 240 | divided_by: reads_count %}{% assign scaled = value | times: 70 | divided_by: reads_max %}{% assign y = 70 | minus: scaled %}{{ x }},{{ y }}{% unless forloop.last %} {% endunless %}{% endfor %}" />
+                      <svg class="resume-plot-svg" viewBox="0 0 {{ plot_view_width }} {{ plot_view_height }}" role="img" aria-label="Reads per year">
+                        <line class="resume-plot-axis-line" x1="{{ axis_left }}" y1="{{ plot_top }}" x2="{{ axis_left }}" y2="{{ axis_bottom }}" />
+                        <line class="resume-plot-axis-line" x1="{{ axis_left }}" y1="{{ axis_bottom }}" x2="{{ axis_right }}" y2="{{ axis_bottom }}" />
+                        <line class="resume-plot-tick" x1="{{ axis_left }}" y1="{{ axis_bottom }}" x2="{{ y_tick_end }}" y2="{{ axis_bottom }}" />
+                        <text class="resume-plot-tick-label resume-plot-tick-label--y" x="{{ y_label_x }}" y="{{ axis_bottom | plus: y_label_offset }}" text-anchor="end">0</text>
+                        <line class="resume-plot-tick" x1="{{ axis_left }}" y1="{{ reads_mid_y }}" x2="{{ y_tick_end }}" y2="{{ reads_mid_y }}" />
+                        {% assign label_value = reads_mid %}
+                        {% if label_value >= 1000 %}
+                          {% assign label_scaled = label_value | times: 10 | divided_by: 1000 %}
+                          {% assign label_major = label_scaled | divided_by: 10 %}
+                          {% assign label_major_ten = label_major | times: 10 %}
+                          {% assign label_minor = label_scaled | minus: label_major_ten %}
+                          {% if label_minor == 0 %}
+                            {% assign label_text = label_major | append: "k" %}
+                          {% else %}
+                            {% assign label_text = label_major | append: "." | append: label_minor | append: "k" %}
+                          {% endif %}
+                        {% else %}
+                          {% assign label_text = label_value %}
+                        {% endif %}
+                        <text class="resume-plot-tick-label resume-plot-tick-label--y" x="{{ y_label_x }}" y="{{ reads_mid_y | plus: y_label_offset }}" text-anchor="end">{{ label_text }}</text>
+                        <line class="resume-plot-tick" x1="{{ axis_left }}" y1="{{ plot_top }}" x2="{{ y_tick_end }}" y2="{{ plot_top }}" />
+                        {% assign label_value = reads_max %}
+                        {% if label_value >= 1000 %}
+                          {% assign label_scaled = label_value | times: 10 | divided_by: 1000 %}
+                          {% assign label_major = label_scaled | divided_by: 10 %}
+                          {% assign label_major_ten = label_major | times: 10 %}
+                          {% assign label_minor = label_scaled | minus: label_major_ten %}
+                          {% if label_minor == 0 %}
+                            {% assign label_text = label_major | append: "k" %}
+                          {% else %}
+                            {% assign label_text = label_major | append: "." | append: label_minor | append: "k" %}
+                          {% endif %}
+                        {% else %}
+                          {% assign label_text = label_value %}
+                        {% endif %}
+                        <text class="resume-plot-tick-label resume-plot-tick-label--y" x="{{ y_label_x }}" y="{{ plot_top | plus: y_label_offset }}" text-anchor="end">{{ label_text }}</text>
+                        {% for item in reads_series %}
+                          {% assign x = forloop.index0 | times: plot_width | divided_by: reads_count | plus: axis_left %}
+                          <line class="resume-plot-tick" x1="{{ x }}" y1="{{ axis_bottom }}" x2="{{ x }}" y2="{{ axis_bottom | plus: tick_size }}" />
+                          <text class="resume-plot-tick-label resume-plot-tick-label--x" x="{{ x }}" y="{{ axis_bottom | plus: x_label_offset }}" text-anchor="end" transform="rotate(-45 {{ x }} {{ axis_bottom | plus: x_label_offset }})">{{ item.year }}</text>
+                        {% endfor %}
+                        <polyline class="resume-plot-line resume-plot-line--reads" points="{% for item in reads_series %}{% assign value = item.value | plus: 0 %}{% assign x = forloop.index0 | times: plot_width | divided_by: reads_count | plus: axis_left %}{% assign scaled = value | times: plot_height | divided_by: reads_max %}{% assign y = plot_top | plus: plot_height | minus: scaled %}{{ x }},{{ y }}{% unless forloop.last %},{% endunless %}{% endfor %}" />
+                        {% for item in reads_series %}
+                          {% assign value = item.value | plus: 0 %}
+                          {% assign x = forloop.index0 | times: plot_width | divided_by: reads_count | plus: axis_left %}
+                          {% assign scaled = value | times: plot_height | divided_by: reads_max %}
+                          {% assign y = plot_top | plus: plot_height | minus: scaled %}
+                          {% assign label_text = value | append: "" %}
+                          {% assign label_len = label_text | size %}
+                          {% assign label_width = label_len | times: 7 | plus: 12 %}
+                          {% assign label_half = label_width | divided_by: 2 %}
+                          {% assign label_x = x | minus: label_half %}
+                          {% assign label_y = y | minus: 22 %}
+                          <g class="resume-plot-point-group">
+                            <circle class="resume-plot-point resume-plot-point--reads" cx="{{ x }}" cy="{{ y }}" r="3"></circle>
+                            <g class="resume-plot-tooltip">
+                              <rect class="resume-plot-tooltip-bg" x="{{ label_x }}" y="{{ label_y }}" width="{{ label_width }}" height="16" rx="5" ry="5"></rect>
+                              <text class="resume-plot-tooltip-text" x="{{ x }}" y="{{ label_y | plus: 11 }}" text-anchor="middle">{{ label_text }}</text>
+                            </g>
+                          </g>
+                        {% endfor %}
                       </svg>
-                      <div class="resume-plot-axis">
-                        <span>{{ reads_series.first.year }}</span>
-                        <span>{{ reads_series.last.year }}</span>
-                      </div>
                     </div>
 
                     {% assign indices_series = plots.indices_per_year | sort: "year" %}
                     {% assign indices_values = '' | split: '' %}
                     {% for item in indices_series %}
-                      {% assign indices_values = indices_values | push: item.h_index | push: item.g_index | push: item.i10_index | push: item.read10_index %}
+                      {% assign read10_scaled = item.read10_index | divided_by: 10 %}
+                      {% assign indices_values = indices_values | push: item.h_index | push: item.g_index | push: item.i10_index | push: read10_scaled %}
                     {% endfor %}
-                    {% assign indices_max = indices_values | sort | last | plus: 0 %}
-                    {% if indices_max == 0 %}{% assign indices_max = 1 %}{% endif %}
+                    {% assign indices_raw_max = indices_values | sort | last | plus: 0 %}
+                    {% if indices_raw_max == 0 %}{% assign indices_raw_max = 1 %}{% endif %}
+                    {% assign indices_max = indices_raw_max | plus: 9 | divided_by: 10 | times: 10 %}
+                    {% if indices_max < 10 %}{% assign indices_max = 10 %}{% endif %}
                     {% assign indices_count = indices_series.size | minus: 1 %}
                     {% if indices_count < 1 %}{% assign indices_count = 1 %}{% endif %}
+                    {% assign indices_mid = indices_max | divided_by: 2 %}
+                    {% assign indices_mid_scaled = indices_mid | times: plot_height | divided_by: indices_max %}
+                    {% assign indices_mid_y = plot_top | plus: plot_height | minus: indices_mid_scaled %}
 
                     <div class="resume-plot-card resume-plot-card--multi">
                       <h3 class="resume-plot-title">Indices per year</h3>
-                      <svg class="resume-plot-svg" viewBox="0 0 240 70" role="img" aria-label="Indices per year">
-                        <polyline class="resume-plot-line resume-plot-line--h" points="{% for item in indices_series %}{% assign value = item.h_index | plus: 0 %}{% assign x = forloop.index0 | times: 240 | divided_by: indices_count %}{% assign scaled = value | times: 70 | divided_by: indices_max %}{% assign y = 70 | minus: scaled %}{{ x }},{{ y }}{% unless forloop.last %} {% endunless %}{% endfor %}" />
-                        <polyline class="resume-plot-line resume-plot-line--g" points="{% for item in indices_series %}{% assign value = item.g_index | plus: 0 %}{% assign x = forloop.index0 | times: 240 | divided_by: indices_count %}{% assign scaled = value | times: 70 | divided_by: indices_max %}{% assign y = 70 | minus: scaled %}{{ x }},{{ y }}{% unless forloop.last %} {% endunless %}{% endfor %}" />
-                        <polyline class="resume-plot-line resume-plot-line--i10" points="{% for item in indices_series %}{% assign value = item.i10_index | plus: 0 %}{% assign x = forloop.index0 | times: 240 | divided_by: indices_count %}{% assign scaled = value | times: 70 | divided_by: indices_max %}{% assign y = 70 | minus: scaled %}{{ x }},{{ y }}{% unless forloop.last %} {% endunless %}{% endfor %}" />
-                        <polyline class="resume-plot-line resume-plot-line--read10" points="{% for item in indices_series %}{% assign value = item.read10_index | plus: 0 %}{% assign x = forloop.index0 | times: 240 | divided_by: indices_count %}{% assign scaled = value | times: 70 | divided_by: indices_max %}{% assign y = 70 | minus: scaled %}{{ x }},{{ y }}{% unless forloop.last %} {% endunless %}{% endfor %}" />
+                      <svg class="resume-plot-svg" viewBox="0 0 {{ plot_view_width }} {{ plot_view_height }}" role="img" aria-label="Indices per year">
+                        <line class="resume-plot-axis-line" x1="{{ axis_left }}" y1="{{ plot_top }}" x2="{{ axis_left }}" y2="{{ axis_bottom }}" />
+                        <line class="resume-plot-axis-line" x1="{{ axis_left }}" y1="{{ axis_bottom }}" x2="{{ axis_right }}" y2="{{ axis_bottom }}" />
+                        <line class="resume-plot-tick" x1="{{ axis_left }}" y1="{{ axis_bottom }}" x2="{{ y_tick_end }}" y2="{{ axis_bottom }}" />
+                        <text class="resume-plot-tick-label resume-plot-tick-label--y" x="{{ y_label_x }}" y="{{ axis_bottom | plus: y_label_offset }}" text-anchor="end">0</text>
+                        <line class="resume-plot-tick" x1="{{ axis_left }}" y1="{{ indices_mid_y }}" x2="{{ y_tick_end }}" y2="{{ indices_mid_y }}" />
+                        {% assign label_value = indices_mid %}
+                        {% if label_value >= 1000 %}
+                          {% assign label_scaled = label_value | times: 10 | divided_by: 1000 %}
+                          {% assign label_major = label_scaled | divided_by: 10 %}
+                          {% assign label_major_ten = label_major | times: 10 %}
+                          {% assign label_minor = label_scaled | minus: label_major_ten %}
+                          {% if label_minor == 0 %}
+                            {% assign label_text = label_major | append: "k" %}
+                          {% else %}
+                            {% assign label_text = label_major | append: "." | append: label_minor | append: "k" %}
+                          {% endif %}
+                        {% else %}
+                          {% assign label_text = label_value %}
+                        {% endif %}
+                        <text class="resume-plot-tick-label resume-plot-tick-label--y" x="{{ y_label_x }}" y="{{ indices_mid_y | plus: y_label_offset }}" text-anchor="end">{{ label_text }}</text>
+                        <line class="resume-plot-tick" x1="{{ axis_left }}" y1="{{ plot_top }}" x2="{{ y_tick_end }}" y2="{{ plot_top }}" />
+                        {% assign label_value = indices_max %}
+                        {% if label_value >= 1000 %}
+                          {% assign label_scaled = label_value | times: 10 | divided_by: 1000 %}
+                          {% assign label_major = label_scaled | divided_by: 10 %}
+                          {% assign label_major_ten = label_major | times: 10 %}
+                          {% assign label_minor = label_scaled | minus: label_major_ten %}
+                          {% if label_minor == 0 %}
+                            {% assign label_text = label_major | append: "k" %}
+                          {% else %}
+                            {% assign label_text = label_major | append: "." | append: label_minor | append: "k" %}
+                          {% endif %}
+                        {% else %}
+                          {% assign label_text = label_value %}
+                        {% endif %}
+                        <text class="resume-plot-tick-label resume-plot-tick-label--y" x="{{ y_label_x }}" y="{{ plot_top | plus: y_label_offset }}" text-anchor="end">{{ label_text }}</text>
+                        {% for item in indices_series %}
+                          {% assign x = forloop.index0 | times: plot_width | divided_by: indices_count | plus: axis_left %}
+                          <line class="resume-plot-tick" x1="{{ x }}" y1="{{ axis_bottom }}" x2="{{ x }}" y2="{{ axis_bottom | plus: tick_size }}" />
+                          <text class="resume-plot-tick-label resume-plot-tick-label--x" x="{{ x }}" y="{{ axis_bottom | plus: x_label_offset }}" text-anchor="end" transform="rotate(-45 {{ x }} {{ axis_bottom | plus: x_label_offset }})">{{ item.year }}</text>
+                        {% endfor %}
+                        <polyline class="resume-plot-line resume-plot-line--h" points="{% for item in indices_series %}{% assign value = item.h_index | plus: 0 %}{% assign x = forloop.index0 | times: plot_width | divided_by: indices_count | plus: axis_left %}{% assign scaled = value | times: plot_height | divided_by: indices_max %}{% assign y = plot_top | plus: plot_height | minus: scaled %}{{ x }},{{ y }}{% unless forloop.last %},{% endunless %}{% endfor %}" />
+                        <polyline class="resume-plot-line resume-plot-line--g" points="{% for item in indices_series %}{% assign value = item.g_index | plus: 0 %}{% assign x = forloop.index0 | times: plot_width | divided_by: indices_count | plus: axis_left %}{% assign scaled = value | times: plot_height | divided_by: indices_max %}{% assign y = plot_top | plus: plot_height | minus: scaled %}{{ x }},{{ y }}{% unless forloop.last %},{% endunless %}{% endfor %}" />
+                        <polyline class="resume-plot-line resume-plot-line--i10" points="{% for item in indices_series %}{% assign value = item.i10_index | plus: 0 %}{% assign x = forloop.index0 | times: plot_width | divided_by: indices_count | plus: axis_left %}{% assign scaled = value | times: plot_height | divided_by: indices_max %}{% assign y = plot_top | plus: plot_height | minus: scaled %}{{ x }},{{ y }}{% unless forloop.last %},{% endunless %}{% endfor %}" />
+                        <polyline class="resume-plot-line resume-plot-line--read10" points="{% for item in indices_series %}{% assign value = item.read10_index | divided_by: 10 %}{% assign x = forloop.index0 | times: plot_width | divided_by: indices_count | plus: axis_left %}{% assign scaled = value | times: plot_height | divided_by: indices_max %}{% assign y = plot_top | plus: plot_height | minus: scaled %}{{ x }},{{ y }}{% unless forloop.last %},{% endunless %}{% endfor %}" />
+                        {% for item in indices_series %}
+                          {% assign x = forloop.index0 | times: plot_width | divided_by: indices_count | plus: axis_left %}
+                          {% assign h_scaled = item.h_index | times: plot_height | divided_by: indices_max %}
+                          {% assign g_scaled = item.g_index | times: plot_height | divided_by: indices_max %}
+                          {% assign i10_scaled = item.i10_index | times: plot_height | divided_by: indices_max %}
+                          {% assign read10_value = item.read10_index | divided_by: 10 %}
+                          {% assign read10_scaled = read10_value | times: plot_height | divided_by: indices_max %}
+                          {% assign h_y = plot_top | plus: plot_height | minus: h_scaled %}
+                          {% assign g_y = plot_top | plus: plot_height | minus: g_scaled %}
+                          {% assign i10_y = plot_top | plus: plot_height | minus: i10_scaled %}
+                          {% assign read10_y = plot_top | plus: plot_height | minus: read10_scaled %}
+
+                          {% assign label_text = "h: " | append: item.h_index %}
+                          {% assign label_len = label_text | size %}
+                          {% assign label_width = label_len | times: 7 | plus: 12 %}
+                          {% assign label_half = label_width | divided_by: 2 %}
+                          {% assign label_x = x | minus: label_half %}
+                          {% assign label_y = h_y | minus: 22 %}
+                          <g class="resume-plot-point-group">
+                            <circle class="resume-plot-point resume-plot-point--h" cx="{{ x }}" cy="{{ h_y }}" r="2.6"></circle>
+                            <g class="resume-plot-tooltip">
+                              <rect class="resume-plot-tooltip-bg" x="{{ label_x }}" y="{{ label_y }}" width="{{ label_width }}" height="16" rx="5" ry="5"></rect>
+                              <text class="resume-plot-tooltip-text" x="{{ x }}" y="{{ label_y | plus: 11 }}" text-anchor="middle">{{ label_text }}</text>
+                            </g>
+                          </g>
+
+                          {% assign label_text = "g: " | append: item.g_index %}
+                          {% assign label_len = label_text | size %}
+                          {% assign label_width = label_len | times: 7 | plus: 12 %}
+                          {% assign label_half = label_width | divided_by: 2 %}
+                          {% assign label_x = x | minus: label_half %}
+                          {% assign label_y = g_y | minus: 22 %}
+                          <g class="resume-plot-point-group">
+                            <circle class="resume-plot-point resume-plot-point--g" cx="{{ x }}" cy="{{ g_y }}" r="2.6"></circle>
+                            <g class="resume-plot-tooltip">
+                              <rect class="resume-plot-tooltip-bg" x="{{ label_x }}" y="{{ label_y }}" width="{{ label_width }}" height="16" rx="5" ry="5"></rect>
+                              <text class="resume-plot-tooltip-text" x="{{ x }}" y="{{ label_y | plus: 11 }}" text-anchor="middle">{{ label_text }}</text>
+                            </g>
+                          </g>
+
+                          {% assign label_text = "i10: " | append: item.i10_index %}
+                          {% assign label_len = label_text | size %}
+                          {% assign label_width = label_len | times: 7 | plus: 12 %}
+                          {% assign label_half = label_width | divided_by: 2 %}
+                          {% assign label_x = x | minus: label_half %}
+                          {% assign label_y = i10_y | minus: 22 %}
+                          <g class="resume-plot-point-group">
+                            <circle class="resume-plot-point resume-plot-point--i10" cx="{{ x }}" cy="{{ i10_y }}" r="2.6"></circle>
+                            <g class="resume-plot-tooltip">
+                              <rect class="resume-plot-tooltip-bg" x="{{ label_x }}" y="{{ label_y }}" width="{{ label_width }}" height="16" rx="5" ry="5"></rect>
+                              <text class="resume-plot-tooltip-text" x="{{ x }}" y="{{ label_y | plus: 11 }}" text-anchor="middle">{{ label_text }}</text>
+                            </g>
+                          </g>
+
+                          {% assign label_text = "read10: " | append: item.read10_index %}
+                          {% assign label_len = label_text | size %}
+                          {% assign label_width = label_len | times: 7 | plus: 12 %}
+                          {% assign label_half = label_width | divided_by: 2 %}
+                          {% assign label_x = x | minus: label_half %}
+                          {% assign label_y = read10_y | minus: 22 %}
+                          <g class="resume-plot-point-group">
+                            <circle class="resume-plot-point resume-plot-point--read10" cx="{{ x }}" cy="{{ read10_y }}" r="2.6"></circle>
+                            <g class="resume-plot-tooltip">
+                              <rect class="resume-plot-tooltip-bg" x="{{ label_x }}" y="{{ label_y }}" width="{{ label_width }}" height="16" rx="5" ry="5"></rect>
+                              <text class="resume-plot-tooltip-text" x="{{ x }}" y="{{ label_y | plus: 11 }}" text-anchor="middle">{{ label_text }}</text>
+                            </g>
+                          </g>
+                        {% endfor %}
                       </svg>
                       <div class="resume-plot-legend">
                         <span class="resume-plot-key resume-plot-key--h">h-index</span>
                         <span class="resume-plot-key resume-plot-key--g">g-index</span>
                         <span class="resume-plot-key resume-plot-key--i10">i10-index</span>
-                        <span class="resume-plot-key resume-plot-key--read10">read10-index</span>
+                        <span class="resume-plot-key resume-plot-key--read10">read10-index (10^-1)</span>
                       </div>
                     </div>
                   </div>
                 {% endif %}
+              </div>
+
+              <h3 class="resume-metrics-title resume-pubs-subtitle">List of publications</h3>
+
+              <div class="resume-pubs-filters" role="tablist" aria-label="Publication filters">
+                <button class="resume-pubs-filter is-active" type="button" data-pubs-target="latest" aria-pressed="true">Latest 10</button>
+                <button class="resume-pubs-filter" type="button" data-pubs-target="cited" aria-pressed="false">Most cited</button>
+                <button class="resume-pubs-filter" type="button" data-pubs-target="first" aria-pressed="false">First/second author</button>
+                <a class="resume-pubs-filter resume-pubs-filter--link" href="https://ui.adsabs.harvard.edu/public-libraries/7KtKk-uwSP-LaMEkA7SKGQ" target="_blank" rel="noopener" aria-label="View all publications on ADS">All (ADS)</a>
               </div>
 
               <div class="resume-pubs-lists">

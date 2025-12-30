@@ -212,9 +212,16 @@
   gap: 1.25rem;
 }
 
-.resume-pubs-overview {
+.resume-pubs-metrics-block {
   display: grid;
   gap: 1rem;
+}
+
+.resume-metrics-title {
+  margin: 0;
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--resume-ink);
 }
 
 .resume-pubs-metrics {
@@ -262,6 +269,14 @@
   gap: .5rem;
 }
 
+.resume-pubs-heading {
+  margin: 0 0 1.5rem;
+}
+
+.resume-pubs-subtitle {
+  margin-top: .75rem;
+}
+
 .resume-pubs-filter {
   border: 1px solid var(--resume-rule);
   background: #fff;
@@ -272,7 +287,18 @@
   text-transform: uppercase;
   font-weight: 600;
   color: var(--resume-ink);
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
   transition: transform .15s ease, box-shadow .15s ease, background-color .15s ease, color .15s ease;
+}
+
+.resume-section .resume-pubs-filter--link,
+.resume-section .resume-pubs-filter--link:visited {
+  color: var(--resume-ink);
+  border-bottom: 1px solid var(--resume-rule);
 }
 
 .resume-pubs-filter:hover,
@@ -290,7 +316,7 @@
 
 .resume-pubs-plots {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: .85rem;
 }
 
@@ -298,7 +324,7 @@
   background: #fff;
   border: 1px solid var(--resume-rule);
   border-radius: .9rem;
-  padding: .75rem .85rem .65rem;
+  padding: .75rem .7rem .65rem .5rem;
   box-shadow: 0 8px 18px rgba(15, 23, 42, 0.08);
 }
 
@@ -312,20 +338,31 @@
 .resume-plot-svg {
   width: 100%;
   height: auto;
+  aspect-ratio: 5 / 4;
+  display: block;
+  overflow: visible;
+  margin-left: 0;
 }
 
-.resume-plot-svg polyline {
-  stroke: var(--plot-color, var(--resume-accent));
-  stroke-width: 2;
-  fill: none;
+.resume-plot-axis-line,
+.resume-plot-tick {
+  stroke: var(--resume-rule);
+  stroke-width: 1;
 }
 
-.resume-plot-axis {
-  display: flex;
-  justify-content: space-between;
-  font-size: .7rem;
-  color: var(--resume-muted);
-  margin-top: .35rem;
+.resume-plot-tick-label {
+  fill: var(--resume-muted);
+  font-size: .5rem;
+  font-weight: 500;
+  pointer-events: none;
+}
+
+.resume-plot-tick-label--x {
+  dominant-baseline: hanging;
+}
+
+.resume-plot-tick-label--y {
+  dominant-baseline: middle;
 }
 
 .resume-plot-card--multi .resume-plot-svg {
@@ -335,22 +372,89 @@
 .resume-plot-line {
   fill: none;
   stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke: currentColor;
 }
 
-.resume-plot-line--h {
-  stroke: var(--resume-accent);
+.resume-plot-point {
+  fill: currentColor;
+  stroke: #fff;
+  stroke-width: 1;
+  pointer-events: all;
+  transform-box: fill-box;
+  transform-origin: center;
+  transition: transform .15s ease, stroke-width .15s ease;
+  cursor: pointer;
 }
 
-.resume-plot-line--g {
-  stroke: #2f6fdb;
+.resume-plot-point:hover {
+  transform: scale(2);
+  stroke-width: 2;
 }
 
-.resume-plot-line--i10 {
-  stroke: #4b5563;
+.resume-plot-point-group:hover .resume-plot-point {
+  transform: scale(2.2);
+  stroke-width: 2.2;
 }
 
-.resume-plot-line--read10 {
-  stroke: #19a974;
+.resume-plot-tooltip {
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity .15s ease;
+}
+
+.resume-plot-tooltip-bg {
+  fill: #0f172a;
+  opacity: .9;
+}
+
+.resume-plot-tooltip-text {
+  fill: #fff;
+  font-size: .6rem;
+  font-weight: 600;
+  paint-order: stroke;
+  stroke: #0f172a;
+  stroke-width: 1;
+}
+
+.resume-plot-point-group:hover .resume-plot-tooltip {
+  opacity: 1;
+}
+
+.resume-plot-line--papers,
+.resume-plot-point--papers {
+  color: #ff6a3c;
+}
+
+.resume-plot-line--citations,
+.resume-plot-point--citations {
+  color: #2f6fdb;
+}
+
+.resume-plot-line--reads,
+.resume-plot-point--reads {
+  color: #19a974;
+}
+
+.resume-plot-line--h,
+.resume-plot-point--h {
+  color: #7c3aed;
+}
+
+.resume-plot-line--g,
+.resume-plot-point--g {
+  color: #ef4444;
+}
+
+.resume-plot-line--i10,
+.resume-plot-point--i10 {
+  color: #d4a017;
+}
+
+.resume-plot-line--read10,
+.resume-plot-point--read10 {
+  color: #14b8a6;
 }
 
 .resume-plot-legend {
@@ -375,19 +479,19 @@
 }
 
 .resume-plot-key--h {
-  color: var(--resume-accent);
+  color: #7c3aed;
 }
 
 .resume-plot-key--g {
-  color: #2f6fdb;
+  color: #ef4444;
 }
 
 .resume-plot-key--i10 {
-  color: #4b5563;
+  color: #d4a017;
 }
 
 .resume-plot-key--read10 {
-  color: #19a974;
+  color: #14b8a6;
 }
 
 .resume-pubs-lists {

@@ -1,15 +1,21 @@
 #!/usr/bin/env python3
 # RUN IN TERMINAL AS:
+# $./scripts/update_ads_pubs.py
+# $./scripts/update_ads_pubs.py "JIV" --metrics --metrics-only
+# $./scripts/update_ads_pubs.py --delta-year 2025 --metrics-only
 # $./scripts/update_ads_pubs.py "JIV" _data/papers_all.yml --sdss _data/papers_sdssv.yml --metrics _data/ads_metrics.yml
-# $./scripts/update_ads_pubs.py "JIV" _data/papers_all.yml --metrics _data/ads_metrics.yml --metrics-only
 #
-import os, sys, re, time, json, math, unicodedata, html
+import os, sys, re, time, json, math, unicodedata, html, argparse
 from typing import List, Dict
 import requests, yaml
 
 ADS_API = "https://api.adsabs.harvard.edu/v1"
 TOKEN = os.getenv("ADS_DEV_KEY")
 HEADERS = {"Authorization": f"Bearer {TOKEN}"}
+DEFAULT_LIBRARY_NAME = "JIV"
+DEFAULT_ALL_YML = "_data/papers_all.yml"
+DEFAULT_SDSS_YML = "_data/papers_sdssv.yml"
+DEFAULT_METRICS_YML = "_data/ads_metrics.yml"
 
 # Map BibTeX month tokens to two-digit numbers
 BIB_MONTHS = {
@@ -171,6 +177,7 @@ def build_citations_series(histograms: Dict) -> List[Dict]:
     block = pick_histogram(histograms, ["citations"])
     if not isinstance(block, dict):
         return []
+    current_year = int(time.strftime("%Y"))
     combined = {}
     for label, series in block.items():
         if "normalized" in label.lower():
@@ -178,7 +185,10 @@ def build_citations_series(histograms: Dict) -> List[Dict]:
         if not isinstance(series, dict):
             continue
         for year, val in series.items():
-            combined[year] = combined.get(year, 0) + coerce_int(val)
+            y = coerce_int(year)
+            if y > current_year:
+                continue
+            combined[y] = combined.get(y, 0) + coerce_int(val)
     if not combined:
         return []
     return sorted(
@@ -201,6 +211,32 @@ def trim_leading_zeros(series: List[Dict]) -> List[Dict]:
             return series[i:]
     return series or []
 
+def latest_year_from_series(*series_list: List[Dict]) -> int:
+    current_year = int(time.strftime("%Y"))
+    years = []
+    for series in series_list:
+        for item in series or []:
+            year = item.get("year")
+            if year is None:
+                continue
+            y = coerce_int(year)
+            if y <= current_year:
+                years.append(y)
+    return max(years) if years else current_year
+
+def read_existing_delta_year(path: str) -> int:
+    if not path or not os.path.exists(path):
+        return 0
+    try:
+        with open(path, "r", encoding="utf-8") as f:
+            data = yaml.safe_load(f) or {}
+    except Exception:
+        return 0
+    val = data.get("delta_year")
+    if not val:
+        val = (data.get("metrics") or {}).get("delta_year")
+    return coerce_int(val)
+
 def fetch_metrics(bibcodes: List[str]) -> Dict:
     if not bibcodes:
         return {}
@@ -217,7 +253,7 @@ def fetch_metrics(bibcodes: List[str]) -> Dict:
             time.sleep(2 * (attempt + 1))
     raise SystemExit(f"ADS metrics request failed after retries: {last_err}")
 
-def build_metrics_payload(metrics_raw: Dict, mapped: List[Dict]) -> Dict:
+def build_metrics_payload(metrics_raw: Dict, mapped: List[Dict], delta_year: int = 0) -> Dict:
     basic = pick_section(metrics_raw, "basic")
     citation = pick_section(metrics_raw, "citation")
     reads = pick_section(metrics_raw, "read")
@@ -238,11 +274,11 @@ def build_metrics_payload(metrics_raw: Dict, mapped: List[Dict]) -> Dict:
     reads_series = trim_leading_zeros(histogram_series(histograms, ["reads", "read"]))
     indices_series = time_series_indices(time_series)
 
-    total_papers = pick_metric_value(basic, ["papers", "publications", "pubs"])
+    total_papers = pick_metric_value(basic, ["number of papers", "papers", "publications", "pubs"])
     if total_papers == 0:
         total_papers = len(mapped)
 
-    total_citations = pick_metric_value(citation, ["citations", "total citations", "citations total"])
+    total_citations = pick_metric_value(citation, ["total number of citations", "citations", "total citations", "citations total"])
     if total_citations == 0:
         total_citations = sum(coerce_int(m.get("citations")) for m in mapped)
 
@@ -254,21 +290,28 @@ def build_metrics_payload(metrics_raw: Dict, mapped: List[Dict]) -> Dict:
     if g_index == 0:
         g_index = pick_metric_value(basic, ["g-index", "g_index", "gindex"])
 
+    if delta_year:
+        latest_year = delta_year
+    else:
+        latest_year = latest_year_from_series(papers_series, citations_series, indices_series)
+    prev_year = latest_year - 1
+
     metrics = {
         "total_papers": total_papers,
         "total_citations": total_citations,
         "h_index": h_index,
         "g_index": g_index,
         "deltas": {
-            "total_papers": year_delta(papers_series, 2024, 2025),
-            "total_citations": year_delta(citations_series, 2024, 2025),
-            "h_index": year_delta(indices_series, 2024, 2025, key="h_index"),
-            "g_index": year_delta(indices_series, 2024, 2025, key="g_index"),
+            "total_papers": year_value(papers_series, latest_year),
+            "total_citations": year_value(citations_series, latest_year),
+            "h_index": year_delta(indices_series, prev_year, latest_year, key="h_index"),
+            "g_index": year_delta(indices_series, prev_year, latest_year, key="g_index"),
         },
     }
 
     return {
         "as_of": time.strftime("%Y-%m-%d"),
+        "delta_year": latest_year,
         "metrics": metrics,
         "plots": {
             "papers_per_year": papers_series,
@@ -562,25 +605,69 @@ def add_tags(m):
     m["tags"] = tags
     return m
 
+def parse_args():
+    parser = argparse.ArgumentParser(
+        description="Sync ADS publications and optional metrics to YAML."
+    )
+    parser.add_argument(
+        "library_name",
+        nargs="?",
+        default=DEFAULT_LIBRARY_NAME,
+        help=f"ADS library name (default: {DEFAULT_LIBRARY_NAME})",
+    )
+    parser.add_argument(
+        "out_all",
+        nargs="?",
+        default=DEFAULT_ALL_YML,
+        help=f"Output YAML for all publications (default: {DEFAULT_ALL_YML})",
+    )
+    parser.add_argument(
+        "--sdss",
+        nargs="?",
+        const=DEFAULT_SDSS_YML,
+        default=None,
+        metavar="PATH",
+        help=f"Optional SDSS subset output (default: {DEFAULT_SDSS_YML})",
+    )
+    parser.add_argument(
+        "--metrics",
+        nargs="?",
+        const=DEFAULT_METRICS_YML,
+        default=None,
+        metavar="PATH",
+        help=f"Write metrics YAML (default: {DEFAULT_METRICS_YML})",
+    )
+    parser.add_argument(
+        "--delta-year",
+        type=int,
+        default=None,
+        help="Year used for delta calculations (default: reuse existing metrics year if set).",
+    )
+    parser.add_argument(
+        "--metrics-only",
+        action="store_true",
+        help="Only refresh metrics using an existing publications file.",
+    )
+    return parser.parse_args()
+
 def main():
     if not TOKEN:
         die("ADS_DEV_KEY is not set in environment.")
 
-    if len(sys.argv) < 3:
-        print("Usage: update_ads_pubs.py '<ADS Library Name>' _data/papers_all.yml [--sdss _data/papers_sdssv.yml] [--metrics _data/ads_metrics.yml] [--metrics-only]", file=sys.stderr)
-        sys.exit(2)
+    args = parse_args()
+    library_name = args.library_name
+    out_all = args.out_all
+    out_sdss = args.sdss
+    out_metrics = args.metrics
+    metrics_only = args.metrics_only
 
-    library_name = sys.argv[1]
-    out_all = sys.argv[2]
-    out_sdss = None
-    out_metrics = None
-    metrics_only = "--metrics-only" in sys.argv
-    if "--sdss" in sys.argv:
-        i = sys.argv.index("--sdss")
-        out_sdss = sys.argv[i+1]
-    if "--metrics" in sys.argv:
-        i = sys.argv.index("--metrics")
-        out_metrics = sys.argv[i+1]
+    if metrics_only and not out_metrics:
+        out_metrics = DEFAULT_METRICS_YML
+    delta_year = args.delta_year
+    if not delta_year:
+        delta_year = read_existing_delta_year(out_metrics)
+    if not delta_year:
+        delta_year = coerce_int(time.strftime("%Y"))
 
     if metrics_only:
         if not os.path.exists(out_all):
@@ -612,7 +699,7 @@ def main():
 
     if out_metrics:
         metrics_raw = fetch_metrics(bibs)
-        metrics_payload = build_metrics_payload(metrics_raw, mapped)
+        metrics_payload = build_metrics_payload(metrics_raw, mapped, delta_year=delta_year)
         write_yaml(out_metrics, metrics_payload)
         print(f"Wrote metrics to {out_metrics}")
 

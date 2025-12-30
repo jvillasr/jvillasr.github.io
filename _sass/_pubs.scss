@@ -9,11 +9,12 @@
   text-indent: 0;
 }
 
-.pubs .pub-title { margin-bottom: .45rem; }
-.pubs .pub-authors { margin-top: .15rem; }
+.pubs .pub-title { margin-bottom: .5rem; font-size: 1.06rem; }
+.pubs .pub-authors { margin-top: .15rem; font-size: .94rem; font-weight: 400; color: rgba(15, 23, 42, .64); }
+.pubs .pub-authors strong { font-weight: 700; color: var(--resume-ink, #111); }
 
-.pubs .pub-venue-inline { margin-left: .25rem; color: #6b7280; }
-.pubs .pub-venue-inline em { color: inherit; }
+.pubs .pub-venue-inline { margin-left: .25rem; color: #6b7280; font-weight: 400; }
+.pubs .pub-venue-inline em { color: inherit; font-weight: 400; }
 
 .pubs .pub-title a {
   color: hsl(217, 71%, 53%);        /* Bulma link blue (#3273dc) */
