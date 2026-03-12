@@ -55,12 +55,13 @@ Example:
     3. Reads per year
     4. Indices per year: h-index, g-index, i10-index, read10-index.
     Use data from ADS.
-- Add a dedicated publications page (data-driven; keep URLs stable)(dismiss) [][]
+- Dedicated publications page no longer needed after the Resume publications refresh [DONE][2026-03-12]
 - [BUG] "Research" is the only button in the nav bar that doesn't stay highlighted [DONE][2026-03-01]
 - SEO/social previews sanity check (remove duplicate `<title>`, confirm OpenGraph image, add per-page descriptions) [][]
 - Analytics: migrate off Universal Analytics (UA) or switch to a privacy-friendly option [][]
 - Add automated link checking (GitHub Action) [][]
 - Add somewhere past students. [][]
+- Polish the BLOeM project page with additional punchy key results [][]
 
 ## Later
 - Add “Talks / Posters” page [][]
