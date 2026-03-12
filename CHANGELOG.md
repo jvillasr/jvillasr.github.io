@@ -54,6 +54,7 @@ This project does not need strict SemVer; entries are grouped by release date.
 - Resume publication plots now reserve extra space for larger y-axis labels
 - Resume publication plots now abbreviate large y-axis labels with k-suffixes
 - Resume publication plot ticks now round to multiples of 10 (midpoints align on 5s)
+- Resume publication indices plot now rounds its y-axis ceiling to the next multiple of 5 for a tighter scale
 - Resume publication section subtitles now use a larger font size
 - Resume publications ADS button now matches the black filter styling
 - Resume publications ADS button now keeps the full pill border

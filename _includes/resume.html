@@ -382,7 +382,7 @@
                     {% endfor %}
                     {% assign indices_raw_max = indices_values | sort | last | plus: 0 %}
                     {% if indices_raw_max == 0 %}{% assign indices_raw_max = 1 %}{% endif %}
-                    {% assign indices_max = indices_raw_max | plus: 9 | divided_by: 10 | times: 10 %}
+                    {% assign indices_max = indices_raw_max | plus: 4 | divided_by: 5 | times: 5 %}
                     {% if indices_max < 10 %}{% assign indices_max = 10 %}{% endif %}
                     {% assign indices_count = indices_series.size | minus: 1 %}
                     {% if indices_count < 1 %}{% assign indices_count = 1 %}{% endif %}

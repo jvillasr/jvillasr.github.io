@@ -34,6 +34,7 @@ Example:
     - Created CLAUDE.md symlink to AGENTS.md
 - Align homepage and navbar name with the full site-wide form (`Jaime I. Villaseñor`) [DONE][2026-03-12]
 - Refresh Publications data and metrics from ADS [DONE][2026-03-12]
+- Tighten the y-axis scale in the "Indices per year" plot [DONE][2026-03-12]
 - Add extra buttons to display publications: [DONE][2025-12-24]
     - latest 10 (default)
     - More cited
