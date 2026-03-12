@@ -22,11 +22,16 @@ Example:
 - Blog: start document to put ideas about future blog entries [DONE][2025-12-24]
 
 ## Next
-- Re-style the "About" section. Follow instructions in `about-revamp.md`. This will need a new branch to work on these changes. [STARTED][2025-12-24]
+- Re-style the "About" section. Follow instructions in `about-revamp.md`. This will need a new branch to work on these changes. [DONE][2025-12-30]
     - About title should be larger, in line with Research and Resume sections.
     - Profile picture should span the column width.
-    - Header text: "Building survey-to-inference pipelines to constrain massive-binary evolution and uncover compact companions at scale." sounds a bit off. It's a good description but it could use some rephrasing. Give me 3 different options to choose from.
-    - 
+    - Header text: "Building survey-to-inference pipelines to constrain massive-binary evolution and uncover compact companions at scale." sounds a bit off. It's a good description but it could use some rephrasing. Give me 3 different options to choose from. 
+- After the revamp of the about section, fine tune the text and layout [DONE][2026-03-01]
+    - Final editorial two-column About layout with portrait, biography, and research-question panels
+    - Rewritten About copy around scientific trajectory, research focus, and motivation
+    - Final tagline: "Uncovering the lives of massive binary stars"
+    - Extracted styles to dedicated `_sass/_about.scss` partial
+    - Created CLAUDE.md symlink to AGENTS.md
 - Add extra buttons to display publications: [DONE][2025-12-24]
     - latest 10 (default)
     - More cited
@@ -44,8 +49,8 @@ Example:
     3. Reads per year
     4. Indices per year: h-index, g-index, i10-index, read10-index.
     Use data from ADS.
-- Add a dedicated publications page (data-driven; keep URLs stable)(optional) [][]
-- [BUG] "Research" is the only button in the nav bar that doesn't stay highlighted
+- Add a dedicated publications page (data-driven; keep URLs stable)(dismiss) [][]
+- [BUG] "Research" is the only button in the nav bar that doesn't stay highlighted [DONE][2026-03-01]
 - SEO/social previews sanity check (remove duplicate `<title>`, confirm OpenGraph image, add per-page descriptions) [][]
 - Analytics: migrate off Universal Analytics (UA) or switch to a privacy-friendly option [][]
 - Add automated link checking (GitHub Action) [][]
@@ -56,6 +61,7 @@ Example:
 ## Later
 - Add “Talks / Posters” page [][]
 - Add bilingual support (EN/ES) [][]
+- Section "For students" or "Opportunities", where I can post PhD positions, internships, conferences, jobs, tips on applications, proposal writing (although those can go into a blog post too) [][]
 - Create a Readthedocs page for MINATO (will be done as part of the minato repo: `/Users/villasenor/science/github/jvillasr/MINATO/minato`)
 - Add “Teaching / Outreach” page (optional) [][]
 - Add HTML validation / accessibility smoke checks (lightweight) [][]

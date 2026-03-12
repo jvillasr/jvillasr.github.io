@@ -1,0 +1,197 @@
+// _sass/_about.scss
+// About section — full-height editorial profile
+// Circular portrait + intro · research question cards
+
+#about {
+  --about-accent: #0f766e;
+  --about-ink: #0f172a;
+  --about-muted: #475569;
+  --about-border: #e2e8f0;
+
+  background: #f8fafc;
+
+  .container { max-width: 1100px; width: 100%; }
+
+  // ---- Section header ----
+  .about-header {
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+
+  // ---- Hero row (portrait + intro) ----
+  .about-hero {
+    display: grid;
+    grid-template-columns: 320px 1fr;
+    gap: 2.5rem;
+    align-items: center;
+  }
+
+  // ---- Circular portrait with teal ring ----
+  .about-portrait {
+    width: 100%;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid var(--about-accent);
+    box-shadow:
+      0 0 0 6px #f8fafc,
+      0 0 0 8px var(--about-border),
+      0 16px 40px rgba(15, 23, 42, 0.12);
+  }
+
+  .about-portrait img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 15%;
+    display: block;
+  }
+
+  // ---- Intro text ----
+  .about-intro {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .about-name {
+    margin: 0;
+    font-size: 2rem;
+    font-weight: 800;
+    color: var(--about-ink);
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+  }
+
+  .about-tagline {
+    margin: 0;
+    font-size: 1.15rem;
+    font-weight: 500;
+    color: var(--about-accent);
+    line-height: 1.4;
+    font-style: italic;
+  }
+
+  .about-bio {
+    margin: 0;
+    font-size: 1.05rem;
+    line-height: 1.75;
+    color: var(--about-muted);
+    max-width: 560px;
+  }
+
+  // ---- CTAs ----
+  .about-ctas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.65rem;
+    align-items: center;
+    margin-top: 0.15rem;
+  }
+
+  .about-cta {
+    font-size: 0.76rem;
+    letter-spacing: 0.1em;
+    padding: 0.65rem 1.3rem;
+  }
+
+  .about-cta--contact {
+    border-color: var(--about-muted);
+    color: var(--about-muted);
+
+    &:hover {
+      border-color: var(--about-ink);
+      color: var(--about-ink);
+      background: transparent;
+    }
+  }
+
+  // ---- Research questions ----
+  .about-questions {
+    margin-top: 2rem;
+  }
+
+  .about-questions-heading {
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: var(--about-accent);
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    margin: 0 0 1rem;
+  }
+
+  .about-questions-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.25rem;
+  }
+
+  .about-q {
+    background: #fff;
+    border: 1px solid var(--about-border);
+    border-top: 3px solid var(--about-accent);
+    border-radius: 0.5rem;
+    padding: 1.25rem 1.15rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+    &:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 16px rgba(15, 23, 42, 0.08);
+    }
+  }
+
+  .about-q-number {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--about-accent);
+    line-height: 1;
+  }
+
+  .about-q p {
+    margin: 0;
+    font-size: 1.05rem;
+    line-height: 1.5;
+    color: var(--about-ink);
+    font-weight: 500;
+  }
+
+  // ---- Responsive ----
+  @media (max-width: 900px) {
+    .about-hero {
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+    }
+
+    .about-portrait {
+      max-width: 260px;
+      margin: 0 auto;
+    }
+
+    .about-intro { align-items: center; text-align: center; }
+    .about-bio { max-width: none; }
+    .about-ctas { justify-content: center; }
+
+    .about-questions-grid {
+      grid-template-columns: 1fr;
+      gap: 1rem;
+    }
+  }
+
+  @media (max-width: 560px) {
+    .about-name { font-size: 1.6rem; }
+    .about-tagline { font-size: 1.05rem; }
+
+    .about-ctas {
+      flex-direction: column;
+      align-items: stretch;
+    }
+
+    .about-cta {
+      width: 100%;
+      text-align: center;
+    }
+  }
+}

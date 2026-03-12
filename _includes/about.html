@@ -1,70 +1,66 @@
-<section class="hero is-fullheight has-background-white-ter" id="about">
-    <div class="hero-body">
-        <div class="container">
-            <p class="about-tagline">Astronomer exploring massive binary stars, born in Chile and researching at MPIA in Heidelberg.</p>
-            <div class="about-infographic">
-                    <div class="about-avatar-card">
-                        <div class="about-avatar-frame">
-                            <div class="about-avatar-photo">
-                            <img class="is-rounded" src="{{site.author-image}}" alt="{{site.author-name}}" loading="lazy" decoding="async">
-                            </div>
-                        </div>
-                        <p class="about-name">{{site.author-name}}</p>
-                    </div>
-                <div class="about-cards-grid">
-                    <div class="about-card about-card--chile">
-                        <p class="card-kicker">From:</p>
-                        <h3 class="card-title">Chile</h3>
-                        <span class="card-underline"></span>
-                        <div class="card-media card-media--chile">
-                            <div class="chile-illustration">
-                                <img class="chile-map" src="{{ '/assets/images/about/chile.png' | relative_url }}" alt="Chile illustration" loading="lazy" decoding="async">
-                                <div class="chile-point chile-point--paranal"></div>
-                                <div class="chile-point chile-point--santiago"></div>
-                                <div class="chile-connector chile-connector--paranal"></div>
-                                <div class="chile-connector chile-connector--santiago"></div>
-                                <div class="chile-icon chile-icon--paranal">
-                                    <div class="chile-icon-thumb">
-                                        <img src="{{ '/assets/images/about/vlt.png' | relative_url }}" alt="Very Large Telescope, Paranal" loading="lazy" decoding="async">
-                                    </div>
-                                    <span class="chile-label">Paranal</span>
-                                </div>
-                                <div class="chile-icon chile-icon--santiago">
-                                    <div class="chile-icon-thumb">
-                                        <img src="{{ '/assets/images/about/andes-scl.png' | relative_url }}" alt="Andes mountains near Santiago" loading="lazy" decoding="async">
-                                    </div>
-                                    <span class="chile-label">Santiago</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="about-card">
-                        <p class="card-kicker">Currently:</p>
-                        <h3 class="card-title">Researcher at MPIA, Heidelberg</h3>
-                        <span class="card-underline"></span>
-                        <div class="card-media card-media--now">
-                            <img class="now-image now-image--mpia" src="{{ '/assets/images/about/mpia.png' | relative_url }}" alt="MPIA illustration" loading="lazy" decoding="async">
-                            <img class="now-image now-image--heidelberg" src="{{ '/assets/images/heidelberg.png' | relative_url }}" alt="Heidelberg skyline illustration" loading="lazy" decoding="async">
-                        </div>
-                    </div>
-                    <div class="about-card">
-                        <p class="card-kicker">Research focus:</p>
-                        <h3 class="card-title">Massive binary stars &amp; gravitational waves</h3>
-                        <span class="card-underline"></span>
-                        <div class="card-media">
-                            <img src="{{ '/assets/images/about/research.svg' | relative_url }}" alt="Research focus illustration" loading="lazy" decoding="async">
-                        </div>
-                    </div>
-                    <div class="about-card">
-                        <p class="card-kicker">How I work:</p>
-                        <h3 class="card-title">Spectroscopic surveys, orbital dynamics, stellar evolution</h3>
-                        <span class="card-underline"></span>
-                        <div class="card-media">
-                            <img src="{{ '/assets/images/about/how.svg' | relative_url }}" alt="Workflow illustration" loading="lazy" decoding="async">
-                        </div>
-                    </div>
-                </div>
-            </div>
+<section class="hero is-fullheight about-section" id="about">
+  <div class="hero-body">
+    <div class="container">
+
+      <header class="about-header">
+        <h2 class="title is-3 is-spaced has-text-weight-semibold is-uppercase">About</h2>
+      </header>
+
+      <div class="about-hero">
+        <div class="about-portrait">
+          <img src="{{ site.author-image }}" alt="{{ site.author-name }}" loading="lazy" decoding="async">
         </div>
+        <div class="about-intro">
+          <h3 class="about-name">{{ site.author-name }}</h3>
+          <p class="about-tagline">
+            Uncovering the lives of massive binary stars
+          </p>
+
+          <p class="about-bio">
+            Originally from Chile, I moved to Scotland for my PhD to specialise
+            in massive binary stars. After postdoctoral work at KU Leuven, I am
+            now at the Max Planck Institute for Astronomy in Heidelberg,
+            studying how massive stars live, interact, and die.
+          </p>
+          <p class="about-bio">
+            Massive binaries power some of astrophysics&rsquo; most energetic
+            phenomena, yet their demographics remain poorly constrained. I
+            combine large spectroscopic surveys with targeted follow-up
+            programmes, building pipelines to measure stellar properties and
+            describe these systems as populations. With those constraints, I
+            test binary-evolution pathways, identify interaction products, and
+            search for massive stars hiding black-hole companions.
+          </p>
+
+          <div class="about-ctas">
+            <a class="button is-black is-rounded is-uppercase about-cta"
+               href="{{ '/#resume' | relative_url }}">Resume</a>
+            <a class="button is-black is-rounded is-outlined is-uppercase about-cta"
+               href="{{ '/#research' | relative_url }}">Research</a>
+            <a class="button is-white is-rounded is-outlined is-uppercase about-cta about-cta--contact"
+               href="{{ '/#contact' | relative_url }}">Contact &rarr;</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="about-questions">
+        <h3 class="about-questions-heading">What drives my research</h3>
+        <div class="about-questions-grid">
+          <div class="about-q">
+            <span class="about-q-number">01</span>
+            <p>How do binary demographics change with environment and metallicity?</p>
+          </div>
+          <div class="about-q">
+            <span class="about-q-number">02</span>
+            <p>What do interaction products reveal about mass transfer and mergers?</p>
+          </div>
+          <div class="about-q">
+            <span class="about-q-number">03</span>
+            <p>How can we efficiently uncover compact companions at survey scale?</p>
+          </div>
+        </div>
+      </div>
+
     </div>
+  </div>
 </section>

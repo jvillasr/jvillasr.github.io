@@ -8,11 +8,17 @@ This project does not need strict SemVer; entries are grouped by release date.
 ## Unreleased
 ### Added
 - `notes/blog-ideas.md` (repo-only; excluded from site build)
-- New blog post: `The Universe’s Power Couples: Why Massive Binary Stars Run the Show`
+- New blog post: `The Universe's Power Couples: Why Massive Binary Stars Run the Show`
 - Resume publications dashboard with filters, metrics, and ADS plots
 - ADS metrics dataset for resume publications (`_data/ads_metrics.yml`)
+- Dedicated About stylesheet (`_sass/_about.scss`) extracted from inline styles
+- CLAUDE.md symlink to AGENTS.md for agent instruction synchronisation
 
 ### Changed
+- About section redesigned into a cleaner editorial two-column layout with portrait, short biography, and research-question panels
+- About copy rewritten around Jaime's scientific trajectory, current research focus, and binary-star motivation
+- About tagline updated to `Uncovering the lives of massive binary stars`
+- About actions simplified to Resume, Research, and Contact
 - Homepage hero tagline and CTA (`site.description`, hero button points to Research)
 - Navbar links use relative `/#section` anchors; improved mobile menu close behavior
 - Publications dataset refreshed from ADS (`_data/papers_all.yml`)
@@ -59,6 +65,7 @@ This project does not need strict SemVer; entries are grouped by release date.
 - Blog post layout: single-column hero + left-aligned metadata
 
 ### Fixed
+- Navbar scroll-spy now highlights About and Research when scrolling (selector changed from `.hero[id]` to `section[id]`)
 - Jekyll Sass build failure caused by non-ASCII characters in SCSS
 - Stray closing `</a>` in hero section markup
 - Contact/footer icon sizing and alignment (switch key icons to inline SVG so they render without Font Awesome)
