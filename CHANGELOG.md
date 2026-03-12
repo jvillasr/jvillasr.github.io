@@ -19,6 +19,7 @@ This project does not need strict SemVer; entries are grouped by release date.
 - About copy rewritten around Jaime's scientific trajectory, current research focus, and binary-star motivation
 - About tagline updated to `Uncovering the lives of massive binary stars`
 - About actions simplified to Resume, Research, and Contact
+- Publications dataset and metrics refreshed from ADS on 2026-03-12 (`_data/papers_all.yml`, `_data/ads_metrics.yml`)
 - Homepage hero tagline and CTA (`site.description`, hero button points to Research)
 - Navbar links use relative `/#section` anchors; improved mobile menu close behavior
 - Publications dataset refreshed from ADS (`_data/papers_all.yml`)

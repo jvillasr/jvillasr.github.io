@@ -1,3 +1,162 @@
+- bibcode: 2026A&A...707A.204L
+  title: 'Binarity at LOw Metallicity (BLOeM): Projected rotational velocities'
+  authors:
+  - Lennon, D. J.
+  - Berlanas, S. R.
+  - Herrero, A.
+  - Britavskiy, N.
+  - Dufton, P. L.
+  - Langer, N.
+  - Jin, H.
+  - Schootemeijer, A.
+  - Menon, A.
+  - Bestenlehner, J.
+  - Crowther, P.
+  - Vink, J. S.
+  - Bodensteiner, J.
+  - Shenar, T.
+  - Deshmukh, K.
+  - Villaseñor, J. I.
+  - Patrick, L.
+  - Najarro, F.
+  - de Koter, A.
+  - Mahy, L.
+  - Bowman, D. M.
+  - Bobrick, A.
+  - Evans, C. J.
+  - Gull, M.
+  - Holgado, G.
+  - Katabi, Z.
+  - Kubát, J.
+  - Marchant, P.
+  - Pauli, D.
+  - Pawlak, M.
+  - Renzo, M.
+  - Rocha, D. F.
+  - Sander, A. A. C.
+  - Sayada, T.
+  - Simón-Díaz, S.
+  - Stoop, M.
+  - Valli, R.
+  - Wang, C.
+  - Xu, X.-T.
+  authors_html: D. J. Lennon; S. R. Berlanas; A. Herrero; N. Britavskiy; P. L. Dufton;
+    N. Langer; H. Jin; A. Schootemeijer; A. Menon; J. Bestenlehner; P. Crowther; J.
+    S. Vink; J. Bodensteiner; T. Shenar; K. Deshmukh; <strong>J. I. Villaseñor</strong>;
+    L. Patrick; F. Najarro; A. de Koter; L. Mahy; D. M. Bowman; A. Bobrick; C. J.
+    Evans; M. Gull; G. Holgado; Z. Katabi; J. Kubát; P. Marchant; D. Pauli; M. Pawlak;
+    M. Renzo; D. F. Rocha; A. A. C. Sander; T. Sayada; S. Simón-Díaz; M. Stoop; R.
+    Valli; C. Wang; X.-T. Xu
+  authors_short_html: D. J. Lennon; S. R. Berlanas; A. Herrero; N. Britavskiy; P.
+    L. Dufton; N. Langer; H. Jin; <strong>J. I. Villaseñor</strong>, <em>et&nbsp;al.</em>
+  authors_display:
+  - D. J. Lennon
+  - S. R. Berlanas
+  - A. Herrero
+  - N. Britavskiy
+  - P. L. Dufton
+  - N. Langer
+  - H. Jin
+  - A. Schootemeijer
+  - A. Menon
+  - J. Bestenlehner
+  - P. Crowther
+  - J. S. Vink
+  - J. Bodensteiner
+  - T. Shenar
+  - K. Deshmukh
+  - J. I. Villaseñor
+  - L. Patrick
+  - F. Najarro
+  - A. de Koter
+  - L. Mahy
+  - D. M. Bowman
+  - A. Bobrick
+  - C. J. Evans
+  - M. Gull
+  - G. Holgado
+  - Z. Katabi
+  - J. Kubát
+  - P. Marchant
+  - D. Pauli
+  - M. Pawlak
+  - M. Renzo
+  - D. F. Rocha
+  - A. A. C. Sander
+  - T. Sayada
+  - S. Simón-Díaz
+  - M. Stoop
+  - R. Valli
+  - C. Wang
+  - X.-T. Xu
+  me_index: 15
+  n_authors: 39
+  year: '2026'
+  pub: Astronomy and Astrophysics
+  volume: '707'
+  page: A204
+  page_range: ''
+  doi: 10.1051/0004-6361/202558539
+  arxiv: '2512.12102'
+  adsurl: https://ui.adsabs.harvard.edu/abs/2026A&A...707A.204L
+  best_url: https://doi.org/10.1051/0004-6361/202558539
+  refereed: true
+  citations: 0
+  month: mar
+  month_num: '03'
+  sortdate: '2026-03-15'
+  tags:
+  - bloem
+- bibcode: 2026A&A...706L..17D
+  title: 'The Tarantula massive binary monitoring: VII. The nature of the eccentric
+    O + BH binary candidate VFTS 812'
+  authors:
+  - Deshmukh, K.
+  - Sana, H.
+  - Verhamme, O.
+  - Willcox, R.
+  - Marchant, P.
+  - Shenar, T.
+  - Backs, F.
+  - Janssens, S.
+  - Ludwig, B.
+  - Mahy, L.
+  - Sundqvist, J. O.
+  - Villaseñor, J. I.
+  authors_html: K. Deshmukh; H. Sana; O. Verhamme; R. Willcox; P. Marchant; T. Shenar;
+    F. Backs; S. Janssens; B. Ludwig; L. Mahy; J. O. Sundqvist; <strong>J. I. Villaseñor</strong>
+  authors_short_html: K. Deshmukh; H. Sana; O. Verhamme; R. Willcox; P. Marchant;
+    T. Shenar; F. Backs; <strong>J. I. Villaseñor</strong>, <em>et&nbsp;al.</em>
+  authors_display:
+  - K. Deshmukh
+  - H. Sana
+  - O. Verhamme
+  - R. Willcox
+  - P. Marchant
+  - T. Shenar
+  - F. Backs
+  - S. Janssens
+  - B. Ludwig
+  - L. Mahy
+  - J. O. Sundqvist
+  - J. I. Villaseñor
+  me_index: 11
+  n_authors: 12
+  year: '2026'
+  pub: Astronomy and Astrophysics
+  volume: '706'
+  page: L17
+  page_range: ''
+  doi: 10.1051/0004-6361/202658872
+  arxiv: '2602.03650'
+  adsurl: https://ui.adsabs.harvard.edu/abs/2026A&A...706L..17D
+  best_url: https://doi.org/10.1051/0004-6361/202658872
+  refereed: true
+  citations: 1
+  month: feb
+  month_num: '02'
+  sortdate: '2026-02-15'
+  tags: []
 - bibcode: 2026AJ....171...52K
   title: Sloan Digital Sky Survey. V. Pioneering Panoptic Spectroscopy
   authors:
@@ -5,7 +164,7 @@
   - Rix, Hans-Walter
   - Aerts, Conny
   - Aird, James
-  - Alfaro, Pablo Vera
+  - Vera Alfaro, Pablo
   - Almeida, Andrés
   - Anderson, Scott F.
   - Arseneau, Stefan M.
@@ -155,7 +314,7 @@
   - Pan, Kaike
   - Pappalardo, Daniel
   - Pandey, Rakesh
-  - Peñaloza, Castalia Alenka Negrete
+  - Negrete Peñaloza, Castalia Alenka
   - Pinsonneault, Marc H.
   - Pogge, Richard W.
   - Taghizadeh Popp, Manuchehr
@@ -519,121 +678,51 @@
   adsurl: https://ui.adsabs.harvard.edu/abs/2026AJ....171...52K
   best_url: https://doi.org/10.3847/1538-3881/ae0576
   refereed: true
-  citations: 40
+  citations: 58
   month: jan
   month_num: '01'
   sortdate: '2026-01-15'
   tags:
   - sdssv
-- bibcode: 2025arXiv251212102L
-  title: 'Binarity at LOw Metallicity (BLOeM): Projected rotational velocities'
+- bibcode: 2026A&A...705A.146S
+  title: The physical properties of post-mass-transfer binaries
   authors:
-  - Lennon, D. J.
-  - Berlanas, S. R.
-  - Herrero, A.
-  - Britavskiy, N.
-  - Dufton, P. L.
-  - Langer, N.
-  - Jin, H.
-  - Schootemeijer, A.
-  - Menon, A.
-  - Bestenlehner, J.
-  - Crowther, P.
-  - Vink, J. S.
-  - Bodensteiner, J.
-  - Shenar, T.
-  - Deshmukh, K.
-  - Villasenor, J.
-  - Patrick, L.
-  - Najarro, F.
-  - de Koter, A.
-  - Mahy, L.
-  - Bowman, D. M.
-  - Bobrick, A.
-  - Evans, C. J.
-  - Gull, M.
-  - Holgado, G.
-  - Katabi, Z.
-  - Kubat, J.
-  - Marchant, P.
-  - Pauli, D.
-  - Pawlak, M.
-  - Renzo, M.
-  - Rocha, D. F.
-  - Sander, A. A. C.
-  - Sayada, T.
-  - Simon-Diaz, S.
-  - Stoop, M.
-  - Valli, R.
-  - Wang, C.
-  - Xu, X.-T.
-  authors_html: D. J. Lennon; S. R. Berlanas; A. Herrero; N. Britavskiy; P. L. Dufton;
-    N. Langer; H. Jin; A. Schootemeijer; A. Menon; J. Bestenlehner; P. Crowther; J.
-    S. Vink; J. Bodensteiner; T. Shenar; K. Deshmukh; <strong>J. Villasenor</strong>;
-    L. Patrick; F. Najarro; A. de Koter; L. Mahy; D. M. Bowman; A. Bobrick; C. J.
-    Evans; M. Gull; G. Holgado; Z. Katabi; J. Kubat; P. Marchant; D. Pauli; M. Pawlak;
-    M. Renzo; D. F. Rocha; A. A. C. Sander; T. Sayada; S. Simon-Diaz; M. Stoop; R.
-    Valli; C. Wang; X.-T. Xu
-  authors_short_html: D. J. Lennon; S. R. Berlanas; A. Herrero; N. Britavskiy; P.
-    L. Dufton; N. Langer; H. Jin; <strong>J. Villasenor</strong>, <em>et&nbsp;al.</em>
+  - Seeburger, R.
+  - Rix, H.-W.
+  - El-Badry, K.
+  - Müller-Horn, J.
+  - Dimoff, A. J.
+  - Henneco, J.
+  - Villaseñor, J. I.
+  authors_html: R. Seeburger; H.-W. Rix; K. El-Badry; J. Müller-Horn; A. J. Dimoff;
+    J. Henneco; <strong>J. I. Villaseñor</strong>
+  authors_short_html: R. Seeburger; H.-W. Rix; K. El-Badry; J. Müller-Horn; A. J.
+    Dimoff; J. Henneco; <strong>J. I. Villaseñor</strong>
   authors_display:
-  - D. J. Lennon
-  - S. R. Berlanas
-  - A. Herrero
-  - N. Britavskiy
-  - P. L. Dufton
-  - N. Langer
-  - H. Jin
-  - A. Schootemeijer
-  - A. Menon
-  - J. Bestenlehner
-  - P. Crowther
-  - J. S. Vink
-  - J. Bodensteiner
-  - T. Shenar
-  - K. Deshmukh
-  - J. Villasenor
-  - L. Patrick
-  - F. Najarro
-  - A. de Koter
-  - L. Mahy
-  - D. M. Bowman
-  - A. Bobrick
-  - C. J. Evans
-  - M. Gull
-  - G. Holgado
-  - Z. Katabi
-  - J. Kubat
-  - P. Marchant
-  - D. Pauli
-  - M. Pawlak
-  - M. Renzo
-  - D. F. Rocha
-  - A. A. C. Sander
-  - T. Sayada
-  - S. Simon-Diaz
-  - M. Stoop
-  - R. Valli
-  - C. Wang
-  - X.-T. Xu
-  me_index: 15
-  n_authors: 39
-  year: '2025'
-  pub: arXiv e-prints
-  volume: ''
-  page: arXiv:2512.12102
+  - R. Seeburger
+  - H.-W. Rix
+  - K. El-Badry
+  - J. Müller-Horn
+  - A. J. Dimoff
+  - J. Henneco
+  - J. I. Villaseñor
+  me_index: 6
+  n_authors: 7
+  year: '2026'
+  pub: Astronomy and Astrophysics
+  volume: '705'
+  page: A146
   page_range: ''
-  doi: 10.48550/arXiv.2512.12102
-  arxiv: '2512.12102'
-  adsurl: https://ui.adsabs.harvard.edu/abs/2025arXiv251212102L
-  best_url: https://doi.org/10.48550/arXiv.2512.12102
-  refereed: false
-  citations: 0
-  month: ''
-  month_num: '12'
-  sortdate: '2025-12-31'
-  tags:
-  - bloem
+  doi: 10.1051/0004-6361/202553916
+  arxiv: '2511.13692'
+  adsurl: https://ui.adsabs.harvard.edu/abs/2026A&A...705A.146S
+  best_url: https://doi.org/10.1051/0004-6361/202553916
+  refereed: true
+  citations: 1
+  month: jan
+  month_num: '01'
+  sortdate: '2026-01-15'
+  tags: []
 - bibcode: 2025arXiv251115347S
   title: Interacting binaries on the Main Sequence as in-situ tracers of mass transfer
     efficiency and stability
@@ -679,46 +768,7 @@
   adsurl: https://ui.adsabs.harvard.edu/abs/2025arXiv251115347S
   best_url: https://doi.org/10.48550/arXiv.2511.15347
   refereed: false
-  citations: 0
-  month: ''
-  month_num: '11'
-  sortdate: '2025-11-31'
-  tags: []
-- bibcode: 2025arXiv251113692S
-  title: The physical properties of post-mass-transfer binaries
-  authors:
-  - Seeburger, Rhys
-  - Rix, Hans-Walter
-  - El-Badry, Kareem
-  - Müller-Horn, Johanna
-  - Dimoff, Alex J.
-  - Henneco, Jan
-  - Villaseñor, Jaime I.
-  authors_html: Rhys Seeburger; Hans-Walter Rix; Kareem El-Badry; Johanna Müller-Horn;
-    Alex J. Dimoff; Jan Henneco; <strong>Jaime I. Villaseñor</strong>
-  authors_short_html: Rhys Seeburger; Hans-Walter Rix; Kareem El-Badry; Johanna Müller-Horn;
-    Alex J. Dimoff; Jan Henneco; <strong>Jaime I. Villaseñor</strong>
-  authors_display:
-  - Rhys Seeburger
-  - Hans-Walter Rix
-  - Kareem El-Badry
-  - Johanna Müller-Horn
-  - Alex J. Dimoff
-  - Jan Henneco
-  - Jaime I. Villaseñor
-  me_index: 6
-  n_authors: 7
-  year: '2025'
-  pub: arXiv e-prints
-  volume: ''
-  page: arXiv:2511.13692
-  page_range: ''
-  doi: 10.48550/arXiv.2511.13692
-  arxiv: '2511.13692'
-  adsurl: https://ui.adsabs.harvard.edu/abs/2025arXiv251113692S
-  best_url: https://doi.org/10.48550/arXiv.2511.13692
-  refereed: false
-  citations: 1
+  citations: 3
   month: ''
   month_num: '11'
   sortdate: '2025-11-31'
@@ -758,7 +808,7 @@
   adsurl: https://ui.adsabs.harvard.edu/abs/2025arXiv251108675V
   best_url: https://doi.org/10.48550/arXiv.2511.08675
   refereed: false
-  citations: 0
+  citations: 1
   month: ''
   month_num: '11'
   sortdate: '2025-11-31'
@@ -829,7 +879,7 @@
   adsurl: https://ui.adsabs.harvard.edu/abs/2025A&A...703A.303Z
   best_url: https://doi.org/10.1051/0004-6361/202556444
   refereed: true
-  citations: 0
+  citations: 1
   month: nov
   month_num: '11'
   sortdate: '2025-11-15'
@@ -1020,7 +1070,7 @@
   adsurl: https://ui.adsabs.harvard.edu/abs/2025NatAs...9.1337S
   best_url: https://doi.org/10.1038/s41550-025-02610-x
   refereed: true
-  citations: 8
+  citations: 17
   month: sep
   month_num: 09
   sortdate: '2025-09-15'
@@ -1071,7 +1121,7 @@
   adsurl: https://ui.adsabs.harvard.edu/abs/2025A&A...701A...9M
   best_url: https://doi.org/10.1051/0004-6361/202452504
   refereed: true
-  citations: 7
+  citations: 9
   month: sep
   month_num: 09
   sortdate: '2025-09-15'
@@ -1564,7 +1614,7 @@
   adsurl: https://ui.adsabs.harvard.edu/abs/2025arXiv250707093S
   best_url: https://doi.org/10.48550/arXiv.2507.07093
   refereed: false
-  citations: 26
+  citations: 40
   month: ''
   month_num: '07'
   sortdate: '2025-07-31'
@@ -1663,7 +1713,7 @@
   adsurl: https://ui.adsabs.harvard.edu/abs/2025A&A...698A..41V
   best_url: https://doi.org/10.1051/0004-6361/202453166
   refereed: true
-  citations: 15
+  citations: 17
   month: jun
   month_num: '06'
   sortdate: '2025-06-15'
@@ -1765,7 +1815,7 @@
   adsurl: https://ui.adsabs.harvard.edu/abs/2025A&A...698A..40B
   best_url: https://doi.org/10.1051/0004-6361/202452963
   refereed: true
-  citations: 8
+  citations: 9
   month: jun
   month_num: '06'
   sortdate: '2025-06-15'
@@ -1875,7 +1925,7 @@
   adsurl: https://ui.adsabs.harvard.edu/abs/2025A&A...698A..39P
   best_url: https://doi.org/10.1051/0004-6361/202452949
   refereed: true
-  citations: 14
+  citations: 17
   month: jun
   month_num: '06'
   sortdate: '2025-06-15'
@@ -1994,7 +2044,7 @@
   adsurl: https://ui.adsabs.harvard.edu/abs/2025A&A...698A..38B
   best_url: https://doi.org/10.1051/0004-6361/202452623
   refereed: true
-  citations: 13
+  citations: 17
   month: jun
   month_num: '06'
   sortdate: '2025-06-15'
@@ -2061,7 +2111,7 @@
   adsurl: https://ui.adsabs.harvard.edu/abs/2024A&A...692A.109D
   best_url: https://doi.org/10.1051/0004-6361/202452352
   refereed: true
-  citations: 9
+  citations: 11
   month: dec
   month_num: '12'
   sortdate: '2024-12-15'
@@ -2255,7 +2305,7 @@
   adsurl: https://ui.adsabs.harvard.edu/abs/2024A&A...690A.289S
   best_url: https://doi.org/10.1051/0004-6361/202451586
   refereed: true
-  citations: 37
+  citations: 41
   month: oct
   month_num: '10'
   sortdate: '2024-10-15'
@@ -2310,7 +2360,7 @@
   adsurl: https://ui.adsabs.harvard.edu/abs/2024arXiv240920252F
   best_url: https://doi.org/10.48550/arXiv.2409.20252
   refereed: false
-  citations: 10
+  citations: 11
   month: ''
   month_num: 09
   sortdate: '2024-09-31'
@@ -2349,7 +2399,7 @@
   adsurl: https://ui.adsabs.harvard.edu/abs/2024A&A...688A.141L
   best_url: https://doi.org/10.1051/0004-6361/202450583
   refereed: true
-  citations: 3
+  citations: 4
   month: aug
   month_num: 08
   sortdate: '2024-08-15'
@@ -2458,6 +2508,56 @@
   month: jun
   month_num: '06'
   sortdate: '2023-06-15'
+  tags: []
+- bibcode: 2023jwst.prop.3589P
+  title: How big do stars get? A NIRCam view of cool supergiants in, NGC 4449, a key
+    low-metallicity environment
+  authors:
+  - Patrick, Lee
+  - Shenar, Tomer
+  - Boyer, Martha L.
+  - Castellanos, Raul
+  - Evans, Christopher
+  - Frost, Abigail Junice
+  - Garcia, Miriam
+  - Lennon, Daniel J.
+  - Najarro, Paco
+  - Negueruela, Ignacio
+  - Villasenor, Jaime
+  authors_html: Lee Patrick; Tomer Shenar; Martha L. Boyer; Raul Castellanos; Christopher
+    Evans; Abigail Junice Frost; Miriam Garcia; Daniel J. Lennon; Paco Najarro; Ignacio
+    Negueruela; <strong>Jaime Villasenor</strong>
+  authors_short_html: Lee Patrick; Tomer Shenar; Martha L. Boyer; Raul Castellanos;
+    Christopher Evans; Abigail Junice Frost; Miriam Garcia; <strong>Jaime Villasenor</strong>,
+    <em>et&nbsp;al.</em>
+  authors_display:
+  - Lee Patrick
+  - Tomer Shenar
+  - Martha L. Boyer
+  - Raul Castellanos
+  - Christopher Evans
+  - Abigail Junice Frost
+  - Miriam Garcia
+  - Daniel J. Lennon
+  - Paco Najarro
+  - Ignacio Negueruela
+  - Jaime Villasenor
+  me_index: 10
+  n_authors: 11
+  year: '2023'
+  pub: JWST Proposal. Cycle 2
+  volume: ''
+  page: '3589'
+  page_range: '3'
+  doi: ''
+  arxiv: ''
+  adsurl: https://ui.adsabs.harvard.edu/abs/2023jwst.prop.3589P
+  best_url: https://ui.adsabs.harvard.edu/abs/2023jwst.prop.3589P
+  refereed: false
+  citations: 0
+  month: jan
+  month_num: '01'
+  sortdate: '2023-01-01'
   tags: []
 - bibcode: 2022A&A...665A.180L
   title: 'The VLT-FLAMES survey of massive stars. NGC 2004#115: A triple system hosting
@@ -2575,7 +2675,7 @@
   adsurl: https://ui.adsabs.harvard.edu/abs/2022A&A...658A..69B
   best_url: https://doi.org/10.1051/0004-6361/202141037
   refereed: true
-  citations: 76
+  citations: 77
   month: feb
   month_num: '02'
   sortdate: '2022-02-15'
@@ -2619,7 +2719,7 @@
   adsurl: https://ui.adsabs.harvard.edu/abs/2021MNRAS.507.5348V
   best_url: https://doi.org/10.1093/mnras/stab2197
   refereed: true
-  citations: 50
+  citations: 51
   month: nov
   month_num: '11'
   sortdate: '2021-11-15'
@@ -2784,7 +2884,7 @@
   adsurl: https://ui.adsabs.harvard.edu/abs/2020Msngr.181...22E
   best_url: https://doi.org/10.18727/0722-6691/5207
   refereed: false
-  citations: 5
+  citations: 6
   month: jan
   month_num: '01'
   sortdate: '2020-01-01'

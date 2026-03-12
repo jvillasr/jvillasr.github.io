@@ -32,6 +32,7 @@ Example:
     - Final tagline: "Uncovering the lives of massive binary stars"
     - Extracted styles to dedicated `_sass/_about.scss` partial
     - Created CLAUDE.md symlink to AGENTS.md
+- Refresh Publications data and metrics from ADS [DONE][2026-03-12]
 - Add extra buttons to display publications: [DONE][2025-12-24]
     - latest 10 (default)
     - More cited
