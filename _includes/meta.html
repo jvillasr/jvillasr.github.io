@@ -1,39 +1,83 @@
 <!-- Include Meta Tags Here -->
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
-<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1 user-scalable=no, shrink-to-fit=no">
-<meta content='#000000' name='theme-color'/>
+<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no, shrink-to-fit=no">
+<meta content="#000000" name="theme-color"/>
 {% if site.google-site-verification and site.google-site-verification != "" %}
 <meta name="google-site-verification" content="{{ site.google-site-verification }}">
 {% endif %}
-<meta name="keywords" content="{{site.site-keywords}}">
-<title>{{site.title}}{% if page.title %} | {{page.title}}{% endif %}</title>
+{% assign meta_title = site.title %}
+{% if page.title %}
+  {% assign meta_title = site.title | append: " | " | append: page.title %}
+{% endif %}
+{% assign meta_description = page.description | default: page.subtitle | default: site.description %}
+{% assign meta_image = page.post-image | default: page.hero_image | default: site.site-image | absolute_url %}
+{% assign canonical_url = page.url | absolute_url %}
+<meta name="keywords" content="{{ site.site-keywords }}">
+<title>{{ meta_title }}</title>
+<link rel="canonical" href="{{ canonical_url }}">
+{% if page.layout == "404" or page.sitemap == false %}
+<meta name="robots" content="noindex, nofollow">
+{% endif %}
 
 <!-- Open Graph general (Facebook, Pinterest & Google+) -->
-<meta name="og:title" content="{{site.title}}{% if page.title %} | {{page.title}}{% endif %}">
-<meta name="og:description" content="{% unless page.layout == 'post' %}{{site.description}}{% else %}{{page.description}}{% endunless %}">
-<meta name="og:image" content="{% unless page.layout == 'post' %}{{site.site-image}}{% else %}{{page.post-image}}{% endunless %}">
-<meta name="og:image:alt" content="{{site.title}}{% if page.title %} | {{page.title}}{% endif %}">
-<meta name="og:url" content="{{site.url}}{{site.baseurl}}{{page.url}}">
+<meta name="og:title" content="{{ meta_title }}">
+<meta name="og:description" content="{{ meta_description }}">
+<meta name="og:image" content="{{ meta_image }}">
+<meta name="og:image:alt" content="{{ meta_title }}">
+<meta name="og:url" content="{{ canonical_url }}">
+{% if site.facebook_username and site.facebook_username != "" %}
 <meta name="article:author" content="https://www.facebook.com/{{site.facebook_username}}">
-<meta name="og:site_name" content="{{site.title}}{% if page.title %} | {{page.title}}{% endif %}">
-<meta name="og:type" content="website">
+{% endif %}
+<meta name="og:site_name" content="{{ site.title }}">
+<meta name="og:type" content="{% if page.layout == 'post' %}article{% else %}website{% endif %}">
 <!-- Twitter -->
-<meta property="twitter:card" content="summary_large_image"/>
-<meta name="twitter:title" content="{{site.title}}{% if page.title %} | {{page.title}}{% endif %}">
-<meta name="twitter:description" content="{% unless page.layout == 'post' %}{{site.description}}{% else %}{{page.description}}{% endunless %}">
+<meta property="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{ meta_title }}">
+<meta name="twitter:description" content="{{ meta_description }}">
+{% if site.twitter_username and site.twitter_username != "" %}
 <meta name="twitter:site" content="@{{site.twitter_username}}">
 <meta name="twitter:creator" content="@{{site.twitter_username}}">
-<meta name="twitter:image:src" content="{% unless page.layout == 'post' %}{{site.site-image}}{% else %}{{page.post-image}}{% endunless %}">
+{% endif %}
+<meta name="twitter:image:src" content="{{ meta_image }}">
 <!-- Search Engine -->
-<meta name="description" content="{% unless page.layout == 'post' %}{{site.description}}{% else %}{{page.description}}{% endunless %}">
-<meta name="image" content="{% unless page.layout == 'post' %}{{site.site-image}}{% else %}{{page.post-image}}{% endunless %}">
+<meta name="description" content="{{ meta_description }}">
+<meta name="image" content="{{ meta_image }}">
 <!-- Schema.org for Google -->
-<meta itemprop="name" content="{{site.title}}{% if page.title %} | {{page.title}}{% endif %}">
+<meta itemprop="name" content="{{ meta_title }}">
 <meta name="author" content="{{site.author-name}}"/>
-<meta itemprop="description" content="{% unless page.layout == 'post' %}{{site.description}}{% else %}{{page.description}}{% endunless %}">
-<meta itemprop="image" content="{% unless page.layout == 'post' %}{{site.site-image}}{% else %}{{page.post-image}}{% endunless %}">
+<meta itemprop="description" content="{{ meta_description }}">
+<meta itemprop="image" content="{{ meta_image }}">
+{% if page.url == "/" %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "name": {{ site.title | jsonify }},
+      "url": {{ site.url | jsonify }}
+    },
+    {
+      "@type": "Person",
+      "name": {{ site.author-name | jsonify }},
+      "url": {{ site.url | jsonify }},
+      "image": {{ site.author-image | absolute_url | jsonify }},
+      "jobTitle": "Astronomer",
+      "affiliation": {
+        "@type": "Organization",
+        "name": "Max Planck Institute for Astronomy"
+      },
+      "sameAs": [
+        {{ site.author-url | jsonify }},
+        {{ "https://orcid.org/" | append: site.orcid_username | jsonify }},
+        {{ "https://bsky.app/profile/" | append: site.bluesky_handle | jsonify }}
+      ]
+    }
+  ]
+}
+</script>
+{% endif %}
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id={{site.google-analytics}}"></script>

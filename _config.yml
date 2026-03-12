@@ -110,8 +110,16 @@ exclude:
   - gemfiles/
   - Gemfile
   - Gemfile.lock
+  - AGENTS.md
+  - CHANGELOG.md
+  - CLAUDE.md
+  - README.md
+  - ROADMAP.md
+  - about-revamp.md
+  - dev-notes/
   - notes/
   - node_modules/
+  - test-page.md
   - vendor/bundle/
   - vendor/cache/
   - vendor/gems/

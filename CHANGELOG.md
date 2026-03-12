@@ -24,6 +24,7 @@ This project does not need strict SemVer; entries are grouped by release date.
 - Roadmap updated: dedicated publications page dropped; BLOeM project polish added as a future task
 - Site now supports Google Search Console verification via a config-driven meta tag
 - Google Search Console verification token added to the live site config
+- SEO baseline improved: duplicate titles removed, internal repo pages excluded from the public build, structured data added, and footer links corrected
 - Site title now matches the full name used elsewhere (`Jaime I. Villaseñor`) in the homepage hero and navbar
 - Publications dataset and metrics refreshed from ADS on 2026-03-12 (`_data/papers_all.yml`, `_data/ads_metrics.yml`)
 - Research section now uses a full-height hero wrapper and the same pale background tone as About for a more consistent home-page rhythm
