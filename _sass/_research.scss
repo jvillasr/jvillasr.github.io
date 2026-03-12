@@ -1,5 +1,15 @@
-/* Compact vertical rhythm */
-.section--compact { padding-top: 4.75rem; padding-bottom: 4.25rem; }
+/* Full-height editorial layout to match the neighbouring sections */
+#research {
+  background: #f8fafc;
+}
+
+#research .hero-body {
+  padding: 4.75rem 1.5rem 4.25rem;
+}
+
+#research .container {
+  width: 100%;
+}
 
 /* Title/subtitle spacing */
 #research header { margin-top: 0.5rem; }  /* moves title down from top edge */
@@ -81,6 +91,6 @@
 
 /* Keep it tighter on small screens */
 @media (max-width: 768px) {
-  .section--compact { padding-top: 3.25rem; padding-bottom: 3rem; }
+  #research .hero-body { padding-top: 3.25rem; padding-bottom: 3rem; }
   #research .columns { margin-top: 1.25rem; }
 }
