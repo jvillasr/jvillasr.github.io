@@ -23,6 +23,7 @@ This project does not need strict SemVer; entries are grouped by release date.
 - SDSS-V project page now highlights punchier published results from Zari et al. (2025)
 - Roadmap updated: dedicated publications page dropped; BLOeM project polish added as a future task
 - Site now supports Google Search Console verification via a config-driven meta tag
+- Google Search Console verification token added to the live site config
 - Site title now matches the full name used elsewhere (`Jaime I. Villaseñor`) in the homepage hero and navbar
 - Publications dataset and metrics refreshed from ADS on 2026-03-12 (`_data/papers_all.yml`, `_data/ads_metrics.yml`)
 - Research section now uses a full-height hero wrapper and the same pale background tone as About for a more consistent home-page rhythm
