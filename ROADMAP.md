@@ -36,6 +36,7 @@ Example:
 - Refresh Publications data and metrics from ADS [DONE][2026-03-12]
 - Tighten the y-axis scale in the "Indices per year" plot [DONE][2026-03-12]
 - Research section layout and background aligned with the full-height home-page sections [DONE][2026-03-12]
+- Update README file and remove the remaining WhatATheme material [DONE][2026-03-12]
 - Add extra buttons to display publications: [DONE][2025-12-24]
     - latest 10 (default)
     - More cited

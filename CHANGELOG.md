@@ -19,6 +19,7 @@ This project does not need strict SemVer; entries are grouped by release date.
 - About copy rewritten around Jaime's scientific trajectory, current research focus, and binary-star motivation
 - About tagline updated to `Uncovering the lives of massive binary stars`
 - About actions simplified to Resume, Research, and Contact
+- README rewritten for this site and leftover WhatATheme config references removed
 - Site title now matches the full name used elsewhere (`Jaime I. Villaseñor`) in the homepage hero and navbar
 - Publications dataset and metrics refreshed from ADS on 2026-03-12 (`_data/papers_all.yml`, `_data/ads_metrics.yml`)
 - Research section now uses a full-height hero wrapper and the same pale background tone as About for a more consistent home-page rhythm
