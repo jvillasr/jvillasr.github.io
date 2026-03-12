@@ -49,7 +49,10 @@ Status: analysis complete; figures drafted; internal review next.
 - Lead author on the first multiplicity paper (in prep).
 
 ## Key results (so far)
-- Zari, **Villaseñor**, Kounkel, Rix, et al. (2025). "The large-scale kinematics of young stars in the Milky Way disc: first results from SDSS-V". (*Subm. to A&A*)
+- **First large-scale young-disc map:** [Zari, Villaseñor, Kounkel, Rix, et al. (2025)](https://ui.adsabs.harvard.edu/abs/2025A%26A...703A.303Z/abstract) used roughly **50,000 young OB stars** from SDSS-V to build a first 3D kinematic map of the Milky Way disc out to **~5 kpc** from the Sun.
+- **Coherent radial motions at kiloparsec scale:** the young-star velocity field shows alternating inward and outward patterns with amplitudes of about **±30 km s⁻¹**, substantially stronger than those seen in older red-giant populations.
+- **Young stars do not simply trace spiral structure:** the radial-velocity patterns correlate only weakly with spiral-arm overdensities, pointing instead to a mix of spiral structure, bar-driven dynamics, resonances, or phase mixing.
+- **Age matters:** about **85%** of the sample is younger than **~300 Myr**, while the very youngest stars (**≲30 Myr**) line up more clearly with density enhancements, showing that the youngest disc populations carry different spatial and kinematic information.
 
 ## All SDSS-V publication
 

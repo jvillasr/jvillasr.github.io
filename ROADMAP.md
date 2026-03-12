@@ -37,6 +37,7 @@ Example:
 - Tighten the y-axis scale in the "Indices per year" plot [DONE][2026-03-12]
 - Research section layout and background aligned with the full-height home-page sections [DONE][2026-03-12]
 - Update README file and remove the remaining WhatATheme material [DONE][2026-03-12]
+- Update "key results" section of the SDSS-V project with some punchy lines/results from the Zari+2025 paper [DONE][2026-03-12]
 - Add extra buttons to display publications: [DONE][2025-12-24]
     - latest 10 (default)
     - More cited
@@ -60,8 +61,6 @@ Example:
 - Analytics: migrate off Universal Analytics (UA) or switch to a privacy-friendly option [][]
 - Add automated link checking (GitHub Action) [][]
 - Add somewhere past students. [][]
-- Update "key results" section of the SDSS-V project with some punchy lines/results from the Zari+2025 paper.
-- Update README file, remove everything related to WhatATheme
 
 ## Later
 - Add “Talks / Posters” page [][]
