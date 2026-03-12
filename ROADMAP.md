@@ -59,7 +59,7 @@ Example:
 - [BUG] "Research" is the only button in the nav bar that doesn't stay highlighted [DONE][2026-03-01]
 - Google Search Console verification and sitemap submission [DONE][2026-03-12]
 - SEO/social previews sanity check (remove duplicate `<title>`, confirm OpenGraph image, add per-page descriptions) [DONE][2026-03-12]
-- Analytics: migrate off Universal Analytics (UA) or switch to a privacy-friendly option [][]
+- Analytics: migrate from Universal Analytics to GA4 [STARTED][2026-03-12]
 - Add automated link checking (GitHub Action) [][]
 - Add somewhere past students. [][]
 - Polish the BLOeM project page with additional punchy key results [][]

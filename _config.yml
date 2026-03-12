@@ -35,8 +35,8 @@ github_username:  jvillasr
 #spotify_username: /
 orcid_username: 0000-0002-7984-1675
 
-# Google Analytics
-google-analytics: UA-163806439-1
+# Google Analytics 4
+google-analytics-id: ""
 
 # Google Search Console
 google-site-verification: "xlgGYg_U6oNJhn75hq5ZeRdFsZA0bc92WvWgfxaSOYQ"

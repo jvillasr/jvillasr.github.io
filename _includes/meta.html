@@ -79,8 +79,9 @@
 </script>
 {% endif %}
 
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id={{site.google-analytics}}"></script>
+{% if site.google-analytics-id and site.google-analytics-id != "" %}
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google-analytics-id }}"></script>
 <script>
     window.dataLayer = window.dataLayer || [];
 
@@ -89,5 +90,6 @@
     }
     gtag('js', new Date());
 
-    gtag('config', '{{site.google-analytics}}');
+    gtag('config', '{{ site.google-analytics-id }}');
 </script>
+{% endif %}
