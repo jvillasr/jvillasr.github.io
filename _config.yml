@@ -38,6 +38,9 @@ orcid_username: 0000-0002-7984-1675
 # Google Analytics
 google-analytics: UA-163806439-1
 
+# Google Search Console
+google-site-verification: ""
+
 # Disqus
 disqus-shortname: ""
 

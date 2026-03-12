@@ -57,6 +57,7 @@ Example:
     Use data from ADS.
 - Dedicated publications page no longer needed after the Resume publications refresh [DONE][2026-03-12]
 - [BUG] "Research" is the only button in the nav bar that doesn't stay highlighted [DONE][2026-03-01]
+- Google Search Console verification and sitemap submission [STARTED][2026-03-12]
 - SEO/social previews sanity check (remove duplicate `<title>`, confirm OpenGraph image, add per-page descriptions) [][]
 - Analytics: migrate off Universal Analytics (UA) or switch to a privacy-friendly option [][]
 - Add automated link checking (GitHub Action) [][]
