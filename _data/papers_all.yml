@@ -1,3 +1,53 @@
+- bibcode: 2026ApJ..1000....2S
+  title: Interacting Binaries on the Main Sequence as In Situ Tracers of Mass-transfer
+    Efficiency and Stability
+  authors:
+  - Sen, Koushik
+  - Renzo, Mathieu
+  - Jin, Harim
+  - Langer, Norbert
+  - Schootemeijer, Abel
+  - Villaseñor, Jaime I.
+  - Mahy, Laurent
+  - Grichener, Aldana
+  - Shah, Neev
+  - Wang, Chen
+  - Xu, Xiao-Tian
+  authors_html: Koushik Sen; Mathieu Renzo; Harim Jin; Norbert Langer; Abel Schootemeijer;
+    <strong>Jaime I. Villaseñor</strong>; Laurent Mahy; Aldana Grichener; Neev Shah;
+    Chen Wang; Xiao-Tian Xu
+  authors_short_html: Koushik Sen; Mathieu Renzo; Harim Jin; Norbert Langer; Abel
+    Schootemeijer; <strong>Jaime I. Villaseñor</strong>; Laurent Mahy; Aldana Grichener,
+    <em>et&nbsp;al.</em>
+  authors_display:
+  - Koushik Sen
+  - Mathieu Renzo
+  - Harim Jin
+  - Norbert Langer
+  - Abel Schootemeijer
+  - Jaime I. Villaseñor
+  - Laurent Mahy
+  - Aldana Grichener
+  - Neev Shah
+  - Chen Wang
+  - Xiao-Tian Xu
+  me_index: 5
+  n_authors: 11
+  year: '2026'
+  pub: The Astrophysical Journal
+  volume: '1000'
+  page: '2'
+  page_range: ''
+  doi: 10.3847/1538-4357/ae40fc
+  arxiv: '2511.15347'
+  adsurl: https://ui.adsabs.harvard.edu/abs/2026ApJ..1000....2S
+  best_url: https://doi.org/10.3847/1538-4357/ae40fc
+  refereed: true
+  citations: 3
+  month: mar
+  month_num: '03'
+  sortdate: '2026-03-15'
+  tags: []
 - bibcode: 2026A&A...707A.204L
   title: 'Binarity at LOw Metallicity (BLOeM): Projected rotational velocities'
   authors:
@@ -678,7 +728,7 @@
   adsurl: https://ui.adsabs.harvard.edu/abs/2026AJ....171...52K
   best_url: https://doi.org/10.3847/1538-3881/ae0576
   refereed: true
-  citations: 58
+  citations: 67
   month: jan
   month_num: '01'
   sortdate: '2026-01-15'
@@ -722,56 +772,6 @@
   month: jan
   month_num: '01'
   sortdate: '2026-01-15'
-  tags: []
-- bibcode: 2025arXiv251115347S
-  title: Interacting binaries on the Main Sequence as in-situ tracers of mass transfer
-    efficiency and stability
-  authors:
-  - Sen, Koushik
-  - Renzo, Mathieu
-  - Jin, Harim
-  - Langer, Norbert
-  - Schootemeijer, Abel
-  - Villaseñor, Jaime I.
-  - Mahy, Laurent
-  - Grichener, Aldana
-  - Shah, Neev
-  - Wang, Chen
-  - Xu, Xiao-Tian
-  authors_html: Koushik Sen; Mathieu Renzo; Harim Jin; Norbert Langer; Abel Schootemeijer;
-    <strong>Jaime I. Villaseñor</strong>; Laurent Mahy; Aldana Grichener; Neev Shah;
-    Chen Wang; Xiao-Tian Xu
-  authors_short_html: Koushik Sen; Mathieu Renzo; Harim Jin; Norbert Langer; Abel
-    Schootemeijer; <strong>Jaime I. Villaseñor</strong>; Laurent Mahy; Aldana Grichener,
-    <em>et&nbsp;al.</em>
-  authors_display:
-  - Koushik Sen
-  - Mathieu Renzo
-  - Harim Jin
-  - Norbert Langer
-  - Abel Schootemeijer
-  - Jaime I. Villaseñor
-  - Laurent Mahy
-  - Aldana Grichener
-  - Neev Shah
-  - Chen Wang
-  - Xiao-Tian Xu
-  me_index: 5
-  n_authors: 11
-  year: '2025'
-  pub: arXiv e-prints
-  volume: ''
-  page: arXiv:2511.15347
-  page_range: ''
-  doi: 10.48550/arXiv.2511.15347
-  arxiv: '2511.15347'
-  adsurl: https://ui.adsabs.harvard.edu/abs/2025arXiv251115347S
-  best_url: https://doi.org/10.48550/arXiv.2511.15347
-  refereed: false
-  citations: 3
-  month: ''
-  month_num: '11'
-  sortdate: '2025-11-31'
   tags: []
 - bibcode: 2025arXiv251108675V
   title: 'The binary landscape of massive stars at low $Z$: Insights from the BLOeM
@@ -1070,7 +1070,7 @@
   adsurl: https://ui.adsabs.harvard.edu/abs/2025NatAs...9.1337S
   best_url: https://doi.org/10.1038/s41550-025-02610-x
   refereed: true
-  citations: 17
+  citations: 18
   month: sep
   month_num: 09
   sortdate: '2025-09-15'
@@ -1614,7 +1614,7 @@
   adsurl: https://ui.adsabs.harvard.edu/abs/2025arXiv250707093S
   best_url: https://doi.org/10.48550/arXiv.2507.07093
   refereed: false
-  citations: 40
+  citations: 42
   month: ''
   month_num: '07'
   sortdate: '2025-07-31'
@@ -1713,7 +1713,7 @@
   adsurl: https://ui.adsabs.harvard.edu/abs/2025A&A...698A..41V
   best_url: https://doi.org/10.1051/0004-6361/202453166
   refereed: true
-  citations: 17
+  citations: 18
   month: jun
   month_num: '06'
   sortdate: '2025-06-15'
@@ -1815,7 +1815,7 @@
   adsurl: https://ui.adsabs.harvard.edu/abs/2025A&A...698A..40B
   best_url: https://doi.org/10.1051/0004-6361/202452963
   refereed: true
-  citations: 9
+  citations: 10
   month: jun
   month_num: '06'
   sortdate: '2025-06-15'
@@ -1925,7 +1925,7 @@
   adsurl: https://ui.adsabs.harvard.edu/abs/2025A&A...698A..39P
   best_url: https://doi.org/10.1051/0004-6361/202452949
   refereed: true
-  citations: 17
+  citations: 18
   month: jun
   month_num: '06'
   sortdate: '2025-06-15'
@@ -2044,7 +2044,7 @@
   adsurl: https://ui.adsabs.harvard.edu/abs/2025A&A...698A..38B
   best_url: https://doi.org/10.1051/0004-6361/202452623
   refereed: true
-  citations: 17
+  citations: 18
   month: jun
   month_num: '06'
   sortdate: '2025-06-15'
@@ -2111,7 +2111,7 @@
   adsurl: https://ui.adsabs.harvard.edu/abs/2024A&A...692A.109D
   best_url: https://doi.org/10.1051/0004-6361/202452352
   refereed: true
-  citations: 11
+  citations: 12
   month: dec
   month_num: '12'
   sortdate: '2024-12-15'
@@ -2305,7 +2305,7 @@
   adsurl: https://ui.adsabs.harvard.edu/abs/2024A&A...690A.289S
   best_url: https://doi.org/10.1051/0004-6361/202451586
   refereed: true
-  citations: 41
+  citations: 42
   month: oct
   month_num: '10'
   sortdate: '2024-10-15'
@@ -2596,7 +2596,7 @@
   adsurl: https://ui.adsabs.harvard.edu/abs/2022A&A...665A.180L
   best_url: https://doi.org/10.1051/0004-6361/202142413
   refereed: true
-  citations: 25
+  citations: 26
   month: sep
   month_num: 09
   sortdate: '2022-09-15'
