@@ -67,6 +67,14 @@ This updates:
 
 The script expects an `ADS_DEV_KEY` environment variable to be set locally.
 
+For the full publish workflow, including changelog update, local build, commit, and push, use:
+
+```bash
+./scripts/sync_ads_pubs.sh
+```
+
+The wrapper defaults to `delta_year=2026`. Override that with `ADS_DELTA_YEAR=<year>` if needed.
+
 ## Content notes
 
 - Keep publication links stable and prefer DOI, publisher, or ADS links.

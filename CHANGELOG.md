@@ -15,6 +15,7 @@ This project does not need strict SemVer; entries are grouped by release date.
 - CLAUDE.md symlink to AGENTS.md for agent instruction synchronisation
 
 ### Changed
+- ADS sync wrapper now refreshes metrics, verifies the ADS snapshot date/year, updates the changelog, builds the site, and pushes in one scripted workflow
 - Publications dataset and metrics refreshed from ADS on 2026-03-31 (`_data/papers_all.yml`, `_data/ads_metrics.yml`)
 - Resume publication metric deltas now use `2026` as the selected comparison year in `_data/ads_metrics.yml`
 - About section redesigned into a cleaner editorial two-column layout with portrait, short biography, and research-question panels
