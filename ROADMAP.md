@@ -35,6 +35,7 @@ Example:
 - Align homepage and navbar name with the full site-wide form (`Jaime I. Villaseñor`) [DONE][2026-03-12]
 - Refresh Publications data and metrics from ADS [DONE][2026-03-12]
 - Automate the weekly ADS refresh workflow [DONE][2026-03-31]
+- Harden weekly ADS sync for detached-worktree automation runs [DONE][2026-04-07]
 - Tighten the y-axis scale in the "Indices per year" plot [DONE][2026-03-12]
 - Research section layout and background aligned with the full-height home-page sections [DONE][2026-03-12]
 - Update README file and remove the remaining WhatATheme material [DONE][2026-03-12]

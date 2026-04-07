@@ -20,6 +20,32 @@ if [[ -z "${ADS_DEV_KEY:-}" ]]; then
   exit 1
 fi
 
+resolve_push_target() {
+  local branch_name=""
+  local remote_head=""
+  local default_branch=""
+
+  branch_name="$(git symbolic-ref --quiet --short HEAD 2>/dev/null || true)"
+  if [[ -n "${branch_name}" ]]; then
+    echo "${branch_name}"
+    return 0
+  fi
+
+  remote_head="$(git symbolic-ref --quiet --short refs/remotes/origin/HEAD 2>/dev/null || true)"
+  if [[ -z "${remote_head}" ]]; then
+    echo "Could not determine the current branch or origin default branch for detached HEAD." >&2
+    return 1
+  fi
+
+  default_branch="${remote_head#origin/}"
+  if ! git merge-base --is-ancestor "origin/${default_branch}" HEAD; then
+    echo "Detached HEAD is not based on origin/${default_branch}; refusing to push automatically." >&2
+    return 1
+  fi
+
+  echo "${default_branch}"
+}
+
 echo "Refreshing ADS library '${LIB_NAME}' with delta year ${DELTA_YEAR}..."
 ./scripts/update_ads_pubs.py "${LIB_NAME}" "${ALL_PATH}" --metrics "${METRICS_PATH}" --delta-year "${DELTA_YEAR}"
 
@@ -80,11 +106,11 @@ if git diff --cached --quiet; then
   exit 0
 fi
 
-CURRENT_BRANCH="$(git rev-parse --abbrev-ref HEAD)"
+CURRENT_BRANCH="$(resolve_push_target)"
 echo "Committing to ${CURRENT_BRANCH}..."
 git commit -m "${COMMIT_MSG}"
 
 echo "Pushing ${CURRENT_BRANCH}..."
-git push
+git push origin "HEAD:refs/heads/${CURRENT_BRANCH}"
 
 echo "Done."
