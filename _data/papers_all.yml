@@ -728,7 +728,7 @@
   adsurl: https://ui.adsabs.harvard.edu/abs/2026AJ....171...52K
   best_url: https://doi.org/10.3847/1538-3881/ae0576
   refereed: true
-  citations: 83
+  citations: 85
   month: jan
   month_num: '01'
   sortdate: '2026-01-15'
@@ -2457,7 +2457,7 @@
   adsurl: https://ui.adsabs.harvard.edu/abs/2023MNRAS.525.5121V
   best_url: https://doi.org/10.1093/mnras/stad2533
   refereed: true
-  citations: 26
+  citations: 27
   month: nov
   month_num: '11'
   sortdate: '2023-11-15'
