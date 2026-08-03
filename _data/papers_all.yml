@@ -1,3 +1,1197 @@
+- bibcode: 2026arXiv260726149S
+  title: 'The Twentieth Data Release of the Sloan Digital Sky Survey: First All-Sky
+    BOSS Spectra, eROSITA-SDSS-V Mapper Coordinated Observations, and a Preview of
+    the Local Volume Mapper'
+  authors:
+  - SDSS Collaboration
+  - Aghakhanloo, Mojgan
+  - Aguilar, David
+  - Aird, James
+  - Almeida, Andrés
+  - Sanabria Alonso, Bella Abigail
+  - Andales, Hillary Diane
+  - Anderson, Scott F.
+  - Arseneau, Stefan
+  - González Ávila, Consuelo
+  - Aviram, Shir
+  - Aydar, Catarina
+  - Badenes, Carles
+  - Andonie, Carolina
+  - Barrera-Ballesteros, Jorge K.
+  - Bauer, Franz E.
+  - Bender, Chad
+  - Berg, Michelle A.
+  - Besser, F.
+  - Bhattarai, Binod
+  - Moni Bidin, Christian
+  - Bird, Jonathan C.
+  - Bizyaev, Dmitry
+  - Blanc, Guillermo A.
+  - Bonkoski, Alexandra
+  - Bovy, Jo
+  - Bracamonte, Andrea
+  - Brandt, W. N.
+  - Brink, Jaco
+  - Brownstein, Joel R.
+  - Bulbul, Esra
+  - Burchett, Joseph N.
+  - Butler, Robert E.
+  - Carigi, Leticia
+  - Carlberg, Joleen K.
+  - Casey, Andrew R.
+  - Castañeda-Carlos, Lesly
+  - Milla Castro, Fernanda
+  - Chakraborty, Priyanka
+  - Chanamé, Julio
+  - Chandra, Vedant
+  - Cherinka, Brian
+  - Chilingarian, Igor
+  - Cortes, Arlin
+  - Cosens, Maren
+  - Cruz-Gonzalez, Irene
+  - D'Onghia, Elena
+  - Dabbieri, Collin
+  - Dai, Xinyu
+  - Darling, Jeremy
+  - Davidson, James W., Jr.
+  - Davis, Megan C.
+  - De Lee, Nathan
+  - Deacon, Niall
+  - Méndez Delgado, José Eduardo
+  - Demasi, Sebastian
+  - Demianenko, Mariia
+  - Demke, Delvin
+  - Di Mille, Francesco
+  - Dias, Bruno
+  - Didiano, Ariana
+  - Donor, John
+  - Driscoll, Ethan
+  - Drory, Niv
+  - Dubay, Liam
+  - Villa Durango, Moníca A
+  - Dwelly, Tom
+  - Egorov, Oleg
+  - Egorova, Evgeniya
+  - El-Badry, Kareem
+  - Eracleous, Michael
+  - Fan, Xiaohui
+  - Flores, Liliana
+  - Frinchaboy, Peter
+  - Gentile Fusillo, Nicola Pietro
+  - Serrano Félix, Luis Daniel
+  - Gänsicke, Boris T.
+  - Galligan, Emma
+  - Garcia, Dante
+  - García, Pablo
+  - Ge, Junqiang
+  - Gelfand, Joseph
+  - Glover, Simon C. O.
+  - Gonzalez Ruiz, Juan Daniel
+  - Grabowski, Katie
+  - Grebel, Eva K.
+  - Green, Paul J.
+  - Grier, Catherine
+  - Griffith, Emily J.
+  - Guetzoyan, Paloma
+  - Gupta, Pramod
+  - Hall, Patrick B.
+  - Hauck, Audrey
+  - Hawkins, Keith
+  - Hekker, Saskia
+  - Herbst, T. M.
+  - Hermes, J. J.
+  - Hernández, J.
+  - Hernández-García, Lorena
+  - Hilder, Thomas
+  - Hiremath, Pranavi
+  - Hogg, David W
+  - Holtzman, Jon
+  - Horne, Keith
+  - Horta, Danny
+  - Huang, Yang
+  - Häberle, Maximilian
+  - Ibarra-Medel, Hector Javier
+  - Imig, Julie
+  - Ji, Alex
+  - Jiménez-Arranz, Ó.
+  - Jofre, Paula
+  - Johnson, James W.
+  - Johnson, Jennifer
+  - Johnston, Evelyn J.
+  - Jones, Patricio
+  - Jones, Amy M.
+  - Kaldor, Mary
+  - Kalechman, Amir
+  - Katkov, Ivan
+  - Khoperskov, Sergey
+  - Kim, Dong-Woo
+  - Kim, Jinyoung Serena
+  - Klessen, Ralf
+  - Kluge, Matthias
+  - Koekemoer, Anton M.
+  - Kollmeier, Juna A.
+  - Kounkel, Marina
+  - Kreckel, Kathryn
+  - Krishnarao, Dhanesh
+  - Krumpe, Mirko
+  - Kumari, Nimisha
+  - Kupfer, Thomas
+  - Lacerna, Ivan
+  - Lam, Sean D.
+  - Lambert, Sorya
+  - Laporte, Chervin
+  - Lepine, Sebastien
+  - Li, Jiadong
+  - Li, Bowen
+  - Lian, Jianhui
+  - Limberg, Guilherme
+  - Liu, Xin
+  - Loebman, Sarah
+  - Long, Dan
+  - Long, Knox
+  - Yuxi
+  - Lu
+  - Lucey, Madeline
+  - Lugo-Aranda, Alejandra Z.
+  - Majewski, Steven Raymond
+  - Maoz, Dan
+  - Martínez-Aldama, M. L.
+  - McClure, Rachel Lee
+  - McKenzie, Madeleine
+  - McKinnon, Kevin
+  - McQuaid, Timothy
+  - Medan, Ilija
+  - Mejía-Narváez, Alfredo J.
+  - Merloni, Andrea
+  - Mészáros, Szabolcs
+  - Minniti, Dante
+  - Miyaji, Takamitsu
+  - Monty, Stephanie
+  - Morales, Leslie M.
+  - Morrison, Sean
+  - Moss, Adam
+  - Müller-Horn, Johanna
+  - Myers, Natalie R.
+  - Negrete, C. Alenka
+  - Neilson, Shannon
+  - Ness, Melissa
+  - Nidever, David L.
+  - Nitschelm, Christian
+  - Iddrisu Nlowie, Mohammed
+  - Oravetz, Daniel
+  - Oravetz, Audrey
+  - Otto, Jonah M.
+  - Adamane Pallathadka, Gautham
+  - Pan, Kaike
+  - Pérez Paolino, Facundo
+  - Peng, Ziming
+  - Peterson, Leah
+  - Pinsonneault, Marc
+  - Plotnikova, Anastasiia
+  - Prescott, Moire K. M.
+  - Price-Whelan, Adrian M.
+  - Pulatova, Nadiia
+  - Raddick, M. Jordan
+  - Rankine, Amy L.
+  - Rodríguez Hidalgo, Paola
+  - Rodriguez Wimberly, M. Katy
+  - Roman-Lopes, A.
+  - Román-Zúñiga, Carlos G.
+  - Fernández Rosso, Daniela
+  - Roster, William
+  - Mahmud Saad, Serat
+  - Salvato, Mara
+  - Sánchez, Sebastián F.
+  - Sander, Andreas A. C.
+  - Sandoval-Orozco, Rodrigo
+  - Sankrit, Ravi
+  - Sasi, Saroon
+  - Sattler, Natascha
+  - Saydjari, Andrew K.
+  - Sayeed, Maryum
+  - Sayres, Conor
+  - Scheuermann, Fabian
+  - Schlaufman, Kevin C.
+  - Schneider, Donald P.
+  - Schwope, Axel
+  - Scoresby, Conner
+  - Seaton, Lucas M.
+  - Serna, Javier
+  - Sharifi, Kayvon
+  - Sheffield, Allyson
+  - Silva, Paula
+  - Singh, Amrita
+  - Sinha, Amaya
+  - Sit, Tawny
+  - Smith, Peter J.
+  - Song, Ying-Yi
+  - Souto, Diogo
+  - Stassun, Keivan
+  - Steinmetz, Matthias
+  - Stone, Zachary
+  - Stone-Martinez, Alexander
+  - Stringfellow, Guy S.
+  - Stutz, Amelia
+  - Sánchez-Gallego, José
+  - Taghizadeh-Popp, Manuchehr
+  - Tan, Jonathan C.
+  - Tasso, Emma
+  - Tayar, Jamie
+  - Thakar, Aniruddha R.
+  - Thibodeaux, Pierre
+  - Ting, Yuan-Sen
+  - Tkachenko, Andrew
+  - Tovmasian, Gagik
+  - Trakhtenbrot, Benny
+  - Fernández-Trincado, José G.
+  - Troup, Nicholas
+  - Trump, Jonathan R.
+  - Tuttle, Sarah
+  - Ulloa, Natalie
+  - Sofía Uzsoy, Ana
+  - López Valdivia, Ricardo
+  - Valk, Greique A.
+  - van der Marel, Roeland P.
+  - Vargas-Herrera, Luciano
+  - Vera, Pablo
+  - Bonilla Villalobos, Valentina
+  - Villanova, Sandro
+  - Villaseñor, Jaime I.
+  - Way, Zach
+  - Weijmans, Anne-Marie
+  - Wilson, John C.
+  - Wofford, Aida
+  - Wong, Tony
+  - Wu, Qiaoya
+  - Wylezalek, Dominika
+  - Xue, Xiang-Xiang
+  - Yan, Renbin
+  - Yang, Qian
+  - Zakamska, Nadia
+  - Zapata, Abner
+  - Zari, Eleonora
+  - Zasowski, Gail
+  - Zeltyn, Grisha
+  - Zeng, Guangquan
+  - Zhang, Jichen
+  - Zhao, Jingkun
+  - Zhu, Zezhou
+  - Zinchenko, Igor
+  - Zucker, Catherine
+  - Zermeño, Rodolfo de J.
+  authors_html: SDSS Collaboration; Mojgan Aghakhanloo; David Aguilar; James Aird;
+    Andrés Almeida; Bella Abigail Sanabria Alonso; Hillary Diane Andales; Scott F.
+    Anderson; Stefan Arseneau; Consuelo González Ávila; Shir Aviram; Catarina Aydar;
+    Carles Badenes; Carolina Andonie; Jorge K. Barrera-Ballesteros; Franz E. Bauer;
+    Chad Bender; Michelle A. Berg; F. Besser; Binod Bhattarai; Christian Moni Bidin;
+    Jonathan C. Bird; Dmitry Bizyaev; Guillermo A. Blanc; Alexandra Bonkoski; Jo Bovy;
+    Andrea Bracamonte; W. N. Brandt; Jaco Brink; Joel R. Brownstein; Esra Bulbul;
+    Joseph N. Burchett; Robert E. Butler; Leticia Carigi; Joleen K. Carlberg; Andrew
+    R. Casey; Lesly Castañeda-Carlos; Fernanda Milla Castro; Priyanka Chakraborty;
+    Julio Chanamé; Vedant Chandra; Brian Cherinka; Igor Chilingarian; Arlin Cortes;
+    Maren Cosens; Irene Cruz-Gonzalez; Elena D'Onghia; Collin Dabbieri; Xinyu Dai;
+    Jeremy Darling; James W. Davidson, Jr.; Megan C. Davis; Nathan De Lee; Niall Deacon;
+    José Eduardo Méndez Delgado; Sebastian Demasi; Mariia Demianenko; Delvin Demke;
+    Francesco Di Mille; Bruno Dias; Ariana Didiano; John Donor; Ethan Driscoll; Niv
+    Drory; Liam Dubay; Moníca A Villa Durango; Tom Dwelly; Oleg Egorov; Evgeniya Egorova;
+    Kareem El-Badry; Michael Eracleous; Xiaohui Fan; Liliana Flores; Peter Frinchaboy;
+    Nicola Pietro Gentile Fusillo; Luis Daniel Serrano Félix; Boris T. Gänsicke; Emma
+    Galligan; Dante Garcia; Pablo García; Junqiang Ge; Joseph Gelfand; Simon C. O.
+    Glover; Juan Daniel Gonzalez Ruiz; Katie Grabowski; Eva K. Grebel; Paul J. Green;
+    Catherine Grier; Emily J. Griffith; Paloma Guetzoyan; Pramod Gupta; Patrick B.
+    Hall; Audrey Hauck; Keith Hawkins; Saskia Hekker; T. M. Herbst; J. J. Hermes;
+    J. Hernández; Lorena Hernández-García; Thomas Hilder; Pranavi Hiremath; David
+    W Hogg; Jon Holtzman; Keith Horne; Danny Horta; Yang Huang; Maximilian Häberle;
+    Hector Javier Ibarra-Medel; Julie Imig; Alex Ji; Ó. Jiménez-Arranz; Paula Jofre;
+    James W. Johnson; Jennifer Johnson; Evelyn J. Johnston; Patricio Jones; Amy M.
+    Jones; Mary Kaldor; Amir Kalechman; Ivan Katkov; Sergey Khoperskov; Dong-Woo Kim;
+    Jinyoung Serena Kim; Ralf Klessen; Matthias Kluge; Anton M. Koekemoer; Juna A.
+    Kollmeier; Marina Kounkel; Kathryn Kreckel; Dhanesh Krishnarao; Mirko Krumpe;
+    Nimisha Kumari; Thomas Kupfer; Ivan Lacerna; Sean D. Lam; Sorya Lambert; Chervin
+    Laporte; Sebastien Lepine; Jiadong Li; Bowen Li; Jianhui Lian; Guilherme Limberg;
+    Xin Liu; Sarah Loebman; Dan Long; Knox Long; Yuxi; Lu; Madeline Lucey; Alejandra
+    Z. Lugo-Aranda; Steven Raymond Majewski; Dan Maoz; M. L. Martínez-Aldama; Rachel
+    Lee McClure; Madeleine McKenzie; Kevin McKinnon; Timothy McQuaid; Ilija Medan;
+    Alfredo J. Mejía-Narváez; Andrea Merloni; Szabolcs Mészáros; Dante Minniti; Takamitsu
+    Miyaji; Stephanie Monty; Leslie M. Morales; Sean Morrison; Adam Moss; Johanna
+    Müller-Horn; Natalie R. Myers; C. Alenka Negrete; Shannon Neilson; Melissa Ness;
+    David L. Nidever; Christian Nitschelm; Mohammed Iddrisu Nlowie; Daniel Oravetz;
+    Audrey Oravetz; Jonah M. Otto; Gautham Adamane Pallathadka; Kaike Pan; Facundo
+    Pérez Paolino; Ziming Peng; Leah Peterson; Marc Pinsonneault; Anastasiia Plotnikova;
+    Moire K. M. Prescott; Adrian M. Price-Whelan; Nadiia Pulatova; M. Jordan Raddick;
+    Amy L. Rankine; Paola Rodríguez Hidalgo; M. Katy Rodriguez Wimberly; A. Roman-Lopes;
+    Carlos G. Román-Zúñiga; Daniela Fernández Rosso; William Roster; Serat Mahmud
+    Saad; Mara Salvato; Sebastián F. Sánchez; Andreas A. C. Sander; Rodrigo Sandoval-Orozco;
+    Ravi Sankrit; Saroon Sasi; Natascha Sattler; Andrew K. Saydjari; Maryum Sayeed;
+    Conor Sayres; Fabian Scheuermann; Kevin C. Schlaufman; Donald P. Schneider; Axel
+    Schwope; Conner Scoresby; Lucas M. Seaton; Javier Serna; Kayvon Sharifi; Allyson
+    Sheffield; Paula Silva; Amrita Singh; Amaya Sinha; Tawny Sit; Peter J. Smith;
+    Ying-Yi Song; Diogo Souto; Keivan Stassun; Matthias Steinmetz; Zachary Stone;
+    Alexander Stone-Martinez; Guy S. Stringfellow; Amelia Stutz; José Sánchez-Gallego;
+    Manuchehr Taghizadeh-Popp; Jonathan C. Tan; Emma Tasso; Jamie Tayar; Aniruddha
+    R. Thakar; Pierre Thibodeaux; Yuan-Sen Ting; Andrew Tkachenko; Gagik Tovmasian;
+    Benny Trakhtenbrot; José G. Fernández-Trincado; Nicholas Troup; Jonathan R. Trump;
+    Sarah Tuttle; Natalie Ulloa; Ana Sofía Uzsoy; Ricardo López Valdivia; Greique
+    A. Valk; Roeland P. van der Marel; Luciano Vargas-Herrera; Pablo Vera; Valentina
+    Bonilla Villalobos; Sandro Villanova; <strong>Jaime I. Villaseñor</strong>; Zach
+    Way; Anne-Marie Weijmans; John C. Wilson; Aida Wofford; Tony Wong; Qiaoya Wu;
+    Dominika Wylezalek; Xiang-Xiang Xue; Renbin Yan; Qian Yang; Nadia Zakamska; Abner
+    Zapata; Eleonora Zari; Gail Zasowski; Grisha Zeltyn; Guangquan Zeng; Jichen Zhang;
+    Jingkun Zhao; Zezhou Zhu; Igor Zinchenko; Catherine Zucker; Rodolfo de J. Zermeño
+  authors_short_html: SDSS Collaboration; Mojgan Aghakhanloo; David Aguilar; James
+    Aird; Andrés Almeida; Bella Abigail Sanabria Alonso; Hillary Diane Andales; <strong>Jaime
+    I. Villaseñor</strong>, <em>et&nbsp;al.</em>
+  authors_display:
+  - SDSS Collaboration
+  - Mojgan Aghakhanloo
+  - David Aguilar
+  - James Aird
+  - Andrés Almeida
+  - Bella Abigail Sanabria Alonso
+  - Hillary Diane Andales
+  - Scott F. Anderson
+  - Stefan Arseneau
+  - Consuelo González Ávila
+  - Shir Aviram
+  - Catarina Aydar
+  - Carles Badenes
+  - Carolina Andonie
+  - Jorge K. Barrera-Ballesteros
+  - Franz E. Bauer
+  - Chad Bender
+  - Michelle A. Berg
+  - F. Besser
+  - Binod Bhattarai
+  - Christian Moni Bidin
+  - Jonathan C. Bird
+  - Dmitry Bizyaev
+  - Guillermo A. Blanc
+  - Alexandra Bonkoski
+  - Jo Bovy
+  - Andrea Bracamonte
+  - W. N. Brandt
+  - Jaco Brink
+  - Joel R. Brownstein
+  - Esra Bulbul
+  - Joseph N. Burchett
+  - Robert E. Butler
+  - Leticia Carigi
+  - Joleen K. Carlberg
+  - Andrew R. Casey
+  - Lesly Castañeda-Carlos
+  - Fernanda Milla Castro
+  - Priyanka Chakraborty
+  - Julio Chanamé
+  - Vedant Chandra
+  - Brian Cherinka
+  - Igor Chilingarian
+  - Arlin Cortes
+  - Maren Cosens
+  - Irene Cruz-Gonzalez
+  - Elena D'Onghia
+  - Collin Dabbieri
+  - Xinyu Dai
+  - Jeremy Darling
+  - James W. Davidson, Jr.
+  - Megan C. Davis
+  - Nathan De Lee
+  - Niall Deacon
+  - José Eduardo Méndez Delgado
+  - Sebastian Demasi
+  - Mariia Demianenko
+  - Delvin Demke
+  - Francesco Di Mille
+  - Bruno Dias
+  - Ariana Didiano
+  - John Donor
+  - Ethan Driscoll
+  - Niv Drory
+  - Liam Dubay
+  - Moníca A Villa Durango
+  - Tom Dwelly
+  - Oleg Egorov
+  - Evgeniya Egorova
+  - Kareem El-Badry
+  - Michael Eracleous
+  - Xiaohui Fan
+  - Liliana Flores
+  - Peter Frinchaboy
+  - Nicola Pietro Gentile Fusillo
+  - Luis Daniel Serrano Félix
+  - Boris T. Gänsicke
+  - Emma Galligan
+  - Dante Garcia
+  - Pablo García
+  - Junqiang Ge
+  - Joseph Gelfand
+  - Simon C. O. Glover
+  - Juan Daniel Gonzalez Ruiz
+  - Katie Grabowski
+  - Eva K. Grebel
+  - Paul J. Green
+  - Catherine Grier
+  - Emily J. Griffith
+  - Paloma Guetzoyan
+  - Pramod Gupta
+  - Patrick B. Hall
+  - Audrey Hauck
+  - Keith Hawkins
+  - Saskia Hekker
+  - T. M. Herbst
+  - J. J. Hermes
+  - J. Hernández
+  - Lorena Hernández-García
+  - Thomas Hilder
+  - Pranavi Hiremath
+  - David W Hogg
+  - Jon Holtzman
+  - Keith Horne
+  - Danny Horta
+  - Yang Huang
+  - Maximilian Häberle
+  - Hector Javier Ibarra-Medel
+  - Julie Imig
+  - Alex Ji
+  - Ó. Jiménez-Arranz
+  - Paula Jofre
+  - James W. Johnson
+  - Jennifer Johnson
+  - Evelyn J. Johnston
+  - Patricio Jones
+  - Amy M. Jones
+  - Mary Kaldor
+  - Amir Kalechman
+  - Ivan Katkov
+  - Sergey Khoperskov
+  - Dong-Woo Kim
+  - Jinyoung Serena Kim
+  - Ralf Klessen
+  - Matthias Kluge
+  - Anton M. Koekemoer
+  - Juna A. Kollmeier
+  - Marina Kounkel
+  - Kathryn Kreckel
+  - Dhanesh Krishnarao
+  - Mirko Krumpe
+  - Nimisha Kumari
+  - Thomas Kupfer
+  - Ivan Lacerna
+  - Sean D. Lam
+  - Sorya Lambert
+  - Chervin Laporte
+  - Sebastien Lepine
+  - Jiadong Li
+  - Bowen Li
+  - Jianhui Lian
+  - Guilherme Limberg
+  - Xin Liu
+  - Sarah Loebman
+  - Dan Long
+  - Knox Long
+  - Yuxi
+  - Lu
+  - Madeline Lucey
+  - Alejandra Z. Lugo-Aranda
+  - Steven Raymond Majewski
+  - Dan Maoz
+  - M. L. Martínez-Aldama
+  - Rachel Lee McClure
+  - Madeleine McKenzie
+  - Kevin McKinnon
+  - Timothy McQuaid
+  - Ilija Medan
+  - Alfredo J. Mejía-Narváez
+  - Andrea Merloni
+  - Szabolcs Mészáros
+  - Dante Minniti
+  - Takamitsu Miyaji
+  - Stephanie Monty
+  - Leslie M. Morales
+  - Sean Morrison
+  - Adam Moss
+  - Johanna Müller-Horn
+  - Natalie R. Myers
+  - C. Alenka Negrete
+  - Shannon Neilson
+  - Melissa Ness
+  - David L. Nidever
+  - Christian Nitschelm
+  - Mohammed Iddrisu Nlowie
+  - Daniel Oravetz
+  - Audrey Oravetz
+  - Jonah M. Otto
+  - Gautham Adamane Pallathadka
+  - Kaike Pan
+  - Facundo Pérez Paolino
+  - Ziming Peng
+  - Leah Peterson
+  - Marc Pinsonneault
+  - Anastasiia Plotnikova
+  - Moire K. M. Prescott
+  - Adrian M. Price-Whelan
+  - Nadiia Pulatova
+  - M. Jordan Raddick
+  - Amy L. Rankine
+  - Paola Rodríguez Hidalgo
+  - M. Katy Rodriguez Wimberly
+  - A. Roman-Lopes
+  - Carlos G. Román-Zúñiga
+  - Daniela Fernández Rosso
+  - William Roster
+  - Serat Mahmud Saad
+  - Mara Salvato
+  - Sebastián F. Sánchez
+  - Andreas A. C. Sander
+  - Rodrigo Sandoval-Orozco
+  - Ravi Sankrit
+  - Saroon Sasi
+  - Natascha Sattler
+  - Andrew K. Saydjari
+  - Maryum Sayeed
+  - Conor Sayres
+  - Fabian Scheuermann
+  - Kevin C. Schlaufman
+  - Donald P. Schneider
+  - Axel Schwope
+  - Conner Scoresby
+  - Lucas M. Seaton
+  - Javier Serna
+  - Kayvon Sharifi
+  - Allyson Sheffield
+  - Paula Silva
+  - Amrita Singh
+  - Amaya Sinha
+  - Tawny Sit
+  - Peter J. Smith
+  - Ying-Yi Song
+  - Diogo Souto
+  - Keivan Stassun
+  - Matthias Steinmetz
+  - Zachary Stone
+  - Alexander Stone-Martinez
+  - Guy S. Stringfellow
+  - Amelia Stutz
+  - José Sánchez-Gallego
+  - Manuchehr Taghizadeh-Popp
+  - Jonathan C. Tan
+  - Emma Tasso
+  - Jamie Tayar
+  - Aniruddha R. Thakar
+  - Pierre Thibodeaux
+  - Yuan-Sen Ting
+  - Andrew Tkachenko
+  - Gagik Tovmasian
+  - Benny Trakhtenbrot
+  - José G. Fernández-Trincado
+  - Nicholas Troup
+  - Jonathan R. Trump
+  - Sarah Tuttle
+  - Natalie Ulloa
+  - Ana Sofía Uzsoy
+  - Ricardo López Valdivia
+  - Greique A. Valk
+  - Roeland P. van der Marel
+  - Luciano Vargas-Herrera
+  - Pablo Vera
+  - Valentina Bonilla Villalobos
+  - Sandro Villanova
+  - Jaime I. Villaseñor
+  - Zach Way
+  - Anne-Marie Weijmans
+  - John C. Wilson
+  - Aida Wofford
+  - Tony Wong
+  - Qiaoya Wu
+  - Dominika Wylezalek
+  - Xiang-Xiang Xue
+  - Renbin Yan
+  - Qian Yang
+  - Nadia Zakamska
+  - Abner Zapata
+  - Eleonora Zari
+  - Gail Zasowski
+  - Grisha Zeltyn
+  - Guangquan Zeng
+  - Jichen Zhang
+  - Jingkun Zhao
+  - Zezhou Zhu
+  - Igor Zinchenko
+  - Catherine Zucker
+  - Rodolfo de J. Zermeño
+  me_index: 253
+  n_authors: 276
+  year: '2026'
+  pub: arXiv e-prints
+  volume: ''
+  page: arXiv:2607.26149
+  page_range: ''
+  doi: 10.48550/arXiv.2607.26149
+  arxiv: '2607.26149'
+  adsurl: https://ui.adsabs.harvard.edu/abs/2026arXiv260726149S
+  best_url: https://doi.org/10.48550/arXiv.2607.26149
+  refereed: false
+  citations: 0
+  month: ''
+  month_num: '07'
+  sortdate: '2026-07-31'
+  tags:
+  - sdssv
+- bibcode: 2026arXiv260717348A
+  title: 'SpecFANN: Spectral Fitting via Artificial Neural Networks I. A deep learning
+    based fastwind emulator and fitting suite'
+  authors:
+  - Abdul-Masih, M.
+  - Hawcroft, C.
+  - Lechien, T.
+  - Simon-Diaz, S.
+  - Sana, H.
+  - Deshmukh, K.
+  - Vrancken, J.
+  - Villaseñor, J. I.
+  - Müller-Horn, J.
+  - Kalita, A. J.
+  - Ludwig, B.
+  - Bodensteiner, J.
+  - Bowman, D. M.
+  - Escorza, A.
+  - Holgado, G.
+  - Puls, J.
+  - de Vicente, A.
+  authors_html: M. Abdul-Masih; C. Hawcroft; T. Lechien; S. Simon-Diaz; H. Sana; K.
+    Deshmukh; J. Vrancken; <strong>J. I. Villaseñor</strong>; J. Müller-Horn; A. J.
+    Kalita; B. Ludwig; J. Bodensteiner; D. M. Bowman; A. Escorza; G. Holgado; J. Puls;
+    A. de Vicente
+  authors_short_html: M. Abdul-Masih; C. Hawcroft; T. Lechien; S. Simon-Diaz; H. Sana;
+    K. Deshmukh; J. Vrancken; <strong>J. I. Villaseñor</strong>, <em>et&nbsp;al.</em>
+  authors_display:
+  - M. Abdul-Masih
+  - C. Hawcroft
+  - T. Lechien
+  - S. Simon-Diaz
+  - H. Sana
+  - K. Deshmukh
+  - J. Vrancken
+  - J. I. Villaseñor
+  - J. Müller-Horn
+  - A. J. Kalita
+  - B. Ludwig
+  - J. Bodensteiner
+  - D. M. Bowman
+  - A. Escorza
+  - G. Holgado
+  - J. Puls
+  - A. de Vicente
+  me_index: 7
+  n_authors: 17
+  year: '2026'
+  pub: arXiv e-prints
+  volume: ''
+  page: arXiv:2607.17348
+  page_range: ''
+  doi: 10.48550/arXiv.2607.17348
+  arxiv: '2607.17348'
+  adsurl: https://ui.adsabs.harvard.edu/abs/2026arXiv260717348A
+  best_url: https://doi.org/10.48550/arXiv.2607.17348
+  refereed: false
+  citations: 0
+  month: ''
+  month_num: '07'
+  sortdate: '2026-07-31'
+  tags: []
+- bibcode: 2026ApJS..285....9S
+  title: The Nineteenth Data Release of the Sloan Digital Sky Survey
+  authors:
+  - SDSS Collaboration
+  - Aghakhanloo, Mojgan
+  - Aird, James
+  - Almeida, Andrés
+  - Amrita, Singh
+  - Anders, Friedrich
+  - Anderson, Scott F.
+  - Arseneau, Stefan
+  - González Ávila, Consuelo
+  - Aviram, Shir
+  - Aydar, Catarina
+  - Badenes, Carles
+  - Barrera-Ballesteros, Jorge K.
+  - Bauer, Franz E.
+  - Behmard, Aida
+  - Berg, Michelle
+  - Besser, F.
+  - Moni Bidin, Christian
+  - Bizyaev, Dmitry
+  - Blanc, Guillermo
+  - Blanton, Michael R.
+  - Bovy, Jo
+  - Brandt, William Nielsen
+  - Brownstein, Joel R.
+  - Buchner, Johannes
+  - Bulbul, Esra
+  - Burchett, Joseph N.
+  - Carigi, Leticia
+  - Carlberg, Joleen K.
+  - Casey, Andrew R.
+  - Chakraborty, Priyanka
+  - Chanamé, Julio
+  - Chandra, Vedant
+  - Chiappini, Cristina
+  - Chilingarian, Igor
+  - Comparat, Johan
+  - Covey, Kevin
+  - Crumpler, Nicole
+  - Cunha, Katia
+  - D'Onghia, Elena
+  - Dai, Xinyu
+  - Darling, Jeremy
+  - Davis, Megan
+  - De Lee, Nathan
+  - Deacon, Niall
+  - Méndez Delgado, José Eduardo
+  - Demasi, Sebastian
+  - Demianenko, Mariia
+  - Demke, Delvin
+  - Donor, John
+  - Drory, Niv
+  - Villa Durango, Monica Alejandra
+  - Dwelly, Tom
+  - Egorov, Oleg
+  - Egorova, Evgeniya
+  - El-Badry, Kareem
+  - Eracleous, Mike
+  - Fan, Xiaohui
+  - Farr, Emily
+  - Finkbeiner, Douglas P.
+  - Fries, Logan
+  - Frinchaboy, Peter
+  - Gentile Fusillo, Nicola Pietro
+  - Serrano Félix, Luis Daniel
+  - Gänsicke, Boris T.
+  - Galligan, Emma
+  - García, Pablo
+  - Gelfand, Joseph
+  - Grabowski, Katie
+  - Grebel, Eva
+  - Green, Paul J.
+  - Greve, Hannah
+  - Grier, Catherine
+  - Griffith, Emily J.
+  - Guetzoyan, Paloma
+  - Gupta, Pramod
+  - Hackshaw, Zoe
+  - Hall, Patrick B.
+  - Hawkins, Keith
+  - Hegedűs, Viola
+  - Hekker, Saskia
+  - Herbst, T. M.
+  - Hermes, J. J.
+  - Hernández-García, Lorena
+  - Hiremath, Pranavi
+  - Hogg, David W.
+  - Holtzman, Jon
+  - Horne, Keith
+  - Horta, Danny
+  - Huang, Yang
+  - Hutchinson, Brian
+  - Häberle, Maximilian
+  - Ibarra-Medel, Hector Javier
+  - Ji, Alexander P.
+  - Jofre, Paula
+  - Johnson, James W.
+  - Johnson, Jennifer
+  - Johnston, Evelyn J.
+  - Kaldor, Mary
+  - Katkov, Ivan
+  - Khalatyan, Arman
+  - Khoperskov, Sergey
+  - Klessen, Ralf
+  - Kluge, Matthias
+  - Koekemoer, Anton M.
+  - Kollmeier, Juna A.
+  - Kounkel, Marina
+  - Kreckel, Kathryn
+  - Krishnarao, Dhanesh
+  - Krumpe, Mirko
+  - Lacerna, Ivan
+  - Laporte, Chervin
+  - Lépine, Sébastien
+  - Li, Jing
+  - Liang, Fu-Heng
+  - Limberg, Guilherme
+  - Liu, Xin
+  - Loebman, Sarah
+  - Long, Knox
+  - Lu, Yuxi(Lucy)
+  - Lucey, Madeline
+  - Lugo-Aranda, Alejandra Z.
+  - Martínez-Aldama, Mary Loli
+  - McKinnon, Kevin A.
+  - Medan, Ilija
+  - Merloni, Andrea
+  - Morrison, Sean
+  - Myers, Natalie
+  - Mészáros, Szabolcs
+  - Müller-Horn, Johanna
+  - Nepal, Samir
+  - Ness, Melissa
+  - Nidever, David
+  - Nitschelm, Christian
+  - Oravetz, Audrey
+  - Otto, Jonah
+  - Adamane Pallathadka, Gautham
+  - Pan, Kaike
+  - Pérez Paolino, Facundo
+  - Negrete Peñaloza, Castalia Alenka
+  - Pinsonneault, Marc
+  - Taghizadeh-Popp, Manuchehr
+  - Price-Whelan, Adrian
+  - Pulatova, Nadiia
+  - Queiroz, A. B. A.
+  - Raddick, Jordan
+  - Rankine, Amy L.
+  - Rix, Hans-Walter
+  - Román-Zúñiga, Carlos G.
+  - Fernández Rosso, Daniela
+  - Runnoe, Jessie
+  - Saad, Serat Mahmud
+  - Salvato, Mara
+  - Sanchez, Sebastian F.
+  - Sattler, Natascha
+  - Saydjari, Andrew K.
+  - Sayres, Conor
+  - Schlaufman, Kevin C.
+  - Schneider, Donald P.
+  - Schwope, Axel
+  - Seaton, Lucas M.
+  - Seeburger, Rhys
+  - Serna, Javier
+  - Sharma, Sanjib
+  - Shen, Yue
+  - Sinha, Amaya
+  - Sizemore, Logan
+  - Sniegowska, Marzena
+  - Song, Ying-Yi
+  - Souto, Diogo
+  - Stassun, Keivan G.
+  - Steinmetz, Matthias
+  - Stone, Zachary
+  - Stone-Martinez, Alexander
+  - Stringfellow, Guy S.
+  - Mata Sánchez, Aurora
+  - Sánchez-Gallego, José
+  - Tan, Jonathan C.
+  - Tayar, Jamie
+  - Thai, Riley
+  - Thakar, Ani
+  - Thibodeaux, Pierre
+  - Ting, Yuan-Sen
+  - Tkachenko, Andrew
+  - Trakhtenbrot, Benny
+  - Fernández-Trincado, José G.
+  - Troup, Nicholas
+  - Trump, Jonathan R.
+  - Ulloa, Natalie
+  - Van Der Marel, Roeland P.
+  - Vera, Pablo
+  - Villanova, Sandro
+  - Villaseñor, Jaime I.
+  - Wang, Ji
+  - Way, Zachary
+  - Weijmans, Anne-Marie
+  - Wheeler, Adam
+  - Wilson, John C.
+  - Wofford, Aida
+  - Wong, Tony
+  - Wu, Qiaoya
+  - Wylezalek, Dominika
+  - Xue, Xiang-Xiang
+  - Yan, Renbin
+  - Yang, Qian
+  - Zakamska, Nadia
+  - Zari, Eleonora
+  - Zasowski, Gail
+  - Zeltyn, Grisha
+  - Zheng, Zheng
+  - Zucker, Catherine
+  - Zermeño, Rodolfo de J.
+  authors_html: SDSS Collaboration; Mojgan Aghakhanloo; James Aird; Andrés Almeida;
+    Singh Amrita; Friedrich Anders; Scott F. Anderson; Stefan Arseneau; Consuelo González
+    Ávila; Shir Aviram; Catarina Aydar; Carles Badenes; Jorge K. Barrera-Ballesteros;
+    Franz E. Bauer; Aida Behmard; Michelle Berg; F. Besser; Christian Moni Bidin;
+    Dmitry Bizyaev; Guillermo Blanc; Michael R. Blanton; Jo Bovy; William Nielsen
+    Brandt; Joel R. Brownstein; Johannes Buchner; Esra Bulbul; Joseph N. Burchett;
+    Leticia Carigi; Joleen K. Carlberg; Andrew R. Casey; Priyanka Chakraborty; Julio
+    Chanamé; Vedant Chandra; Cristina Chiappini; Igor Chilingarian; Johan Comparat;
+    Kevin Covey; Nicole Crumpler; Katia Cunha; Elena D'Onghia; Xinyu Dai; Jeremy Darling;
+    Megan Davis; Nathan De Lee; Niall Deacon; José Eduardo Méndez Delgado; Sebastian
+    Demasi; Mariia Demianenko; Delvin Demke; John Donor; Niv Drory; Monica Alejandra
+    Villa Durango; Tom Dwelly; Oleg Egorov; Evgeniya Egorova; Kareem El-Badry; Mike
+    Eracleous; Xiaohui Fan; Emily Farr; Douglas P. Finkbeiner; Logan Fries; Peter
+    Frinchaboy; Nicola Pietro Gentile Fusillo; Luis Daniel Serrano Félix; Boris T.
+    Gänsicke; Emma Galligan; Pablo García; Joseph Gelfand; Katie Grabowski; Eva Grebel;
+    Paul J. Green; Hannah Greve; Catherine Grier; Emily J. Griffith; Paloma Guetzoyan;
+    Pramod Gupta; Zoe Hackshaw; Patrick B. Hall; Keith Hawkins; Viola Hegedűs; Saskia
+    Hekker; T. M. Herbst; J. J. Hermes; Lorena Hernández-García; Pranavi Hiremath;
+    David W. Hogg; Jon Holtzman; Keith Horne; Danny Horta; Yang Huang; Brian Hutchinson;
+    Maximilian Häberle; Hector Javier Ibarra-Medel; Alexander P. Ji; Paula Jofre;
+    James W. Johnson; Jennifer Johnson; Evelyn J. Johnston; Mary Kaldor; Ivan Katkov;
+    Arman Khalatyan; Sergey Khoperskov; Ralf Klessen; Matthias Kluge; Anton M. Koekemoer;
+    Juna A. Kollmeier; Marina Kounkel; Kathryn Kreckel; Dhanesh Krishnarao; Mirko
+    Krumpe; Ivan Lacerna; Chervin Laporte; Sébastien Lépine; Jing Li; Fu-Heng Liang;
+    Guilherme Limberg; Xin Liu; Sarah Loebman; Knox Long; Yuxi(Lucy) Lu; Madeline
+    Lucey; Alejandra Z. Lugo-Aranda; Mary Loli Martínez-Aldama; Kevin A. McKinnon;
+    Ilija Medan; Andrea Merloni; Sean Morrison; Natalie Myers; Szabolcs Mészáros;
+    Johanna Müller-Horn; Samir Nepal; Melissa Ness; David Nidever; Christian Nitschelm;
+    Audrey Oravetz; Jonah Otto; Gautham Adamane Pallathadka; Kaike Pan; Facundo Pérez
+    Paolino; Castalia Alenka Negrete Peñaloza; Marc Pinsonneault; Manuchehr Taghizadeh-Popp;
+    Adrian Price-Whelan; Nadiia Pulatova; A. B. A. Queiroz; Jordan Raddick; Amy L.
+    Rankine; Hans-Walter Rix; Carlos G. Román-Zúñiga; Daniela Fernández Rosso; Jessie
+    Runnoe; Serat Mahmud Saad; Mara Salvato; Sebastian F. Sanchez; Natascha Sattler;
+    Andrew K. Saydjari; Conor Sayres; Kevin C. Schlaufman; Donald P. Schneider; Axel
+    Schwope; Lucas M. Seaton; Rhys Seeburger; Javier Serna; Sanjib Sharma; Yue Shen;
+    Amaya Sinha; Logan Sizemore; Marzena Sniegowska; Ying-Yi Song; Diogo Souto; Keivan
+    G. Stassun; Matthias Steinmetz; Zachary Stone; Alexander Stone-Martinez; Guy S.
+    Stringfellow; Aurora Mata Sánchez; José Sánchez-Gallego; Jonathan C. Tan; Jamie
+    Tayar; Riley Thai; Ani Thakar; Pierre Thibodeaux; Yuan-Sen Ting; Andrew Tkachenko;
+    Benny Trakhtenbrot; José G. Fernández-Trincado; Nicholas Troup; Jonathan R. Trump;
+    Natalie Ulloa; Roeland P. Van Der Marel; Pablo Vera; Sandro Villanova; <strong>Jaime
+    I. Villaseñor</strong>; Ji Wang; Zachary Way; Anne-Marie Weijmans; Adam Wheeler;
+    John C. Wilson; Aida Wofford; Tony Wong; Qiaoya Wu; Dominika Wylezalek; Xiang-Xiang
+    Xue; Renbin Yan; Qian Yang; Nadia Zakamska; Eleonora Zari; Gail Zasowski; Grisha
+    Zeltyn; Zheng Zheng; Catherine Zucker; Rodolfo de J. Zermeño
+  authors_short_html: SDSS Collaboration; Mojgan Aghakhanloo; James Aird; Andrés Almeida;
+    Singh Amrita; Friedrich Anders; Scott F. Anderson; <strong>Jaime I. Villaseñor</strong>,
+    <em>et&nbsp;al.</em>
+  authors_display:
+  - SDSS Collaboration
+  - Mojgan Aghakhanloo
+  - James Aird
+  - Andrés Almeida
+  - Singh Amrita
+  - Friedrich Anders
+  - Scott F. Anderson
+  - Stefan Arseneau
+  - Consuelo González Ávila
+  - Shir Aviram
+  - Catarina Aydar
+  - Carles Badenes
+  - Jorge K. Barrera-Ballesteros
+  - Franz E. Bauer
+  - Aida Behmard
+  - Michelle Berg
+  - F. Besser
+  - Christian Moni Bidin
+  - Dmitry Bizyaev
+  - Guillermo Blanc
+  - Michael R. Blanton
+  - Jo Bovy
+  - William Nielsen Brandt
+  - Joel R. Brownstein
+  - Johannes Buchner
+  - Esra Bulbul
+  - Joseph N. Burchett
+  - Leticia Carigi
+  - Joleen K. Carlberg
+  - Andrew R. Casey
+  - Priyanka Chakraborty
+  - Julio Chanamé
+  - Vedant Chandra
+  - Cristina Chiappini
+  - Igor Chilingarian
+  - Johan Comparat
+  - Kevin Covey
+  - Nicole Crumpler
+  - Katia Cunha
+  - Elena D'Onghia
+  - Xinyu Dai
+  - Jeremy Darling
+  - Megan Davis
+  - Nathan De Lee
+  - Niall Deacon
+  - José Eduardo Méndez Delgado
+  - Sebastian Demasi
+  - Mariia Demianenko
+  - Delvin Demke
+  - John Donor
+  - Niv Drory
+  - Monica Alejandra Villa Durango
+  - Tom Dwelly
+  - Oleg Egorov
+  - Evgeniya Egorova
+  - Kareem El-Badry
+  - Mike Eracleous
+  - Xiaohui Fan
+  - Emily Farr
+  - Douglas P. Finkbeiner
+  - Logan Fries
+  - Peter Frinchaboy
+  - Nicola Pietro Gentile Fusillo
+  - Luis Daniel Serrano Félix
+  - Boris T. Gänsicke
+  - Emma Galligan
+  - Pablo García
+  - Joseph Gelfand
+  - Katie Grabowski
+  - Eva Grebel
+  - Paul J. Green
+  - Hannah Greve
+  - Catherine Grier
+  - Emily J. Griffith
+  - Paloma Guetzoyan
+  - Pramod Gupta
+  - Zoe Hackshaw
+  - Patrick B. Hall
+  - Keith Hawkins
+  - Viola Hegedűs
+  - Saskia Hekker
+  - T. M. Herbst
+  - J. J. Hermes
+  - Lorena Hernández-García
+  - Pranavi Hiremath
+  - David W. Hogg
+  - Jon Holtzman
+  - Keith Horne
+  - Danny Horta
+  - Yang Huang
+  - Brian Hutchinson
+  - Maximilian Häberle
+  - Hector Javier Ibarra-Medel
+  - Alexander P. Ji
+  - Paula Jofre
+  - James W. Johnson
+  - Jennifer Johnson
+  - Evelyn J. Johnston
+  - Mary Kaldor
+  - Ivan Katkov
+  - Arman Khalatyan
+  - Sergey Khoperskov
+  - Ralf Klessen
+  - Matthias Kluge
+  - Anton M. Koekemoer
+  - Juna A. Kollmeier
+  - Marina Kounkel
+  - Kathryn Kreckel
+  - Dhanesh Krishnarao
+  - Mirko Krumpe
+  - Ivan Lacerna
+  - Chervin Laporte
+  - Sébastien Lépine
+  - Jing Li
+  - Fu-Heng Liang
+  - Guilherme Limberg
+  - Xin Liu
+  - Sarah Loebman
+  - Knox Long
+  - Yuxi(Lucy) Lu
+  - Madeline Lucey
+  - Alejandra Z. Lugo-Aranda
+  - Mary Loli Martínez-Aldama
+  - Kevin A. McKinnon
+  - Ilija Medan
+  - Andrea Merloni
+  - Sean Morrison
+  - Natalie Myers
+  - Szabolcs Mészáros
+  - Johanna Müller-Horn
+  - Samir Nepal
+  - Melissa Ness
+  - David Nidever
+  - Christian Nitschelm
+  - Audrey Oravetz
+  - Jonah Otto
+  - Gautham Adamane Pallathadka
+  - Kaike Pan
+  - Facundo Pérez Paolino
+  - Castalia Alenka Negrete Peñaloza
+  - Marc Pinsonneault
+  - Manuchehr Taghizadeh-Popp
+  - Adrian Price-Whelan
+  - Nadiia Pulatova
+  - A. B. A. Queiroz
+  - Jordan Raddick
+  - Amy L. Rankine
+  - Hans-Walter Rix
+  - Carlos G. Román-Zúñiga
+  - Daniela Fernández Rosso
+  - Jessie Runnoe
+  - Serat Mahmud Saad
+  - Mara Salvato
+  - Sebastian F. Sanchez
+  - Natascha Sattler
+  - Andrew K. Saydjari
+  - Conor Sayres
+  - Kevin C. Schlaufman
+  - Donald P. Schneider
+  - Axel Schwope
+  - Lucas M. Seaton
+  - Rhys Seeburger
+  - Javier Serna
+  - Sanjib Sharma
+  - Yue Shen
+  - Amaya Sinha
+  - Logan Sizemore
+  - Marzena Sniegowska
+  - Ying-Yi Song
+  - Diogo Souto
+  - Keivan G. Stassun
+  - Matthias Steinmetz
+  - Zachary Stone
+  - Alexander Stone-Martinez
+  - Guy S. Stringfellow
+  - Aurora Mata Sánchez
+  - José Sánchez-Gallego
+  - Jonathan C. Tan
+  - Jamie Tayar
+  - Riley Thai
+  - Ani Thakar
+  - Pierre Thibodeaux
+  - Yuan-Sen Ting
+  - Andrew Tkachenko
+  - Benny Trakhtenbrot
+  - José G. Fernández-Trincado
+  - Nicholas Troup
+  - Jonathan R. Trump
+  - Natalie Ulloa
+  - Roeland P. Van Der Marel
+  - Pablo Vera
+  - Sandro Villanova
+  - Jaime I. Villaseñor
+  - Ji Wang
+  - Zachary Way
+  - Anne-Marie Weijmans
+  - Adam Wheeler
+  - John C. Wilson
+  - Aida Wofford
+  - Tony Wong
+  - Qiaoya Wu
+  - Dominika Wylezalek
+  - Xiang-Xiang Xue
+  - Renbin Yan
+  - Qian Yang
+  - Nadia Zakamska
+  - Eleonora Zari
+  - Gail Zasowski
+  - Grisha Zeltyn
+  - Zheng Zheng
+  - Catherine Zucker
+  - Rodolfo de J. Zermeño
+  me_index: 192
+  n_authors: 212
+  year: '2026'
+  pub: The Astrophysical Journal Supplement Series
+  volume: '285'
+  page: '9'
+  page_range: ''
+  doi: 10.3847/1538-4365/ae4697
+  arxiv: '2507.07093'
+  adsurl: https://ui.adsabs.harvard.edu/abs/2026ApJS..285....9S
+  best_url: https://doi.org/10.3847/1538-4365/ae4697
+  refereed: true
+  citations: 72
+  month: jul
+  month_num: '07'
+  sortdate: '2026-07-15'
+  tags:
+  - sdssv
 - bibcode: 2026ApJ..1000....2S
   title: Interacting Binaries on the Main Sequence as In Situ Tracers of Mass-transfer
     Efficiency and Stability
@@ -43,7 +1237,7 @@
   adsurl: https://ui.adsabs.harvard.edu/abs/2026ApJ..1000....2S
   best_url: https://doi.org/10.3847/1538-4357/ae40fc
   refereed: true
-  citations: 4
+  citations: 7
   month: mar
   month_num: '03'
   sortdate: '2026-03-15'
@@ -151,7 +1345,7 @@
   adsurl: https://ui.adsabs.harvard.edu/abs/2026A&A...707A.204L
   best_url: https://doi.org/10.1051/0004-6361/202558539
   refereed: true
-  citations: 1
+  citations: 3
   month: mar
   month_num: '03'
   sortdate: '2026-03-15'
@@ -202,7 +1396,7 @@
   adsurl: https://ui.adsabs.harvard.edu/abs/2026A&A...706L..17D
   best_url: https://doi.org/10.1051/0004-6361/202658872
   refereed: true
-  citations: 1
+  citations: 2
   month: feb
   month_num: '02'
   sortdate: '2026-02-15'
@@ -728,7 +1922,7 @@
   adsurl: https://ui.adsabs.harvard.edu/abs/2026AJ....171...52K
   best_url: https://doi.org/10.3847/1538-3881/ae0576
   refereed: true
-  citations: 89
+  citations: 106
   month: jan
   month_num: '01'
   sortdate: '2026-01-15'
@@ -773,6 +1967,196 @@
   month_num: '01'
   sortdate: '2026-01-15'
   tags: []
+- bibcode: 2026Msngr.196...15S
+  title: 'Multiplicity of Massive Stars at Low Metallicity: Early Results from the
+    BLOeM Campaign'
+  authors:
+  - Shenar, T.
+  - Bodensteiner, J.
+  - Abdul-Masih, M.
+  - Backs, F.
+  - Berlanas, S. R.
+  - Bestenlehner, J. M.
+  - Bobrick, A.
+  - Bowman, D. M.
+  - Britavskiy, N.
+  - Crowther, P. A.
+  - Deshmukh, K.
+  - Fabry, M.
+  - Gieles, M.
+  - Gilkis, A.
+  - González-Torà, G.
+  - Gräfener, G.
+  - Gull, M.
+  - Götberg, Y.
+  - Hawcroft, C.
+  - Hénault-Brunet, V.
+  - Herrero, A.
+  - Holgado, G.
+  - Izzard, R. G.
+  - Janssens, S.
+  - Jin, H.
+  - Kalari, V. M.
+  - Katabi, Z.
+  - de Koter, A.
+  - Klencki, J.
+  - Kubátová, B.
+  - Kubát, J.
+  - Langer, N.
+  - Lechien, T.
+  - Lennon, D.
+  - Lefever, R.
+  - Ludwig, B.
+  - Mahy, L.
+  - Maíz Apellániz, J.
+  - Mandel, I.
+  - Mang Román, A.
+  - Maravelias, G.
+  - Marchant, P.
+  - Menon, A.
+  - Najarro, F.
+  - O'Grady, A.
+  - Oskinova, L.
+  - Ovadia, R.
+  - Patrick, L. R.
+  - Pauli, D.
+  - Pawlak, M.
+  - Bernini Peron, M.
+  - Picco, A.
+  - Ramachandran, V.
+  - Renzo, M.
+  - Rocha, D. F.
+  - Sana, H.
+  - Sander, A. A.
+  - Sayada, T.
+  - Schootemeijer, A.
+  - Schneider, F. R. N.
+  - Seeburger, R.
+  - Sen, K.
+  - Shahaf, S.
+  - Simón-Díaz, S.
+  - Stoop, M.
+  - Toonen, S.
+  - Tramper, F.
+  - Valli, R.
+  - Van Daele, P.
+  - van Loon, J. T.
+  - Son, L. v.
+  - Vigna-Gómez, A.
+  - Villaseñor, J. I.
+  - Vink, J. S.
+  - Wang, C.
+  - Xu, X.-T.
+  authors_html: T. Shenar; J. Bodensteiner; M. Abdul-Masih; F. Backs; S. R. Berlanas;
+    J. M. Bestenlehner; A. Bobrick; D. M. Bowman; N. Britavskiy; P. A. Crowther; K.
+    Deshmukh; M. Fabry; M. Gieles; A. Gilkis; G. González-Torà; G. Gräfener; M. Gull;
+    Y. Götberg; C. Hawcroft; V. Hénault-Brunet; A. Herrero; G. Holgado; R. G. Izzard;
+    S. Janssens; H. Jin; V. M. Kalari; Z. Katabi; A. de Koter; J. Klencki; B. Kubátová;
+    J. Kubát; N. Langer; T. Lechien; D. Lennon; R. Lefever; B. Ludwig; L. Mahy; J.
+    Maíz Apellániz; I. Mandel; A. Mang Román; G. Maravelias; P. Marchant; A. Menon;
+    F. Najarro; A. O'Grady; L. Oskinova; R. Ovadia; L. R. Patrick; D. Pauli; M. Pawlak;
+    M. Bernini Peron; A. Picco; V. Ramachandran; M. Renzo; D. F. Rocha; H. Sana; A.
+    A. Sander; T. Sayada; A. Schootemeijer; F. R. N. Schneider; R. Seeburger; K. Sen;
+    S. Shahaf; S. Simón-Díaz; M. Stoop; S. Toonen; F. Tramper; R. Valli; P. Van Daele;
+    J. T. van Loon; L. v. Son; A. Vigna-Gómez; <strong>J. I. Villaseñor</strong>;
+    J. S. Vink; C. Wang; X.-T. Xu
+  authors_short_html: T. Shenar; J. Bodensteiner; M. Abdul-Masih; F. Backs; S. R.
+    Berlanas; J. M. Bestenlehner; A. Bobrick; <strong>J. I. Villaseñor</strong>, <em>et&nbsp;al.</em>
+  authors_display:
+  - T. Shenar
+  - J. Bodensteiner
+  - M. Abdul-Masih
+  - F. Backs
+  - S. R. Berlanas
+  - J. M. Bestenlehner
+  - A. Bobrick
+  - D. M. Bowman
+  - N. Britavskiy
+  - P. A. Crowther
+  - K. Deshmukh
+  - M. Fabry
+  - M. Gieles
+  - A. Gilkis
+  - G. González-Torà
+  - G. Gräfener
+  - M. Gull
+  - Y. Götberg
+  - C. Hawcroft
+  - V. Hénault-Brunet
+  - A. Herrero
+  - G. Holgado
+  - R. G. Izzard
+  - S. Janssens
+  - H. Jin
+  - V. M. Kalari
+  - Z. Katabi
+  - A. de Koter
+  - J. Klencki
+  - B. Kubátová
+  - J. Kubát
+  - N. Langer
+  - T. Lechien
+  - D. Lennon
+  - R. Lefever
+  - B. Ludwig
+  - L. Mahy
+  - J. Maíz Apellániz
+  - I. Mandel
+  - A. Mang Román
+  - G. Maravelias
+  - P. Marchant
+  - A. Menon
+  - F. Najarro
+  - A. O'Grady
+  - L. Oskinova
+  - R. Ovadia
+  - L. R. Patrick
+  - D. Pauli
+  - M. Pawlak
+  - M. Bernini Peron
+  - A. Picco
+  - V. Ramachandran
+  - M. Renzo
+  - D. F. Rocha
+  - H. Sana
+  - A. A. Sander
+  - T. Sayada
+  - A. Schootemeijer
+  - F. R. N. Schneider
+  - R. Seeburger
+  - K. Sen
+  - S. Shahaf
+  - S. Simón-Díaz
+  - M. Stoop
+  - S. Toonen
+  - F. Tramper
+  - R. Valli
+  - P. Van Daele
+  - J. T. van Loon
+  - L. v. Son
+  - A. Vigna-Gómez
+  - J. I. Villaseñor
+  - J. S. Vink
+  - C. Wang
+  - X.-T. Xu
+  me_index: 72
+  n_authors: 76
+  year: '2026'
+  pub: The Messenger
+  volume: '196'
+  page: '15'
+  page_range: '1'
+  doi: 10.18727/0722-6691/5417
+  arxiv: '2607.27395'
+  adsurl: https://ui.adsabs.harvard.edu/abs/2026Msngr.196...15S
+  best_url: https://doi.org/10.18727/0722-6691/5417
+  refereed: false
+  citations: 0
+  month: jan
+  month_num: '01'
+  sortdate: '2026-01-01'
+  tags:
+  - bloem
 - bibcode: 2025arXiv251108675V
   title: 'The binary landscape of massive stars at low $Z$: Insights from the BLOeM
     Campaign'
@@ -1070,7 +2454,7 @@
   adsurl: https://ui.adsabs.harvard.edu/abs/2025NatAs...9.1337S
   best_url: https://doi.org/10.1038/s41550-025-02610-x
   refereed: true
-  citations: 24
+  citations: 30
   month: sep
   month_num: 09
   sortdate: '2025-09-15'
@@ -1121,505 +2505,11 @@
   adsurl: https://ui.adsabs.harvard.edu/abs/2025A&A...701A...9M
   best_url: https://doi.org/10.1051/0004-6361/202452504
   refereed: true
-  citations: 9
+  citations: 10
   month: sep
   month_num: 09
   sortdate: '2025-09-15'
   tags: []
-- bibcode: 2025arXiv250707093S
-  title: The Nineteenth Data Release of the Sloan Digital Sky Survey
-  authors:
-  - SDSS Collaboration
-  - Adamane Pallathadka, Gautham
-  - Aghakhanloo, Mojgan
-  - Aird, James
-  - Almeida, Andrés
-  - Amrita, Singh
-  - Anders, Friedrich
-  - Anderson, Scott F.
-  - Arseneau, Stefan
-  - González Avila, Consuelo
-  - Aviram, Shir
-  - Aydar, Catarina
-  - Badenes, Carles
-  - Barrera-Ballesteros, Jorge K.
-  - Bauer, Franz E.
-  - Behmard, Aida
-  - Berg, Michelle
-  - Besser, F.
-  - Moni Bidin, Christian
-  - Bizyaev, Dmitry
-  - Blanc, Guillermo
-  - Blanton, Michael R.
-  - Bovy, Jo
-  - Brandt, William Nielsen
-  - Brownstein, Joel R.
-  - Buchner, Johannes
-  - Bulbul, Esra
-  - Burchett, Joseph N.
-  - Carigi, Leticia
-  - Carlberg, Joleen K.
-  - Casey, Andrew R.
-  - Chakraborty, Priyanka
-  - Chanamé, Julio
-  - Chandra, Vedant
-  - Chiappini, Cristina
-  - Chilingarian, Igor
-  - Comparat, Johan
-  - Covey, Kevin
-  - Crumpler, Nicole
-  - Cunha, Katia
-  - D'Onghia, Elena
-  - Dai, Xinyu
-  - Darling, Jeremy
-  - Davis, Megan
-  - De Lee, Nathan
-  - Deacon, Niall
-  - Méndez Delgado, José Eduardo
-  - Demasi, Sebastian
-  - Demianenko, Mariia
-  - Demke, Delvin
-  - Donor, John
-  - Drory, Niv
-  - Villa Durango, Monica Alejandra
-  - Dwelly, Tom
-  - Egorov, Oleg
-  - Egorova, Evgeniya
-  - El-Badry, Kareem
-  - Eracleous, Mike
-  - Fan, Xiaohui
-  - Farr, Emily
-  - Finkbeiner, Douglas P.
-  - Fries, Logan
-  - Frinchaboy, Peter
-  - Gentile Fusillo, Nicola Pietro
-  - Serrano Félix, Luis Daniel
-  - Gaensicke, Boris
-  - Galligan, Emma
-  - García, Pablo
-  - Gelfand, Joseph
-  - Grabowski, Katie
-  - Grebel, Eva
-  - Green, Paul J
-  - Greve, Hannah
-  - Grier, Catherine
-  - Griffith, Emily
-  - Guetzoyan, Paloma
-  - Gupta, Pramod
-  - Hackshaw, Zoe
-  - Hall, Patrick B.
-  - Hawkins, Keith
-  - Hegedűs, Viola
-  - Hekker, Saskia
-  - Herbst, T. M.
-  - Hermes, J. J.
-  - Hernández-García, Lorena
-  - Hiremath, Pranavi
-  - Hogg, David W
-  - Holtzman, Jon
-  - Horne, Keith
-  - Horta, Danny
-  - Huang, Yang
-  - Hutchinson, Brian
-  - Häberle, Maximilian
-  - Ibarra-Medel, Hector Javier
-  - Ji, Alexander P.
-  - Jofre, Paula
-  - Johnson, James W.
-  - Johnson, Jennifer
-  - Johnston, Evelyn J.
-  - Kaldor, Mary
-  - Katkov, Ivan
-  - Khalatyan, Arman
-  - Khoperskov, Sergey
-  - Klessen, Ralf
-  - Kluge, Matthias
-  - Koekemoer, Anton M.
-  - Kollmeier, Juna A.
-  - Kounkel, Marina
-  - Kreckel, Kathryn
-  - Krishnarao, Dhanesh
-  - Krumpe, Mirko
-  - Lacerna, Ivan
-  - Laporte, Chervin
-  - Lepine, Sebastien
-  - Li, Jing
-  - Liang, Fu-Heng
-  - Limberg, Guilherme
-  - Liu, Xin
-  - Loebman, Sarah
-  - Long, Knox
-  - Lu, Yuxi
-  - Lucey, Madeline
-  - Lugo-Aranda, Alejandra Z.
-  - Martínez Martinez-Aldama, Mary Loli
-  - McKinnon, Kevin
-  - Medan, Ilija
-  - Merloni, Andrea
-  - Morrison, Sean
-  - Myers, Natalie
-  - Mészáros, Szabolcs
-  - Müller-Horn, Johanna
-  - Nepal, Samir
-  - Ness, Melissa
-  - Nidever, David
-  - Nitschelm, Christian
-  - Oravetz, Audrey
-  - Otto, Jonah
-  - Pan, Kaike
-  - Pérez Paolino, Facundo
-  - Negrete Peñaloza, Castalia Alenka
-  - Pinsonneault, Marc
-  - Taghizadeh Popp, Manuchehr
-  - Price-Whelan, Adrian
-  - Pulatova, Nadiia
-  - Queiroz, Anna Barbara
-  - Raddick, Jordan
-  - Rankine, Amy
-  - Rix, Hans-Walter
-  - Román-Zúñiga, Carlos
-  - Fernández Rosso, Daniela
-  - Runnoe, Jessie
-  - Mahmud Saad, Serat
-  - Salvato, Mara
-  - Sanchez, Sebastian F.
-  - Sattler, Natascha
-  - Saydjari, Andrew
-  - Sayres, Conor
-  - Schlaufman, Kevin
-  - Schneider, Donald P.
-  - Schwope, Axel
-  - Seaton, Lucas M.
-  - Seeburger, Rhys
-  - Serna, Javier
-  - Sharma, Sanjib
-  - Shen, Yue
-  - Sinha, Amaya
-  - Sizemore, Brian
-  - Sniegowska, Marzena
-  - Song, Yingyi
-  - Souto, Diogo
-  - Stassun, Keivan
-  - Steinmetz, Matthias
-  - Stone, Zachary
-  - Stone-Martinez, Alexander
-  - Stringfellow, Guy S.
-  - Mata Sánchez, Aurora
-  - Sánchez-Gallego, José
-  - Tan, Jonathan
-  - Tayar, Jamie
-  - Thai, Riley
-  - Thakar, Ani
-  - Thibodeaux, Pierre
-  - Ting, Yuan-Sen
-  - Tkachenko, Andrew
-  - Trakhtenbrot, Benny
-  - Fernandez Trincado, Jose G.
-  - Troup, Nicholas
-  - Trump, Jonathan R.
-  - Ulloa, Natalie
-  - Van der Marel, Roeland P.
-  - Vera, Pablo
-  - Villanova, Sandro
-  - Villaseñor, Jaime
-  - Wang, Ji
-  - Way, Zachary
-  - Weijmans, Anne-Marie
-  - Wheeler, Adam
-  - Wilson, John C.
-  - Wofford, Aida
-  - Wong, Tony
-  - Wu, Qiaoya
-  - Wylezalek, Dominika
-  - Xue, Xiang-Xiang
-  - Yan, Renbin
-  - Yang, Qian
-  - Zakamska, Nadia
-  - Zari, Eleonora
-  - Zasowski, Gail
-  - Zeltyn, Grisha
-  - Zheng, Zheng
-  - Zucker, Catherine
-  - Zermeño, Rodolfo de J.
-  authors_html: SDSS Collaboration; Gautham Adamane Pallathadka; Mojgan Aghakhanloo;
-    James Aird; Andrés Almeida; Singh Amrita; Friedrich Anders; Scott F. Anderson;
-    Stefan Arseneau; Consuelo González Avila; Shir Aviram; Catarina Aydar; Carles
-    Badenes; Jorge K. Barrera-Ballesteros; Franz E. Bauer; Aida Behmard; Michelle
-    Berg; F. Besser; Christian Moni Bidin; Dmitry Bizyaev; Guillermo Blanc; Michael
-    R. Blanton; Jo Bovy; William Nielsen Brandt; Joel R. Brownstein; Johannes Buchner;
-    Esra Bulbul; Joseph N. Burchett; Leticia Carigi; Joleen K. Carlberg; Andrew R.
-    Casey; Priyanka Chakraborty; Julio Chanamé; Vedant Chandra; Cristina Chiappini;
-    Igor Chilingarian; Johan Comparat; Kevin Covey; Nicole Crumpler; Katia Cunha;
-    Elena D'Onghia; Xinyu Dai; Jeremy Darling; Megan Davis; Nathan De Lee; Niall Deacon;
-    José Eduardo Méndez Delgado; Sebastian Demasi; Mariia Demianenko; Delvin Demke;
-    John Donor; Niv Drory; Monica Alejandra Villa Durango; Tom Dwelly; Oleg Egorov;
-    Evgeniya Egorova; Kareem El-Badry; Mike Eracleous; Xiaohui Fan; Emily Farr; Douglas
-    P. Finkbeiner; Logan Fries; Peter Frinchaboy; Nicola Pietro Gentile Fusillo; Luis
-    Daniel Serrano Félix; Boris Gaensicke; Emma Galligan; Pablo García; Joseph Gelfand;
-    Katie Grabowski; Eva Grebel; Paul J Green; Hannah Greve; Catherine Grier; Emily
-    Griffith; Paloma Guetzoyan; Pramod Gupta; Zoe Hackshaw; Patrick B. Hall; Keith
-    Hawkins; Viola Hegedűs; Saskia Hekker; T. M. Herbst; J. J. Hermes; Lorena Hernández-García;
-    Pranavi Hiremath; David W Hogg; Jon Holtzman; Keith Horne; Danny Horta; Yang Huang;
-    Brian Hutchinson; Maximilian Häberle; Hector Javier Ibarra-Medel; Alexander P.
-    Ji; Paula Jofre; James W. Johnson; Jennifer Johnson; Evelyn J. Johnston; Mary
-    Kaldor; Ivan Katkov; Arman Khalatyan; Sergey Khoperskov; Ralf Klessen; Matthias
-    Kluge; Anton M. Koekemoer; Juna A. Kollmeier; Marina Kounkel; Kathryn Kreckel;
-    Dhanesh Krishnarao; Mirko Krumpe; Ivan Lacerna; Chervin Laporte; Sebastien Lepine;
-    Jing Li; Fu-Heng Liang; Guilherme Limberg; Xin Liu; Sarah Loebman; Knox Long;
-    Yuxi Lu; Madeline Lucey; Alejandra Z. Lugo-Aranda; Mary Loli Martínez Martinez-Aldama;
-    Kevin McKinnon; Ilija Medan; Andrea Merloni; Sean Morrison; Natalie Myers; Szabolcs
-    Mészáros; Johanna Müller-Horn; Samir Nepal; Melissa Ness; David Nidever; Christian
-    Nitschelm; Audrey Oravetz; Jonah Otto; Kaike Pan; Facundo Pérez Paolino; Castalia
-    Alenka Negrete Peñaloza; Marc Pinsonneault; Manuchehr Taghizadeh Popp; Adrian
-    Price-Whelan; Nadiia Pulatova; Anna Barbara Queiroz; Jordan Raddick; Amy Rankine;
-    Hans-Walter Rix; Carlos Román-Zúñiga; Daniela Fernández Rosso; Jessie Runnoe;
-    Serat Mahmud Saad; Mara Salvato; Sebastian F. Sanchez; Natascha Sattler; Andrew
-    Saydjari; Conor Sayres; Kevin Schlaufman; Donald P. Schneider; Axel Schwope; Lucas
-    M. Seaton; Rhys Seeburger; Javier Serna; Sanjib Sharma; Yue Shen; Amaya Sinha;
-    Brian Sizemore; Marzena Sniegowska; Yingyi Song; Diogo Souto; Keivan Stassun;
-    Matthias Steinmetz; Zachary Stone; Alexander Stone-Martinez; Guy S. Stringfellow;
-    Aurora Mata Sánchez; José Sánchez-Gallego; Jonathan Tan; Jamie Tayar; Riley Thai;
-    Ani Thakar; Pierre Thibodeaux; Yuan-Sen Ting; Andrew Tkachenko; Benny Trakhtenbrot;
-    Jose G. Fernandez Trincado; Nicholas Troup; Jonathan R. Trump; Natalie Ulloa;
-    Roeland P. Van der Marel; Pablo Vera; Sandro Villanova; <strong>Jaime Villaseñor</strong>;
-    Ji Wang; Zachary Way; Anne-Marie Weijmans; Adam Wheeler; John C. Wilson; Aida
-    Wofford; Tony Wong; Qiaoya Wu; Dominika Wylezalek; Xiang-Xiang Xue; Renbin Yan;
-    Qian Yang; Nadia Zakamska; Eleonora Zari; Gail Zasowski; Grisha Zeltyn; Zheng
-    Zheng; Catherine Zucker; Rodolfo de J. Zermeño
-  authors_short_html: SDSS Collaboration; Gautham Adamane Pallathadka; Mojgan Aghakhanloo;
-    James Aird; Andrés Almeida; Singh Amrita; Friedrich Anders; <strong>Jaime Villaseñor</strong>,
-    <em>et&nbsp;al.</em>
-  authors_display:
-  - SDSS Collaboration
-  - Gautham Adamane Pallathadka
-  - Mojgan Aghakhanloo
-  - James Aird
-  - Andrés Almeida
-  - Singh Amrita
-  - Friedrich Anders
-  - Scott F. Anderson
-  - Stefan Arseneau
-  - Consuelo González Avila
-  - Shir Aviram
-  - Catarina Aydar
-  - Carles Badenes
-  - Jorge K. Barrera-Ballesteros
-  - Franz E. Bauer
-  - Aida Behmard
-  - Michelle Berg
-  - F. Besser
-  - Christian Moni Bidin
-  - Dmitry Bizyaev
-  - Guillermo Blanc
-  - Michael R. Blanton
-  - Jo Bovy
-  - William Nielsen Brandt
-  - Joel R. Brownstein
-  - Johannes Buchner
-  - Esra Bulbul
-  - Joseph N. Burchett
-  - Leticia Carigi
-  - Joleen K. Carlberg
-  - Andrew R. Casey
-  - Priyanka Chakraborty
-  - Julio Chanamé
-  - Vedant Chandra
-  - Cristina Chiappini
-  - Igor Chilingarian
-  - Johan Comparat
-  - Kevin Covey
-  - Nicole Crumpler
-  - Katia Cunha
-  - Elena D'Onghia
-  - Xinyu Dai
-  - Jeremy Darling
-  - Megan Davis
-  - Nathan De Lee
-  - Niall Deacon
-  - José Eduardo Méndez Delgado
-  - Sebastian Demasi
-  - Mariia Demianenko
-  - Delvin Demke
-  - John Donor
-  - Niv Drory
-  - Monica Alejandra Villa Durango
-  - Tom Dwelly
-  - Oleg Egorov
-  - Evgeniya Egorova
-  - Kareem El-Badry
-  - Mike Eracleous
-  - Xiaohui Fan
-  - Emily Farr
-  - Douglas P. Finkbeiner
-  - Logan Fries
-  - Peter Frinchaboy
-  - Nicola Pietro Gentile Fusillo
-  - Luis Daniel Serrano Félix
-  - Boris Gaensicke
-  - Emma Galligan
-  - Pablo García
-  - Joseph Gelfand
-  - Katie Grabowski
-  - Eva Grebel
-  - Paul J Green
-  - Hannah Greve
-  - Catherine Grier
-  - Emily Griffith
-  - Paloma Guetzoyan
-  - Pramod Gupta
-  - Zoe Hackshaw
-  - Patrick B. Hall
-  - Keith Hawkins
-  - Viola Hegedűs
-  - Saskia Hekker
-  - T. M. Herbst
-  - J. J. Hermes
-  - Lorena Hernández-García
-  - Pranavi Hiremath
-  - David W Hogg
-  - Jon Holtzman
-  - Keith Horne
-  - Danny Horta
-  - Yang Huang
-  - Brian Hutchinson
-  - Maximilian Häberle
-  - Hector Javier Ibarra-Medel
-  - Alexander P. Ji
-  - Paula Jofre
-  - James W. Johnson
-  - Jennifer Johnson
-  - Evelyn J. Johnston
-  - Mary Kaldor
-  - Ivan Katkov
-  - Arman Khalatyan
-  - Sergey Khoperskov
-  - Ralf Klessen
-  - Matthias Kluge
-  - Anton M. Koekemoer
-  - Juna A. Kollmeier
-  - Marina Kounkel
-  - Kathryn Kreckel
-  - Dhanesh Krishnarao
-  - Mirko Krumpe
-  - Ivan Lacerna
-  - Chervin Laporte
-  - Sebastien Lepine
-  - Jing Li
-  - Fu-Heng Liang
-  - Guilherme Limberg
-  - Xin Liu
-  - Sarah Loebman
-  - Knox Long
-  - Yuxi Lu
-  - Madeline Lucey
-  - Alejandra Z. Lugo-Aranda
-  - Mary Loli Martínez Martinez-Aldama
-  - Kevin McKinnon
-  - Ilija Medan
-  - Andrea Merloni
-  - Sean Morrison
-  - Natalie Myers
-  - Szabolcs Mészáros
-  - Johanna Müller-Horn
-  - Samir Nepal
-  - Melissa Ness
-  - David Nidever
-  - Christian Nitschelm
-  - Audrey Oravetz
-  - Jonah Otto
-  - Kaike Pan
-  - Facundo Pérez Paolino
-  - Castalia Alenka Negrete Peñaloza
-  - Marc Pinsonneault
-  - Manuchehr Taghizadeh Popp
-  - Adrian Price-Whelan
-  - Nadiia Pulatova
-  - Anna Barbara Queiroz
-  - Jordan Raddick
-  - Amy Rankine
-  - Hans-Walter Rix
-  - Carlos Román-Zúñiga
-  - Daniela Fernández Rosso
-  - Jessie Runnoe
-  - Serat Mahmud Saad
-  - Mara Salvato
-  - Sebastian F. Sanchez
-  - Natascha Sattler
-  - Andrew Saydjari
-  - Conor Sayres
-  - Kevin Schlaufman
-  - Donald P. Schneider
-  - Axel Schwope
-  - Lucas M. Seaton
-  - Rhys Seeburger
-  - Javier Serna
-  - Sanjib Sharma
-  - Yue Shen
-  - Amaya Sinha
-  - Brian Sizemore
-  - Marzena Sniegowska
-  - Yingyi Song
-  - Diogo Souto
-  - Keivan Stassun
-  - Matthias Steinmetz
-  - Zachary Stone
-  - Alexander Stone-Martinez
-  - Guy S. Stringfellow
-  - Aurora Mata Sánchez
-  - José Sánchez-Gallego
-  - Jonathan Tan
-  - Jamie Tayar
-  - Riley Thai
-  - Ani Thakar
-  - Pierre Thibodeaux
-  - Yuan-Sen Ting
-  - Andrew Tkachenko
-  - Benny Trakhtenbrot
-  - Jose G. Fernandez Trincado
-  - Nicholas Troup
-  - Jonathan R. Trump
-  - Natalie Ulloa
-  - Roeland P. Van der Marel
-  - Pablo Vera
-  - Sandro Villanova
-  - Jaime Villaseñor
-  - Ji Wang
-  - Zachary Way
-  - Anne-Marie Weijmans
-  - Adam Wheeler
-  - John C. Wilson
-  - Aida Wofford
-  - Tony Wong
-  - Qiaoya Wu
-  - Dominika Wylezalek
-  - Xiang-Xiang Xue
-  - Renbin Yan
-  - Qian Yang
-  - Nadia Zakamska
-  - Eleonora Zari
-  - Gail Zasowski
-  - Grisha Zeltyn
-  - Zheng Zheng
-  - Catherine Zucker
-  - Rodolfo de J. Zermeño
-  me_index: 192
-  n_authors: 212
-  year: '2025'
-  pub: arXiv e-prints
-  volume: ''
-  page: arXiv:2507.07093
-  page_range: ''
-  doi: 10.48550/arXiv.2507.07093
-  arxiv: '2507.07093'
-  adsurl: https://ui.adsabs.harvard.edu/abs/2025arXiv250707093S
-  best_url: https://doi.org/10.48550/arXiv.2507.07093
-  refereed: false
-  citations: 61
-  month: ''
-  month_num: '07'
-  sortdate: '2025-07-31'
-  tags:
-  - sdssv
 - bibcode: 2025A&A...698A..41V
   title: 'Binarity at LOw Metallicity (BLOeM): Enhanced multiplicity of early B-type
     dwarfs and giants at Z = 0.2 Z⊙'
@@ -1713,7 +2603,7 @@
   adsurl: https://ui.adsabs.harvard.edu/abs/2025A&A...698A..41V
   best_url: https://doi.org/10.1051/0004-6361/202453166
   refereed: true
-  citations: 18
+  citations: 21
   month: jun
   month_num: '06'
   sortdate: '2025-06-15'
@@ -1815,7 +2705,7 @@
   adsurl: https://ui.adsabs.harvard.edu/abs/2025A&A...698A..40B
   best_url: https://doi.org/10.1051/0004-6361/202452963
   refereed: true
-  citations: 14
+  citations: 16
   month: jun
   month_num: '06'
   sortdate: '2025-06-15'
@@ -1925,7 +2815,7 @@
   adsurl: https://ui.adsabs.harvard.edu/abs/2025A&A...698A..39P
   best_url: https://doi.org/10.1051/0004-6361/202452949
   refereed: true
-  citations: 19
+  citations: 22
   month: jun
   month_num: '06'
   sortdate: '2025-06-15'
@@ -2044,7 +2934,7 @@
   adsurl: https://ui.adsabs.harvard.edu/abs/2025A&A...698A..38B
   best_url: https://doi.org/10.1051/0004-6361/202452623
   refereed: true
-  citations: 19
+  citations: 21
   month: jun
   month_num: '06'
   sortdate: '2025-06-15'
@@ -2111,7 +3001,7 @@
   adsurl: https://ui.adsabs.harvard.edu/abs/2024A&A...692A.109D
   best_url: https://doi.org/10.1051/0004-6361/202452352
   refereed: true
-  citations: 13
+  citations: 15
   month: dec
   month_num: '12'
   sortdate: '2024-12-15'
@@ -2305,7 +3195,7 @@
   adsurl: https://ui.adsabs.harvard.edu/abs/2024A&A...690A.289S
   best_url: https://doi.org/10.1051/0004-6361/202451586
   refereed: true
-  citations: 45
+  citations: 50
   month: oct
   month_num: '10'
   sortdate: '2024-10-15'
@@ -2360,7 +3250,7 @@
   adsurl: https://ui.adsabs.harvard.edu/abs/2024arXiv240920252F
   best_url: https://doi.org/10.48550/arXiv.2409.20252
   refereed: false
-  citations: 12
+  citations: 13
   month: ''
   month_num: 09
   sortdate: '2024-09-31'
@@ -2587,7 +3477,7 @@
   adsurl: https://ui.adsabs.harvard.edu/abs/2022MNRAS.512.3331D
   best_url: https://doi.org/10.1093/mnras/stac630
   refereed: true
-  citations: 15
+  citations: 16
   month: may
   month_num: '05'
   sortdate: '2022-05-15'
@@ -2625,7 +3515,7 @@
   adsurl: https://ui.adsabs.harvard.edu/abs/2022A&A...658A..69B
   best_url: https://doi.org/10.1051/0004-6361/202141037
   refereed: true
-  citations: 78
+  citations: 80
   month: feb
   month_num: '02'
   sortdate: '2022-02-15'

@@ -15,6 +15,8 @@ This project does not need strict SemVer; entries are grouped by release date.
 - CLAUDE.md symlink to AGENTS.md for agent instruction synchronisation
 
 ### Changed
+- Publications dataset and metrics refreshed from ADS on 2026-08-03 (`_data/papers_all.yml`, `_data/ads_metrics.yml`)
+- Weekly ADS sync now fetches and aligns with the current remote branch before generating a refresh
 - Publications dataset and metrics refreshed from ADS on 2026-06-29 (`_data/papers_all.yml`, `_data/ads_metrics.yml`)
 - Publications dataset and metrics refreshed from ADS on 2026-06-15 (`_data/papers_all.yml`, `_data/ads_metrics.yml`)
 - Publications dataset and metrics refreshed from ADS on 2026-06-01 (`_data/papers_all.yml`, `_data/ads_metrics.yml`)
@@ -85,6 +87,7 @@ This project does not need strict SemVer; entries are grouped by release date.
 - Blog post layout: single-column hero + left-aligned metadata
 
 ### Fixed
+- Weekly ADS automation no longer creates unpublishable commits from a stale detached worktree
 - Navbar scroll-spy now highlights About and Research when scrolling (selector changed from `.hero[id]` to `section[id]`)
 - Jekyll Sass build failure caused by non-ASCII characters in SCSS
 - Stray closing `</a>` in hero section markup
