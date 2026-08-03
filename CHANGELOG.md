@@ -87,6 +87,7 @@ This project does not need strict SemVer; entries are grouped by release date.
 - Blog post layout: single-column hero + left-aligned metadata
 
 ### Fixed
+- GitHub Actions now installs the locked Ruby bundle instead of relying on the incompatible `jekyll/builder:latest` image
 - Weekly ADS automation no longer creates unpublishable commits from a stale detached worktree
 - Navbar scroll-spy now highlights About and Research when scrolling (selector changed from `.hero[id]` to `section[id]`)
 - Jekyll Sass build failure caused by non-ASCII characters in SCSS
