@@ -38,13 +38,58 @@ resolve_push_target() {
   fi
 
   default_branch="${remote_head#origin/}"
-  if ! git merge-base --is-ancestor "origin/${default_branch}" HEAD; then
-    echo "Detached HEAD is not based on origin/${default_branch}; refusing to push automatically." >&2
+  echo "${default_branch}"
+}
+
+require_clean_worktree() {
+  if [[ -n "$(git status --porcelain)" ]]; then
+    echo "The worktree has uncommitted changes; refusing to refresh or change its base." >&2
+    git status --short >&2
+    return 1
+  fi
+}
+
+synchronise_push_base() {
+  local target_branch="$1"
+  local branch_name=""
+  local remote_ref="origin/${target_branch}"
+
+  echo "Fetching the latest refs from origin..."
+  git fetch origin
+
+  branch_name="$(git symbolic-ref --quiet --short HEAD 2>/dev/null || true)"
+  if ! git show-ref --verify --quiet "refs/remotes/${remote_ref}"; then
+    if [[ "${branch_name}" == "${target_branch}" ]]; then
+      echo "Remote branch ${remote_ref} does not exist yet; continuing from the local branch."
+      return 0
+    fi
+    echo "Could not find ${remote_ref}; refusing to refresh from a detached worktree." >&2
     return 1
   fi
 
-  echo "${default_branch}"
+  if [[ -z "${branch_name}" ]]; then
+    echo "Aligning detached HEAD with ${remote_ref}..."
+    git checkout --detach "${remote_ref}"
+    return 0
+  fi
+
+  if git merge-base --is-ancestor "${remote_ref}" HEAD; then
+    return 0
+  fi
+
+  if git merge-base --is-ancestor HEAD "${remote_ref}"; then
+    echo "Fast-forwarding ${branch_name} to ${remote_ref}..."
+    git merge --ff-only "${remote_ref}"
+    return 0
+  fi
+
+  echo "${branch_name} and ${remote_ref} have diverged; refusing to choose a history automatically." >&2
+  return 1
 }
+
+PUSH_TARGET="$(resolve_push_target)"
+require_clean_worktree
+synchronise_push_base "${PUSH_TARGET}"
 
 echo "Refreshing ADS library '${LIB_NAME}' with delta year ${DELTA_YEAR}..."
 ./scripts/update_ads_pubs.py "${LIB_NAME}" "${ALL_PATH}" --metrics "${METRICS_PATH}" --delta-year "${DELTA_YEAR}"
@@ -106,11 +151,10 @@ if git diff --cached --quiet; then
   exit 0
 fi
 
-CURRENT_BRANCH="$(resolve_push_target)"
-echo "Committing to ${CURRENT_BRANCH}..."
+echo "Committing for ${PUSH_TARGET}..."
 git commit -m "${COMMIT_MSG}"
 
-echo "Pushing ${CURRENT_BRANCH}..."
-git push origin "HEAD:refs/heads/${CURRENT_BRANCH}"
+echo "Pushing ${PUSH_TARGET}..."
+git push origin "HEAD:refs/heads/${PUSH_TARGET}"
 
 echo "Done."
