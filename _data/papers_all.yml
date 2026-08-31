@@ -1,3 +1,72 @@
+- bibcode: 2026arXiv260805276M
+  title: A Galactic intermediate-mass stripped star with a Wolf-Rayet-like wind
+  authors:
+  - Müller-Horn, Johanna
+  - El-Badry, Kareem
+  - Sander, Andreas A. C.
+  - Rix, Hans-Walter
+  - Blomberg, Lisa
+  - Hermes, J. J.
+  - Nagarajan, Pranav
+  - Shahaf, Sahar
+  - Jin, Harim
+  - Rowan, Dominick M.
+  - Dutta, Debasish
+  - Fernández-Trincado, José G.
+  - Götberg, Ylva
+  - Ilyin, Ilya
+  - Maccarone, Tom
+  - Méndez Delgado, José Eduardo
+  - Stringfellow, Guy S.
+  - Tkachenko, Andrew
+  - Villaseñor, Jaime I.
+  - Zari, Eleonora
+  authors_html: Johanna Müller-Horn; Kareem El-Badry; Andreas A. C. Sander; Hans-Walter
+    Rix; Lisa Blomberg; J. J. Hermes; Pranav Nagarajan; Sahar Shahaf; Harim Jin; Dominick
+    M. Rowan; Debasish Dutta; José G. Fernández-Trincado; Ylva Götberg; Ilya Ilyin;
+    Tom Maccarone; José Eduardo Méndez Delgado; Guy S. Stringfellow; Andrew Tkachenko;
+    <strong>Jaime I. Villaseñor</strong>; Eleonora Zari
+  authors_short_html: Johanna Müller-Horn; Kareem El-Badry; Andreas A. C. Sander;
+    Hans-Walter Rix; Lisa Blomberg; J. J. Hermes; Pranav Nagarajan; <strong>Jaime
+    I. Villaseñor</strong>, <em>et&nbsp;al.</em>
+  authors_display:
+  - Johanna Müller-Horn
+  - Kareem El-Badry
+  - Andreas A. C. Sander
+  - Hans-Walter Rix
+  - Lisa Blomberg
+  - J. J. Hermes
+  - Pranav Nagarajan
+  - Sahar Shahaf
+  - Harim Jin
+  - Dominick M. Rowan
+  - Debasish Dutta
+  - José G. Fernández-Trincado
+  - Ylva Götberg
+  - Ilya Ilyin
+  - Tom Maccarone
+  - José Eduardo Méndez Delgado
+  - Guy S. Stringfellow
+  - Andrew Tkachenko
+  - Jaime I. Villaseñor
+  - Eleonora Zari
+  me_index: 18
+  n_authors: 20
+  year: '2026'
+  pub: arXiv e-prints
+  volume: ''
+  page: arXiv:2608.05276
+  page_range: ''
+  doi: 10.48550/arXiv.2608.05276
+  arxiv: '2608.05276'
+  adsurl: https://ui.adsabs.harvard.edu/abs/2026arXiv260805276M
+  best_url: https://doi.org/10.48550/arXiv.2608.05276
+  refereed: false
+  citations: 0
+  month: ''
+  month_num: 08
+  sortdate: '2026-08-31'
+  tags: []
 - bibcode: 2026arXiv260726149S
   title: 'The Twentieth Data Release of the Sloan Digital Sky Survey: First All-Sky
     BOSS Spectra, eROSITA-SDSS-V Mapper Coordinated Observations, and a Preview of
@@ -1186,7 +1255,7 @@
   adsurl: https://ui.adsabs.harvard.edu/abs/2026ApJS..285....9S
   best_url: https://doi.org/10.3847/1538-4365/ae4697
   refereed: true
-  citations: 72
+  citations: 80
   month: jul
   month_num: '07'
   sortdate: '2026-07-15'
@@ -1237,7 +1306,7 @@
   adsurl: https://ui.adsabs.harvard.edu/abs/2026ApJ..1000....2S
   best_url: https://doi.org/10.3847/1538-4357/ae40fc
   refereed: true
-  citations: 7
+  citations: 9
   month: mar
   month_num: '03'
   sortdate: '2026-03-15'
@@ -1345,7 +1414,7 @@
   adsurl: https://ui.adsabs.harvard.edu/abs/2026A&A...707A.204L
   best_url: https://doi.org/10.1051/0004-6361/202558539
   refereed: true
-  citations: 3
+  citations: 4
   month: mar
   month_num: '03'
   sortdate: '2026-03-15'
@@ -1922,7 +1991,7 @@
   adsurl: https://ui.adsabs.harvard.edu/abs/2026AJ....171...52K
   best_url: https://doi.org/10.3847/1538-3881/ae0576
   refereed: true
-  citations: 106
+  citations: 107
   month: jan
   month_num: '01'
   sortdate: '2026-01-15'
@@ -1962,7 +2031,7 @@
   adsurl: https://ui.adsabs.harvard.edu/abs/2026A&A...705A.146S
   best_url: https://doi.org/10.1051/0004-6361/202553916
   refereed: true
-  citations: 1
+  citations: 2
   month: jan
   month_num: '01'
   sortdate: '2026-01-15'
@@ -2454,7 +2523,7 @@
   adsurl: https://ui.adsabs.harvard.edu/abs/2025NatAs...9.1337S
   best_url: https://doi.org/10.1038/s41550-025-02610-x
   refereed: true
-  citations: 30
+  citations: 33
   month: sep
   month_num: 09
   sortdate: '2025-09-15'
@@ -2505,7 +2574,7 @@
   adsurl: https://ui.adsabs.harvard.edu/abs/2025A&A...701A...9M
   best_url: https://doi.org/10.1051/0004-6361/202452504
   refereed: true
-  citations: 10
+  citations: 11
   month: sep
   month_num: 09
   sortdate: '2025-09-15'
@@ -2603,7 +2672,7 @@
   adsurl: https://ui.adsabs.harvard.edu/abs/2025A&A...698A..41V
   best_url: https://doi.org/10.1051/0004-6361/202453166
   refereed: true
-  citations: 21
+  citations: 22
   month: jun
   month_num: '06'
   sortdate: '2025-06-15'
@@ -2934,7 +3003,7 @@
   adsurl: https://ui.adsabs.harvard.edu/abs/2025A&A...698A..38B
   best_url: https://doi.org/10.1051/0004-6361/202452623
   refereed: true
-  citations: 21
+  citations: 22
   month: jun
   month_num: '06'
   sortdate: '2025-06-15'
@@ -3001,7 +3070,7 @@
   adsurl: https://ui.adsabs.harvard.edu/abs/2024A&A...692A.109D
   best_url: https://doi.org/10.1051/0004-6361/202452352
   refereed: true
-  citations: 15
+  citations: 18
   month: dec
   month_num: '12'
   sortdate: '2024-12-15'
@@ -3195,7 +3264,7 @@
   adsurl: https://ui.adsabs.harvard.edu/abs/2024A&A...690A.289S
   best_url: https://doi.org/10.1051/0004-6361/202451586
   refereed: true
-  citations: 50
+  citations: 53
   month: oct
   month_num: '10'
   sortdate: '2024-10-15'
@@ -3347,7 +3416,7 @@
   adsurl: https://ui.adsabs.harvard.edu/abs/2023MNRAS.525.5121V
   best_url: https://doi.org/10.1093/mnras/stad2533
   refereed: true
-  citations: 28
+  citations: 30
   month: nov
   month_num: '11'
   sortdate: '2023-11-15'
@@ -3515,7 +3584,7 @@
   adsurl: https://ui.adsabs.harvard.edu/abs/2022A&A...658A..69B
   best_url: https://doi.org/10.1051/0004-6361/202141037
   refereed: true
-  citations: 80
+  citations: 83
   month: feb
   month_num: '02'
   sortdate: '2022-02-15'
@@ -3559,7 +3628,7 @@
   adsurl: https://ui.adsabs.harvard.edu/abs/2021MNRAS.507.5348V
   best_url: https://doi.org/10.1093/mnras/stab2197
   refereed: true
-  citations: 51
+  citations: 52
   month: nov
   month_num: '11'
   sortdate: '2021-11-15'
