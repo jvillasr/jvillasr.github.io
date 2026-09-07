@@ -15,6 +15,7 @@ This project does not need strict SemVer; entries are grouped by release date.
 - CLAUDE.md symlink to AGENTS.md for agent instruction synchronisation
 
 ### Changed
+- Publications dataset and metrics refreshed from ADS on 2026-09-07 (`_data/papers_all.yml`, `_data/ads_metrics.yml`)
 - Publications dataset and metrics refreshed from ADS on 2026-08-31 (`_data/papers_all.yml`, `_data/ads_metrics.yml`)
 - Publications dataset and metrics refreshed from ADS on 2026-08-03 (`_data/papers_all.yml`, `_data/ads_metrics.yml`)
 - Weekly ADS sync now fetches and aligns with the current remote branch before generating a refresh

@@ -1414,7 +1414,7 @@
   adsurl: https://ui.adsabs.harvard.edu/abs/2026A&A...707A.204L
   best_url: https://doi.org/10.1051/0004-6361/202558539
   refereed: true
-  citations: 4
+  citations: 5
   month: mar
   month_num: '03'
   sortdate: '2026-03-15'
@@ -2523,7 +2523,7 @@
   adsurl: https://ui.adsabs.harvard.edu/abs/2025NatAs...9.1337S
   best_url: https://doi.org/10.1038/s41550-025-02610-x
   refereed: true
-  citations: 33
+  citations: 35
   month: sep
   month_num: 09
   sortdate: '2025-09-15'
@@ -2672,7 +2672,7 @@
   adsurl: https://ui.adsabs.harvard.edu/abs/2025A&A...698A..41V
   best_url: https://doi.org/10.1051/0004-6361/202453166
   refereed: true
-  citations: 22
+  citations: 24
   month: jun
   month_num: '06'
   sortdate: '2025-06-15'
@@ -2774,7 +2774,7 @@
   adsurl: https://ui.adsabs.harvard.edu/abs/2025A&A...698A..40B
   best_url: https://doi.org/10.1051/0004-6361/202452963
   refereed: true
-  citations: 16
+  citations: 18
   month: jun
   month_num: '06'
   sortdate: '2025-06-15'
@@ -3003,7 +3003,7 @@
   adsurl: https://ui.adsabs.harvard.edu/abs/2025A&A...698A..38B
   best_url: https://doi.org/10.1051/0004-6361/202452623
   refereed: true
-  citations: 22
+  citations: 24
   month: jun
   month_num: '06'
   sortdate: '2025-06-15'
@@ -3264,7 +3264,7 @@
   adsurl: https://ui.adsabs.harvard.edu/abs/2024A&A...690A.289S
   best_url: https://doi.org/10.1051/0004-6361/202451586
   refereed: true
-  citations: 53
+  citations: 54
   month: oct
   month_num: '10'
   sortdate: '2024-10-15'
@@ -3584,7 +3584,7 @@
   adsurl: https://ui.adsabs.harvard.edu/abs/2022A&A...658A..69B
   best_url: https://doi.org/10.1051/0004-6361/202141037
   refereed: true
-  citations: 83
+  citations: 84
   month: feb
   month_num: '02'
   sortdate: '2022-02-15'
