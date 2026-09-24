@@ -30,7 +30,7 @@ If you discover the repo differs, report it to me before making any changes.
 ---
 
 ## Working style rules (important)
-**Before editing:** Always pull the latest changes from the current target branch. Preserve existing local changes; if they prevent a safe pull, resolve that first without discarding them.
+**Before editing:** At the start of each work session, pull the latest changes from the current target branch once. Do not pull again during that session unless the user explicitly asks. Preserve existing local changes; if they prevent a safe pull, resolve that first without discarding them.
 
 1. **Small, reviewable changes**  
    Keep PRs focused. Don’t mix unrelated refactors with content updates.

@@ -16,7 +16,7 @@ This project does not need strict SemVer; entries are grouped by release date.
 
 ### Changed
 - Homepage hero name now scales on mobile and stays on one line.
-- Project guidelines now require pulling the target branch before editing and preserving existing local changes.
+- Project guidelines now require pulling the target branch once per session before editing and preserving existing local changes.
 - Publications dataset and metrics refreshed from ADS on 2026-09-14 (`_data/papers_all.yml`, `_data/ads_metrics.yml`)
 - Publications dataset and metrics refreshed from ADS on 2026-09-07 (`_data/papers_all.yml`, `_data/ads_metrics.yml`)
 - Publications dataset and metrics refreshed from ADS on 2026-08-31 (`_data/papers_all.yml`, `_data/ads_metrics.yml`)
