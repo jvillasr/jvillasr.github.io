@@ -12,6 +12,7 @@ Example:
 ---
 
 ## Now (highest priority)
+- Use the approved face edit for the profile picture while preserving the original image [DONE][2026-09-24]
 - Fix icon display in section 'Contact' and in the footer (only Bluesky icon showing) [DONE][2025-12-24]
 - Publications: Start with the Title, then authors (Currently the other way around). Add hovering effect in title. [DONE][2025-12-24]
 - Homepage hero copy: upgrade `site.description` + CTA (make it specific and scannable) [DONE][2025-12-24]
