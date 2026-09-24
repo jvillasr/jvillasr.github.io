@@ -12,6 +12,7 @@ Example:
 ---
 
 ## Now (highest priority)
+- Keep the full homepage hero name on one line on mobile [DONE][2026-09-24]
 - Add a pull-before-editing rule to the project guidelines [DONE][2026-09-24]
 - Use the approved face edit for the profile picture while preserving the original image [DONE][2026-09-24]
 - Fix icon display in section 'Contact' and in the footer (only Bluesky icon showing) [DONE][2025-12-24]

@@ -72,6 +72,14 @@ a.navbar-item.is-active {
         content: "";
     }
 }
+
+@media screen and (max-width: 600px) {
+    #hero h1 {
+        margin: 0 !important;
+        white-space: nowrap;
+        font-size: clamp(1.4rem, 7.5vw, 2.75rem);
+    }
+}
 .title {
     margin: auto 0.75rem!important;
 }
