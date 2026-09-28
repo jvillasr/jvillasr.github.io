@@ -1,3 +1,65 @@
+- bibcode: 2026A&A...713A.168A
+  title: 'SPECFANN: Spectral Fitting via Artificial Neural Networks: I. A deep-learning-based
+    FASTWIND emulator and fitting suite'
+  authors:
+  - Abdul-Masih, M.
+  - Hawcroft, C.
+  - Lechien, T.
+  - Simon-Diaz, S.
+  - Sana, H.
+  - Deshmukh, K.
+  - Vrancken, J.
+  - Villaseñor, J. I.
+  - Müller-Horn, J.
+  - Kalita, A. J.
+  - Ludwig, B.
+  - Bodensteiner, J.
+  - Bowman, D. M.
+  - Escorza, A.
+  - Holgado, G.
+  - Puls, J.
+  - de Vicente, A.
+  authors_html: M. Abdul-Masih; C. Hawcroft; T. Lechien; S. Simon-Diaz; H. Sana; K.
+    Deshmukh; J. Vrancken; <strong>J. I. Villaseñor</strong>; J. Müller-Horn; A. J.
+    Kalita; B. Ludwig; J. Bodensteiner; D. M. Bowman; A. Escorza; G. Holgado; J. Puls;
+    A. de Vicente
+  authors_short_html: M. Abdul-Masih; C. Hawcroft; T. Lechien; S. Simon-Diaz; H. Sana;
+    K. Deshmukh; J. Vrancken; <strong>J. I. Villaseñor</strong>, <em>et&nbsp;al.</em>
+  authors_display:
+  - M. Abdul-Masih
+  - C. Hawcroft
+  - T. Lechien
+  - S. Simon-Diaz
+  - H. Sana
+  - K. Deshmukh
+  - J. Vrancken
+  - J. I. Villaseñor
+  - J. Müller-Horn
+  - A. J. Kalita
+  - B. Ludwig
+  - J. Bodensteiner
+  - D. M. Bowman
+  - A. Escorza
+  - G. Holgado
+  - J. Puls
+  - A. de Vicente
+  me_index: 7
+  n_authors: 17
+  year: '2026'
+  pub: Astronomy and Astrophysics
+  volume: '713'
+  page: A168
+  page_range: ''
+  doi: 10.1051/0004-6361/202660673
+  arxiv: '2607.17348'
+  adsurl: https://ui.adsabs.harvard.edu/abs/2026A&A...713A.168A
+  best_url: https://doi.org/10.1051/0004-6361/202660673
+  refereed: true
+  citations: 0
+  month: sep
+  month_num: 09
+  sortdate: '2026-09-15'
+  tags: []
 - bibcode: 2026arXiv260805276M
   title: A Galactic intermediate-mass stripped star with a Wolf-Rayet-like wind
   authors:
@@ -705,68 +767,6 @@
   sortdate: '2026-07-31'
   tags:
   - sdssv
-- bibcode: 2026arXiv260717348A
-  title: 'SpecFANN: Spectral Fitting via Artificial Neural Networks I. A deep learning
-    based fastwind emulator and fitting suite'
-  authors:
-  - Abdul-Masih, M.
-  - Hawcroft, C.
-  - Lechien, T.
-  - Simon-Diaz, S.
-  - Sana, H.
-  - Deshmukh, K.
-  - Vrancken, J.
-  - Villaseñor, J. I.
-  - Müller-Horn, J.
-  - Kalita, A. J.
-  - Ludwig, B.
-  - Bodensteiner, J.
-  - Bowman, D. M.
-  - Escorza, A.
-  - Holgado, G.
-  - Puls, J.
-  - de Vicente, A.
-  authors_html: M. Abdul-Masih; C. Hawcroft; T. Lechien; S. Simon-Diaz; H. Sana; K.
-    Deshmukh; J. Vrancken; <strong>J. I. Villaseñor</strong>; J. Müller-Horn; A. J.
-    Kalita; B. Ludwig; J. Bodensteiner; D. M. Bowman; A. Escorza; G. Holgado; J. Puls;
-    A. de Vicente
-  authors_short_html: M. Abdul-Masih; C. Hawcroft; T. Lechien; S. Simon-Diaz; H. Sana;
-    K. Deshmukh; J. Vrancken; <strong>J. I. Villaseñor</strong>, <em>et&nbsp;al.</em>
-  authors_display:
-  - M. Abdul-Masih
-  - C. Hawcroft
-  - T. Lechien
-  - S. Simon-Diaz
-  - H. Sana
-  - K. Deshmukh
-  - J. Vrancken
-  - J. I. Villaseñor
-  - J. Müller-Horn
-  - A. J. Kalita
-  - B. Ludwig
-  - J. Bodensteiner
-  - D. M. Bowman
-  - A. Escorza
-  - G. Holgado
-  - J. Puls
-  - A. de Vicente
-  me_index: 7
-  n_authors: 17
-  year: '2026'
-  pub: arXiv e-prints
-  volume: ''
-  page: arXiv:2607.17348
-  page_range: ''
-  doi: 10.48550/arXiv.2607.17348
-  arxiv: '2607.17348'
-  adsurl: https://ui.adsabs.harvard.edu/abs/2026arXiv260717348A
-  best_url: https://doi.org/10.48550/arXiv.2607.17348
-  refereed: false
-  citations: 0
-  month: ''
-  month_num: '07'
-  sortdate: '2026-07-31'
-  tags: []
 - bibcode: 2026ApJS..285....9S
   title: The Nineteenth Data Release of the Sloan Digital Sky Survey
   authors:
@@ -1306,7 +1306,7 @@
   adsurl: https://ui.adsabs.harvard.edu/abs/2026ApJ..1000....2S
   best_url: https://doi.org/10.3847/1538-4357/ae40fc
   refereed: true
-  citations: 9
+  citations: 10
   month: mar
   month_num: '03'
   sortdate: '2026-03-15'
@@ -1991,7 +1991,7 @@
   adsurl: https://ui.adsabs.harvard.edu/abs/2026AJ....171...52K
   best_url: https://doi.org/10.3847/1538-3881/ae0576
   refereed: true
-  citations: 107
+  citations: 111
   month: jan
   month_num: '01'
   sortdate: '2026-01-15'
@@ -2523,7 +2523,7 @@
   adsurl: https://ui.adsabs.harvard.edu/abs/2025NatAs...9.1337S
   best_url: https://doi.org/10.1038/s41550-025-02610-x
   refereed: true
-  citations: 35
+  citations: 36
   month: sep
   month_num: 09
   sortdate: '2025-09-15'
