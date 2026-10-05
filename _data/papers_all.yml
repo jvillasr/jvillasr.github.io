@@ -1255,7 +1255,7 @@
   adsurl: https://ui.adsabs.harvard.edu/abs/2026ApJS..285....9S
   best_url: https://doi.org/10.3847/1538-4365/ae4697
   refereed: true
-  citations: 80
+  citations: 84
   month: jul
   month_num: '07'
   sortdate: '2026-07-15'
@@ -1991,7 +1991,7 @@
   adsurl: https://ui.adsabs.harvard.edu/abs/2026AJ....171...52K
   best_url: https://doi.org/10.3847/1538-3881/ae0576
   refereed: true
-  citations: 111
+  citations: 112
   month: jan
   month_num: '01'
   sortdate: '2026-01-15'
@@ -2523,7 +2523,7 @@
   adsurl: https://ui.adsabs.harvard.edu/abs/2025NatAs...9.1337S
   best_url: https://doi.org/10.1038/s41550-025-02610-x
   refereed: true
-  citations: 36
+  citations: 37
   month: sep
   month_num: 09
   sortdate: '2025-09-15'
