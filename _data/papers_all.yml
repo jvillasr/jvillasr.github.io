@@ -1255,7 +1255,7 @@
   adsurl: https://ui.adsabs.harvard.edu/abs/2026ApJS..285....9S
   best_url: https://doi.org/10.3847/1538-4365/ae4697
   refereed: true
-  citations: 84
+  citations: 87
   month: jul
   month_num: '07'
   sortdate: '2026-07-15'
@@ -1991,7 +1991,7 @@
   adsurl: https://ui.adsabs.harvard.edu/abs/2026AJ....171...52K
   best_url: https://doi.org/10.3847/1538-3881/ae0576
   refereed: true
-  citations: 112
+  citations: 121
   month: jan
   month_num: '01'
   sortdate: '2026-01-15'
@@ -2332,7 +2332,7 @@
   adsurl: https://ui.adsabs.harvard.edu/abs/2025A&A...703A.303Z
   best_url: https://doi.org/10.1051/0004-6361/202556444
   refereed: true
-  citations: 1
+  citations: 2
   month: nov
   month_num: '11'
   sortdate: '2025-11-15'
@@ -2523,7 +2523,7 @@
   adsurl: https://ui.adsabs.harvard.edu/abs/2025NatAs...9.1337S
   best_url: https://doi.org/10.1038/s41550-025-02610-x
   refereed: true
-  citations: 37
+  citations: 38
   month: sep
   month_num: 09
   sortdate: '2025-09-15'
@@ -2574,7 +2574,7 @@
   adsurl: https://ui.adsabs.harvard.edu/abs/2025A&A...701A...9M
   best_url: https://doi.org/10.1051/0004-6361/202452504
   refereed: true
-  citations: 11
+  citations: 12
   month: sep
   month_num: 09
   sortdate: '2025-09-15'
@@ -3416,7 +3416,7 @@
   adsurl: https://ui.adsabs.harvard.edu/abs/2023MNRAS.525.5121V
   best_url: https://doi.org/10.1093/mnras/stad2533
   refereed: true
-  citations: 30
+  citations: 31
   month: nov
   month_num: '11'
   sortdate: '2023-11-15'

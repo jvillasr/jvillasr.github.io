@@ -15,6 +15,7 @@ This project does not need strict SemVer; entries are grouped by release date.
 - CLAUDE.md symlink to AGENTS.md for agent instruction synchronisation
 
 ### Changed
+- Publications dataset and metrics refreshed from ADS on 2026-10-12 (`_data/papers_all.yml`, `_data/ads_metrics.yml`)
 - Publications dataset and metrics refreshed from ADS on 2026-10-05 (`_data/papers_all.yml`, `_data/ads_metrics.yml`)
 - Publications dataset and metrics refreshed from ADS on 2026-09-28 (`_data/papers_all.yml`, `_data/ads_metrics.yml`)
 - Homepage hero name now scales on mobile and stays on one line.
