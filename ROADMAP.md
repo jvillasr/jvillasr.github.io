@@ -12,6 +12,7 @@ Example:
 ---
 
 ## Now (highest priority)
+- Rename the first/second-author tab to "Featured" and include third-author papers [DONE][2026-10-14]
 - Keep the full homepage hero name on one line on mobile [DONE][2026-09-24]
 - Add a pull-before-editing rule to the project guidelines [DONE][2026-09-24]
 - Clarify that the target branch should be pulled once per session [DONE][2026-09-25]

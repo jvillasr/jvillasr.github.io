@@ -1,5 +1,5 @@
 {%- comment -%}
-  First/second-author publications.
+  Featured publications where Jaime is among the first three authors.
   Params:
     - limit
     - authors / first_n
@@ -9,7 +9,7 @@
 {%- assign limit_n = include.limit | default: 10 | plus: 0 -%}
 {%- assign render_list = '' | split: '' -%}
 {%- for p in site.data.papers_all -%}
-  {%- if p.me_index == 0 or p.me_index == 1 -%}
+  {%- if p.me_index == 0 or p.me_index == 1 or p.me_index == 2 -%}
     {%- assign render_list = render_list | push: p -%}
   {%- endif -%}
 {%- endfor -%}
@@ -21,7 +21,7 @@
 <div class="pubs{% if include.numbered %} pubs--numbered{% endif %}">
   <ul class="pub-list">
     {%- if render_list.size == 0 -%}
-      <li class="pub-item">No first- or second-author publications found.</li>
+      <li class="pub-item">No featured publications found.</li>
     {%- else -%}
       {%- for p in render_list -%}
         {% include one_pub.html p=p authors=include.authors first_n=include.first_n %}

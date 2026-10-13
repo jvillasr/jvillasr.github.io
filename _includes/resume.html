@@ -523,7 +523,7 @@
               <div class="resume-pubs-filters" role="tablist" aria-label="Publication filters">
                 <button class="resume-pubs-filter is-active" type="button" data-pubs-target="latest" aria-pressed="true">Latest 10</button>
                 <button class="resume-pubs-filter" type="button" data-pubs-target="cited" aria-pressed="false">Most cited</button>
-                <button class="resume-pubs-filter" type="button" data-pubs-target="first" aria-pressed="false">First/second author</button>
+                <button class="resume-pubs-filter" type="button" data-pubs-target="featured" aria-pressed="false">Featured</button>
                 <a class="resume-pubs-filter resume-pubs-filter--link" href="https://ui.adsabs.harvard.edu/public-libraries/7KtKk-uwSP-LaMEkA7SKGQ" target="_blank" rel="noopener" aria-label="View all publications on ADS">All (ADS)</a>
               </div>
 
@@ -534,8 +534,8 @@
                 <div class="resume-pubs-list" data-pubs-panel="cited">
                   {% include publications_most_cited.html limit=10 authors="short" first_n="5" numbered=true %}
                 </div>
-                <div class="resume-pubs-list" data-pubs-panel="first">
-                  {% include publications_first_second.html limit=10 authors="short" first_n="5" numbered=true %}
+                <div class="resume-pubs-list" data-pubs-panel="featured">
+                  {% include publications_featured.html limit=10 authors="short" first_n="5" numbered=true %}
                 </div>
               </div>
             </div>

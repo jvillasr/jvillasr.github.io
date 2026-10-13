@@ -15,6 +15,7 @@ This project does not need strict SemVer; entries are grouped by release date.
 - CLAUDE.md symlink to AGENTS.md for agent instruction synchronisation
 
 ### Changed
+- Resume publication tab renamed to "Featured" and expanded to include first-, second-, and third-author papers (2026-10-14). Verified with `bundle exec jekyll build --future` and browser checks at desktop and mobile widths.
 - Publications dataset and metrics refreshed from ADS on 2026-10-12 (`_data/papers_all.yml`, `_data/ads_metrics.yml`)
 - Publications dataset and metrics refreshed from ADS on 2026-10-05 (`_data/papers_all.yml`, `_data/ads_metrics.yml`)
 - Publications dataset and metrics refreshed from ADS on 2026-09-28 (`_data/papers_all.yml`, `_data/ads_metrics.yml`)
