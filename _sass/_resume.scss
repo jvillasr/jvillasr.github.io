@@ -94,6 +94,117 @@
   margin-top: 1.25rem;
 }
 
+.resume-supervision {
+  scroll-margin-top: 5rem;
+}
+
+.resume-supervision .resume-supervision-intro {
+  margin-bottom: 1.5rem;
+  color: var(--resume-muted);
+  line-height: 1.75;
+}
+
+/* Student profiles: project details alongside the current position. */
+.resume-profiles-caption {
+  color: var(--resume-muted);
+  font-size: .875rem;
+  line-height: 1.6;
+}
+
+.resume-profiles {
+  margin-top: .75rem;
+}
+
+.resume-profile {
+  display: grid;
+  grid-template-columns: minmax(0, 1.55fr) minmax(0, 1fr);
+  gap: 2rem;
+  align-items: start;
+  padding: 1.5rem 0;
+  border-top: 1px solid var(--resume-rule);
+}
+
+.resume-profile:last-child {
+  padding-bottom: 0;
+}
+
+.resume-profile-name {
+  margin: 0 0 .4rem;
+  color: var(--resume-ink);
+  font-size: 1.3rem;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+.resume-profile-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .25rem .8rem;
+  color: var(--resume-muted);
+  font-size: .875rem;
+  line-height: 1.6;
+  font-variant-numeric: tabular-nums;
+}
+
+.resume-profile .resume-profile-project {
+  margin-top: .65rem;
+  color: rgba(15, 23, 42, .78);
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+.resume-profile-destination {
+  padding-left: 1.25rem;
+  border-left: 2px solid #f4c5b5;
+}
+
+.resume-profile-stage {
+  color: #9e3f22;
+  font-size: .8rem;
+  font-weight: 600;
+  letter-spacing: .08em;
+  line-height: 1.6;
+  text-transform: uppercase;
+}
+
+.resume-profile-institution {
+  font-size: 1.125rem;
+  font-weight: 600;
+  line-height: 1.55;
+}
+
+.resume-supervision .resume-profile-institution a {
+  color: var(--resume-ink);
+  border-bottom-color: #b9c2d0;
+}
+
+.resume-supervision .resume-profile-institution a:hover {
+  color: var(--resume-link);
+}
+
+.resume-supervision .resume-profile-institution a:focus-visible {
+  outline: 2px solid var(--resume-link);
+  outline-offset: 4px;
+}
+
+.resume-profile-country {
+  color: var(--resume-muted);
+  font-size: .875rem;
+  line-height: 1.6;
+}
+
+@media (max-width: 640px) {
+  .resume-profile {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 1rem;
+    padding: 1.4rem 0;
+  }
+
+  .resume-profile-destination {
+    padding-left: 1rem;
+  }
+}
+
 /* Timeline layout */
 .resume-timeline {
   --date-w: clamp(120px, 16vw, 165px);

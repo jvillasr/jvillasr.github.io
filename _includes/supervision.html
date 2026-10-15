@@ -1,0 +1,33 @@
+{% assign supervision = site.data.supervision %}
+{% if supervision.students.size > 0 %}
+<section class="resume-section resume-supervision" id="supervision" aria-labelledby="supervision-heading">
+  <h2 class="resume-section-heading" id="supervision-heading">Student supervision</h2>
+  <p class="resume-supervision-intro">{{ supervision.introduction | escape }}</p>
+  <p class="resume-profiles-caption">Recent students &middot; {{ supervision.institution | escape }}</p>
+  <div class="resume-profiles">
+    {% for student in supervision.students %}
+      <article class="resume-profile">
+        <div class="resume-profile-work">
+          <h3 class="resume-profile-name">{{ student.name | escape }}</h3>
+          <p class="resume-profile-meta">
+            <span>{{ student.project_type | escape }}</span>
+            <span>{{ student.start | escape }} &ndash; {{ student.end | escape }}</span>
+          </p>
+          <p class="resume-profile-project">{{ student.project | escape }}</p>
+        </div>
+        <div class="resume-profile-destination">
+          <p class="resume-profile-stage">Now &middot; {{ student.current_position | escape }}</p>
+          <p class="resume-profile-institution">
+            {% if student.profile_url %}
+              <a href="{{ student.profile_url | escape }}" target="_blank" rel="noopener">{{ student.current_institution | escape }}</a>
+            {% else %}
+              {{ student.current_institution | escape }}
+            {% endif %}
+          </p>
+          <p class="resume-profile-country">{{ student.current_country | escape }}</p>
+        </div>
+      </article>
+    {% endfor %}
+  </div>
+</section>
+{% endif %}

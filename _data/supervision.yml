@@ -1,0 +1,39 @@
+# Projects and dates: cv-villasenor.pdf, supervision record (page 4).
+# Current positions: selected_achievements.pdf, section 5.
+# Institutional profiles checked on 2026-10-14.
+# List the most recent students first, by the end of their supervision.
+introduction: >-
+  I have supervised undergraduate and master's research projects at KU Leuven,
+  and a master's thesis and summer internships at MPIA. My three most recent
+  students have continued into PhD programmes in astronomy.
+institution: Max Planck Institute for Astronomy, Germany
+students:
+  - name: Farah Wallauer
+    start: "07.2025"
+    end: "09.2025"
+    project_type: Summer internship
+    project: Python tools for the analysis of massive stars
+    current_position: PhD student
+    current_institution: University of Cambridge
+    current_country: United Kingdom
+    profile_url: https://www.ast.cam.ac.uk/people/farah.wallauer
+
+  - name: Henry Willems
+    start: "03.2024"
+    end: "03.2025"
+    project_type: MSc thesis
+    project: Modelling eclipsing binaries in the search for binary interaction products
+    current_position: PhD student
+    current_institution: National Centre for Nuclear Research (NCBJ)
+    current_country: Poland
+    profile_url: https://www.ncbj.gov.pl/en/astrophysics-division/employees
+
+  - name: Ludovica Carbone
+    start: "07.2024"
+    end: "08.2024"
+    project_type: Summer internship
+    project: Follow-up strategies for massive stars with candidate black hole companions
+    current_position: PhD student
+    current_institution: Università degli Studi di Milano-Bicocca
+    current_country: Italy
+    profile_url: https://www.unimib.it/ludovica-carbone

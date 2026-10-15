@@ -5,7 +5,7 @@
         <header class="resume-header">
           <p class="resume-eyebrow">Curriculum Vitae</p>
           <h1 class="title is-uppercase has-text-weight-semibold resume-title">Resume</h1>
-          <p class="resume-subtitle">A snapshot of my research positions, education, and latest publications.</p>
+          <p class="resume-subtitle">A snapshot of my research positions, education, student supervision, and publications.</p>
         </header>
 
         <div class="resume-body">
@@ -65,6 +65,8 @@
               </article>
             </div>
           </section>
+
+          {% include supervision.html %}
 
           <section class="resume-section">
             {% assign ads_metrics = site.data.ads_metrics %}

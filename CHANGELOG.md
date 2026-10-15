@@ -7,6 +7,7 @@ This project does not need strict SemVer; entries are grouped by release date.
 
 ## Unreleased
 ### Added
+- Student supervision section in Resume with projects, dates, and current PhD institutions for Farah Wallauer, Henry Willems, and Ludovica Carbone, maintained in `_data/supervision.yml` (2026-10-16). Uses compact responsive rows with larger text: 16px projects, 18px current institutions, 14px dates and countries, and 20.8px names. Verified with `bundle exec jekyll build --future` and browser checks at 1440, 768, 640, 390, and 320 pixels, including keyboard focus and publication-tab behaviour.
 - `notes/blog-ideas.md` (repo-only; excluded from site build)
 - New blog post: `The Universe's Power Couples: Why Massive Binary Stars Run the Show`
 - Resume publications dashboard with filters, metrics, and ADS plots

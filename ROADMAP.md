@@ -70,7 +70,7 @@ Example:
 - SEO/social previews sanity check (remove duplicate `<title>`, confirm OpenGraph image, add per-page descriptions) [DONE][2026-03-12]
 - Analytics: migrate from Universal Analytics to GA4 [DONE][2026-03-12]
 - Add automated link checking (GitHub Action) [][]
-- Add somewhere past students. [][]
+- Add student supervision to Resume with the three most recent students and their current institutions, using compact responsive profiles with larger text [DONE][2026-10-16]
 - Polish the BLOeM project page with additional punchy key results [][]
 
 ## Later
