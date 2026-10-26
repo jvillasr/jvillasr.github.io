@@ -1,3 +1,64 @@
+- bibcode: 2026arXiv261017253M
+  title: An upper limit on Galactic OB+black hole binaries from SDSS-V
+  authors:
+  - Müller-Horn, J.
+  - Rix, H.-W.
+  - Shahaf, S.
+  - Pennell, B.
+  - Zari, E.
+  - Ramírez-Tannus, M. C.
+  - Farah, A.
+  - Essick, R.
+  - Villaseñor, J. I.
+  - Blanton, M. R.
+  - Fernández-Trincado, J. G.
+  - Kollmeier, J. A.
+  - Lam, C.
+  - Maltsev, K.
+  - Roman-Lopes, A.
+  - Schneider, D. P.
+  - Tkachenko, A.
+  authors_html: J. Müller-Horn; H.-W. Rix; S. Shahaf; B. Pennell; E. Zari; M. C. Ramírez-Tannus;
+    A. Farah; R. Essick; <strong>J. I. Villaseñor</strong>; M. R. Blanton; J. G. Fernández-Trincado;
+    J. A. Kollmeier; C. Lam; K. Maltsev; A. Roman-Lopes; D. P. Schneider; A. Tkachenko
+  authors_short_html: J. Müller-Horn; H.-W. Rix; S. Shahaf; B. Pennell; E. Zari; M.
+    C. Ramírez-Tannus; A. Farah; <strong>J. I. Villaseñor</strong>, <em>et&nbsp;al.</em>
+  authors_display:
+  - J. Müller-Horn
+  - H.-W. Rix
+  - S. Shahaf
+  - B. Pennell
+  - E. Zari
+  - M. C. Ramírez-Tannus
+  - A. Farah
+  - R. Essick
+  - J. I. Villaseñor
+  - M. R. Blanton
+  - J. G. Fernández-Trincado
+  - J. A. Kollmeier
+  - C. Lam
+  - K. Maltsev
+  - A. Roman-Lopes
+  - D. P. Schneider
+  - A. Tkachenko
+  me_index: 8
+  n_authors: 17
+  year: '2026'
+  pub: arXiv e-prints
+  volume: ''
+  page: arXiv:2610.17253
+  page_range: ''
+  doi: 10.48550/arXiv.2610.17253
+  arxiv: '2610.17253'
+  adsurl: https://ui.adsabs.harvard.edu/abs/2026arXiv261017253M
+  best_url: https://doi.org/10.48550/arXiv.2610.17253
+  refereed: false
+  citations: 0
+  month: ''
+  month_num: '10'
+  sortdate: '2026-10-31'
+  tags:
+  - sdssv
 - bibcode: 2026A&A...713A.168A
   title: 'SPECFANN: Spectral Fitting via Artificial Neural Networks: I. A deep-learning-based
     FASTWIND emulator and fitting suite'
@@ -1255,7 +1316,7 @@
   adsurl: https://ui.adsabs.harvard.edu/abs/2026ApJS..285....9S
   best_url: https://doi.org/10.3847/1538-4365/ae4697
   refereed: true
-  citations: 87
+  citations: 96
   month: jul
   month_num: '07'
   sortdate: '2026-07-15'
@@ -1306,7 +1367,7 @@
   adsurl: https://ui.adsabs.harvard.edu/abs/2026ApJ..1000....2S
   best_url: https://doi.org/10.3847/1538-4357/ae40fc
   refereed: true
-  citations: 10
+  citations: 14
   month: mar
   month_num: '03'
   sortdate: '2026-03-15'
@@ -1414,7 +1475,7 @@
   adsurl: https://ui.adsabs.harvard.edu/abs/2026A&A...707A.204L
   best_url: https://doi.org/10.1051/0004-6361/202558539
   refereed: true
-  citations: 5
+  citations: 6
   month: mar
   month_num: '03'
   sortdate: '2026-03-15'
@@ -1991,7 +2052,7 @@
   adsurl: https://ui.adsabs.harvard.edu/abs/2026AJ....171...52K
   best_url: https://doi.org/10.3847/1538-3881/ae0576
   refereed: true
-  citations: 121
+  citations: 137
   month: jan
   month_num: '01'
   sortdate: '2026-01-15'
@@ -2031,7 +2092,7 @@
   adsurl: https://ui.adsabs.harvard.edu/abs/2026A&A...705A.146S
   best_url: https://doi.org/10.1051/0004-6361/202553916
   refereed: true
-  citations: 2
+  citations: 4
   month: jan
   month_num: '01'
   sortdate: '2026-01-15'
@@ -2332,7 +2393,7 @@
   adsurl: https://ui.adsabs.harvard.edu/abs/2025A&A...703A.303Z
   best_url: https://doi.org/10.1051/0004-6361/202556444
   refereed: true
-  citations: 2
+  citations: 4
   month: nov
   month_num: '11'
   sortdate: '2025-11-15'
@@ -2523,7 +2584,7 @@
   adsurl: https://ui.adsabs.harvard.edu/abs/2025NatAs...9.1337S
   best_url: https://doi.org/10.1038/s41550-025-02610-x
   refereed: true
-  citations: 38
+  citations: 42
   month: sep
   month_num: 09
   sortdate: '2025-09-15'
@@ -2574,7 +2635,7 @@
   adsurl: https://ui.adsabs.harvard.edu/abs/2025A&A...701A...9M
   best_url: https://doi.org/10.1051/0004-6361/202452504
   refereed: true
-  citations: 12
+  citations: 14
   month: sep
   month_num: 09
   sortdate: '2025-09-15'
@@ -2884,7 +2945,7 @@
   adsurl: https://ui.adsabs.harvard.edu/abs/2025A&A...698A..39P
   best_url: https://doi.org/10.1051/0004-6361/202452949
   refereed: true
-  citations: 22
+  citations: 23
   month: jun
   month_num: '06'
   sortdate: '2025-06-15'
@@ -3003,7 +3064,7 @@
   adsurl: https://ui.adsabs.harvard.edu/abs/2025A&A...698A..38B
   best_url: https://doi.org/10.1051/0004-6361/202452623
   refereed: true
-  citations: 24
+  citations: 25
   month: jun
   month_num: '06'
   sortdate: '2025-06-15'
@@ -3264,7 +3325,7 @@
   adsurl: https://ui.adsabs.harvard.edu/abs/2024A&A...690A.289S
   best_url: https://doi.org/10.1051/0004-6361/202451586
   refereed: true
-  citations: 54
+  citations: 57
   month: oct
   month_num: '10'
   sortdate: '2024-10-15'
@@ -3416,7 +3477,7 @@
   adsurl: https://ui.adsabs.harvard.edu/abs/2023MNRAS.525.5121V
   best_url: https://doi.org/10.1093/mnras/stad2533
   refereed: true
-  citations: 31
+  citations: 32
   month: nov
   month_num: '11'
   sortdate: '2023-11-15'
