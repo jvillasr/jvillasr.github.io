@@ -1,13 +1,13 @@
-as_of: '2026-10-26'
+as_of: '2026-11-10'
 delta_year: 2026
 metrics:
-  total_papers: 32
-  total_citations: 847
+  total_papers: 33
+  total_citations: 858
   h_index: 16
   g_index: 29
   deltas:
-    total_papers: 11
-    total_citations: 501
+    total_papers: 12
+    total_citations: 523
     h_index: 7
     g_index: 12
 plots:
@@ -33,7 +33,7 @@ plots:
   - year: 2025
     value: 8
   - year: 2026
-    value: 11
+    value: 12
   citations_per_year:
   - year: 2017
     value: 1
@@ -50,11 +50,11 @@ plots:
   - year: 2023
     value: 42
   - year: 2024
-    value: 58
+    value: 53
   - year: 2025
-    value: 190
+    value: 184
   - year: 2026
-    value: 501
+    value: 523
   reads_per_year:
   - year: 2016
     value: 66
@@ -77,7 +77,7 @@ plots:
   - year: 2025
     value: 5281
   - year: 2026
-    value: 4320
+    value: 4416
   indices_per_year:
   - year: 2016
     h_index: 0
@@ -133,4 +133,4 @@ plots:
     h_index: 16
     g_index: 29
     i10_index: 18
-    read10_index: 538
+    read10_index: 540
