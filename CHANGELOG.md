@@ -16,6 +16,7 @@ This project does not need strict SemVer; entries are grouped by release date.
 - CLAUDE.md symlink to AGENTS.md for agent instruction synchronisation
 
 ### Changed
+- Update CommonMarker to 0.23.12 and run the Jekyll CI build on Ubuntu 26.04 (2026-11-10).
 - Pin the Jekyll CI runner to Ubuntu 24.04 to restore the locked Ruby dependencies build (2026-11-10).
 - Publications dataset and metrics refreshed from ADS on 2026-11-10 (`_data/papers_all.yml`, `_data/ads_metrics.yml`)
 - Publications dataset and metrics refreshed from ADS on 2026-10-26 (`_data/papers_all.yml`, `_data/ads_metrics.yml`)
