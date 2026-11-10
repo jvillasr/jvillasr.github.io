@@ -12,6 +12,7 @@ Example:
 ---
 
 ## Now (highest priority)
+- Update website dependencies and verify the Jekyll CI build on Ubuntu 26.04 [][]
 - Rename the first/second-author tab to "Featured" and include third-author papers [DONE][2026-10-14]
 - Keep the full homepage hero name on one line on mobile [DONE][2026-09-24]
 - Add a pull-before-editing rule to the project guidelines [DONE][2026-09-24]
